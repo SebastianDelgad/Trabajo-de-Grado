@@ -91,6 +91,7 @@ new_reviews = ['Utiliza muchos v√≠deos de YouTube en vez de explicar los temas √
                'muy buen profesor',
                'xd',
                '(y)',
-               'sin comentarios']
+               'sin comentarios',
+               'Muy buena docente , excelente directora de trabajo de grado']
 
 print(pipeline.predict(new_reviews))
