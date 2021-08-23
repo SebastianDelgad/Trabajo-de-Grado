@@ -2,36 +2,32 @@ import leerObservaciones
 import preprocesado
 
 
-#datos = ['El mejor profesor de la universidad']
-
 txt = leerObservaciones.observaciones()
-
-#p = [txt[1]]
-#print(p)
-#rating = preprocesado.dataset(p)
-
 nombres = leerObservaciones.almacenarNombres(txt)
-
-#print(rating[0])
-
-#print("'"+txt[1]+"'")
-
-print(nombres)
 
 clasificacionInicial = []
 clasificacionFinal = []
+evaluar = []
 
 for observaciones in txt:
     if observaciones[0].isnumeric():
-        evaluar = [observaciones]
-        rating = preprocesado.dataset(evaluar)
-        clasificacionInicial.append(rating[0])
+        evaluar.append(observaciones)
 
     for nombreDoc in nombres:
         if observaciones == nombreDoc:
+            if len(clasificacionInicial) > 0:
+                vectorRating = preprocesado.dataset(evaluar)
+                for rating in vectorRating:
+                    clasificacionInicial.append(rating)
+                evaluar = []
             clasificacionInicial.append(observaciones)
-            break
-        #print(observaciones[0])
+
+    if observaciones == txt[len(txt)-1]:
+        vectorRating = preprocesado.dataset(evaluar)
+        for rating in vectorRating:
+            clasificacionInicial.append(rating)
+
+
 
 print(clasificacionInicial)
 
