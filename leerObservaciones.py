@@ -20,6 +20,7 @@ def leerPDF():
 #def leerTxt(documento):
 def leerTxt():
     tObservaciones = []
+    quitarEspacios = []
     with open('PDF/pruebas.txt', "r", encoding='utf8') as archivo:
         for word in archivo:
             if word.strip() == 'Observaciones':
@@ -30,7 +31,12 @@ def leerTxt():
                     if not linea:
                         break
         archivo.close()
-    return tObservaciones
+
+    for word3 in tObservaciones:
+        if len(word3) > 0:
+            quitarEspacios.append(word3)
+
+    return quitarEspacios
     #print(tObservaciones)
 
 # Almacena los nombres, curso y grupo del curso que enseña el docente
@@ -66,19 +72,20 @@ def almacenarNombres(datos):
 
 def procesadoTxt(datos, vectorNombres):
     vectorFinal = []
-    vectorDatosProcesada = []
+    vectorDatosProcesados = []
     nObservación = 0
     union = ""
 
     for word2 in datos:
-        if word2.isnumeric():
-            if int(word2) > nObservación:
+        if word2[0].isnumeric():
+            if int(word2[0]) > nObservación:
                 vectorFinal.append(union)
                 union = ""
                 nObservación += 1
             else:
-                if int(word2) < nObservación:
+                if int(word2[0]) <= nObservación:
                     vectorFinal.append(union)
+                    union = ""
 
         for nombre in vectorNombres:
             if word2 == nombre:
@@ -95,10 +102,10 @@ def procesadoTxt(datos, vectorNombres):
     #se elimina los elementos vacios que hay en el vector
     for word3 in vectorFinal:
         if len(word3) > 0:
-            vectorDatosProcesada.append(word3)
+            vectorDatosProcesados.append(word3)
 
 
-    return vectorDatosProcesada
+    return vectorDatosProcesados
     #print(vectorDatosProcesada)
 
 def observaciones():
