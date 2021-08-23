@@ -12,14 +12,15 @@ def leerPDF():
         salida.write(texto)
         salida.write(b"\n----\n")
     salida.close()
-    leerTxt(pdf_a_texto)
+    return pdf_a_texto
 
 
 #Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
 
-def leerTxt(documento):
+#def leerTxt(documento):
+def leerTxt():
     tObservaciones = []
-    with open(documento, "r", encoding='utf8') as archivo:
+    with open('PDF/pruebas.txt', "r", encoding='utf8') as archivo:
         for word in archivo:
             if word.strip() == 'Observaciones':
                 while (True):
@@ -29,7 +30,7 @@ def leerTxt(documento):
                     if not linea:
                         break
         archivo.close()
-    almacenarNombres(tObservaciones)
+    return tObservaciones
     #print(tObservaciones)
 
 # Almacena los nombres, curso y grupo del curso que enseña el docente
@@ -58,13 +59,14 @@ def almacenarNombres(datos):
                                  if grupo == "M 55":
                                     vectorNombres.append(nombre)
     #print(vectorNombres)
-    procesadoTxt(datos, vectorNombres)
+    return vectorNombres
 
 
 # Texto perfectamente acomodado, se extrajeron saltos de linea innecesarios que se generaban por el formato del PDF
 
 def procesadoTxt(datos, vectorNombres):
     vectorFinal = []
+    vectorDatosProcesada = []
     nObservación = 0
     union = ""
 
@@ -80,14 +82,34 @@ def procesadoTxt(datos, vectorNombres):
 
         for nombre in vectorNombres:
             if word2 == nombre:
+                if len(union) > 0:
+                    vectorFinal.append(union)
+                    union = ""
                 vectorFinal.append(word2)
                 break
         else:
             union += word2 + " "
 
     vectorFinal.append(union)
-    vectorFinal.pop(1)
-    print(vectorFinal)
+
+    #se elimina los elementos vacios que hay en el vector
+    for word3 in vectorFinal:
+        if len(word3) > 0:
+            vectorDatosProcesada.append(word3)
 
 
-leerPDF()
+    return vectorDatosProcesada
+    #print(vectorDatosProcesada)
+
+def observaciones():
+
+    #pdf = leerPDF()
+    txt = leerTxt()
+    nombres = almacenarNombres(txt)
+    procesado = procesadoTxt(txt,nombres)
+    #print(procesado)
+    return procesado
+
+
+#leerPDF()
+observaciones()

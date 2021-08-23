@@ -15,10 +15,6 @@ stemmer = SnowballStemmer('spanish')
 non_words.extend(['¿', '¡', '...'])
 non_words.extend(map(str, range(10)))
 
-#Lectura del data set
-data = pd.read_csv('dataset/Observaciones_0_a_4.csv', sep=',', encoding= "utf8", header=None)
-data.columns = ['Observaciones', 'Sentiment']
-
 
 
 def sentence_tokenize(text):
@@ -50,6 +46,7 @@ def remove_stopwords(sentence):
     """
     return ' '.join([stemmer.stem(w) for w in word_tokenize(sentence) if not w in spanish_stopwords])
 
+
 #Preprocesado de los datos aplicando cada una de las funciones
 def preprocess(text):
     sentence_tokens = sentence_tokenize(text)
@@ -64,27 +61,38 @@ def preprocess(text):
     return word_list
 
 
-#Función que crea el vector y aplica el preprosesamiento
-bow = CountVectorizer(analyzer=preprocess)
-#TF- IDF
-tfidf = TfidfTransformer()
+def dataset(new_reviews):
+    #Lectura el data set y especificar las dos columnas que tiene el dataset como estructura
+    data = pd.read_csv('dataset/Observaciones_0_a_4.csv', sep=',', encoding= "utf8", header=None)
+    data.columns = ['Observaciones', 'Sentiment']
 
 
-#SVM (Máquina de vectores de soporte)
-print("Clasificador SVM")
-text_classifier = SVC(kernel='linear')
-pipeline = Pipeline([
+    #Función que crea el vector y aplica el preprosesamiento
+    bow = CountVectorizer(analyzer=preprocess)
+    #TF- IDF
+    tfidf = TfidfTransformer()
+
+
+    #SVM (Máquina de vectores de soporte)
+    #print("Clasificador SVM")
+    text_classifier = SVC(kernel='linear')
+
+    pipeline = Pipeline([
     ('bow', bow),  # strings to token integer counts
     ('tfidf', tfidf),  # integer counts to weighted TF-IDF scores
     ('classifier', text_classifier),  # train on TF-IDF vectors w/ SVM classifier
-])
-pipeline.fit(data['Observaciones'].values.astype('U'),data['Sentiment'])
-pipeline.score(data['Observaciones'].values.astype('U'), data['Sentiment'])
-#aplicamos todas las técnicas de medición
-all_predictions = pipeline.predict(data['Observaciones'].values.astype('U'))
-print(classification_report(data['Sentiment'], all_predictions))
-#Prueba
-new_reviews = ['Utiliza muchos vídeos de YouTube en vez de explicar los temas él mismo, no me gusta su metodología',
+    ])
+
+    pipeline.fit(data['Observaciones'].values.astype('U'),data['Sentiment'])
+    pipeline.score(data['Observaciones'].values.astype('U'), data['Sentiment'])
+
+    #aplicamos todas las técnicas de medición
+    #all_predictions = pipeline.predict(data['Observaciones'].values.astype('U'))
+    #print(classification_report(data['Sentiment'], all_predictions))
+
+    #Prueba
+    """
+    new_reviews = ['Utiliza muchos vídeos de YouTube en vez de explicar los temas él mismo, no me gusta su metodología',
                'Lee muchas diapositivas',
                'es grosero',
                'es arrogante',
@@ -93,5 +101,10 @@ new_reviews = ['Utiliza muchos vídeos de YouTube en vez de explicar los temas �
                '(y)',
                'sin comentarios',
                'Muy buena docente , excelente directora de trabajo de grado']
+    """
+    #print(pipeline.predict(new_reviews))
+    rating = pipeline.predict(new_reviews)
+    return rating
 
-print(pipeline.predict(new_reviews))
+#new_reviews = ['']
+#dataset(new_reviews)
