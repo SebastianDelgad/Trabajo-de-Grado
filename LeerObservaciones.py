@@ -1,7 +1,7 @@
 import fitz    #Libreria PyMuPDF
 
 #Transforma un archivo PDF a TXT sin perder la estructura del PDF
-def leerPDF():
+def leer_PDF():
     pdf_documento = 'PDF/2017- ll.pdf'
     documento = fitz.open(pdf_documento)
     pdf_a_texto = 'PDF/pdf_a_texto.txt'
@@ -18,7 +18,7 @@ def leerPDF():
 #Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
 
 #def leerTxt(documento):
-def leerTxt():
+def leer_txt():
     tObservaciones = []
     quitarEspacios = []
     with open('PDF/pruebas.txt', "r", encoding='utf8') as archivo:
@@ -41,7 +41,7 @@ def leerTxt():
 
 # Almacena los nombres, curso y grupo del curso que enseña el docente
 
-def almacenarNombres(datos):
+def almacenar_nombres(datos):
     vectorNombres = []
 
     for nombre in datos:
@@ -70,7 +70,7 @@ def almacenarNombres(datos):
 
 # Texto perfectamente acomodado, se extrajeron saltos de linea innecesarios que se generaban por el formato del PDF
 
-def procesadoTxt(datos, vectorNombres):
+def procesado_txt(datos, vectorNombres):
     vectorFinal = []
     vectorDatosProcesados = []
     nObservación = 0
@@ -110,10 +110,10 @@ def procesadoTxt(datos, vectorNombres):
 
 def observaciones():
 
-    #pdf = leerPDF()
-    txt = leerTxt()
-    nombres = almacenarNombres(txt)
-    procesado = procesadoTxt(txt,nombres)
+    #pdf = leer_PDF()
+    txt = leer_txt()
+    nombres = almacenar_nombres(txt)
+    procesado = procesado_txt(txt,nombres)
     #print(procesado)
     return procesado
 
