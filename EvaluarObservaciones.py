@@ -1,5 +1,6 @@
 import LeerObservaciones
 import Preprocesado
+import operator
 
 
 txt = LeerObservaciones.observaciones()
@@ -24,7 +25,7 @@ def evaluar_documento():
                         nota += rating
                     nota = nota / len(evaluar)
                     evaluar = []
-                    vecClasificador.append(float("{0:.2f}".format(nota)))
+                    vecClasificador.append(float("{0:.1f}".format(nota)))
                     nota = 0
                 clasificacionInicial.append(observaciones)
 
@@ -34,7 +35,7 @@ def evaluar_documento():
                 clasificacionInicial.append(rating)
                 nota += rating
             nota = nota / len(evaluar)
-            vecClasificador.append(float("{0:.2f}".format(nota)))
+            vecClasificador.append(float("{0:.1f}".format(nota)))
 
     print(clasificacionInicial)
     doc_evaluado(clasificacionInicial)
@@ -44,15 +45,15 @@ def doc_evaluado(dataClasificacion):
 
     clasificacionFinal = []
     for puntaje in dataClasificacion:
-        if puntaje == 0:
+        if puntaje == -2:
             clasificacionFinal.append("Muy negativo")
-        elif puntaje == 1:
+        elif puntaje == -1:
             clasificacionFinal.append("Negativo")
-        elif puntaje == 2:
+        elif puntaje == 0:
             clasificacionFinal.append("Neutral")
-        elif puntaje == 3:
+        elif puntaje == 1:
             clasificacionFinal.append("Positivo")
-        elif puntaje == 4:
+        elif puntaje == 2:
             clasificacionFinal.append("Muy positivo")
         else:
             clasificacionFinal.append(puntaje)
@@ -95,7 +96,6 @@ def cursos():
     return curso
 
 
-
 def info_dicionario(nombres,asignaturas,notas):
 
     dict_from_list = {}
@@ -104,16 +104,78 @@ def info_dicionario(nombres,asignaturas,notas):
         dict_from_list[i] = {'docente': nombres[i], 'asignatura': asignaturas[i], 'calificación': notas[i]}
 
     print(dict_from_list)
+    return dict_from_list
 
+def ordenar_diccionario_por_nombres(diccionario, nombres):
+
+    docentesEvaluados = []
+    for item in nombres:
+        if item not in docentesEvaluados:
+            docentesEvaluados.append(item)
+
+    docentesOrdenados = sorted(docentesEvaluados)
+    #print(docentesOrdenados)
+    #return docentesOrdenados
+
+    ordenadoAlfabeticamente = {}
+
+    for name in docentesOrdenados:
+        for i in range(len(diccionario)):
+            if diccionario[i]['docente'] == name:
+                ordenadoAlfabeticamente[i] = diccionario[i]
+
+    print(ordenadoAlfabeticamente)
+
+def promedio_calificacion(diccionario):
+
+    notas = {}
+
+    for i in range(len(diccionario)):
+        notas[i] = diccionario[i]['calificación']
+
+    return notas
+
+def peor_promedio_calificacion(notas,diccionario):
+
+    notas_sort = sorted(notas.items(), key=operator.itemgetter(1), reverse=False)
+    peor_nota = {}
+
+    for key in enumerate(notas_sort):
+        peor_nota[key[1][0]] = notas[key[1][0]]
+
+    peor_prom_profesor = {}
+    list_keys1 = list(peor_nota.keys())
+
+    for key in list_keys1:
+        peor_prom_profesor[key] = diccionario[key]
+
+    print(peor_prom_profesor)
+
+def mejor_promedio_calificacion(notas,diccionario):
+
+    notas_sort = sorted(notas.items(), key=operator.itemgetter(1), reverse=True)
+    mejor_nota = {}
+
+    for key in enumerate(notas_sort):
+        mejor_nota[key[1][0]] = notas[key[1][0]]
+
+    mejor_prom_profesor = {}
+    list_keys2 = list(mejor_nota.keys())
+
+    for key in list_keys2:
+        mejor_prom_profesor[key] = diccionario[key]
+
+    print(mejor_prom_profesor)
 
 def data():
     notas = evaluar_documento()
     nombres = nombres_docentes()
     asignaturas = cursos()
-    info_dicionario(nombres, asignaturas, notas)
+    diccionario = info_dicionario(nombres, asignaturas, notas)
+    ordenar_diccionario_por_nombres(diccionario, nombres)
+    prom_notas = promedio_calificacion(diccionario)
+    peor_promedio_calificacion(prom_notas, diccionario)
+    mejor_promedio_calificacion(prom_notas, diccionario)
 
 data()
 
-#ordenar_doc(corsair,evaluado)
-
-#nombre_docente()

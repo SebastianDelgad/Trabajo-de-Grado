@@ -63,7 +63,7 @@ def preprocess(text):
 
 def dataset(new_reviews):
     #Lectura el data set y especificar las dos columnas que tiene el dataset como estructura
-    data = pd.read_csv('dataset/Observaciones_0_a_4.csv', sep=',', encoding= "utf8", header=None)
+    data = pd.read_csv('dataset/Observaciones_-2_a_2.csv', sep=',', encoding= "utf8", header=None)
     data.columns = ['Observaciones', 'Sentiment']
 
 
