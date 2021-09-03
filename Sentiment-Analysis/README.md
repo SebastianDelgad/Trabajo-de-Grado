@@ -1,2 +1,1 @@
-# Trabajo-de-grado
-Desarrollo del trabajo de grado
+Libraries required in requiriments.txt
