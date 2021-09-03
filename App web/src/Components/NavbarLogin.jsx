@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import logo_imagen from "../images/logo-univalle.png";
+import PagLogin from "./PagLogin";
+import logo_imagen from "../Assets/Images/logo-univalle.png";
 
 
-const Login = () => {
+const NavbarLogin = () => {
   return (
     <Fragment>
         <Router>
@@ -25,9 +26,9 @@ const Login = () => {
             </Route>
         </Switch>
       </Router>
-      <h2>Página del Login</h2>
+      <PagLogin />
     </Fragment>
   );
 };
 
-export default Login;
+export default NavbarLogin;
