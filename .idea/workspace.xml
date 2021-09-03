@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e504242f-5877-42c2-a339-230889271d2a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Trabajo de Grado.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EvaluarObservaciones.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeerObservaciones.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PDF/2017- ll.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PDF/pdf_a_texto.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PDF/pruebas.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preprocesado.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/Observaciones_0_a_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/observaciones_-2_a_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tg/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web-tg/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tg/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web-tg/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tg/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web-tg/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tg/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/web-tg/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tg/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tg/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/web-tg/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tg/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tg/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-tg/src/setupTests.js" beforeDir="false" />
-    </list>
+    <list default="true" id="e504242f-5877-42c2-a339-230889271d2a" name="Changes" comment="web y algoritmo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +58,29 @@
       <option name="presentableId" value="Default" />
       <updated>1630641043938</updated>
     </task>
+    <task id="LOCAL-00001" summary="web y algoritmo">
+      <created>1630642178818</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1630642178818</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="web y algoritmo" />
+    <option name="LAST_COMMIT_MESSAGE" value="web y algoritmo" />
   </component>
 </project>
