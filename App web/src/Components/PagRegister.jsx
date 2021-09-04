@@ -1,9 +1,15 @@
 import React, { Fragment } from "react";
 import { db, auth } from "../firebase";
 import { useHistory } from "react-router-dom";
+import { NavbarRegister } from "./NavbarRegister";
+import "../Assets/Styles/icons.css";
 
 export const PagRegister = (props) => {
   let history = useHistory();
+
+  function handleClickYaTieneCuenta() {
+    history.push("/login");
+  }
 
   const [email, setEmail] = React.useState("");
   const [pass, setPass] = React.useState("");
@@ -11,7 +17,7 @@ export const PagRegister = (props) => {
 
   const procesarDatos = (e) => {
     e.preventDefault();
-    if (!email.trim() || !pass.trim()) {
+    if (!email.trim()) {
       console.log("Datos vacíos email!");
       setError("Datos vacíos email!");
       return;
@@ -28,7 +34,6 @@ export const PagRegister = (props) => {
     }
     console.log("correcto...");
     setError(null);
-    history.push("/classifier");
   };
 
   const registrar = React.useCallback(async () => {
@@ -62,37 +67,65 @@ export const PagRegister = (props) => {
 
   return (
     <Fragment>
-      <div className="mt-5">
+      <NavbarRegister />
+      <div className="container mt-3 bg-light">
         <h3 className="text-center">Registro de usuarios</h3>
-        <hr />
         <div className="row justify-content-center">
           <div className="col-12 col-sm-8 col-md-6 col-xl-4">
             <form onSubmit={procesarDatos}>
               {error ? <div className="alert alert-danger">{error}</div> : null}
-              <input
-                type="email"
-                className="form-control mb-2"
-                placeholder="Ingrese Email"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-              />
-              <input
-                type="password"
-                className="form-control mb-2"
-                placeholder="Ingrese Contraseña"
-                onChange={(e) => setPass(e.target.value)}
-                value={pass}
-              />
-              <button
-                className="btn btn-lg btn-dark btn-block"
-                type="submit"
-                onClick={registrar}
-              >
-                Registrarse
-              </button>
-              <button className="btn btn-sm btn-info btn-block" type="button">
-                ¿Ya tienes cuenta?
-              </button>
+              <div className="row mt-3 justify-content-center">
+                <h4> Usuario </h4>
+              </div>
+              <div className="row justify-content-center">
+                <div className="col-2">
+                  <span className="material-icons md-36">&#xe853;</span>
+                </div>
+                <div className="col">
+                  <input
+                    type="email"
+                    className="form-control mb-2"
+                    placeholder="Ingrese Email"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                  />
+                </div>
+              </div>
+              <div className="row mt-3 justify-content-center">
+                <h4> Constraseña </h4>
+              </div>
+              <div className="row justify-content-center">
+                <div className="col-2">
+                  <span className="material-icons md-36">&#xe897;</span>
+                </div>
+                <div className="col">
+                  <input
+                    type="password"
+                    className="form-control mb-2"
+                    placeholder="Ingrese Contraseña"
+                    onChange={(e) => setPass(e.target.value)}
+                    value={pass}
+                  />
+                </div>
+              </div>
+              <div className="row mt-3 justify-content-center">
+                <button
+                  className="btn btn-outline-danger"
+                  type="submit"
+                  onClick={registrar}
+                >
+                  Registrarse
+                </button>
+              </div>
+              <div className="row mt-3 justify-content-center">
+                <button
+                  className="btn btn-outline-danger"
+                  type="button"
+                  onClick={handleClickYaTieneCuenta}
+                >
+                  ¿Ya tienes cuenta?
+                </button>
+              </div>
             </form>
           </div>
         </div>

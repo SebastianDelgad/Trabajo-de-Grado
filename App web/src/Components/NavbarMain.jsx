@@ -14,7 +14,7 @@ export const NavbarMain = () => {
       <div className="container mt-2 bg-light">
         <div className="row">
           <div className="col-sm-10">
-            <img src={logo_imagen} width="500" height="62.46" alt="logo" />
+            <img src={logo_imagen} alt="logo" />
           </div>
           <div className="col-sm-2 mt-3">
             <div className="btn-toolbar">

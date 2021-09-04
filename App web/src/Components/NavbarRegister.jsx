@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
 
-export const NavbarLogin = () => {
+export const NavbarRegister = () => {
   return (
     <Fragment>
       <div className="container mt-2 bg-light">
-        <img
-          className="img-responsive"
-          src={logo_imagen}
-          alt="logoLogin"
-        />
+        <div className="row">
+          <div className="col-sm-10">
+            <img src={logo_imagen} alt="logoLogin" />
+          </div>
+        </div>
       </div>
     </Fragment>
   );
