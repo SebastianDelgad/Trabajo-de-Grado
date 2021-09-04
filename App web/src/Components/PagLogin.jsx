@@ -10,6 +10,10 @@ export const PagLogin = () => {
     history.push("/classifier");
   }
 
+  function handleClickRegistrarse(){
+    history.push("/register")
+  }
+
   return (
     <Fragment>
       <NavbarLogin />
@@ -52,7 +56,8 @@ export const PagLogin = () => {
           </button>
         </div>
         <div className="row mt-3 justify-content-center">
-          <button className="btn btn-outline-danger">
+          <button className="btn btn-outline-danger"
+          onClick={handleClickRegistrarse}>
             <span> Registrarse </span>
           </button>
         </div>

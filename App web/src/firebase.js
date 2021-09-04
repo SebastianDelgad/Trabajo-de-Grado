@@ -1,6 +1,6 @@
-import app from 'firebase/app'
-import 'firebase/firestore'
-import 'firebase/auth'
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/firestore'
+import 'firebase/compat/auth'
 
 
 
@@ -8,6 +8,7 @@ import 'firebase/auth'
 const firebaseConfig = {
   apiKey: "AIzaSyDzii7kgYbU_hwOVVJbzWwAAKkMOCGMCpw",
   authDomain: "teacher-qualifier.firebaseapp.com",
+  databaseURL: "https://teacher-qualifier-default-rtdb.firebaseio.com",
   projectId: "teacher-qualifier",
   storageBucket: "teacher-qualifier.appspot.com",
   messagingSenderId: "27392235985",
@@ -16,9 +17,10 @@ const firebaseConfig = {
 };
 
 
-app.initializeApp(firebaseConfig);
 
-const db = app.firestore();
-const auth = app.auth();
+firebase.initializeApp(firebaseConfig);
+
+const db = firebase.firestore();
+const auth = firebase.auth();
 
 export {db, auth}
