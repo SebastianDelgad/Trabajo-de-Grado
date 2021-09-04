@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Register from "./Register";
 import "../Assets/Styles/icons.css";
 import NavbarClassifier from "./NavbarClassifier";
+import NavbarLogin from "./NavbarLogin";
 
 const PagLogin = () => {
   return (
@@ -10,6 +11,7 @@ const PagLogin = () => {
       <Router>
         <Switch>
           <Route path="/Login" exact>
+            <NavbarLogin />
             <div className="container mt-3 bg-light">
               <div className="row justify-content-center">
                 <h4> Acceder al sistema </h4>

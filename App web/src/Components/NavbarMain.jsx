@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-import NavbarLogin from "./NavbarLogin";
+import PagLogin from "./PagLogin";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
 import PagMain from "./PagMain";
 
@@ -36,7 +34,7 @@ const NavbarMain = () => {
             <PagMain />
           </Route>
           <Route path="/Login" exact>
-            <NavbarLogin />
+            <PagLogin />
           </Route>
         </Switch>
       </Router>

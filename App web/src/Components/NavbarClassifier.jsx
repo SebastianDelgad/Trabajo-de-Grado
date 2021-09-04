@@ -18,7 +18,7 @@ const NavbarClassifier = () => {
                     src={logo_imagen}
                     width="500"
                     height="62.46"
-                    alt="logo"
+                    alt="logoClassifier"
                   />
                 </div>
                 <div className="col-sm-2 mt-3">
