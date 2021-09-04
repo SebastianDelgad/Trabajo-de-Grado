@@ -28,9 +28,8 @@ export const PagRegister = (props) => {
     }
     console.log("correcto...");
     setError(null);
-    history.push("/classifier")
+    history.push("/classifier");
   };
-
 
   const registrar = React.useCallback(async () => {
     try {
@@ -47,7 +46,6 @@ export const PagRegister = (props) => {
       setPass("");
       setError(null);
       props.history.push("/classifier");
-      
     } catch (error) {
       console.log(error);
       // setError(error.message)
@@ -85,8 +83,11 @@ export const PagRegister = (props) => {
                 onChange={(e) => setPass(e.target.value)}
                 value={pass}
               />
-              <button className="btn btn-lg btn-dark btn-block" type="submit"
-              onClick={registrar}>
+              <button
+                className="btn btn-lg btn-dark btn-block"
+                type="submit"
+                onClick={registrar}
+              >
                 Registrarse
               </button>
               <button className="btn btn-sm btn-info btn-block" type="button">

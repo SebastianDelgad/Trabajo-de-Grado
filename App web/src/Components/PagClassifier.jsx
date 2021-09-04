@@ -1,9 +1,25 @@
 import React, { Fragment } from "react";
 import { Upload } from "./Upload";
 import { NavbarClassifier } from "./NavbarClassifier";
+import { auth } from "../firebase";
 
 export const PagClassifier = () => {
-  return (
+  
+
+  const [firebaseUser, setFirebaseUser] = React.useState(false);
+
+  React.useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      console.log(user);
+      if (user) {
+        setFirebaseUser(user);
+      } else {
+        setFirebaseUser(null);
+      }
+    });
+  }, []);
+
+  return firebaseUser !== null ? (
     <Fragment>
       <NavbarClassifier />
       <div className="container mt-3 bg-light">
@@ -44,5 +60,7 @@ export const PagClassifier = () => {
         </div>
       </div>
     </Fragment>
+  ) : (
+    <div>Cargando...</div>
   );
 };

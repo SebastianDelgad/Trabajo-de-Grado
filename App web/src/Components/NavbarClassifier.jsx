@@ -1,13 +1,18 @@
 import React, { Fragment } from "react";
-import { useHistory } from "react-router-dom";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
+import { auth } from "../firebase";
+import { useHistory } from "react-router-dom";
 
-export const NavbarClassifier = () => {
+export const NavbarClassifier = (props) => {
+
   let history = useHistory();
 
-  function handleClickCerrarsesion() {
-    history.push("/");
-  }
+  const cerrarSesion = () => {
+    auth.signOut().then(() => {
+      history.push("/");
+    });
+  };
+
   return (
     <Fragment>
       <div className="container mt-2 bg-light">
@@ -22,12 +27,12 @@ export const NavbarClassifier = () => {
           </div>
           <div className="col-sm-2 mt-3">
             <div className="btn-toolbar">
-              <button
-                className="btn btn-outline-danger"
-                onClick={handleClickCerrarsesion}
-              >
+            props.firebaseUser !== null ? (
+              <button className="btn btn-outline-danger"
+               onClick={cerrarSesion}>
                 <span> Cerrar sesión </span>
               </button>
+            )
             </div>
           </div>
         </div>
