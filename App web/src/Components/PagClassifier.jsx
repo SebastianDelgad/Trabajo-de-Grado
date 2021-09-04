@@ -4,8 +4,6 @@ import { NavbarClassifier } from "./NavbarClassifier";
 import { auth } from "../firebase";
 
 export const PagClassifier = () => {
-  
-
   const [firebaseUser, setFirebaseUser] = React.useState(false);
 
   React.useEffect(() => {

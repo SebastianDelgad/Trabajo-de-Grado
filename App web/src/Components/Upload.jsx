@@ -26,4 +26,3 @@ export function Upload(props) {
     </section>
   );
 }
-

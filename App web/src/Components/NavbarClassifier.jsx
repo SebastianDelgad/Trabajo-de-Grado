@@ -4,7 +4,6 @@ import { auth } from "../firebase";
 import { useHistory } from "react-router-dom";
 
 export const NavbarClassifier = (props) => {
-
   let history = useHistory();
 
   const cerrarSesion = () => {
@@ -27,12 +26,11 @@ export const NavbarClassifier = (props) => {
           </div>
           <div className="col-sm-2 mt-3">
             <div className="btn-toolbar">
-            props.firebaseUser !== null ? (
-              <button className="btn btn-outline-danger"
-               onClick={cerrarSesion}>
+              props.firebaseUser !== null ? (
+              <button className="btn btn-outline-danger" onClick={cerrarSesion}>
                 <span> Cerrar sesión </span>
               </button>
-            )
+              )
             </div>
           </div>
         </div>
