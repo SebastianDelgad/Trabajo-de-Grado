@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import UploadPDF from "./UploadPDF"
+import Upload from "./Upload"
 
 const PagClassifier = () => {
   return (
@@ -19,7 +19,7 @@ const PagClassifier = () => {
             <h4>Archivos a evaluar</h4>
           </div>
           <div className="col">
-            <UploadPDF />
+            <Upload />
           </div>
         </div>
         <br></br>
