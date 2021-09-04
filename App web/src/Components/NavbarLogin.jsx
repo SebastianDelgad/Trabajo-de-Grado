@@ -1,14 +1,13 @@
 import React, { Fragment } from "react";
 
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import PagLogin from "./PagLogin";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
-
 
 const NavbarLogin = () => {
   return (
     <Fragment>
-        <Router>
+      <Router>
         <Switch>
           <Route path="/Login" exact>
             <div className="container mt-2 bg-light">
@@ -23,7 +22,7 @@ const NavbarLogin = () => {
                 </div>
               </div>
             </div>
-            </Route>
+          </Route>
         </Switch>
       </Router>
       <PagLogin />
