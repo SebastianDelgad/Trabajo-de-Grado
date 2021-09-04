@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-const Register = () => {
+export const Register = () => {
   return (
     <Fragment>
       <Router>
@@ -14,5 +14,3 @@ const Register = () => {
     </Fragment>
   );
 };
-
-export default Register;

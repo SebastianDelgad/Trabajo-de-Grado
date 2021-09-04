@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const UploadPDF = () => {
+export const UploadPDF = () => {
 
     const [pdfFile, setPdfFile] = useState(null);
     const [pdfFileError, setPdfFileError] = useState('');
@@ -46,4 +46,3 @@ const UploadPDF = () => {
      );
 }
  
-export default UploadPDF;

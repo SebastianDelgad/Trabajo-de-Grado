@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
-import Upload from "./Upload"
+import { Upload } from "./Upload";
+import { NavbarClassifier } from "./NavbarClassifier";
 
-const PagClassifier = () => {
+export const PagClassifier = () => {
   return (
     <Fragment>
+      <NavbarClassifier />
       <div className="container mt-3 bg-light">
         <div className="row">
           <div className="col">
@@ -44,5 +46,3 @@ const PagClassifier = () => {
     </Fragment>
   );
 };
-
-export default PagClassifier;

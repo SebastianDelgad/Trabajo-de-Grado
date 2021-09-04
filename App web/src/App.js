@@ -1,14 +1,15 @@
-import React, { Fragment } from "react";
-import NavbarMain from "./Components/NavbarMain";
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import { PagMain } from "./Components/PagMain";
+import { PagLogin } from "./Components/PagLogin";
+import { PagClassifier } from "./Components/PagClassifier";
 
-function App() {
+export const App = () => {
   return (
-    <Fragment>
-      <div className="mb-2 bg-white">
-        <NavbarMain />
-      </div>
-    </Fragment>
+    <BrowserRouter>
+      <Route exact path="/login" component={PagLogin} />
+      <Route exact path="/" component={PagMain} />
+      <Route exact path="/classifier" component={PagClassifier} />
+    </BrowserRouter>
   );
-}
-
-export default App;
+};

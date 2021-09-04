@@ -1,44 +1,33 @@
 import React, { Fragment } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import PagLogin from "./PagLogin";
+import { useHistory } from "react-router-dom";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
-import PagMain from "./PagMain";
 
-const NavbarMain = () => {
+export const NavbarMain = () => {
+  let history = useHistory();
+
+  function handleClickIniciarsesion() {
+    history.push("/login");
+  }
+
   return (
     <Fragment>
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <div className="container mt-2 bg-light">
-              <div className="row">
-                <div className="col-sm-10">
-                  <img
-                    src={logo_imagen}
-                    width="500"
-                    height="62.46"
-                    alt="logo"
-                  />
-                </div>
-                <div className="col-sm-2 mt-3">
-                  <div className="btn-toolbar">
-                    <Link to="/Login">
-                      <button className="btn btn-outline-danger">
-                        <span> Iniciar sesión </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+      <div className="container mt-2 bg-light">
+        <div className="row">
+          <div className="col-sm-10">
+            <img src={logo_imagen} width="500" height="62.46" alt="logo" />
+          </div>
+          <div className="col-sm-2 mt-3">
+            <div className="btn-toolbar">
+              <button
+                className="btn btn-outline-danger"
+                onClick={handleClickIniciarsesion}
+              >
+                <span> Iniciar sesión </span>
+              </button>
             </div>
-            <PagMain />
-          </Route>
-          <Route path="/Login" exact>
-            <PagLogin />
-          </Route>
-        </Switch>
-      </Router>
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 };
-export default NavbarMain;

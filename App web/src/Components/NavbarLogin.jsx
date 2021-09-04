@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
 
-const NavbarLogin = () => {
+export const NavbarLogin = () => {
   return (
     <Fragment>
       <div className="container mt-2 bg-light">
@@ -14,5 +14,3 @@ const NavbarLogin = () => {
     </Fragment>
   );
 };
-
-export default NavbarLogin;

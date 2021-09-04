@@ -1,46 +1,37 @@
 import React, { Fragment } from "react";
-import NavbarMain from "./NavbarMain"
-import PagClassifier from "./PagClassifier"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
 
+export const NavbarClassifier = () => {
+  let history = useHistory();
 
-const NavbarClassifier = () => {
+  function handleClickCerrarsesion() {
+    history.push("/");
+  }
   return (
     <Fragment>
-      <Router>
-        <Switch>
-          <Route path="/Classifier" exact>
-            <div className="container mt-2 bg-light">
-              <div className="row">
-                <div className="col-sm-10">
-                  <img
-                    src={logo_imagen}
-                    width="500"
-                    height="62.46"
-                    alt="logoClassifier"
-                  />
-                </div>
-                <div className="col-sm-2 mt-3">
-                  <div className="btn-toolbar">
-                    <Link to="/">
-                      <button className="btn btn-outline-danger">
-                        <span> Cerrar sesión </span>
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+      <div className="container mt-2 bg-light">
+        <div className="row">
+          <div className="col-sm-10">
+            <img
+              src={logo_imagen}
+              width="500"
+              height="62.46"
+              alt="logoClassifier"
+            />
+          </div>
+          <div className="col-sm-2 mt-3">
+            <div className="btn-toolbar">
+              <button
+                className="btn btn-outline-danger"
+                onClick={handleClickCerrarsesion}
+              >
+                <span> Cerrar sesión </span>
+              </button>
             </div>
-            <PagClassifier/>
-          </Route>
-          <Route path="/" exact>
-            <NavbarMain />
-          </Route>
-        </Switch>
-      </Router>
+          </div>
+        </div>
+      </div>
     </Fragment>
   );
 };
-
-export default NavbarClassifier;

@@ -1,7 +1,7 @@
 import React from "react";
 import { useDropzone } from "react-dropzone";
 
-function Upload(props) {
+export function Upload(props) {
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
 
   const files = acceptedFiles.map((file) => (
@@ -27,4 +27,3 @@ function Upload(props) {
   );
 }
 
-export default Upload;

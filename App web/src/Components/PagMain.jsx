@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { NavbarMain } from "./NavbarMain";
 import graficos_imagen from "../Assets/Images/pexels-lukas-590037.jpg";
 import alfabeticamente_imagen from "../Assets/Images/pexels-pixabay-434337.jpg";
 import ok_imagen from "../Assets/Images/pexels-andrea-piacquadio-3767418.jpg";
@@ -7,9 +8,10 @@ import miner_imagen from "../Assets/Images/clipart4755686.png";
 import machine_imagen from "../Assets/Images/Chip iconos vectoriales gratuitos diseñados por Freepik.png";
 import sentiment_imagen from "../Assets/Images/ambalina-sentiment-analysis-header.jpg";
 
-const PagMain = () => {
+export const PagMain = () => {
   return (
     <Fragment>
+      <NavbarMain />
       <div className="container mt-3 bg-light">
         <div className="row">
           <div className="col">
@@ -130,5 +132,3 @@ const PagMain = () => {
     </Fragment>
   );
 };
-
-export default PagMain;
