@@ -40,18 +40,18 @@ export const PagClassifier = () => {
           </div>
           <br></br>
           <div className="row">
-            <div className="col">
-              <button className="btn btn-outline-danger">
+            <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+              <button className="btn btn-outline-danger btn-block">
                 <span> Alfabéticamente </span>
               </button>
             </div>
-            <div className="col">
-              <button className="btn btn-outline-danger">
+            <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+              <button className="btn btn-outline-danger btn-block">
                 <span> Mejor promedio de calificaciones </span>
               </button>
             </div>
-            <div className="col">
-              <button className="btn btn-outline-danger">
+            <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+              <button className="btn btn-outline-danger btn-block">
                 <span> Peor promedio de calificaciones </span>
               </button>
             </div>

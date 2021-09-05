@@ -13,15 +13,15 @@ export const PagMain = () => {
     <Fragment>
       <NavbarMain />
       <div className="container mt-3 bg-light">
+        <h3 className="text-center text-responsive">
+          Califica las observaciones de los docentes en el periodo académico{" "}
+        </h3>
         <div className="row">
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-            <h3>
-              Califica las observaciones de los docentes en el periodo académico{" "}
-            </h3>
-            <p>
+            <p className="text-responsive">
               Esta web proporciona un documento con las observaciones docente
               calificadas, donde se puede elegir ordenar el documento en 3
-              formatos{" "}
+              formatos
             </p>
           </div>
           <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
@@ -39,7 +39,7 @@ export const PagMain = () => {
       <div className="container mt-3 bg-light">
         <div className="row d-flex justify-content-around">
           <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <h3 className="text-center">Minería de texto</h3>
+            <h4 className="text-center text-responsive">Minería de texto</h4>
             <img src={miner_imagen} className="img-fluid" alt="miner" />
             <p className="text-justify">
               La minería de textos es el proceso de analizar texto con el objeto
@@ -50,7 +50,9 @@ export const PagMain = () => {
             <p>Fuente: www.ibm.com</p>
           </div>
           <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <h3 className="text-center">Análisis de sentimiento</h3>
+            <h4 className="text-center text-responsive">
+              Análisis de sentimiento
+            </h4>
             <img src={sentiment_imagen} className="img-fluid" alt="sentiment" />
             <p className="text-justify">
               El análisis de texto, un tipo de análisis cualitativo, es la
@@ -61,7 +63,7 @@ export const PagMain = () => {
             <p className="text-justify">Fuente: www.ibm.com</p>
           </div>
           <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <h3 className="text-center">Machine learning</h3>
+            <h4 className="text-center">Machine learning</h4>
             <img src={machine_imagen} className="img-fluid" alt="machine" />
             <p className="text-justify">
               Machine learning es una forma de la IA que permite a un sistema
@@ -88,10 +90,10 @@ export const PagMain = () => {
             />
           </div>
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-            <h3 className="text-justify">
+            <h4 className="text-justify">
               Documento ordenado alfabéticamente por el nombre de los docentes y
               sus cursos
-            </h3>
+            </h4>
           </div>
         </div>
       </div>
@@ -99,10 +101,10 @@ export const PagMain = () => {
       <div className="container mt-3 bg-light">
         <div className="row">
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-            <h3 className="text-justify">
+            <h4 className="text-justify">
               Documento con los cursos que en promedio fueron mejor calificados
               a peor calificados
-            </h3>
+            </h4>
           </div>
           <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
             <img src={ok_imagen} className="img-fluid" alt="ok_imagen" />
@@ -116,10 +118,10 @@ export const PagMain = () => {
             <img src={bad_imagen} className="img-fluid" alt="bad" />
           </div>
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-            <h3 className="text-justify">
+            <h4 className="text-justify">
               Documento con los cursos que en promedio fueron peor calificados a
               mejor calificados
-            </h3>
+            </h4>
           </div>
         </div>
       </div>

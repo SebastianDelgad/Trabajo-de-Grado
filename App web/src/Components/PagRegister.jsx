@@ -80,8 +80,8 @@ export const PagRegister = (props) => {
         <NavbarRegister />
         <div className="container mt-3 bg-light">
           <div className="row mt-3 justify-content-center">
-            <div className="col-4"></div>
-                  <div className="col-8 ">
+            <div className="col-3"></div>
+            <div className="col-9 ">
               <h3>Registro de usuarios</h3>
             </div>
           </div>
@@ -132,22 +132,28 @@ export const PagRegister = (props) => {
                   </div>
                 </div>
                 <div className="row mt-3 justify-content-center">
-                  <button
-                    className="btn btn-outline-danger"
-                    type="submit"
-                    onClick={registrar}
-                  >
-                    Registrarse
-                  </button>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                    <button
+                      className="btn btn-outline-danger btn-block"
+                      type="submit"
+                      onClick={registrar}
+                    >
+                      Registrarse
+                    </button>
+                  </div>
                 </div>
                 <div className="row mt-3 justify-content-center">
-                  <button
-                    className="btn btn-outline-danger"
-                    type="button"
-                    onClick={handleClickYaTieneCuenta}
-                  >
-                    ¿Ya tienes cuenta?
-                  </button>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                    <button
+                      className="btn btn-outline-danger btn-block"
+                      type="button"
+                      onClick={handleClickYaTieneCuenta}
+                    >
+                      ¿Ya tienes cuenta?
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
