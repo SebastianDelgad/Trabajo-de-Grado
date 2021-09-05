@@ -64,13 +64,17 @@ export const PagLogin = (props) => {
             <form onSubmit={procesarDatos}>
               {error ? <div className="alert alert-danger">{error}</div> : null}
               <div className="row mt-3 justify-content-center">
-                <h4> Usuario </h4>
+                <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <h4> Usuario </h4>
+                </div>
               </div>
+
               <div className="row justify-content-center">
-                <div className="col-2">
+                <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                   <span className="material-icons md-36">&#xe853;</span>
                 </div>
-                <div className="col">
+                <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
                   <input
                     type="email"
                     className="form-control mb-2"
@@ -80,10 +84,13 @@ export const PagLogin = (props) => {
                 </div>
               </div>
               <div className="row mt-3 justify-content-center">
-                <h4> Constraseña </h4>
+              <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <h4>Contraseña </h4>
+                </div>
               </div>
               <div className="row justify-content-center">
-                <div className="col-2">
+                <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                   <span className="material-icons md-36">&#xe897;</span>
                 </div>
                 <div className="col">
@@ -113,7 +120,9 @@ export const PagLogin = (props) => {
                   className="outline-danger"
                   onClick={handleClickOlvidoContraseña}
                 >
-                  <span> ¿Olvidó su contraseña? </span>
+                  <span className="text-danger">
+                    <u> ¿Olvidó su contraseña?</u>{" "}
+                  </span>
                 </h6>
               </div>
             </form>

@@ -79,7 +79,12 @@ export const PagRegister = (props) => {
       <Fragment>
         <NavbarRegister />
         <div className="container mt-3 bg-light">
-          <h3 className="text-center">Registro de usuarios</h3>
+          <div className="row mt-3 justify-content-center">
+            <div className="col-4"></div>
+                  <div className="col-8 ">
+              <h3>Registro de usuarios</h3>
+            </div>
+          </div>
           <div className="row justify-content-center">
             <div className="col-12 col-sm-8 col-md-6 col-xl-4">
               <form onSubmit={procesarDatos}>
@@ -87,7 +92,10 @@ export const PagRegister = (props) => {
                   <div className="alert alert-danger">{error}</div>
                 ) : null}
                 <div className="row mt-3 justify-content-center">
-                  <h4> Usuario </h4>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                    <h4>Usuario </h4>
+                  </div>
                 </div>
                 <div className="row justify-content-center">
                   <div className="col-2">
@@ -104,7 +112,10 @@ export const PagRegister = (props) => {
                   </div>
                 </div>
                 <div className="row mt-3 justify-content-center">
-                  <h4> Constraseña </h4>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                    <h4>Contraseña </h4>
+                  </div>
                 </div>
                 <div className="row justify-content-center">
                   <div className="col-2">
