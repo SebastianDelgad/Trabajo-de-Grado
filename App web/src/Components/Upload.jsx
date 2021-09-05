@@ -2,13 +2,9 @@ import React from "react";
 import { useDropzone } from "react-dropzone";
 
 export function Upload(props) {
-    const {
-      acceptedFiles,
-      fileRejections,
-      getRootProps,
-      getInputProps
-    } = useDropzone({    
-      maxFiles:1
+  const { acceptedFiles, fileRejections, getRootProps, getInputProps } =
+    useDropzone({
+      maxFiles: 1,
     });
 
   const acceptedFileItems = acceptedFiles.map((file) => (
@@ -17,17 +13,18 @@ export function Upload(props) {
     </li>
   ));
 
-  const fileRejectionItems = fileRejections.map(({ file, errors  }) => { 
+  const fileRejectionItems = fileRejections.map(({ file, errors }) => {
     return (
       <li key={file.path}>
-           {file.path} - {file.size} bytes
-           <ul>
-             {errors.map(e => <li key={e.code}>{e.message}</li>)}
-          </ul>
- 
+        {file.path} - {file.size} bytes
+        <ul>
+          {errors.map((e) => (
+            <li key={e.code}>{e.message}</li>
+          ))}
+        </ul>
       </li>
-    ) 
-   });
+    );
+  });
 
   return (
     <section className="container">

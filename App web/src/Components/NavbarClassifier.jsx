@@ -17,10 +17,7 @@ export const NavbarClassifier = (props) => {
       <div className="container mt-2 bg-light">
         <div className="row">
           <div className="col-sm-10">
-            <img
-              src={logo_imagen}
-              alt="logoClassifier"
-            />
+            <img src={logo_imagen} alt="logoClassifier" />
           </div>
           <div className="col-sm-2 mt-3">
             <div className="btn-toolbar">

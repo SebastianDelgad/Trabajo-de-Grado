@@ -1,12 +1,12 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Upload } from "./Upload";
 import { NavbarClassifier } from "./NavbarClassifier";
 import { auth } from "../firebase";
 
 export const PagClassifier = () => {
-  const [firebaseUser, setFirebaseUser] = React.useState(false);
+  const [firebaseUser, setFirebaseUser] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     auth.onAuthStateChanged((user) => {
       console.log(user);
       if (user) {
@@ -30,8 +30,8 @@ export const PagClassifier = () => {
             </p>
           </div>
         </div>
-        </div>
-        <div className="container mt-3 bg-light">
+      </div>
+      <div className="container mt-3 bg-light">
         <div className="row">
           <div className="col">
             <h4>Archivo a evaluar</h4>

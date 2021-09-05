@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useCallback } from "react";
 import "../Assets/Styles/icons.css";
 import { useHistory } from "react-router-dom";
 import { NavbarLogin } from "./NavbarLogin";
@@ -15,9 +15,9 @@ export const PagLogin = (props) => {
     history.push("/changepass");
   }
 
-  const [email, setEmail] = React.useState("");
-  const [pass, setPass] = React.useState("");
-  const [error, setError] = React.useState(null);
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const [error, setError] = useState(null);
 
   const procesarDatos = (e) => {
     e.preventDefault();
@@ -35,7 +35,7 @@ export const PagLogin = (props) => {
     setError(null);
   };
 
-  const login = React.useCallback(async () => {
+  const login = useCallback(async () => {
     try {
       await auth.signInWithEmailAndPassword(email, pass);
       setEmail("");

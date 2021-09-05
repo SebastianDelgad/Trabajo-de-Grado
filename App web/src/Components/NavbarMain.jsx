@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
 import { auth } from "../firebase";
@@ -8,7 +8,7 @@ export const NavbarMain = () => {
 
   const [firebaseUser, setFirebaseUser] = React.useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     auth.onAuthStateChanged((user) => {
       console.log(user);
       if (user) {
@@ -21,8 +21,8 @@ export const NavbarMain = () => {
 
   function handleClickIniciarsesion() {
     firebaseUser !== null
-      ? (history.push("/classifier"))
-      : (history.push("/login"))
+      ? history.push("/classifier")
+      : history.push("/login");
   }
 
   return (
@@ -38,7 +38,7 @@ export const NavbarMain = () => {
                 className="btn btn-outline-danger"
                 onClick={handleClickIniciarsesion}
               >
-                <span> Iniciar sesión </span>
+                {firebaseUser !== null ? "Clasificador" : "Iniciar Sesión"}
               </button>
             </div>
           </div>
