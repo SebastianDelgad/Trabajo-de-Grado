@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
 import { auth } from "../firebase";
@@ -6,7 +6,7 @@ import { auth } from "../firebase";
 export const NavbarMain = () => {
   let history = useHistory();
 
-  const [firebaseUser, setFirebaseUser] = React.useState(false);
+  const [firebaseUser, setFirebaseUser] = useState(false);
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -20,9 +20,7 @@ export const NavbarMain = () => {
   }, []);
 
   function handleClickIniciarsesion() {
-    firebaseUser !== null
-      ? history.push("/classifier")
-      : history.push("/login");
+    firebaseUser ? history.push("/classifier") : history.push("/login");
   }
 
   return (

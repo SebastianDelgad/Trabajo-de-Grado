@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
 import { auth } from "../firebase";
 import { useHistory } from "react-router-dom";
@@ -10,7 +10,7 @@ export const PagChangePass = () => {
     history.push("/login");
   }
 
-  const [email, setEmail] = React.useState("");
+  const [email, setEmail] = useState("");
 
   const forgotPassword = (email) => {
     auth

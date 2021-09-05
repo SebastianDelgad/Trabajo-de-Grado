@@ -1,8 +1,9 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect, useCallback } from "react";
 import { db, auth } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { NavbarRegister } from "./NavbarRegister";
 import "../Assets/Styles/icons.css";
+import { PagClassifier } from "./PagClassifier";
 
 export const PagRegister = (props) => {
   let history = useHistory();
@@ -11,9 +12,17 @@ export const PagRegister = (props) => {
     history.push("/login");
   }
 
-  const [email, setEmail] = React.useState("");
-  const [pass, setPass] = React.useState("");
-  const [error, setError] = React.useState(null);
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const [error, setError] = useState(null);
+  const [User, setUser] = useState(false);
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      console.log(user);
+      setUser(user);
+    });
+  }, []);
 
   const procesarDatos = (e) => {
     e.preventDefault();
@@ -36,7 +45,7 @@ export const PagRegister = (props) => {
     setError(null);
   };
 
-  const registrar = React.useCallback(async () => {
+  const registrar = useCallback(async () => {
     try {
       const res = await auth.createUserWithEmailAndPassword(email, pass);
       console.log(res.user);
@@ -65,71 +74,76 @@ export const PagRegister = (props) => {
     }
   }, [email, pass, props.history]);
 
-  return (
-    <Fragment>
-      <NavbarRegister />
-      <div className="container mt-3 bg-light">
-        <h3 className="text-center">Registro de usuarios</h3>
-        <div className="row justify-content-center">
-          <div className="col-12 col-sm-8 col-md-6 col-xl-4">
-            <form onSubmit={procesarDatos}>
-              {error ? <div className="alert alert-danger">{error}</div> : null}
-              <div className="row mt-3 justify-content-center">
-                <h4> Usuario </h4>
-              </div>
-              <div className="row justify-content-center">
-                <div className="col-2">
-                  <span className="material-icons md-36">&#xe853;</span>
+  if (!User) {
+    return (
+      <Fragment>
+        <NavbarRegister />
+        <div className="container mt-3 bg-light">
+          <h3 className="text-center">Registro de usuarios</h3>
+          <div className="row justify-content-center">
+            <div className="col-12 col-sm-8 col-md-6 col-xl-4">
+              <form onSubmit={procesarDatos}>
+                {error ? (
+                  <div className="alert alert-danger">{error}</div>
+                ) : null}
+                <div className="row mt-3 justify-content-center">
+                  <h4> Usuario </h4>
                 </div>
-                <div className="col">
-                  <input
-                    type="email"
-                    className="form-control mb-2"
-                    placeholder="Ingrese Email"
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                  />
+                <div className="row justify-content-center">
+                  <div className="col-2">
+                    <span className="material-icons md-36">&#xe853;</span>
+                  </div>
+                  <div className="col">
+                    <input
+                      type="email"
+                      className="form-control mb-2"
+                      placeholder="Ingrese Email"
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={email}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="row mt-3 justify-content-center">
-                <h4> Constraseña </h4>
-              </div>
-              <div className="row justify-content-center">
-                <div className="col-2">
-                  <span className="material-icons md-36">&#xe897;</span>
+                <div className="row mt-3 justify-content-center">
+                  <h4> Constraseña </h4>
                 </div>
-                <div className="col">
-                  <input
-                    type="password"
-                    className="form-control mb-2"
-                    placeholder="Ingrese Contraseña"
-                    onChange={(e) => setPass(e.target.value)}
-                    value={pass}
-                  />
+                <div className="row justify-content-center">
+                  <div className="col-2">
+                    <span className="material-icons md-36">&#xe897;</span>
+                  </div>
+                  <div className="col">
+                    <input
+                      type="password"
+                      className="form-control mb-2"
+                      placeholder="Ingrese Contraseña"
+                      onChange={(e) => setPass(e.target.value)}
+                      value={pass}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="row mt-3 justify-content-center">
-                <button
-                  className="btn btn-outline-danger"
-                  type="submit"
-                  onClick={registrar}
-                >
-                  Registrarse
-                </button>
-              </div>
-              <div className="row mt-3 justify-content-center">
-                <button
-                  className="btn btn-outline-danger"
-                  type="button"
-                  onClick={handleClickYaTieneCuenta}
-                >
-                  ¿Ya tienes cuenta?
-                </button>
-              </div>
-            </form>
+                <div className="row mt-3 justify-content-center">
+                  <button
+                    className="btn btn-outline-danger"
+                    type="submit"
+                    onClick={registrar}
+                  >
+                    Registrarse
+                  </button>
+                </div>
+                <div className="row mt-3 justify-content-center">
+                  <button
+                    className="btn btn-outline-danger"
+                    type="button"
+                    onClick={handleClickYaTieneCuenta}
+                  >
+                    ¿Ya tienes cuenta?
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </Fragment>
-  );
+      </Fragment>
+    );
+  }
+  return <PagClassifier />;
 };
