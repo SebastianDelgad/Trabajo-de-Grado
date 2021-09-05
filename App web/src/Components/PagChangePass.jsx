@@ -26,7 +26,19 @@ export const PagChangePass = () => {
   return (
     <Fragment>
       <div className="container mt-2 bg-light">
-        <img className="img-responsive" src={logo_imagen} alt="logoLogin" />
+        <div className="row">
+          <div className="col-sm-10">
+            <img className="img-responsive" src={logo_imagen} alt="logoLogin" />
+          </div>
+          <div className="col-sm-2 mt-3">
+            <button
+              className="btn btn-outline-danger"
+              onClick={handleClickRegresar}
+            >
+              <span> Regresar </span>
+            </button>
+          </div>
+        </div>
       </div>
       <div className="container mt-3 bg-light">
         <div className="row mt-3 justify-content-center">
@@ -48,12 +60,6 @@ export const PagChangePass = () => {
             onClick={() => forgotPassword(email)}
           >
             <span> Enviar </span>
-          </button>
-          <button
-            className="btn btn-outline-danger"
-            onClick={handleClickRegresar}
-          >
-            <span> Regresar </span>
           </button>
         </div>
       </div>

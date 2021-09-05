@@ -34,7 +34,7 @@ export const PagClassifier = () => {
         <div className="container mt-3 bg-light">
         <div className="row">
           <div className="col">
-            <h4>Archivos a evaluar</h4>
+            <h4>Archivo a evaluar</h4>
           </div>
           <div className="col">
             <Upload />
