@@ -11,6 +11,10 @@ export const PagLogin = (props) => {
     history.push("/register");
   }
 
+  function handleClickOlvidoContraseña() {
+    history.push("/changepass");
+  }
+
   const [email, setEmail] = React.useState("");
   const [pass, setPass] = React.useState("");
   const [error, setError] = React.useState(null);
@@ -103,6 +107,14 @@ export const PagLogin = (props) => {
                 >
                   <span> Registrarse </span>
                 </button>
+              </div>
+              <div className="row mt-3 justify-content-center">
+                <h6
+                  className="outline-danger"
+                  onClick={handleClickOlvidoContraseña}
+                >
+                  <span> ¿Olvidó su contraseña? </span>
+                </h6>
               </div>
             </form>
           </div>

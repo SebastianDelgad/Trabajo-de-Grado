@@ -4,6 +4,7 @@ import { PagMain } from "./Components/PagMain";
 import { PagLogin } from "./Components/PagLogin";
 import { PagClassifier } from "./Components/PagClassifier";
 import { PagRegister } from "./Components/PagRegister";
+import { PagChangePass } from "./Components/PagChangePass";
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       <Route exact path="/" component={PagMain} />
       <Route exact path="/classifier" component={PagClassifier} />
       <Route exact path="/register" component={PagRegister} />
+      <Route exact path="/changepass" component={PagChangePass} />
     </BrowserRouter>
   );
 };
