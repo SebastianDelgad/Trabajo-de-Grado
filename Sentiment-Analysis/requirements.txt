@@ -1,2 +1,4 @@
 pip install nltk
 pip install PyMuPDF
+conda install -c conda-forge
+pip install Flask
