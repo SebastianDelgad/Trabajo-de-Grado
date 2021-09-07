@@ -1,20 +1,29 @@
-import React, { useEffect, useState, setState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 export const ClassifierAlfabéticamente = () => {
-  const [getMessage, setGetMessage] = useState();
+  const [equipos, setEquipo] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('http://127.0.0.1:5000/')
-      .then((response) => response.data)
-      .then((data) => {
-        setGetMessage(data);
-        console.log(this.state.getMessage);
-      });
-
-    // [...]
+    //console.log("useEffect");
+    obtenerDatos();
   }, []);
 
-  return <div> Cargando {getMessage}</div>;
+  const obtenerDatos = async () => {
+    const data = await fetch("http://127.0.0.1:5000/");
+    const info = await data.json();
+    console.log(info);
+    info.data.map((element) => {
+      console.log(element);
+    });
+    setEquipo(info.data);
+  };
+
+  return (
+    <div>
+      <h1>Evaluaciones</h1>
+      {equipos.map((item) => (
+        <li> Nombre:  {item.docente} - Asignatura:  {item.asignatura} - Promedio:  {item.calificación}</li>
+      ))}
+    </div>
+  );
 };

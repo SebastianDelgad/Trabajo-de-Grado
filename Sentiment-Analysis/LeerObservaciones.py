@@ -44,26 +44,15 @@ def leer_txt():
 def almacenar_nombres(datos):
     vectorNombres = []
 
+    grupos = ["M 50", "M 51", "M 52", "M 53", "M 54", "M 55"]
+
     for nombre in datos:
         if len(nombre) > 18:
-            grupo = nombre[len(nombre) - 4] + "" + nombre[len(nombre) - 3] + ""+ nombre[len(nombre) - 2] + "" + nombre[len(nombre) - 1]
-            if grupo == "M 50":
-                vectorNombres.append(nombre)
-            else:
-                if grupo == "M 51":
+            grupoPDF = nombre[len(nombre) - 4] + "" + nombre[len(nombre) - 3] + ""+ nombre[len(nombre) - 2] + "" + nombre[len(nombre) - 1]
+            for grupo in grupos:
+                if grupoPDF == grupo:
                     vectorNombres.append(nombre)
-                else:
-                    if grupo == "M 52":
-                        vectorNombres.append(nombre)
-                    else:
-                         if grupo == "M 53":
-                            vectorNombres.append(nombre)
-                         else:
-                             if grupo == "M 54":
-                                vectorNombres.append(nombre)
-                             else:
-                                 if grupo == "M 55":
-                                    vectorNombres.append(nombre)
+
     #print(vectorNombres)
     return vectorNombres
 
@@ -104,9 +93,20 @@ def procesado_txt(datos, vectorNombres):
         if len(word3) > 0:
             vectorDatosProcesados.append(word3)
 
-
     return vectorDatosProcesados
     #print(vectorDatosProcesada)
+
+
+def tiempo_calificacion(datosProcesados):
+
+    tamaño = len(datosProcesados) - 1
+    dato = datosProcesados[tamaño]
+    tamañoS = "" + dato
+    cantidadObservaciones = [int(temp) for temp in tamañoS.split() if temp.isdigit()]
+    tiempo = ((cantidadObservaciones[0]) * 1.3) / 60
+    tiempoFInal = "Tiempo estimado de procesamiento: " + str((float("{0:.1f}".format(tiempo)))) + " Minutos"
+
+    return tiempoFInal
 
 def observaciones():
 
@@ -115,6 +115,8 @@ def observaciones():
     nombres = almacenar_nombres(txt)
     procesado = procesado_txt(txt,nombres)
     #print(procesado)
+
+
     return procesado
 
 
