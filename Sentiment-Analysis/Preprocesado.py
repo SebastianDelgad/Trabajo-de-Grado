@@ -16,13 +16,13 @@ non_words.extend(['¿', '¡', '...'])
 non_words.extend(map(str, range(10)))
 
 
-
 def sentence_tokenize(text):
     """
     take string input and return a list of sentences.
     use nltk.sent_tokenize() to split the sentences.
     """
     return sent_tokenize(str(text))
+
 
 def remove_numbers(text):
     """
@@ -47,7 +47,7 @@ def remove_stopwords(sentence):
     return ' '.join([stemmer.stem(w) for w in word_tokenize(sentence) if not w in spanish_stopwords])
 
 
-#Preprocesado de los datos aplicando cada una de las funciones
+# Preprocesado de los datos aplicando cada una de las funciones
 def preprocess(text):
     sentence_tokens = sentence_tokenize(text)
     word_list = []
@@ -62,35 +62,35 @@ def preprocess(text):
 
 
 def dataset(new_reviews):
-    #Lectura el data set y especificar las dos columnas que tiene el dataset como estructura
-    data = pd.read_csv('dataset/Observaciones_-2_a_2.csv', sep=',', encoding= "utf8", header=None)
+    # Lectura el data set y especificar las dos columnas que tiene el dataset como estructura
+    data = pd.read_csv('dataset/Observaciones_-2_a_2.csv',
+                       sep=',', encoding="utf8", header=None)
     data.columns = ['Observaciones', 'Sentiment']
 
-
-    #Función que crea el vector y aplica el preprosesamiento
+    # Función que crea el vector y aplica el preprosesamiento
     bow = CountVectorizer(analyzer=preprocess)
     #TF- IDF
     tfidf = TfidfTransformer()
 
-
-    #SVM (Máquina de vectores de soporte)
+    # SVM (Máquina de vectores de soporte)
     #print("Clasificador SVM")
     text_classifier = SVC(kernel='linear')
 
     pipeline = Pipeline([
-    ('bow', bow),  # strings to token integer counts
-    ('tfidf', tfidf),  # integer counts to weighted TF-IDF scores
-    ('classifier', text_classifier),  # train on TF-IDF vectors w/ SVM classifier
+        ('bow', bow),  # strings to token integer counts
+        ('tfidf', tfidf),  # integer counts to weighted TF-IDF scores
+        # train on TF-IDF vectors w/ SVM classifier
+        ('classifier', text_classifier),
     ])
 
-    pipeline.fit(data['Observaciones'].values.astype('U'),data['Sentiment'])
+    pipeline.fit(data['Observaciones'].values.astype('U'), data['Sentiment'])
     pipeline.score(data['Observaciones'].values.astype('U'), data['Sentiment'])
 
-    #aplicamos todas las técnicas de medición
+    # aplicamos todas las técnicas de medición
     #all_predictions = pipeline.predict(data['Observaciones'].values.astype('U'))
     #print(classification_report(data['Sentiment'], all_predictions))
 
-    #Prueba
+    # Prueba
     """
     new_reviews = ['Utiliza muchos vídeos de YouTube en vez de explicar los temas él mismo, no me gusta su metodología',
                'Lee muchas diapositivas',
@@ -102,9 +102,9 @@ def dataset(new_reviews):
                'sin comentarios',
                'Muy buena docente , excelente directora de trabajo de grado']
     """
-    #print(pipeline.predict(new_reviews))
+    # print(pipeline.predict(new_reviews))
     rating = pipeline.predict(new_reviews)
     return rating
 
 #new_reviews = ['']
-#dataset(new_reviews)
+# dataset(new_reviews)

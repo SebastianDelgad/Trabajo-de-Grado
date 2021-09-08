@@ -9,6 +9,7 @@ nombres_cursos = LeerObservaciones.almacenar_nombres(txt)
 tiempo = LeerObservaciones.tiempo_calificacion(txt)
 print(tiempo)
 
+
 def evaluar_documento():
 
     clasificacionInicial = []
@@ -36,10 +37,10 @@ def evaluar_documento():
             for rating in vectorRating:
                 clasificacionInicial.append(rating)
 
-
     print(clasificacionInicial)
     doc_evaluado(clasificacionInicial)
     return vecClasificador
+
 
 def cant_muy_negativa(dataClasificacion):
 
@@ -52,6 +53,7 @@ def cant_muy_negativa(dataClasificacion):
         totalMuyNeg.append(muyNeg)
     return totalMuyNeg
 
+
 def cant_negativa(dataClasificacion):
     totalNeg = []
     for item in dataClasificacion:
@@ -61,6 +63,7 @@ def cant_negativa(dataClasificacion):
                 neg += 1
         totalNeg.append(neg)
     return totalNeg
+
 
 def cant_neutral(dataClasificacion):
     totalNeu = []
@@ -72,6 +75,7 @@ def cant_neutral(dataClasificacion):
         totalNeu.append(neu)
     return totalNeu
 
+
 def cant_postiva(dataClasificacion):
     totalPos = []
     for item in dataClasificacion:
@@ -81,6 +85,7 @@ def cant_postiva(dataClasificacion):
                 pos += 1
         totalPos.append(pos)
     return totalPos
+
 
 def cant_muy_positiva(dataClasificacion):
     totalMuyPos = []
@@ -92,14 +97,27 @@ def cant_muy_positiva(dataClasificacion):
         totalMuyPos.append(muyPos)
     return totalMuyPos
 
+
 def nota_promedio(muyNeg, neg, neu, pos, muyPos):
 
     notas_prom = []
 
     for i in range(len(pos)):
-        nota_prom = ((-2 * muyNeg[i]) + (neg[i] * -1) + pos[i] + (muyPos[i] * 2)) / (muyNeg[i] + neg[i] + pos[i] + muyPos[i] + neu[i])
+        nota_prom = ((-2 * muyNeg[i]) + (neg[i] * -1) + pos[i] + (muyPos[i] * 2)) / (
+            muyNeg[i] + neg[i] + pos[i] + muyPos[i] + neu[i])
         notas_prom.append(nota_prom)
     return notas_prom
+
+
+def total_observaciones(muyNeg, neg, neu, pos, muyPos):
+
+    total = []
+
+    for i in range(len(pos)):
+        nota_prom = muyNeg[i] + neg[i] + pos[i] + muyPos[i] + neu[i]
+        total.append(nota_prom)
+    return total
+
 
 def doc_evaluado(dataClasificacion):
 
@@ -120,6 +138,7 @@ def doc_evaluado(dataClasificacion):
 
     print(clasificacionFinal)
     return dataClasificacion
+
 
 def nombres_docentes():
     docentes = []
@@ -157,17 +176,18 @@ def cursos():
     return curso
 
 
-def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos):
+def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos, total_observaciones):
 
     dict_from_list = {}
 
     for i in range(len(nombres)):
         dict_from_list[i] = {'docente': nombres[i], 'asignatura': asignaturas[i], 'promedio_calificación': notas[i],
                              'total_muy_neg': total_muy_neg[i], 'total_neg': total_neg[i], 'total_neu': total_neu[i],
-                             'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i]}
+                             'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i], 'total_observaciones': total_observaciones[i]}
 
-    #print(dict_from_list)
+    # print(dict_from_list)
     return dict_from_list
+
 
 def ordenar_diccionario_por_nombres(diccionario, nombres):
 
@@ -199,6 +219,7 @@ def ordenar_diccionario_por_nombres(diccionario, nombres):
 
     print(ordenadoAlfabeticamente)
 
+
 def promedio_calificacion(diccionario):
 
     notas = {}
@@ -208,9 +229,11 @@ def promedio_calificacion(diccionario):
 
     return notas
 
-def peor_promedio_calificacion(notas,diccionario):
 
-    notas_sort = sorted(notas.items(), key=operator.itemgetter(1), reverse=False)
+def peor_promedio_calificacion(notas, diccionario):
+
+    notas_sort = sorted(
+        notas.items(), key=operator.itemgetter(1), reverse=False)
     peor_nota = {}
 
     for key in enumerate(notas_sort):
@@ -224,9 +247,11 @@ def peor_promedio_calificacion(notas,diccionario):
 
     print(peor_prom_profesor)
 
-def mejor_promedio_calificacion(notas,diccionario):
 
-    notas_sort = sorted(notas.items(), key=operator.itemgetter(1), reverse=True)
+def mejor_promedio_calificacion(notas, diccionario):
+
+    notas_sort = sorted(
+        notas.items(), key=operator.itemgetter(1), reverse=True)
     mejor_nota = {}
 
     for key in enumerate(notas_sort):
@@ -240,6 +265,7 @@ def mejor_promedio_calificacion(notas,diccionario):
 
     print(mejor_prom_profesor)
 
+
 def data():
 
     evaluacion = evaluar_documento()
@@ -248,14 +274,18 @@ def data():
     total_neu = cant_neutral(evaluacion)
     total_pos = cant_postiva(evaluacion)
     total_muy_pos = cant_muy_positiva(evaluacion)
-    notas = nota_promedio(total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos)
+    total_obs = total_observaciones(
+        total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos)
+    notas = nota_promedio(total_muy_neg, total_neg,
+                          total_neu, total_pos, total_muy_pos)
     nombres = nombres_docentes()
     asignaturas = cursos()
-    diccionario = info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos)
+    diccionario = info_dicionario(nombres, asignaturas, notas, total_muy_neg,
+                                  total_neg, total_neu, total_pos, total_muy_pos, total_obs)
     prom_notas = promedio_calificacion(diccionario)
     ordenar_diccionario_por_nombres(diccionario, nombres)
     peor_promedio_calificacion(prom_notas, diccionario)
     mejor_promedio_calificacion(prom_notas, diccionario)
 
-data()
 
+data()

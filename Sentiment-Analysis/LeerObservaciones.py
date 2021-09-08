@@ -1,23 +1,25 @@
-import fitz    #Libreria PyMuPDF
+import fitz  # Libreria PyMuPDF
 
-#Transforma un archivo PDF a TXT sin perder la estructura del PDF
+# Transforma un archivo PDF a TXT sin perder la estructura del PDF
+
+
 def leer_PDF():
     pdf_documento = 'PDF/2017- ll.pdf'
     documento = fitz.open(pdf_documento)
     pdf_a_texto = 'PDF/pdf_a_texto.txt'
-    salida = open(pdf_a_texto,"wb")
+    salida = open(pdf_a_texto, "wb")
 
     for pagina in documento:
-        texto =pagina.getText().encode("utf8")
+        texto = pagina.getText().encode("utf8")
         salida.write(texto)
         salida.write(b"\n----\n")
     salida.close()
     return pdf_a_texto
 
 
-#Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
+# Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
 
-#def leerTxt(documento):
+# def leerTxt(documento):
 def leer_txt():
     tObservaciones = []
     quitarEspacios = []
@@ -27,7 +29,7 @@ def leer_txt():
                 while (True):
                     linea = archivo.readline()
                     tObservaciones.append(linea.strip())
-                    #print(linea)
+                    # print(linea)
                     if not linea:
                         break
         archivo.close()
@@ -37,9 +39,10 @@ def leer_txt():
             quitarEspacios.append(word3)
 
     return quitarEspacios
-    #print(tObservaciones)
+    # print(tObservaciones)
 
 # Almacena los nombres, curso y grupo del curso que enseña el docente
+
 
 def almacenar_nombres(datos):
     vectorNombres = []
@@ -48,12 +51,13 @@ def almacenar_nombres(datos):
 
     for nombre in datos:
         if len(nombre) > 18:
-            grupoPDF = nombre[len(nombre) - 4] + "" + nombre[len(nombre) - 3] + ""+ nombre[len(nombre) - 2] + "" + nombre[len(nombre) - 1]
+            grupoPDF = nombre[len(nombre) - 4] + "" + nombre[len(nombre) - 3] + \
+                "" + nombre[len(nombre) - 2] + "" + nombre[len(nombre) - 1]
             for grupo in grupos:
                 if grupoPDF == grupo:
                     vectorNombres.append(nombre)
 
-    #print(vectorNombres)
+    # print(vectorNombres)
     return vectorNombres
 
 
@@ -88,13 +92,13 @@ def procesado_txt(datos, vectorNombres):
 
     vectorFinal.append(union)
 
-    #se elimina los elementos vacios que hay en el vector
+    # se elimina los elementos vacios que hay en el vector
     for word3 in vectorFinal:
         if len(word3) > 0:
             vectorDatosProcesados.append(word3)
 
     return vectorDatosProcesados
-    #print(vectorDatosProcesada)
+    # print(vectorDatosProcesada)
 
 
 def tiempo_calificacion(datosProcesados):
@@ -102,23 +106,25 @@ def tiempo_calificacion(datosProcesados):
     tamaño = len(datosProcesados) - 1
     dato = datosProcesados[tamaño]
     tamañoS = "" + dato
-    cantidadObservaciones = [int(temp) for temp in tamañoS.split() if temp.isdigit()]
+    cantidadObservaciones = [int(temp)
+                             for temp in tamañoS.split() if temp.isdigit()]
     tiempo = ((cantidadObservaciones[0]) * 1.3) / 60
-    tiempoFInal = "Tiempo estimado de procesamiento: " + str((float("{0:.1f}".format(tiempo)))) + " Minutos"
+    tiempoFInal = "Tiempo estimado de procesamiento: " + \
+        str((float("{0:.1f}".format(tiempo)))) + " Minutos"
 
     return tiempoFInal
+
 
 def observaciones():
 
     #pdf = leer_PDF()
     txt = leer_txt()
     nombres = almacenar_nombres(txt)
-    procesado = procesado_txt(txt,nombres)
-    #print(procesado)
-
+    procesado = procesado_txt(txt, nombres)
+    # print(procesado)
 
     return procesado
 
 
-#leerPDF()
+# leerPDF()
 observaciones()
