@@ -176,14 +176,16 @@ def cursos():
     return curso
 
 
-def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos, total_observaciones):
+def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos,
+                    total_observaciones ):
 
     dict_from_list = {}
 
     for i in range(len(nombres)):
         dict_from_list[i] = {'docente': nombres[i], 'asignatura': asignaturas[i], 'promedio_calificación': notas[i],
                              'total_muy_neg': total_muy_neg[i], 'total_neg': total_neg[i], 'total_neu': total_neu[i],
-                             'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i], 'total_observaciones': total_observaciones[i]}
+                             'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i],
+                             'total_observaciones': total_observaciones[i]}
 
     # print(dict_from_list)
     return dict_from_list
@@ -198,12 +200,12 @@ def ordenar_diccionario_por_nombres(diccionario, nombres):
 
     docentesOrdenados = sorted(docentesEvaluados)
 
-    ordenadoAlfabeticamente = {}
+    ordenadoAlfabeticamente = []
 
     for name in docentesOrdenados:
         for i in range(len(diccionario)):
             if diccionario[i]['docente'] == name:
-                ordenadoAlfabeticamente[i] = diccionario[i]
+                ordenadoAlfabeticamente.append(diccionario[i])
 
     for i in range(len(ordenadoAlfabeticamente)):
         if ordenadoAlfabeticamente[i]['promedio_calificación'] >= 1.5:
@@ -239,11 +241,12 @@ def peor_promedio_calificacion(notas, diccionario):
     for key in enumerate(notas_sort):
         peor_nota[key[1][0]] = notas[key[1][0]]
 
-    peor_prom_profesor = {}
+    peor_prom_profesor = []
     list_keys1 = list(peor_nota.keys())
 
     for key in list_keys1:
-        peor_prom_profesor[key] = diccionario[key]
+        peor_prom_profesor.append(diccionario[key])
+
 
     print(peor_prom_profesor)
 
@@ -257,11 +260,11 @@ def mejor_promedio_calificacion(notas, diccionario):
     for key in enumerate(notas_sort):
         mejor_nota[key[1][0]] = notas[key[1][0]]
 
-    mejor_prom_profesor = {}
+    mejor_prom_profesor = []
     list_keys2 = list(mejor_nota.keys())
 
     for key in list_keys2:
-        mejor_prom_profesor[key] = diccionario[key]
+        mejor_prom_profesor.append(diccionario[key])
 
     print(mejor_prom_profesor)
 
