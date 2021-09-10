@@ -4,16 +4,12 @@ import img_negativa from "../Assets/Images/negativa.png";
 import img_neutral from "../Assets/Images/neutral.png";
 import img_positivo from "../Assets/Images/positivo.png";
 import img_muy_positivo from "../Assets/Images/muy_positivo.png";
-import logo_imagen from "../Assets/Images/logo-univalle.png";
-import { useHistory } from "react-router-dom";
+import {NavbarCalifications} from "./NavbarCalifications"
 
 export const ClassifierAlfabéticamente = () => {
-  let history = useHistory();
 
-  function handleClickRegresar() {
-    history.push("/classifier");
-  }
-  const [equipos, setEquipo] = useState([]);
+ 
+  const [observaciones, setObservacion] = useState([]);
 
   useEffect(() => {
     //console.log("useEffect");
@@ -21,39 +17,22 @@ export const ClassifierAlfabéticamente = () => {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch("http://127.0.0.1:5000/get");
+    const data = await fetch("http://127.0.0.1:5000/Albabeticamente");
     const info = await data.json();
     info.data.map((element) => {
     });
-    setEquipo(info.data);
+    setObservacion(info.data);
   };
 
   return (
     <Fragment>
-      <div className="container mt-3 bg-light">
-        <div className="row">
-          <div className="col-8 col-sm-9 col-xs-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
-            <img src={logo_imagen} alt="logoLogin" className="img-fluid" />
-          </div>
-          <div className="col-4 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-3">
-            <div className="btn-toolbar">
-              <button
-                className="btn btn-outline-danger"
-                onClick={handleClickRegresar}
-              >
-                <span> Regresar </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <NavbarCalifications />
       <div className="container mt-3 bg-light">
         <h2 className="text-center mt-2">
-          Evaluaciones ordenadas por el mejor promedio de calificacion de las
-          observaciones
+          Evaluaciones ordenadas alfabeticamente por el nombre del profesor
         </h2>
         <h5 className="mt-2"> Clasificación de las observaciones: </h5>
-        <div className="row mt-3">
+        <div className="row justify-content-md-center mt-3">
           <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
             <img
               src={img_muy_negativa}
@@ -78,7 +57,7 @@ export const ClassifierAlfabéticamente = () => {
             />
           </div>
         </div>
-        <div className="row">
+        <div className="row justify-content-md-center">
           <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
             <p> Muy negativa</p>
           </div>
@@ -97,7 +76,7 @@ export const ClassifierAlfabéticamente = () => {
         </div>
       </div>
 
-      {equipos.map((item) => (
+      {observaciones.map((item) => (
         <div className="container mt-4 bg-light">
           <li key={item.id}>
             <div className="row">
@@ -150,7 +129,7 @@ export const ClassifierAlfabéticamente = () => {
 
                 {item.promedio_calificación === "Negativo" && (
                   <img
-                    src={img_muy_negativa}
+                    src={img_negativa}
                     className="img-fluid"
                     alt="negativo"
                   />
@@ -161,7 +140,7 @@ export const ClassifierAlfabéticamente = () => {
             <div className="row mt-3">
               <h4> &nbsp; Calificación observaciones </h4>
             </div>
-            <div className="row mt-2">
+            <div className="row justify-content-md-center mt-2">
               <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                 <img
                   src={img_muy_negativa}
@@ -186,7 +165,7 @@ export const ClassifierAlfabéticamente = () => {
                 />
               </div>
             </div>
-            <div className="row mt-1">
+            <div className="row justify-content-md-center mt-1">
               <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                 <h5> &nbsp;&nbsp;&nbsp; {item.total_muy_neg} </h5>
               </div>

@@ -9,7 +9,7 @@ export const PagClassifier = () => {
 
   let history = useHistory();
 
-  function handleClickAlfabeticamente() {
+  function handleClickGenerar() {
     history.push("/classifierAlfabetico");
   }
 
@@ -46,22 +46,17 @@ export const PagClassifier = () => {
             </div>
           </div>
           <br></br>
-          <div className="row">
-            <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <button className="btn btn-outline-danger btn-block" onClick={handleClickAlfabeticamente}>
-                <span> Alfabéticamente </span>
+          <div className="row mt-3">
+            <div className="col"></div>
+            <div className="col">
+              <button
+                className="btn btn-outline-danger btn-block"
+                onClick={handleClickGenerar}
+              >
+                <span> Generar </span>
               </button>
             </div>
-            <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <button className="btn btn-outline-danger btn-block">
-                <span> Mejor promedio de calificaciones </span>
-              </button>
-            </div>
-            <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-              <button className="btn btn-outline-danger btn-block">
-                <span> Peor promedio de calificaciones </span>
-              </button>
-            </div>
+            <div className="col"></div>
           </div>
         </div>
       </Fragment>

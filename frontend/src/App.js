@@ -6,6 +6,8 @@ import { PagClassifier } from "./Components/PagClassifier";
 import { PagRegister } from "./Components/PagRegister";
 import { PagChangePass } from "./Components/PagChangePass";
 import {ClassifierAlfabéticamente} from "./Components/ClassifierAlfabéticamente";
+import {ClassifierMejorProm} from "./Components/ClassifierMejorProm";
+import {ClassifierPeorProm} from "./Components/ClassifierPeorProm";
 
 export const App = () => {
   return (
@@ -16,6 +18,8 @@ export const App = () => {
       <Route exact path="/register" component={PagRegister} />
       <Route exact path="/changepass" component={PagChangePass} />
       <Route exact path="/classifierAlfabetico" component={ClassifierAlfabéticamente} />
+      <Route exact path="/classifierMejorProm" component={ClassifierMejorProm} />
+      <Route exact path="/classifierPeorProm" component={ClassifierPeorProm} />
     </BrowserRouter>
   );
 };
