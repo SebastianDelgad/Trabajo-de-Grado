@@ -185,7 +185,7 @@ def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total
         dict_from_list[i] = {'docente': nombres[i], 'asignatura': asignaturas[i], 'promedio_calificación': notas[i],
                              'total_muy_neg': total_muy_neg[i], 'total_neg': total_neg[i], 'total_neu': total_neu[i],
                              'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i],
-                             'total_observaciones': total_observaciones[i]}
+                             'total_observaciones': total_observaciones[i], 'id': i}
 
     # print(dict_from_list)
     return dict_from_list
