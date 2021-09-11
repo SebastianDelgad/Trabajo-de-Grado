@@ -3,8 +3,6 @@ from Preprocesado import dataset
 import operator
 
 
-
-
 def evaluar_documento(txt):
 
     nombres_cursos = almacenar_nombres(txt)
@@ -33,7 +31,7 @@ def evaluar_documento(txt):
             for rating in vectorRating:
                 clasificacionInicial.append(rating)
 
-    #print(clasificacionInicial)
+    # print(clasificacionInicial)
     doc_evaluado(clasificacionInicial)
     return vecClasificador
 
@@ -132,7 +130,7 @@ def doc_evaluado(dataClasificacion):
         else:
             clasificacionFinal.append(puntaje)
 
-    #print(clasificacionFinal)
+    # print(clasificacionFinal)
     return dataClasificacion
 
 
@@ -173,17 +171,17 @@ def cursos(txt):
 
 
 def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos,
-                    total_observaciones ):
+                    total_observaciones):
 
     diccionario = {}
 
     for i in range(len(nombres)):
         diccionario[i] = {"docente": nombres[i], "asignatura": asignaturas[i], "promedio_calificación": notas[i],
-                             "total_muy_neg": total_muy_neg[i], "total_neg": total_neg[i], "total_neu": total_neu[i],
-                             "total_pos": total_pos[i], "total_muy_pos": total_muy_pos[i],
-                             "total_observaciones": total_observaciones[i], "id": i}
+                          "total_muy_neg": total_muy_neg[i], "total_neg": total_neg[i], "total_neu": total_neu[i],
+                          "total_pos": total_pos[i], "total_muy_pos": total_muy_pos[i],
+                          "total_observaciones": total_observaciones[i], "id": i}
 
-    #print(dict_from_list)
+    # print(dict_from_list)
     return diccionario
 
 
@@ -243,7 +241,6 @@ def peor_promedio_calificacion(notas, diccionario):
     for key in list_keys1:
         peor_prom_profesor.append(diccionario[key])
 
-
     return peor_prom_profesor
 
 
@@ -288,4 +285,4 @@ def data():
     return diccionario
 
 
-#data()
+# data()

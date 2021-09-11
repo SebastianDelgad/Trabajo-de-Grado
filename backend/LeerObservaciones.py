@@ -21,22 +21,21 @@ def leer_PDF():
 
 # Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
 
-#def leer_txt(documento):
+# def leer_txt(documento):
 def leer_txt():
     tObservaciones = []
     quitarEspacios = []
     module_dir = os.path.dirname(__file__)
-    file = os.path.join(module_dir,'pruebas.txt')
+    file = os.path.join(module_dir, 'pruebas.txt')
     archivo = open(file, mode='r', encoding='utf8')
     for word in archivo:
-            if word.strip() == 'Observaciones':
-                while (True):
-                    linea = archivo.readline()
-                    tObservaciones.append(linea.strip())
-                    # print(linea)
-                    if not linea:
-                        break
-    
+        if word.strip() == 'Observaciones':
+            while (True):
+                linea = archivo.readline()
+                tObservaciones.append(linea.strip())
+                # print(linea)
+                if not linea:
+                    break
 
     for word3 in tObservaciones:
         if len(word3) > 0:
@@ -125,10 +124,10 @@ def observaciones():
     txt = leer_txt()
     nombres = almacenar_nombres(txt)
     procesado = procesado_txt(txt, nombres)
-    #print(procesado)
+    # print(procesado)
 
     return procesado
 
 
 # leerPDF()
-#observaciones()
+# observaciones()

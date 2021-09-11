@@ -60,7 +60,10 @@ export const PagClassifier = () => {
           <div className="row mt-3">
             <div className="col">
               {tiempo.map((item) => (
-                <li> <h5> {item.Tiempo} </h5> </li>
+                <li>
+                  {" "}
+                  <h5> {item.Tiempo} </h5>{" "}
+                </li>
               ))}
             </div>
           </div>

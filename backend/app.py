@@ -21,7 +21,7 @@ def tiempo_cla():
     tiempo = tiempo_calificacion(texto)
     time['Tiempo'] = tiempo
     return jsonify(
-        {"data": [time] })
+        {"data": [time]})
 
 
 @app.route("/mejor-promedio", methods=["GET"])
