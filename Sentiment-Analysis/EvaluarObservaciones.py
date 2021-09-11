@@ -105,7 +105,7 @@ def nota_promedio(muyNeg, neg, neu, pos, muyPos):
     for i in range(len(pos)):
         nota_prom = ((-2 * muyNeg[i]) + (neg[i] * -1) + pos[i] + (muyPos[i] * 2)) / (
             muyNeg[i] + neg[i] + pos[i] + muyPos[i] + neu[i])
-        notas_prom.append(nota_prom)
+        notas_prom.append(float("{0:.1f}".format(nota_prom)))
     return notas_prom
 
 
@@ -136,7 +136,7 @@ def doc_evaluado(dataClasificacion):
         else:
             clasificacionFinal.append(puntaje)
 
-    print(clasificacionFinal)
+    #print(clasificacionFinal)
     return dataClasificacion
 
 
@@ -187,7 +187,7 @@ def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total
                              'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i],
                              'total_observaciones': total_observaciones[i], 'id': i}
 
-    # print(dict_from_list)
+    print(dict_from_list)
     return dict_from_list
 
 

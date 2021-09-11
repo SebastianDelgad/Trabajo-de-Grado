@@ -7,6 +7,7 @@ import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report
 from sklearn.svm import SVC
+import os
 
 non_words = list(punctuation)
 spanish_stopwords = stopwords.words('spanish')
@@ -63,7 +64,9 @@ def preprocess(text):
 
 def dataset(new_reviews):
     # Lectura el data set y especificar las dos columnas que tiene el dataset como estructura
-    data = pd.read_csv('dataset/Observaciones_-2_a_2.csv',
+    module_dir = os.path.dirname(__file__)
+    file = os.path.join(module_dir,'dataset/Observaciones_-2_a_2.csv')
+    data = pd.read_csv(file,
                        sep=',', encoding="utf8", header=None)
     data.columns = ['Observaciones', 'Sentiment']
 

@@ -27,20 +27,31 @@ export const UploadPDF = () => {
   const handlePdfFileSubmit = (e) => {
     e.preventDefault();
     if (pdfFile !== null) {
+      console.log(pdfFile);
     }
   };
 
   return (
     <div>
-      <form className="form-group" onSubmit={handlePdfFileSubmit}>
+      <form
+        className="form-group"
+        method="post"
+        action="/pdf"
+        encType="multipart/form-data"
+        onSubmit={handlePdfFileSubmit}
+      >
         <input
           type="file"
           className="form-control"
+          name="inputFile"
           onChange={handlePdfFileChange}
         />
         {pdfFileError && (
           <div className="alert alert-danger">{pdfFileError}</div>
         )}
+        <button className="btn btn-outline-danger btn-block" type="submit">
+           Generar
+        </button>
       </form>
     </div>
   );

@@ -1,4 +1,6 @@
 import fitz  # Libreria PyMuPDF
+import os
+
 
 # Transforma un archivo PDF a TXT sin perder la estructura del PDF
 
@@ -19,12 +21,14 @@ def leer_PDF():
 
 # Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
 
-# def leerTxt(documento):
+#def leer_txt(documento):
 def leer_txt():
     tObservaciones = []
     quitarEspacios = []
-    with open('PDF/pruebas.txt', "r", encoding='utf8') as archivo:
-        for word in archivo:
+    module_dir = os.path.dirname(__file__)
+    file = os.path.join(module_dir,'pruebas.txt')
+    archivo = open(file, mode='r', encoding='utf8')
+    for word in archivo:
             if word.strip() == 'Observaciones':
                 while (True):
                     linea = archivo.readline()
@@ -32,7 +36,7 @@ def leer_txt():
                     # print(linea)
                     if not linea:
                         break
-        archivo.close()
+    
 
     for word3 in tObservaciones:
         if len(word3) > 0:
@@ -105,9 +109,9 @@ def tiempo_calificacion(datosProcesados):
 
     tamaño = len(datosProcesados) - 1
     dato = datosProcesados[tamaño]
-    tamañoS = "" + dato
+    tamaño = "" + dato
     cantidadObservaciones = [int(temp)
-                             for temp in tamañoS.split() if temp.isdigit()]
+                             for temp in tamaño.split() if temp.isdigit()]
     tiempo = ((cantidadObservaciones[0]) * 1.3) / 60
     tiempoFInal = "Tiempo estimado de procesamiento: " + \
         str((float("{0:.1f}".format(tiempo)))) + " Minutos"
@@ -121,10 +125,10 @@ def observaciones():
     txt = leer_txt()
     nombres = almacenar_nombres(txt)
     procesado = procesado_txt(txt, nombres)
-    # print(procesado)
+    #print(procesado)
 
     return procesado
 
 
 # leerPDF()
-observaciones()
+#observaciones()

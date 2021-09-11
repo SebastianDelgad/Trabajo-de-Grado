@@ -4,11 +4,9 @@ import img_negativa from "../Assets/Images/negativa.png";
 import img_neutral from "../Assets/Images/neutral.png";
 import img_positivo from "../Assets/Images/positivo.png";
 import img_muy_positivo from "../Assets/Images/muy_positivo.png";
-import {NavbarCalifications} from "./NavbarCalifications"
+import { NavbarCalifications } from "./NavbarCalifications";
 
 export const ClassifierAlfabéticamente = () => {
-
- 
   const [observaciones, setObservacion] = useState([]);
 
   useEffect(() => {
@@ -17,10 +15,9 @@ export const ClassifierAlfabéticamente = () => {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch("http://127.0.0.1:5000/Albabeticamente");
+    const data = await fetch("http://127.0.0.1:5000/alfabeticamente");
     const info = await data.json();
-    info.data.map((element) => {
-    });
+    info.data.map((element) => {});
     setObservacion(info.data);
   };
 
@@ -98,7 +95,6 @@ export const ClassifierAlfabéticamente = () => {
                 <h4> Promedio: </h4>
               </div>
               <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-
                 {item.promedio_calificación === "Muy negativo" && (
                   <img
                     src={img_muy_negativa}
@@ -183,7 +179,7 @@ export const ClassifierAlfabéticamente = () => {
               </div>
             </div>
             <div className="row mt-3">
-              <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+              <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
                 <h4> Total observaciones: </h4>
               </div>
               <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">

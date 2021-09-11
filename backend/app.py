@@ -1,11 +1,23 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
+from LeerObservaciones import tiempo_calificacion, observaciones
 
 app = Flask(__name__)
 CORS(app)
 
 
-@app.route("/mejorProm", methods=["GET"])
+
+@app.route("/tiempo", methods=["GET"])
+def tiempo_cla():
+    time = {}
+    txt = observaciones()
+    tiempo = tiempo_calificacion(txt)
+    time['Tiempo'] = tiempo
+    return jsonify(
+        {"data": [time] })
+
+
+@app.route("/mejor-promedio", methods=["GET"])
 def mejor_prom():
     return jsonify(
         {"data": [
@@ -134,7 +146,7 @@ def mejor_prom():
     )
 
 
-@app.route("/peorProm", methods=["GET"])
+@app.route("/peor-promedio", methods=["GET"])
 def peor_prom():
     return jsonify(
         {"data": [
@@ -262,7 +274,7 @@ def peor_prom():
     )
 
 
-@app.route("/Albabeticamente", methods=["GET"])
+@app.route("/alfabeticamente", methods=["GET"])
 def alfabeticamente():
     return jsonify(
         {"data": [

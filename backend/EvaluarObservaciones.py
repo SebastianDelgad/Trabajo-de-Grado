@@ -1,17 +1,19 @@
-import LeerObservaciones
-import Preprocesado
+from .LeerObservaciones import observaciones, almacenar_nombres, tiempo_calificacion
+from .Preprocesado import dataset
 import operator
 
 
-txt = LeerObservaciones.observaciones()
-nombres_cursos = LeerObservaciones.almacenar_nombres(txt)
+txt = observaciones()
+nombres_cursos = almacenar_nombres(txt)
 
-tiempo = LeerObservaciones.tiempo_calificacion(txt)
+tiempo = tiempo_calificacion(txt)
 print(tiempo)
 
 
 def evaluar_documento():
 
+    txt = observaciones()txt = observaciones()
+    nombres_cursos = almacenar_nombres(txt)
     clasificacionInicial = []
     evaluar = []
     vecClasificador = []
@@ -23,7 +25,7 @@ def evaluar_documento():
         for nombreDoc in nombres_cursos:
             if observaciones == nombreDoc:
                 if len(clasificacionInicial) > 0:
-                    vectorRating = Preprocesado.dataset(evaluar)
+                    vectorRating = dataset(evaluar)
                     vecClasificador.append(vectorRating)
                     for rating in vectorRating:
                         clasificacionInicial.append(rating)
@@ -32,7 +34,7 @@ def evaluar_documento():
                 clasificacionInicial.append(observaciones)
 
         if observaciones == txt[len(txt)-1]:
-            vectorRating = Preprocesado.dataset(evaluar)
+            vectorRating = dataset(evaluar)
             vecClasificador.append(vectorRating)
             for rating in vectorRating:
                 clasificacionInicial.append(rating)
@@ -105,7 +107,7 @@ def nota_promedio(muyNeg, neg, neu, pos, muyPos):
     for i in range(len(pos)):
         nota_prom = ((-2 * muyNeg[i]) + (neg[i] * -1) + pos[i] + (muyPos[i] * 2)) / (
             muyNeg[i] + neg[i] + pos[i] + muyPos[i] + neu[i])
-        notas_prom.append(nota_prom)
+        notas_prom.append(float("{0:.1f}".format(nota_prom)))
     return notas_prom
 
 
@@ -136,7 +138,7 @@ def doc_evaluado(dataClasificacion):
         else:
             clasificacionFinal.append(puntaje)
 
-    print(clasificacionFinal)
+    #print(clasificacionFinal)
     return dataClasificacion
 
 
@@ -187,7 +189,7 @@ def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total
                              'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i],
                              'total_observaciones': total_observaciones[i], 'id': i}
 
-    # print(dict_from_list)
+    print(dict_from_list)
     return dict_from_list
 
 
@@ -291,4 +293,4 @@ def data():
     mejor_promedio_calificacion(prom_notas, diccionario)
 
 
-data()
+#data()

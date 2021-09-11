@@ -50,14 +50,18 @@ export const NavbarCalifications = () => {
             </button>
           </div>
           <div className="col-4">
-            <button className="btn btn-outline-danger btn-block"
-            onClick={handleClickMejorProm}>
+            <button
+              className="btn btn-outline-danger btn-block"
+              onClick={handleClickMejorProm}
+            >
               <span> Mejor promedio de calificaciones </span>
             </button>
           </div>
           <div className="col-3">
-            <button className="btn btn-outline-danger btn-block"
-            onClick={handleClickPeorProm}>
+            <button
+              className="btn btn-outline-danger btn-block"
+              onClick={handleClickPeorProm}
+            >
               <span> Peor promedio de calificaciones </span>
             </button>
           </div>

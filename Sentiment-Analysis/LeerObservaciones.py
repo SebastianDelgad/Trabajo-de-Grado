@@ -1,5 +1,6 @@
 import fitz  # Libreria PyMuPDF
 
+
 # Transforma un archivo PDF a TXT sin perder la estructura del PDF
 
 
@@ -19,8 +20,8 @@ def leer_PDF():
 
 # Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
 
-# def leerTxt(documento):
-def leer_txt():
+def leerTxt(documento):
+#def leer_txt():
     tObservaciones = []
     quitarEspacios = []
     with open('PDF/pruebas.txt', "r", encoding='utf8') as archivo:
