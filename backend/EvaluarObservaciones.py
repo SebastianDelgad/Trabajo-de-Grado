@@ -1,18 +1,12 @@
-from .LeerObservaciones import observaciones, almacenar_nombres, tiempo_calificacion
-from .Preprocesado import dataset
+from LeerObservaciones import observaciones, almacenar_nombres, tiempo_calificacion
+from Preprocesado import dataset
 import operator
 
 
-txt = observaciones()
-nombres_cursos = almacenar_nombres(txt)
-
-tiempo = tiempo_calificacion(txt)
-print(tiempo)
 
 
-def evaluar_documento():
+def evaluar_documento(txt):
 
-    txt = observaciones()txt = observaciones()
     nombres_cursos = almacenar_nombres(txt)
     clasificacionInicial = []
     evaluar = []
@@ -39,7 +33,7 @@ def evaluar_documento():
             for rating in vectorRating:
                 clasificacionInicial.append(rating)
 
-    print(clasificacionInicial)
+    #print(clasificacionInicial)
     doc_evaluado(clasificacionInicial)
     return vecClasificador
 
@@ -142,10 +136,10 @@ def doc_evaluado(dataClasificacion):
     return dataClasificacion
 
 
-def nombres_docentes():
+def nombres_docentes(txt):
     docentes = []
     nombreDocente = ""
-
+    nombres_cursos = almacenar_nombres(txt)
     for word2 in nombres_cursos:
         for name in word2:
             if name != "-":
@@ -158,11 +152,11 @@ def nombres_docentes():
     return docentes
 
 
-def cursos():
+def cursos(txt):
     curso = []
     nombreCurso = ""
     validar = 0
-
+    nombres_cursos = almacenar_nombres(txt)
     for item in nombres_cursos:
         for word in item:
             if word == "-":
@@ -181,16 +175,16 @@ def cursos():
 def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos,
                     total_observaciones ):
 
-    dict_from_list = {}
+    diccionario = {}
 
     for i in range(len(nombres)):
-        dict_from_list[i] = {'docente': nombres[i], 'asignatura': asignaturas[i], 'promedio_calificación': notas[i],
-                             'total_muy_neg': total_muy_neg[i], 'total_neg': total_neg[i], 'total_neu': total_neu[i],
-                             'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i],
-                             'total_observaciones': total_observaciones[i], 'id': i}
+        diccionario[i] = {"docente": nombres[i], "asignatura": asignaturas[i], "promedio_calificación": notas[i],
+                             "total_muy_neg": total_muy_neg[i], "total_neg": total_neg[i], "total_neu": total_neu[i],
+                             "total_pos": total_pos[i], "total_muy_pos": total_muy_pos[i],
+                             "total_observaciones": total_observaciones[i], "id": i}
 
-    print(dict_from_list)
-    return dict_from_list
+    #print(dict_from_list)
+    return diccionario
 
 
 def ordenar_diccionario_por_nombres(diccionario, nombres):
@@ -206,7 +200,7 @@ def ordenar_diccionario_por_nombres(diccionario, nombres):
 
     for name in docentesOrdenados:
         for i in range(len(diccionario)):
-            if diccionario[i]['docente'] == name:
+            if diccionario[i]["docente"] == name:
                 ordenadoAlfabeticamente.append(diccionario[i])
 
     for i in range(len(ordenadoAlfabeticamente)):
@@ -221,7 +215,7 @@ def ordenar_diccionario_por_nombres(diccionario, nombres):
         elif ordenadoAlfabeticamente[i]['promedio_calificación'] >= -1.6:
             ordenadoAlfabeticamente[i]['promedio_calificación'] = "Muy negativo"
 
-    print(ordenadoAlfabeticamente)
+    return ordenadoAlfabeticamente
 
 
 def promedio_calificacion(diccionario):
@@ -250,7 +244,7 @@ def peor_promedio_calificacion(notas, diccionario):
         peor_prom_profesor.append(diccionario[key])
 
 
-    print(peor_prom_profesor)
+    return peor_prom_profesor
 
 
 def mejor_promedio_calificacion(notas, diccionario):
@@ -268,12 +262,12 @@ def mejor_promedio_calificacion(notas, diccionario):
     for key in list_keys2:
         mejor_prom_profesor.append(diccionario[key])
 
-    print(mejor_prom_profesor)
+    return mejor_prom_profesor
 
 
 def data():
-
-    evaluacion = evaluar_documento()
+    txt = observaciones()
+    evaluacion = evaluar_documento(txt)
     total_muy_neg = cant_muy_negativa(evaluacion)
     total_neg = cant_negativa(evaluacion)
     total_neu = cant_neutral(evaluacion)
@@ -283,14 +277,15 @@ def data():
         total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos)
     notas = nota_promedio(total_muy_neg, total_neg,
                           total_neu, total_pos, total_muy_pos)
-    nombres = nombres_docentes()
-    asignaturas = cursos()
+    nombres = nombres_docentes(txt)
+    asignaturas = cursos(txt)
     diccionario = info_dicionario(nombres, asignaturas, notas, total_muy_neg,
                                   total_neg, total_neu, total_pos, total_muy_pos, total_obs)
-    prom_notas = promedio_calificacion(diccionario)
-    ordenar_diccionario_por_nombres(diccionario, nombres)
-    peor_promedio_calificacion(prom_notas, diccionario)
-    mejor_promedio_calificacion(prom_notas, diccionario)
+    #prom_notas = promedio_calificacion(diccionario)
+    #ordenar_diccionario_por_nombres(diccionario, nombres)
+    #peor_promedio_calificacion(prom_notas, diccionario)
+    #mejor_promedio_calificacion(prom_notas, diccionario)
+    return diccionario
 
 
 #data()
