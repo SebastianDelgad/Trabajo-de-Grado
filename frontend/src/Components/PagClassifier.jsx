@@ -4,17 +4,10 @@ import { NavbarClassifier } from "./NavbarClassifier";
 import { auth } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { UploadPDF } from "./UploadPDF";
+import { PagMain } from "./PagMain";
 
 export const PagClassifier = () => {
   const [user, setUser] = useState();
-  const [tiempo, setTiempo] = useState([]);
-
-  const obtenerDatos = async () => {
-    const data = await fetch("http://127.0.0.1:5000/tiempo");
-    const info = await data.json();
-    info.data.map((element) => {});
-    setTiempo(info.data);
-  };
 
   let history = useHistory();
 
@@ -26,7 +19,6 @@ export const PagClassifier = () => {
     auth.onAuthStateChanged((user) => {
       setUser(user);
       console.log(user);
-      obtenerDatos();
     });
   }, []);
 
@@ -57,16 +49,7 @@ export const PagClassifier = () => {
             </div>
           </div>
           <br></br>
-          <div className="row mt-3">
-            <div className="col">
-              {tiempo.map((item) => (
-                <li>
-                  {" "}
-                  <h5> {item.Tiempo} </h5>{" "}
-                </li>
-              ))}
-            </div>
-          </div>
+          <div className="row mt-3"></div>
           <div className="row mt-3">
             <div className="col"></div>
             <div className="col">
@@ -83,5 +66,5 @@ export const PagClassifier = () => {
       </Fragment>
     );
   }
-  return <div> Cargando... </div>;
+  return <PagMain />;
 };

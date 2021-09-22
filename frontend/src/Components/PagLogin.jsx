@@ -78,7 +78,7 @@ export const PagLogin = (props) => {
                 <div className="row mt-3 justify-content-center">
                   <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
                   <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
-                    <h4> Usuario </h4>
+                    <h4> Correo </h4>
                   </div>
                 </div>
 
