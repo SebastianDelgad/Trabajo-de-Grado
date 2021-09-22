@@ -5,8 +5,8 @@ from nltk.stem import SnowballStemmer
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 import pandas as pd
 from sklearn.pipeline import Pipeline
+from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report
-from sklearn.svm import SVC
 import os
 
 non_words = list(punctuation)
@@ -22,7 +22,7 @@ def sentence_tokenize(text):
     take string input and return a list of sentences.
     use nltk.sent_tokenize() to split the sentences.
     """
-    return sent_tokenize(str(text))
+    return sent_tokenize(str(text.lower()))
 
 
 def remove_numbers(text):
@@ -65,7 +65,7 @@ def preprocess(text):
 def dataset(new_reviews):
     # Lectura el data set y especificar las dos columnas que tiene el dataset como estructura
     module_dir = os.path.dirname(__file__)
-    file = os.path.join(module_dir,'dataset/Observaciones_-2_a_2.csv')
+    file = os.path.join(module_dir, 'dataset/Observaciones_-2_a_2.csv')
     data = pd.read_csv(file,
                        sep=',', encoding="utf8", header=None)
     data.columns = ['Observaciones', 'Sentiment']
@@ -75,14 +75,15 @@ def dataset(new_reviews):
     #TF- IDF
     tfidf = TfidfTransformer()
 
-    # SVM (Máquina de vectores de soporte)
-    #print("Clasificador SVM")
-    text_classifier = SVC(kernel='linear')
+    # MLP (red neuronal)
+    #print("Clasificador NLP")
+    text_classifier = MLPClassifier(hidden_layer_sizes=(
+        1500, 1000, 500), max_iter=3000, activation='relu', solver='adam', random_state=1)
 
     pipeline = Pipeline([
         ('bow', bow),  # strings to token integer counts
         ('tfidf', tfidf),  # integer counts to weighted TF-IDF scores
-        # train on TF-IDF vectors w/ SVM classifier
+        # train on TF-IDF vectors w/ NLP classifier
         ('classifier', text_classifier),
     ])
 

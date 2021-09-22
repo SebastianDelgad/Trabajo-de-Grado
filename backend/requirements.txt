@@ -1,5 +1,5 @@
-pip install nltk
-pip install PyMuPDF
-pip install Flask
-pip install flask-restful
-pip install -U flask-cors
+nltk
+PyMuPDF
+Flask
+flask-restful
+-U flask-cors

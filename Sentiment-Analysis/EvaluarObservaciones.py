@@ -6,40 +6,48 @@ import operator
 txt = LeerObservaciones.observaciones()
 nombres_cursos = LeerObservaciones.almacenar_nombres(txt)
 
-tiempo = LeerObservaciones.tiempo_calificacion(txt)
-print(tiempo)
-
 
 def evaluar_documento():
 
     clasificacionInicial = []
+    cantidad = []
     evaluar = []
+    vectorEvaluado = []
     vecClasificador = []
-    nota = 0
+    notas = []
+    cont = 0
+
     for observaciones in txt:
         if observaciones[0].isnumeric():
+            cont += 1
             evaluar.append(observaciones)
 
         for nombreDoc in nombres_cursos:
             if observaciones == nombreDoc:
-                if len(clasificacionInicial) > 0:
-                    vectorRating = Preprocesado.dataset(evaluar)
-                    vecClasificador.append(vectorRating)
-                    for rating in vectorRating:
-                        clasificacionInicial.append(rating)
-                    evaluar = []
-
-                clasificacionInicial.append(observaciones)
+                cantidad.append(cont)
 
         if observaciones == txt[len(txt)-1]:
-            vectorRating = Preprocesado.dataset(evaluar)
-            vecClasificador.append(vectorRating)
-            for rating in vectorRating:
-                clasificacionInicial.append(rating)
+            evaluar.append(observaciones)
+            cantidad.append(cont)
 
+    vectorEvaluado = Preprocesado.dataset(evaluar)
+    cantidad.pop(0)
+    item = 0
+    for i in range(len(nombres_cursos)):
+        vecClasificador.append(nombres_cursos[i])
+        clasificacionInicial.append(notas)
+        notas = []
+        while item < cantidad[i]:
+            vecClasificador.append(vectorEvaluado[item])
+            notas.append(vectorEvaluado[item])
+            item += 1
+    clasificacionInicial.append(notas)
+
+    clasificacionInicial.pop(0)
+    print(vecClasificador)
     print(clasificacionInicial)
-    doc_evaluado(clasificacionInicial)
-    return vecClasificador
+    doc_evaluado(vecClasificador)
+    return clasificacionInicial
 
 
 def cant_muy_negativa(dataClasificacion):
@@ -136,7 +144,7 @@ def doc_evaluado(dataClasificacion):
         else:
             clasificacionFinal.append(puntaje)
 
-    #print(clasificacionFinal)
+    # print(clasificacionFinal)
     return dataClasificacion
 
 
@@ -177,7 +185,7 @@ def cursos():
 
 
 def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos,
-                    total_observaciones ):
+                    total_observaciones):
 
     dict_from_list = {}
 
@@ -216,7 +224,7 @@ def ordenar_diccionario_por_nombres(diccionario, nombres):
             ordenadoAlfabeticamente[i]['promedio_calificación'] = "Neutral"
         elif ordenadoAlfabeticamente[i]['promedio_calificación'] >= -1.5:
             ordenadoAlfabeticamente[i]['promedio_calificación'] = "Negativo"
-        elif ordenadoAlfabeticamente[i]['promedio_calificación'] >= -1.6:
+        else:
             ordenadoAlfabeticamente[i]['promedio_calificación'] = "Muy negativo"
 
     print(ordenadoAlfabeticamente)
@@ -246,7 +254,6 @@ def peor_promedio_calificacion(notas, diccionario):
 
     for key in list_keys1:
         peor_prom_profesor.append(diccionario[key])
-
 
     print(peor_prom_profesor)
 

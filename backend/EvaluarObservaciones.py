@@ -3,37 +3,50 @@ from Preprocesado import dataset
 import operator
 
 
+
+
 def evaluar_documento(txt):
 
     nombres_cursos = almacenar_nombres(txt)
     clasificacionInicial = []
+    cantidad = []
     evaluar = []
+    vectorEvaluado = []
     vecClasificador = []
-    nota = 0
+    notas = []
+    cont = 0
+
     for observaciones in txt:
         if observaciones[0].isnumeric():
+            cont += 1
             evaluar.append(observaciones)
 
         for nombreDoc in nombres_cursos:
             if observaciones == nombreDoc:
-                if len(clasificacionInicial) > 0:
-                    vectorRating = dataset(evaluar)
-                    vecClasificador.append(vectorRating)
-                    for rating in vectorRating:
-                        clasificacionInicial.append(rating)
-                    evaluar = []
-
-                clasificacionInicial.append(observaciones)
+                cantidad.append(cont)
 
         if observaciones == txt[len(txt)-1]:
-            vectorRating = dataset(evaluar)
-            vecClasificador.append(vectorRating)
-            for rating in vectorRating:
-                clasificacionInicial.append(rating)
+            evaluar.append(observaciones)
+            cantidad.append(cont)
 
-    # print(clasificacionInicial)
-    doc_evaluado(clasificacionInicial)
-    return vecClasificador
+    vectorEvaluado = dataset(evaluar)
+    cantidad.pop(0)
+    item = 0
+    for i in range(len(nombres_cursos)):
+        vecClasificador.append(nombres_cursos[i])
+        clasificacionInicial.append(notas)
+        notas = []
+        while item < cantidad[i]:
+            vecClasificador.append(vectorEvaluado[item])
+            notas.append(vectorEvaluado[item])
+            item += 1
+    clasificacionInicial.append(notas)
+
+    clasificacionInicial.pop(0)
+    #print(vecClasificador)
+    #print(clasificacionInicial)
+    doc_evaluado(vecClasificador)
+    return clasificacionInicial
 
 
 def cant_muy_negativa(dataClasificacion):
@@ -173,16 +186,16 @@ def cursos(txt):
 def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total_neu, total_pos, total_muy_pos,
                     total_observaciones):
 
-    diccionario = {}
+    dict_from_list = {}
 
     for i in range(len(nombres)):
-        diccionario[i] = {"docente": nombres[i], "asignatura": asignaturas[i], "promedio_calificación": notas[i],
-                          "total_muy_neg": total_muy_neg[i], "total_neg": total_neg[i], "total_neu": total_neu[i],
-                          "total_pos": total_pos[i], "total_muy_pos": total_muy_pos[i],
-                          "total_observaciones": total_observaciones[i], "id": i}
+        dict_from_list[i] = {'docente': nombres[i], 'asignatura': asignaturas[i], 'promedio_calificación': notas[i],
+                             'total_muy_neg': total_muy_neg[i], 'total_neg': total_neg[i], 'total_neu': total_neu[i],
+                             'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i],
+                             'total_observaciones': total_observaciones[i], 'id': i}
 
-    # print(dict_from_list)
-    return diccionario
+    #print(dict_from_list)
+    return dict_from_list
 
 
 def ordenar_diccionario_por_nombres(diccionario, nombres):
@@ -198,7 +211,7 @@ def ordenar_diccionario_por_nombres(diccionario, nombres):
 
     for name in docentesOrdenados:
         for i in range(len(diccionario)):
-            if diccionario[i]["docente"] == name:
+            if diccionario[i]['docente'] == name:
                 ordenadoAlfabeticamente.append(diccionario[i])
 
     for i in range(len(ordenadoAlfabeticamente)):
@@ -210,7 +223,7 @@ def ordenar_diccionario_por_nombres(diccionario, nombres):
             ordenadoAlfabeticamente[i]['promedio_calificación'] = "Neutral"
         elif ordenadoAlfabeticamente[i]['promedio_calificación'] >= -1.5:
             ordenadoAlfabeticamente[i]['promedio_calificación'] = "Negativo"
-        elif ordenadoAlfabeticamente[i]['promedio_calificación'] >= -1.6:
+        else:
             ordenadoAlfabeticamente[i]['promedio_calificación'] = "Muy negativo"
 
     return ordenadoAlfabeticamente
@@ -284,5 +297,4 @@ def data():
     #mejor_promedio_calificacion(prom_notas, diccionario)
     return diccionario
 
-
-# data()
+#data()
