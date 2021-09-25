@@ -5,7 +5,7 @@ import fitz  # Libreria PyMuPDF
 
 
 def leer_PDF():
-    pdf_documento = 'PDF/2020- ll.pdf'
+    pdf_documento = 'PDF/2017- ll.pdf'
     documento = fitz.open(pdf_documento)
     pdf_a_texto = 'PDF/pdf_a_texto.txt'
     salida = open(pdf_a_texto, "wb")
