@@ -3,8 +3,8 @@ import os
 from werkzeug.utils import secure_filename
 from flask_cors import CORS
 from LeerObservaciones import observaciones
-from EvaluarObservaciones import data, promedio_calificacion, ordenar_diccionario_por_nombres, peor_promedio_calificacion, mejor_promedio_calificacion, nombres_docentes
-
+from EvaluarObservaciones import data
+from OrdenResultados import resultados, nombre_y_curso, promedio_calificacion, ordenar_diccionario_por_nombres, peor_promedio_calificacion, mejor_promedio_calificacion, nombres_docentes
 app = Flask(__name__)
 module_dir = os.path.dirname(__file__)
 file = os.path.join(module_dir, '/PDF')
@@ -14,17 +14,27 @@ CORS(app)
 
 def procesador(pdf):
     texto = observaciones(pdf)
-    diccionario = data(texto)
-    nombres = nombres_docentes(texto)
-    promedio = promedio_calificacion(diccionario)
-    orden_nombres = ordenar_diccionario_por_nombres(diccionario, nombres)
-    peor_promedio = peor_promedio_calificacion(promedio, diccionario)
-    mejor_promedio = mejor_promedio_calificacion(promedio, diccionario)
-    alfabeticamente(orden_nombres)
-    mejor_prom(mejor_promedio)
-    peor_prom(peor_promedio)
-    print("terminé")
+    infoPrincipal = data(texto)
+    return infoPrincipal
     
+datos = []
+module_dir = os.path.dirname(__file__)
+pdf_a_texto = os.path.join(module_dir, 'resultado.txt')
+archivo = open(pdf_a_texto, 'r')
+for line in archivo.readlines():
+    if len(line) < 4:
+        datos.append(int(line.strip()))
+    else: datos.append(line.strip())
+
+diccionario = resultados(datos)
+
+nombresCursos = nombre_y_curso(datos)
+prom_notas = promedio_calificacion(diccionario)
+nombres = nombres_docentes(nombresCursos)
+orden_nombres = ordenar_diccionario_por_nombres(diccionario, nombres)
+peor_promedio = peor_promedio_calificacion(prom_notas, diccionario)
+mejor_promedio = mejor_promedio_calificacion(prom_notas, diccionario)
+
 
 #@app.route("/")
 #def upload_file():
@@ -42,25 +52,25 @@ def uploader():
   f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
   procesador(filename)
   # Retornamos una respuesta satisfactoria
-  return redirect('http://localhost:3000/classifier')
+  return redirect('http://localhost:3000/classifierAlfabetico')
 
 
 @app.route("/mejor-promedio", methods=["GET"])
-def mejor_prom(mejor_promedio):
+def mejor_prom():
     best = {}
     best["data"] = mejor_promedio
     return jsonify(best)
 
 
 @app.route("/peor-promedio", methods=["GET"])
-def peor_prom(peor_promedio):
+def peor_prom():
     worse = {}
     worse["data"] = peor_promedio
     return jsonify(worse)
 
 
 @app.route("/alfabeticamente", methods=["GET"])
-def alfabeticamente(orden_nombres):
+def alfabeticamente():
     ordenado = {}
     ordenado["data"] = orden_nombres
     return jsonify(ordenado)

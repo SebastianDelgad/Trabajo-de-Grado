@@ -13,7 +13,7 @@ def consolidado_notas(datos):
             notas = []
     consolidado.append(notas)
     consolidado.pop(0)
-    print(consolidado)
+    #print(consolidado)
     return consolidado
 
 
@@ -23,7 +23,7 @@ def nombre_y_curso(datos):
     for nombre in datos:
         if type(nombre) == str:
             nombreYCurso.append(nombre)
-    print(nombreYCurso)
+    #print(nombreYCurso)
     return nombreYCurso
 
 
@@ -256,11 +256,12 @@ def resultados(datosCalificados):
     asignaturas = cursos(nombresCursos)
     diccionario = info_dicionario(nombres, asignaturas, notas, total_muy_neg,
                                   total_neg, total_neu, total_pos, total_muy_pos, total_obs)
-    prom_notas = promedio_calificacion(diccionario)
-    ordenar_diccionario_por_nombres(diccionario, nombres)
-    peor_promedio_calificacion(prom_notas, diccionario)
-    mejor_promedio_calificacion(prom_notas, diccionario)
-    consultar_por_nombre(diccionario, 'JUAN SEBASTIAN CORREA FERNANDEZ')
+    return diccionario
+    #prom_notas = promedio_calificacion(diccionario)
+    #ordenar_diccionario_por_nombres(diccionario, nombres)
+    #peor_promedio_calificacion(prom_notas, diccionario)
+    #mejor_promedio_calificacion(prom_notas, diccionario)
+    #consultar_por_nombre(diccionario, 'JUAN SEBASTIAN CORREA FERNANDEZ')
 
 def leer_archivo():
     datos = []
@@ -271,8 +272,8 @@ def leer_archivo():
         if len(line) < 4:
             datos.append(int(line.strip()))
         else: datos.append(line.strip())
-    print(datos)
+    #print(datos)
     return datos
 
-datos = leer_archivo()
-resultados(datos)
+#datos = leer_archivo()
+#resultados(datos)
