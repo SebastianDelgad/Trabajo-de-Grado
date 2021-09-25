@@ -48,7 +48,7 @@ def leer_txt(documento):
 def almacenar_nombres(datos):
     vectorNombres = []
 
-    grupos = ["M 50", "M 51", "M 52", "M 53", "M 54", "M 55"]
+    grupos = ["M 50", "M 51", "M 52", "M 53", "M 54", "M 55", "M 56", "M 57", "M 58", "M 59", "M 60"]
 
     for nombre in datos:
         if len(nombre) > 18:
@@ -114,4 +114,4 @@ def observaciones():
 
 
 # leerPDF()
-observaciones()
+#observaciones()
