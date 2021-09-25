@@ -34,24 +34,15 @@ export const UploadPDF = () => {
   return (
     <div>
       <form
-        className="form-group"
-        method="post"
-        action="/pdf"
+        action="http://127.0.0.1:5000/upload"
+        method= 'POST'
         encType="multipart/form-data"
-        onSubmit={handlePdfFileSubmit}
       >
         <input
           type="file"
-          className="form-control"
-          name="inputFile"
-          onChange={handlePdfFileChange}
+          name="archivo"
         />
-        {pdfFileError && (
-          <div className="alert alert-danger">{pdfFileError}</div>
-        )}
-        <button className="btn btn-outline-danger btn-block" type="submit">
-           Generar
-        </button>
+       <input type="submit"></input>
       </form>
     </div>
   );

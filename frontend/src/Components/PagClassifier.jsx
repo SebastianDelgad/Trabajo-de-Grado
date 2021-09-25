@@ -7,6 +7,7 @@ import { UploadPDF } from "./UploadPDF";
 import { PagMain } from "./PagMain";
 
 export const PagClassifier = () => {
+  
   const [user, setUser] = useState();
 
   let history = useHistory();
@@ -14,6 +15,7 @@ export const PagClassifier = () => {
   function handleClickGenerar() {
     history.push("/classifierAlfabetico");
   }
+  
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -21,6 +23,10 @@ export const PagClassifier = () => {
       console.log(user);
     });
   }, []);
+
+  
+
+ 
 
   if (user) {
     return (
@@ -45,7 +51,7 @@ export const PagClassifier = () => {
               <h4>Archivo a evaluar</h4>
             </div>
             <div className="col">
-              <Upload />
+              <UploadPDF />
             </div>
           </div>
           <br></br>

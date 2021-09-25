@@ -5,10 +5,12 @@ import os
 # Transforma un archivo PDF a TXT sin perder la estructura del PDF
 
 
-def leer_PDF():
-    pdf_documento = 'PDF/2017- ll.pdf'
-    documento = fitz.open(pdf_documento)
-    pdf_a_texto = 'PDF/pdf_a_texto.txt'
+def leer_PDF(pdf):
+    module_dir = os.path.dirname(__file__)
+    file = os.path.join(module_dir, pdf)
+    documento = fitz.open(file)
+    pdf_a_texto =  os.path.join(module_dir, 'pdf_a_texto.txt')
+    nombre_txt = 'pdf_a_texto.txt'
     salida = open(pdf_a_texto, "wb")
 
     for pagina in documento:
@@ -16,17 +18,17 @@ def leer_PDF():
         salida.write(texto)
         salida.write(b"\n----\n")
     salida.close()
-    return pdf_a_texto
+    return nombre_txt
 
 
 # Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
 
-# def leer_txt(documento):
-def leer_txt():
+def leer_txt(documento):
+#def leer_txt():
     tObservaciones = []
     quitarEspacios = []
     module_dir = os.path.dirname(__file__)
-    file = os.path.join(module_dir, 'pruebas.txt')
+    file = os.path.join(module_dir, documento)
     archivo = open(file, mode='r', encoding='utf8')
     for word in archivo:
         if word.strip() == 'Observaciones':
@@ -104,24 +106,10 @@ def procesado_txt(datos, vectorNombres):
     # print(vectorDatosProcesada)
 
 
-def tiempo_calificacion(datosProcesados):
+def observaciones(file):
 
-    tamaño = len(datosProcesados) - 1
-    dato = datosProcesados[tamaño]
-    tamaño = "" + dato
-    cantidadObservaciones = [int(temp)
-                             for temp in tamaño.split() if temp.isdigit()]
-    tiempo = ((cantidadObservaciones[0]) * 1.3) / 60
-    tiempoFInal = "Tiempo estimado de procesamiento: " + \
-        str((float("{0:.1f}".format(tiempo)))) + " Minutos"
-
-    return tiempoFInal
-
-
-def observaciones():
-
-    #pdf = leer_PDF()
-    txt = leer_txt()
+    pdf = leer_PDF(file)
+    txt = leer_txt(pdf)
     nombres = almacenar_nombres(txt)
     procesado = procesado_txt(txt, nombres)
     # print(procesado)

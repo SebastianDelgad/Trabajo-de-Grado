@@ -5,7 +5,7 @@ import fitz  # Libreria PyMuPDF
 
 
 def leer_PDF():
-    pdf_documento = 'PDF/2017- ll.pdf'
+    pdf_documento = 'PDF/2020- ll.pdf'
     documento = fitz.open(pdf_documento)
     pdf_a_texto = 'PDF/pdf_a_texto.txt'
     salida = open(pdf_a_texto, "wb")
@@ -20,11 +20,11 @@ def leer_PDF():
 
 # Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
 
-#def leerTxt(documento):
-def leer_txt():
+def leer_txt(documento):
+#def leer_txt():
     tObservaciones = []
     quitarEspacios = []
-    with open('PDF/pruebas.txt', "r", encoding='utf8') as archivo:
+    with open(documento, "r", encoding='utf8') as archivo:
         for word in archivo:
             if word.strip() == 'Observaciones':
                 while (True):
@@ -102,24 +102,10 @@ def procesado_txt(datos, vectorNombres):
     # print(vectorDatosProcesada)
 
 
-def tiempo_calificacion(datosProcesados):
-
-    tamaño = len(datosProcesados) - 1
-    dato = datosProcesados[tamaño]
-    tamañoS = "" + dato
-    cantidadObservaciones = [int(temp)
-                             for temp in tamañoS.split() if temp.isdigit()]
-    tiempo = ((cantidadObservaciones[0]) * 1.3) / 60
-    tiempoFInal = "Tiempo estimado de procesamiento: " + \
-        str((float("{0:.1f}".format(tiempo)))) + " Minutos"
-
-    return tiempoFInal
-
-
 def observaciones():
 
-    #pdf = leer_PDF()
-    txt = leer_txt()
+    pdf = leer_PDF()
+    txt = leer_txt(pdf)
     nombres = almacenar_nombres(txt)
     procesado = procesado_txt(txt, nombres)
     # print(procesado)

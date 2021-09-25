@@ -1,4 +1,4 @@
-from LeerObservaciones import observaciones, almacenar_nombres, tiempo_calificacion
+from LeerObservaciones import observaciones, almacenar_nombres
 from Preprocesado import dataset
 import operator
 
@@ -275,8 +275,7 @@ def mejor_promedio_calificacion(notas, diccionario):
     return mejor_prom_profesor
 
 
-def data():
-    txt = observaciones()
+def data(txt):
     evaluacion = evaluar_documento(txt)
     total_muy_neg = cant_muy_negativa(evaluacion)
     total_neg = cant_negativa(evaluacion)

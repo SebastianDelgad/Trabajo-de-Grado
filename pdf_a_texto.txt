@@ -1,0 +1,3472 @@
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+1/33
+Vicerrectoría Académica
+Dirección de Autoevaluación y Calidad Académica
+Sistema Institucional de Evaluación de Cursos
+RESULTADOS DE LA EVALUACIÓN DE LOS CURSOS DE LA UNIDAD ACADÉMICA
+ 
+Sede:
+06
+Semestre Académico:
+Primer semestre de 2018
+Facultad / Instituto / Dirección:
+Dirección Regionalización
+Departamento /Escuela /Sede:
+TULUA
+ 
+Indicadores:
+No. cursos_programados:
+294
+No. cursos_evaluados:
+262 (89%): 100% de manera online
+No. profesores_programados:
+111
+No. profesores_evaluados:
+102 (92%)
+No. encuestas disponibles:
+7127
+No. encuestas diligenciadas (evaluaciones):
+5233 (73%)
+ 
+Consolidado de Preguntas:
+No.
+Enunciado
+Nota
+Max
+Nota
+Min
+Mas
+Ocurrencia
+Promedio
+No
+Aplica
+1
+El curso fue relevante para mi formación.
+5.00
+1.00
+5.00
+4.72
+6
+2
+Los contenidos del curso fueron coherentes entre sí.
+5.00
+1.00
+5.00
+4.68
+7
+3
+El acumulado de conocimientos con el que llegué al curso fue suficiente para su comprensión.
+5.00
+1.00
+5.00
+4.49
+8
+4
+El tiempo de trabajo independiente estipulado para este curso fue apropiado de acuerdo a su
+jornada.
+5.00
+1.00
+5.00
+4.62
+5
+5
+La ubicación del curso en la semestralización de mi programa académico fue apropiada.
+5.00
+1.00
+5.00
+4.72
+4
+6
+La práctica le permitió desarrollar habilidades para su desempeño profesional.
+5.00
+1.00
+5.00
+4.64
+23
+7
+Los conocimientos teóricos adquiridos fueron acorde con la práctica que desarrollo.
+5.00
+1.00
+5.00
+4.62
+26
+8
+La práctica permitió conocer la realidad social de la comunidad.
+5.00
+1.00
+5.00
+4.59
+196
+9
+El Profesor explicó el programa y lo presentó oportunamente.
+5.00
+1.00
+5.00
+4.72
+10
+10
+El profesor planificó adecuadamente el curso.
+5.00
+1.00
+5.00
+4.66
+8
+11
+El profesor dio cumplimiento al horario establecido para el curso.
+5.00
+1.00
+5.00
+4.69
+5
+12
+La metodología empleada propició la reflexión y apropiación de los conocimientos y habilidades.
+5.00
+1.00
+5.00
+4.61
+6
+13
+Las explicaciones del profesor fueron claras.
+5.00
+1.00
+5.00
+4.59
+5
+14
+El profesor cumplió los objetivos planteados al inicio del curso.
+5.00
+1.00
+5.00
+4.64
+6
+15
+El profesor tuvo disponibilidad para consultas y asesorías en el tiempo programado para ese fin.
+5.00
+1.00
+5.00
+4.68
+11
+16
+Se estableció un acuerdo claro sobre la evaluación al inicio del curso.
+5.00
+1.00
+5.00
+4.75
+10
+17
+El profesor entregó los resultados de las evaluaciones a tiempo.
+5.00
+1.00
+5.00
+4.66
+20
+18
+El profesor utilizó las evaluaciones para mejorar la formación de los estudiantes.
+5.00
+1.00
+5.00
+4.62
+22
+19
+El acompañamiento del docente le facilitó la adquisición de habilidades para el desarrollo de técnicas
+y procedimientos
+5.00
+1.00
+5.00
+4.63
+7
+20
+El trato del profesor fue respetuoso con los estudiantes.
+5.00
+1.00
+5.00
+4.86
+4
+21
+Atendí con responsabilidad cada una de las exigencias del curso.
+5.00
+1.00
+5.00
+4.63
+2
+22
+Con mi actitud contribuí a la construcción de un ambiente académico universitario.
+5.00
+1.00
+5.00
+4.66
+9
+23
+Consulté, por iniciativa propia, bibliografía y documentación adicional.
+5.00
+1.00
+5.00
+4.57
+5
+24
+Utilicé adecuadamente la disponibilidad de los horarios de consulta del profesor.
+5.00
+1.00
+5.00
+4.60
+23
+25
+Califique su asistencia a clase.
+5.00
+1.00
+5.00
+4.73
+9
+ 
+Gráfico Estadístico:
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+2/33
+ 
+Cursos evaluados en su componente 'Profesor' por debajo del estandar:
+No
+Periodo Académico
+No. documento
+profesor
+Código
+asignatura
+Grupo
+Nombre asignatura
+Calificación menor
+a 3.8
+1
+FEBRERO/2018 
+-
+JUNIO/2018
+1107508508
+111048M
+50
+ÁLGEBRA LINEAL
+3.50
+2
+FEBRERO/2018 
+-
+JUNIO/2018
+10295860
+204066M
+50
+BUSINESS ENGLISH II
+3.61
+3
+FEBRERO/2018 
+-
+JUNIO/2018
+66918962
+607136
+50
+AUDITORÍA II
+0.00
+4
+FEBRERO/2018 
+-
+JUNIO/2018
+29185642
+607147
+50
+MANEJO DE CONFLICTOS
+0.00
+5
+FEBRERO/2018 
+-
+JUNIO/2018
+16229147
+710192M
+50
+ARQUITECTURA DE COMPUTADORES I
+3.61
+6
+FEBRERO/2018 
+-
+JUNIO/2018
+16600108
+745007M
+50
+QUÍMICA DE ALIMENTOS
+3.76
+7
+FEBRERO/2018 
+-
+JUNIO/2018
+66719397
+745050M
+50
+FUNDAMENTOS DE NUTRICIÓN HUMANA Y ANIMAL
+2.47
+8
+FEBRERO/2018 
+-
+JUNIO/2018
+16600108
+745129M
+50
+MANEJO DE SÓLIDOS Y FLUIDOS
+3.40
+9
+FEBRERO/2018 
+-
+JUNIO/2018
+94475125
+750081M
+51
+INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA
+A OBJETOS
+3.69
+10
+FEBRERO/2018 
+-
+JUNIO/2018
+1144024178
+750087M
+50
+APLICACIONES EN EL WEB Y REDES INALÁMBRICAS 3.33
+11
+FEBRERO/2018 
+-
+JUNIO/2018
+1113652653
+750102M
+56
+TRABAJO DE GRADO II
+1.00
+12
+FEBRERO/2018 
+-
+JUNIO/2018
+98381333
+801075M
+50
+ORGANIZACIÓN Y MEDIO AMBIENTE
+3.14
+13
+FEBRERO/2018 
+-
+JUNIO/2018
+29877725
+801108M
+53
+TRABAJO DE GRADO
+3.67
+14
+FEBRERO/2018 
+-
+JUNIO/2018
+66710651
+801108M
+68
+TRABAJO DE GRADO
+3.58
+15
+FEBRERO/2018 
+-
+JUNIO/2018
+98381333
+801154M
+50
+RESOLUCIÓN 
+DE 
+PROBLEMAS 
+Y 
+TOMA 
+DE
+DECISIONES
+2.79
+16
+FEBRERO/2018 
+-
+JUNIO/2018
+14883724
+801174M
+50
+DISEÑO Y EVALUACIÓN ORGANIZACIONAL
+2.79
+17
+FEBRERO/2018 
+-
+JUNIO/2018
+1115062941
+802026M
+50
+CONTABILIDAD PÚBLICA
+2.68
+ 
+Cursos evaluados en su componente 'Asignatura' por debajo del estandar:
+No
+Periodo Académico
+No. documento
+profesor
+Código
+asignatura
+Grupo
+Nombre asignatura
+Calificación menor a
+3.8
+1
+FEBRERO/2018 
+-
+JUNIO/2018
+1107508508
+111048M
+50
+ÁLGEBRA LINEAL
+3.21
+2
+FEBRERO/2018 
+-
+JUNIO/2018
+72191003
+111050M
+52
+CÁLCULO I
+3.74
+3
+FEBRERO/2018 
+-
+JUNIO/2018
+10295860
+204066M
+50
+BUSINESS ENGLISH II
+3.62
+4
+FEBRERO/2018 
+-
+JUNIO/2018
+66918962
+607136
+50
+AUDITORÍA II
+0.00
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+3/33
+5
+FEBRERO/2018 
+-
+JUNIO/2018
+29185642
+607147
+50
+MANEJO DE CONFLICTOS
+0.00
+6
+FEBRERO/2018 
+-
+JUNIO/2018
+66719397
+745050M
+50
+FUNDAMENTOS DE NUTRICIÓN HUMANA Y
+ANIMAL
+3.27
+7
+FEBRERO/2018 
+-
+JUNIO/2018
+16600108
+745129M
+50
+MANEJO DE SÓLIDOS Y FLUIDOS
+3.77
+8
+FEBRERO/2018 
+-
+JUNIO/2018
+1144024178
+750087M
+50
+APLICACIONES 
+EN 
+EL 
+WEB 
+Y 
+REDES
+INALÁMBRICAS
+3.63
+9
+FEBRERO/2018 
+-
+JUNIO/2018
+1113652653
+750102M
+56
+TRABAJO DE GRADO II
+1.00
+10
+FEBRERO/2018 
+-
+JUNIO/2018
+98381333
+801154M
+50
+RESOLUCIÓN DE PROBLEMAS Y TOMA DE
+DECISIONES
+3.55
+11
+FEBRERO/2018 
+-
+JUNIO/2018
+14883724
+801174M
+50
+DISEÑO Y EVALUACIÓN ORGANIZACIONAL
+3.44
+12
+FEBRERO/2018 
+-
+JUNIO/2018
+1115062941
+802026M
+50
+CONTABILIDAD PÚBLICA
+3.22
+ 
+Observaciones:
+No
+Observaciones
+WILLIAM ROLDAN PIEDRAHITA - FÍSICA I 106011M 50
+1
+Excelente Profesor
+2
+Estuvo muy bien, aunque a veces el docente cometía errores conceptuales.
+3
+El profesor no esta abierto a reclamos
+WILLIAM ROLDAN PIEDRAHITA - FÍSICA II 106015M 50
+4
+Buen profesor
+5
+Su manera de calificar no es la mejor y sus explicaciones dentro de la clase a veces se quedan cortas para algunos temas
+6
+La metodologia del profesor ayuda a adquirir los conocimientos necesarios y crea un ambiente de trabajo agradable
+IVÁN DARIO OROZCO TRUJILLO - FÍSICA GENERAL I 106065M 50
+7
+MEJORAR LA METODOLOGÍA EN EL MOMENTO DE EXPLICAR LA CLASE ,Y SABER PROPORCIONAL LA INFORMACIÓN DE LA ASIGNATURA EN
+TODO EL SEMESTRE.
+8
+No prepara la clase no tiene paciencia para explicar es indolente ante situaciones personales de los estudiantes
+IVÁN DARIO OROZCO TRUJILLO - FÍSICA GENERAL I 106065M 51
+9
+Cuando un estudiante le haga una pregunta al profesor, éste deberia responder para que así dicho estudiante no salga con dudas de la clase... pues este
+profesor en varias ocasiones respondió "esas preguntas no son revelantes para su curso", "lo que pregunta no es necesario en su carrera" etc
+10
+Es un profesor muy amable, se ve que prepara sus clases, pero no siento que en su clase este super preparada ya que solo es un dia a la semana y son
+muchos temas por dias, el trata de enseñar lo mejor que puede pero de nuevo repito este semestre algunos de los profesores no motivan.
+11
+Es un buen docente lo unico que no me gusta es que me rebaje por ortografía. es clase de fisica no de lengua
+WILLIAM ROLDAN PIEDRAHITA - EXPERIMENTACION FÍSICA I 106070M 50
+12
+Las clases son muy entretenidas y la metologia del profesor crea un ambiente de trabajo agradable
+WILLIAM ROLDAN PIEDRAHITA - EXPERIMENTACIÓN FÍSICA II 106071M 50
+13
+Excelente profesor.
+14
+Este curso es totalmente importante en la carrera, para no desconocer artefactos y poder llevar a la practica todo lo visto en la teoria, es muy interesante.
+Felicitaciones al profesor por llegar a los estudianted de una manera más amigable, muy responsable.
+WILLIAM ROLDAN PIEDRAHITA - FÍSICA 106094M 50
+15
+Buen Profe
+16
+.
+17
+El docente es muy entusiasta y energico al dictar la clase, siendo claro en sus explicaciones y temas
+18
+Ninguna.
+19
+Buen profesor, se esmera. aunque es un poco rigido
+HECTOR GARCIA RODRIGUEZ - ÁLGEBRA LINEAL 111048M 50
+20
+Ninguna
+HECTOR GARCIA RODRIGUEZ - ÁLGEBRA LINEAL 111048M 51
+21
+Falta de compromiso a la hora de terminas las clases ya que es muchas ocasiones salimos antes de lo estipulado en los horarios sin motivo alguno, hubo
+atraso por falta de clases por que el profesor tuvo compromisos en cuba y sin motivo alguno no se recuperaron las clases que se cancelaron, no hubo
+profesor de aula en todo el semestre y un acopañamiento mas oportuno por parte del docente, pocas cosas vista en la materia y evalua contenido que
+aveces el estudiante no tiene conocimiento
+22
+N/A
+23
+:)
+GERARDO HUMBERTO PERILLA CALVO - ÁLGEBRA LINEAL 111048M 52
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+4/33
+24
+El profesor en un docente muy preparado y de calidad humana excelente me parece que es uno de mejores docente que he tenido..... y espero volverlo a
+ver en alguna materia proximanete
+25
+Es un profesor con aptitudes para la enseñanza.
+26
+Excelente docente y persona
+27
+Implementar otra metodologia diferente
+28
+Ejerció con plenitud y excelencia su rol como docente, teniendo en cuenta la cercanía con el estudiante, permitiendo el despeje de dudas de la misma
+materia e incluso de otras.
+29
+Un muy buen profesor, sabe demostrar de donde surguieron las formulas para mayor entendimiento de el tema explicado
+30
+Es uno de los mejores profes que he visto en mi recorrido por la Univalle, el nos explica bien, pero, con esos parciales parece que explica demasiado bien
+EFRAIN VASQUEZ MILLAN - ECUACIONES DIFERENCIALES 111049M 50
+31
+Un docente muy preparado , el mejor de ecuaciones, cálculo y todo lo relacionado, nos tiene paciencia como estudiantes y explica todas las veces
+necesarias para dejarnos claro el tema.
+32
+Explica muy bien
+33
+Debe planificar mejor el cronograma del curso para no tener que sacar notas en sobretiempo.
+34
+Felicitaciones al profesor por su metodologia asertiva, sus amplios conocimientos y habilidades para enseñar, el profesor es un caballero en todo el sentido
+de la palabra muy humano y respetuoso.
+ROOSVELTH ANTONIO PEREZ CASTRILLON - CÁLCULO I 111050M 50
+35
+Ninguna, todo muy bien
+EFRAIN VASQUEZ MILLAN - CÁLCULO I 111050M 51
+36
+Que es uno de los mejores profesores de la Universidad y que admiro mucho
+37
+La manera de expresar sus conocimientos el profesor se deja llevar de su clase y llega a un punto en que va tan rapido y no se le logra entender con
+claridad lo que explica.
+38
+Excelente docente!!!1
+39
+El docente va muy rápido con cada uno de los temas y no deja procesar la información a sus estudiantes.
+40
+El profesor explica muy rapido y uno no entiende muy bien la clase por que se acelera demasiado
+41
+Tratar de que explique de diferentes formas , no todos tenemos las mismas capacidades para aprender , a algunos se nos dificulta un poco mas y entender
+los conceptos con los que explica el profesor es algo dificil pero efrain es un buen profesor
+42
+Que el profesor explique mejor los temas, ya que muchas veces lo hace perder a uno.
+43
+No
+44
+Mejorar expicacion en los temas y que tengan mas coherencia
+45
+Explicaciones perfectas
+46
+Recomendaria una mayor variedad de interacción de la plataforma (campús virtual) para mejorar el entendimiento, y recomendaciones online para ampliar
+el periodo de estudio y refozar los temas vistos en clase, moderar un poco el ritmo y avance entre cada tema, para ir un poco mas a corde con toda la
+asignatura..
+47
+Un excelente profesor con mucha paciencia a la hora de sus clases
+48
+Deberia entender que todos no entendemos de la misma manera que el, y ademas si todo el mundo perdia los examenes es porque no entienden nada de
+lo que nos enseña
+ROOSVELTH ANTONIO PEREZ CASTRILLON - CÁLCULO I 111050M 52
+49
+Muy buen profesor, seria bueno que nos pudiera dar calculo II ya que el sabe con que conocimientos pasamos al siguiente semestre.
+50
+Dictar un poco mas lento las clases y con mas paciencia
+51
+NO MENOSPRECIAR EL CONOCIMIENTO DE LOS DEMAS ESTUDIANTES
+52
+No menospreciar la capacidad de los estudiantes.
+53
+Mal docente, pido el cambio por favor, gracias
+54
+Falta mejorar el trato hacia los estudiantes y ser más claro en sus temas.
+YONNY JIMENO - CÁLCULO I 111050M 53
+55
+Veo necesaria más asignación de talleres para la casa que sean calificados para incentivar la apropiación de conocimiento.
+56
+Al profesor le falta ser más objetivo en los temas y no desviarse en algunos casos; también debería cambiar el pensamiento de que en el último parcial la
+gran mayoría de los estudiantes perderán dicho examen y ser más responsable con la entrega de los parciales.
+57
+Ninguna
+58
+Un buen profesor.
+59
+Fue un buen profesor
+60
+El profesor deberia tomarse un poco mas de tiempo explicando a los estudiantes que no logramos entender bien el tema, en lugar de decir que si queremos
+repetir el curso, muchas gracias por permitirnos evaluar a los profesores
+61
+El profesor debería explicar un poco mejor y no adelantarse mucho los temas.
+62
+La clase de calculo I fue una clase enriquecedora donde se aprendio lo que se necesitaba saber pero deberia existir mas espacios para el aprendizaje de
+estas materias
+63
+Muy bueno
+HECTOR GARCIA - CÁLCULO II 111051M 50
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+5/33
+64
+Un profesor de exigencias altas, no apto para cardiacos
+65
+.
+66
+El acompañamiento del profersor ayudo mucho para resolver problemas dificiles, el aula ayuda mucho para la comprension de la materia y su refuerzo.
+67
+Mas que el director del programa de tecnología en electronica es un excelente Docente
+68
+El profesor es muy entusiasmado por la clase y se preocupa porque todos entiendan claramente los temas .
+69
+Ninguna.
+ROOSVELTH ANTONIO PEREZ CASTRILLON - CÁLCULO II 111051M 51
+70
+El profesor debe de ser un poco menos surpicaz a la hora de referirse a los estudiantes por no haber entendido algún temo o ejercicio.
+71
+El profesor debe usar una mejor metodologia para que el estudiante aprenda con mucha mas facilidad
+72
+El profesor debe de tener una mayor pedagogia para que la clase sea mas amena y se facilite en entender
+73
+Sin comentarios. :)
+74
+Buen profesor
+75
+Siga así, profe.....
+JAIME AGUDELO MARTINEZ - CÁLCULO II 111051M 52
+76
+Me gustaria para proximos cursos, que el profesor nos diera las respuestas de los talleres de repaso, para asi poder estudiar mejor.
+77
+:*
+78
+:)
+79
+Es muy profesional en lo que hace.
+80
+Un excelente docente, su metodologia permite una facil comprension de los temas de la asignatura
+81
+Felicidades
+82
+Excelente profesor
+83
+5
+84
+Debe agregarse que el docente ejerció plenamente su labor, explico de una manera ejemplar para que cada alumno comprendiera el tema, dejó talleres,
+despejo dudas... Su clase fue amena y grata.Gracias.
+85
+Me gustaria que este mismo docente diera el curso de calculo III en el proximo semestre, excelente en su manera de explicar, La exigencia es la adecuada
+segun a lo que enseña, se nota que tiene un nivel alto de experiencia
+86
+Buen profesor, se entiende bien los temas que explica
+87
+Ninguna, es muy buen profesor
+HECTOR GARCIA - CÁLCULO III 111052M 50
+88
+El profesor tiene una forma de enseñanza muy creativa y excelente
+89
+Pida el curso de ecuaciones diferenciales para que nos enseñe el proximo semestre
+90
+¡Muy buen profesor!, explica muy bien
+91
+Es un excelente profesor, su explicacion es excelente y como persona es genial, es como un padre para nosotros :3
+92
+Buen Profesor
+93
+Debe dar explicación a los temas no entendidos por parte de los estudiantes a la hora de aclarar dudas fuera de clase, debido a la utilización de medios de
+chat como el whatsapp de la creación de un grupo. No se justifica de ningún modo de porque lo haya explicado en clase debe salir diciendo "Yo lo explique
+ese día" u otra frase "Ustedes son de ingeniería" Como profesor tiene el deber de darle al estudiante cierta explicación retomando concientemente su
+tiempo de disponibilidad, lo único es que no se esté justificando.
+94
+.
+95
+Buen profesor
+96
+Excelente docente
+HECTOR GARCIA - MATEMÁTICAS ESPECIALES PARA TECNOLOGÍA 111060M 50
+97
+Excelente profesor.
+98
+Es un excelente profesor, con altos conocimientos, ademas de esto es un excelente coordinador, la universidad es muy afortunada de contar con docentes
+altamente preparados, un gran coordinador y un gran docente.
+99
+Aparte de ser un buen director, es un excelente profesor siempre pendiente de sus estudiantes, un ser muy comprometido y dispuesto a todo por sus clases
+y sus hijos electronicos
+WILLSON ANDRES OROSCO TRUJILLO - QUÍMICA GENERAL 116016M 50
+100
+Excelente docente se nota el maneja de los temas estipulados en clases y la manera de brinda la informacion es clara y precisa...
+101
+Es un excelente profesor, tiene una manera de explicar diferente a la de los demás docentes tiene un buen carisma y buena vibra a la hora de trasmitir los
+conocimientos ya que la clase es larga la hace mas amena.
+102
+BUEN PROFESOR FALTA TIEMPO PARA EXPLICAR MAS
+103
+Muy buen profesor.
+104
+Gran profesor
+MARÍA DEL CARMÉN BENITEZ - PRINCIPIOS DE QUíMICA ORGÁNICA GENERAL 116088M 50
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+6/33
+105
+La mejor
+ESPERANZA MEJIA VARELA - ESPAÑOL 204001M 50
+106
+Excelente profesora, didactica, coherencia y buen manejo de los temas
+107
+:* ;)
+108
+Nada que decir, en general estuvo bien.
+109
+Excelente profesora, nos explica todo muy bien y siempre intenta hacernos ver el español como una herramienta sencilla.
+110
+Domina muy bien cualquier tema que explica
+111
+Buena profesoras un ser muy lindo y también una mujer muy hermosa.
+JAIME PARDO - LECTURA DE TEXTOS CONTABLES EN INGLÉS I 204046M 50
+112
+Muy importante para poder conocer una lengua tan importante a nivel mundial
+113
+Todo bien.
+114
+Es grosero con los estudiantes, no permite que se le pregunte nada, ni atiende quejas o sugerencias, no tiene humanidad. como persona y docente deja
+mucho que desear por su mala educacion y trato asia los demas...
+115
+En la buena profe.
+116
+Es buen profesor y maneja una buena metodología
+117
+Muy bien.
+118
+Este tipo de clases deben ser un poco más lúdicas, ya que son temas difíciles de aprender.
+119
+MEJORAR SU METODO DE ENSEÑANZA
+120
+Debería explicar un poco más los temas.
+121
+Excelente Docente.
+122
+Le habla de una manera no formal a las personas, tiene un temperamento muy malo, y cree que todo el mundo debe saber lo que el explica
+123
+El profesor utilizó metodología adecuada para el entendimiento del curso
+ADOLFO ERNESTO BURBANO CORAL - BUSINESS ENGLISH II 204066M 50
+124
+Muy buen profesor, dedicado, creativo, responsable, con muchas ayudas audiovisuales y un buen método de enseñanza.
+125
+Su metodo evaluativo es confuso, en el momento de realizar observaciones generales regularmente era ofensivo con sus comentarios y en general las
+explicaciones, metodos evaluativos y ejercicios en clase era muy complejos para su desarrollo.
+126
+Se enoja cuando uno le pregunta algo y esa no es la manera y su metodologia tampoco adecuada para enseñar un idioma y menos relacionado a la
+administracion o temas economicos
+127
+No tiene una metodología adecuada para enseñar las clases, su forma de enseñar hace sentir que los alumnos no saben nada y que el sabe mucho,
+cuando se le pregunta algo le da como malgenio que no se sepa acerca del tema
+128
+:p
+129
+Su metodologia hace que la clase sea muy aburridora, es muy triste salir de una clase y no entender nada, deberia de cambiar su manera de explicar y
+nunca crei que un idoma que me gusta se vuelva tan aburridor
+130
+Su pedagogía no es muy clara para mi formación académica.
+131
+El profesor es bueno pero se enoja cuando uno le pide una explicacion
+LARRY PEÑARANDA GÓMEZ - BUSINESS ENGLISH II 204066M 51
+132
+Tiene una muy buena metodologia de enseñanza. Se hace entender.
+133
+Mejorar el modelo de enseñanza
+134
+SERIA BUENO NO DAR TODA LA CLASE EN INGLES PARA PODER ENTENDER
+135
+El contenido de metodologías para transmitir el conocimiento son muy óptimas y facilitan a los estudiantes el poder desarrollar un segundo idioma
+136
+Dar mejores bases a los estudiantes en ingles 1 para no llegar tan perdidos a ingles dos y despedir al profesor Burbano.
+137
+UN BUEN PROFESOR, BUENA METODOLOGÍA AUNQUE ES UN POCO ESTRICTO EN LAS NOTAS...APRENDÍ MUCHO.
+138
+Muy buen profesor, maneja muy bien el area
+139
+RECOMIENDO QUE CAMBIE SU POSTURA FRENTE AL ESTUDIANTE, DEBIDO QUE EL PRETENDE QUE LOAS ALUMNOS SEAMOS EXPERTOS EN
+ESCRIBIR HABLAR Y ESCUCHAR EL IDIOMA INGLES.
+140
+Es muy inflexible, y su metodo de explicacion no fue muy clara.
+141
+El profesor no es comprensivo, es muy cerrado hacia las ideas de los estudiantes y no se preocupa por dejar el tema claro y por mejorar su metodología.
+Explica toda la clase en ingles y muchas veces no es entendible, el acumulado de conocimientos con el que llegamos al curso no es suficiente para su
+comprensión y la metodología que el utiliza nos lo hace más incomprendible.
+142
+Su metodologia no es tan apropiada para comprender los temas.
+143
+Excelent professor
+144
+La metodología empleada para el curso no es la apropiada. porque todos no tenemos un nivel alto de ingles,en todas las horas de clase habla en ingles y
+no le comprendo lo que explica, no se interesa por cambiar la metodología .
+VIVIANA CRUZ SARRIA - LECTURA DE TEXTOS ACADÉMICOS EN INGLÉS I 204101M 50
+145
+Es una excelente docente, la cual brinda un acompañamiento completo a los estudiantes, hace que sus clases sean mas interactivas entre los mismos
+estudiantes.
+146
+Las mejores clases que he tenido, se hacen muy entretenidas y la profesora viviana tiene muchas metodologias de enseñanza y eso me gusta
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+7/33
+147
+Muy buenas las clases :V XD
+148
+El profesor explica claro y las clases son entrenidas
+149
+La mejor profe,muy buena persona y muy profesional,la quiero mucho <3
+150
+Una excelente maestra, tiene muy buen disposicion a la hora de dar las clases y las hece menos monotonas y mas interesantes
+151
+Muy bella la profesora ;) necesitamos mas asi...
+152
+Excelente docente se le nota el empeño que le pone a las clases utilizando diversos métodos de enseñanza explicando clara y dinamicamente los temas
+153
+-seria bueno que la universidad dotara a la docente de mas recursos tecnologicos para mejor la clase. -tener mas tiempo para ganar mas conocimiento en
+el curso y no en curso de relleno innecesarias.
+154
+LOS TEMAS TRATADOS NOS DA EL CONOCIMIENTO NECESARIO PARA PARA VERIFICAR TEMAS DE INGLES EN LO PERSONAL
+ARENAS SALAZAR JOSE FERNANDO - LECTURA DE TEXTOS ACADÉMICOS EN INGLÉS I 204101M 51
+155
+Mi única observacion seria que siguiera con una actividad que desarrolo durante el semestre que fue un taller con los medios tecnologicos y muy dinamico
+156
+No tengop ninguna observacion, ni critica ni aportadora.
+157
+Excelente acompañamiento por parte del docente, ademas de los conocimientos ser acordes a las tecnologias, tambien fue variado en los distintos ambitos
+de la vida cotidiana.
+158
+El profesor es muy objetivo en sus clases y explica de manera muy coherente, y esta muy bien informado de todo , hace falta un laboratorio de multimedia
+159
+Un buen profesor, con amplio conocimiento en el tema y una muy buena metodologia de enseñanza
+160
+Ese man es el mejor
+161
+Falta es un salón de multimedia donde el estudiante y aprenda de manera mas personalizada ademas hay muchos estudiantes por curso lo cual dificulta el
+aprendizaje. el profesor es un excelente docente... y creo que le falta mas apollo por parte de la universidad para tener mejor desarrollo de su metodologia
+162
+Muy buen profesor,muy responsable,respetuoso, exigente, solo faltan espacios mas acordes para las actividades de audio y conversaciones,pero eso ya
+depende de los recursos de la universidad y no del profesor,seria apropiada una sala.
+163
+Es un buen profesor
+164
+Aplicar mas actividades digitales para la participación del estudiantes via Campus Virtual. Con mayor interactividad de la plataforma.
+165
+Creo que las intervenciones del profesor fueron oportunas para nuestro mejoramiento y mucha paciencia
+166
+Muy buen profesor sabe y valora su materia como debe de ser se le ve pasión con que lo hace lo único que no estoy de acuerdo con el profesor es que da
+las explicaciones en ingles pueda que sea su metodología y es respetable solo que no entiendo como transmitir un conocimiento cuando no se da a
+entender que es lo que tiene para informar
+167
+Le recomendaria que hablara un poco mas en español para que todos tengamos claro de que habla , y que explique las consultas en español
+ARENAS SALAZAR JOSE FERNANDO - LECTURA DE TEXTOS ACADÉMICOS EN INGLÉS I 204101M 53
+168
+Cre{i haber le{ido que el 5 es lo mayor.
+169
+Nada.
+170
+Ninguna
+171
+Un buen profesor.
+172
+Fue un buen profesor
+173
+Debería ser más respetuoso con sus estudiantes.
+174
+El profesor es muy grosero con los estudiantes, y al momento de decirle algo a uno lo regaña y dice que uno estuvo todo el semestre en lo mismo y
+molestando cuando nisiquiera le habia llamado la atencion a uno en todo el curso, repito debe mejorar su trato con lo estudiantes, porque es muy
+irrespetuoso,por lo mismo muchos estudiantes cuando toca con el se aburren y la mayoria prefieren no asistir...
+175
+La clase de lectura de textos academicos fue un clase enriquecedora pero se necesita una ayuda para las personas que no saben el idioma y puedan
+aprenderlo mas facil
+ARENAS SALAZAR JOSE FERNANDO - LECTURA DE TEXTOS ACADÉMICOS EN INGLÉS II 204104M 50
+176
+Muy Buen Profesor.
+177
+Buen profesor
+LARRY PEÑARANDA GÓMEZ - LECTURA DE TEXTOS ACADÉMICOS EN INGLÉS II 204104M 51
+178
+Mucha gente no aprende a escuchar el ingles, el profesor no habla en español y mucha gente sigue perdida, se supone que la asignatura es lectura de
+textos academicos en ingles, deberia basarse mas en la lectura que en cualquier otra cosa.
+179
+Es un excelente profesor el unico defecto es que se demora en entregar los resultados de parciales. me gusta mucho su exigencia ya que le ayuda a uno a
+superarse en esa area.
+180
+No cumple con la entrega de las notas.
+181
+El profesor Larry debería de explicar en ocasiones en español, para aquellas personas que se sienten perdidas y no tienen la capacidad de entender.
+Adicional a esto su forma didáctica de enseñar hace que las clases sean amenas, pero por otro lado, los parciales se hacen un poco extensos y como
+recomendación que los tiempos de uso de diccionario sean mas largos para garantizar que se realicen a finalidad los parciales.
+182
+Que. El profe se más puntual a la entrega de notas, de resto Excelente el curso
+ADOLFO ERNESTO BURBANO CORAL - LECTURA DE TEXTOS ACADÉMICOS EN INGLÉS II 204104M 52
+183
+Su metodología no es mala, sin embargo no permite que los estudiantes adquieran el conocimiento requerido para la evaluación del curso, sus
+explicaciones y su actitud fue ética en la mayoría de los casos, pero este trató al grupo de "vagos irresponsables" cuando la mayoría nos esforzamos por
+cumplir con sus criterios de evaluación.
+184
+El docente deberia mejorar su actitud... y ademas no estar cambiando los porcentajes de evaluacion del curso a medida que este va avanzando
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+8/33
+185
+El docente tiene el conocimiento necesario y una metodologia aceptable pero en ocasiones es grosero y sarcastico con algunos estudiantes, ademas
+cambia el tipo de evaluacion acordado con los estudiantes constantemente
+186
+Necesaria otra metodologia
+187
+El docente hace lo que está en sus manos para que el alumno aprenda y pase, sin embargo la manera en que aveces lo hace no es la correcta puesto que
+tiende a enojarse momentaneamente, usar de una manera inapropiada el sarcasmo y formar una tormenta en un vaso de agua.
+188
+Buen profesor, explica bien, ayuda mucho a mejor la gramatica en ingles
+189
+Es un profesor que cree que uno es tan idiota como para no identificar los insultos en el sarcasmo
+ARENAS SALAZAR JOSE FERNANDO - LECTURA TEXTOS ACADÉMICOS EN INGLÉS III 204140M 50
+190
+Parece que se quiera compar una casa con la plata de las fotocopias
+191
+Clases muy monótonas
+192
+¿Y el Kahoot?
+193
+No me parece justo que aunque uno trate de realizar la activdad y se equivoque le coloque un cero, dado que por lo menos lo intento, el cero seria
+justificable si no hubiera por lo menos intentado realizar x ejercicio.
+FREDY VALENCIA CARRILLO - LECTURA DE TEXTOS ACADÉMICOS EN INGLÉS IV 204141M 50
+194
+Buen curso
+195
+Mejorar metodología de enseñanza
+JAIME PARDO - LECTURA DE TEXTOS CONTABLES EN INGLÉS III 204151M 50
+196
+Excelente docente
+197
+Ninguna
+198
+Un profesor muy comprometido por el aprendizaje de los estudiantes, demostrando sus conocimientos y empleando clases dinámicas.
+199
+Excelente profesor.
+ALICIA AGRDA LOPEZ - COMPRENSIÓN Y PRODUCCIÓN DE TEXTOS ACADÉMICOS 204161M 50
+200
+La profesora es una persona muy cordial e integra, pero su metodologia de enseñanza es muy descorcentante, creo que debe ponerse de acuerdo consigo
+misma y ser coherente con lo que dice y hace
+201
+Es una excelente profesora, con buen dominio del tema; siempre brinda apoyo y valora el trabajo de los estudiantes
+202
+Excelente metodologia de enseñanza por parte de la profesora
+FREDY VALENCIA CARRILLO - COMPRENSIÓN Y PRODUCCIÓN DE TEXTOS ACADÉMICOS 204161M 51
+203
+EL profesor tiene ideologías un poco raras que pueden incomodar u ofender a los estudiantes del curso
+204
+-la claridad que poco tiene en el porque del tema. - el no escuchar algunos puntos de vista del los estudiante, que no este conforme con su mismo punto de
+vista casi como un dogma.
+205
+Bastante adecuada la metodología que utiliza el profesor, y apropiada para un mayor entendimiento
+206
+Explicar mas el material entregado.
+207
+Es un excelente profesor con muy buenas habilidades para la enseñanza, por mi parte no tengo queja alguna
+208
+No se debería evaluar con frases especificas sobre tantas copias
+209
+SE ENTIENDE MUY CLARA MENTE LOS TEMAS PROPUESTOS LA EXIGENCIA DEL PROFESOR AYUDA A QUE EL CONOCIMIENTO AVANCE Y NO
+AYA MEDIOCRIDAD EN EL GRUPO ACLARA DUDAS Y GENERA ACTIVIDADES DE MUCHO CONICIMIENTO Y ANALISIS
+210
+Todo fue muy claro
+HECTOR FERNANDO RUEDA RODRIGUEZ - COMPRENSIÓN Y PRODUCCIÓN DE TEXTOS ACADÉMICOS 204161M 52
+211
+Excelente docente.
+212
+Excelente profesor
+213
+Excelente profesor, personas como usted lo motivan a uno a salir adelante y a estudiar, muy buena pedagogía.
+ALICIA AGRDA LOPEZ - COMPRENSIÓN Y PRODUCCIÓN DE TEXTOS ACADÉMICOS 204161M 53
+214
+BUENA DOCENTE
+215
+Muy clara en sus temas.
+ANGELA MARÍA CUARTAS CIFUENTES - PAZ TRANSFORMADORA Y HORIZONTE DE LA RECONCILIACIÓN 403171M 50
+216
+Necesita mayor disponibilidad para consultarle algo al docente.
+217
+Ninguna
+218
+Un buen profesora.
+219
+Fue una buena profesora
+220
+La profesora, es super respetuosa y entre los estudiantes solo se escucha lo mismo, de ella, que es muy amable, que es un amor, es una excelente
+persona y profesora, para ella solo tengo palabras como esas, y simplemente gracias...
+221
+La clase de paz es buena ya que aporta a la sociedad pero se debe hacer mas dinamica la clase y abordar diferentes temas
+NELSON DARIO RAMIREZ CACERES - DEPORTE FORMATIVO 404001M 50
+222
+Excelente trabajo
+JESUS ADRIAN PIEDRAHITA CARDENAS - DEPORTE FORMATIVO 404001M 51
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+9/33
+223
+Excelente Profesor, sus clases son muy bacanas y en cuanto a las clases teoricas las deja muy claras
+JESUS ADRIAN PIEDRAHITA CARDENAS - DEPORTE FORMATIVO 404001M 52
+224
+Muy bueno
+225
+Mejorar el trato, disposición y la actitud hacia los estudiantes.
+NELSON DARIO RAMIREZ CACERES - DEPORTE FORMATIVO 404001M 53
+226
+Lo que falta en este curso es una mejora de espacios de recreación el profesor se ve muy limitado en esos espacios por lo cual las clases no son lo mejor
+.... como docente siempre ve que los estudiantes participen de todas las actividades.
+227
+Es un buen profesor
+228
+El profesor nelson es muy puntual, responsable,respetuoso, su clase me gusta mucho por que motiva.
+JESUS ADRIAN PIEDRAHITA CARDENAS - DEPORTE FORMATIVO 404001M 54
+229
+:v
+230
+Es muy competente, ejerce su profesión de la mejor manera.
+231
+Toda la clase es muy dinamica, el profesor es muy respetuoso y hace la clase divertida, lo unico malo son las salidas pedagogicas que hace fuera de la
+universidad, y siempre falto porque no me gustan las odio, y muchos de los compañeros que faltan a esas actividades es por lo mismo, desearía que
+hicieran la clase siempre en la universidad, con la misma energía del profesor y se limitaran a eso.
+232
+MUY BUEN TRABAJO!!
+233
+Un buen profesor, tiene buenas didacticas y son entretenidas sus clases
+234
+Excelente docente
+NELSON DARIO RAMIREZ CACERES - DEPORTE FORMATIVO 404001M 55
+235
+Una buena clase de esparcimiento
+236
+Todo bien.
+237
+Todo bien
+238
+No considero que una carrera sea forma correcta para sacar una nota, venga a adquirir conocimientos no estado físico
+239
+CUMPLE CON MIS EXPECTATIVAS
+240
+Debe prestar más atención en las salidas académicas para estar más al tanto de los estudiantes.
+241
+El Docente no debe contar con el tiempo de los estudiantes para poner clases fuera de la programacion nocturna a la que pertenecemos.
+242
+Buen docente.
+243
+Son amenas y útiles las clases
+244
+La clase de deporte es muy divertida pues se convierte en un espacio diferente y el cual nos ayuda en muchos aspectos
+JESUS ADRIAN PIEDRAHITA CARDENAS - DEPORTE FORMATIVO 404001M 56
+245
+Contribuye a sentir amor con el deporte
+246
+Si
+247
+Excelente docente, hace sus clases teoricas muy amenas , claras y precisas, disponibilidad y vocacion para dictar sus clases y despejar las dudas
+248
+Es una de las clases mas agradable, muy profesional en su trabajo, buena persona. excelente
+249
+Definitivamente por algo tiene el título de Coordinador de bienestar Universitario. Un ser humano excelente
+NELSON DARIO RAMIREZ CACERES - DEPORTE FORMATIVO 404001M 57
+250
+La clase es muy participativa y dinámica . Estoy de acuerdo con su metodología.
+251
+Su manera de enseñar es muy buena las clases eran muy entretenidas
+252
+ES UNA MATERIA MUY BUENA
+253
+La clase deberia durar tres horas como todas las demas
+254
+Muy buen profesor, me encanta su manera de dar la clase
+255
+Un gran profesor con su metodologia de enseñanza nos generó una nueva perspectiva frente a nuestros habitos alimenticios y de la manera de cuidarnos.
+256
+Muy buen espacio para recreación y actividades ludicas muy buenas que ayudaron a la convivencia Y BUEN USO DEL TIEMPO LIBRE
+257
+Es un profesor muy bueno.
+258
+Buena metodología!
+259
+Buen profesor.
+260
+Muy buen conocimiento.
+261
+Deberia ser en un semestre mas adelante.
+NELSON DARIO RAMIREZ CACERES - DEPORTE FORMATIVO 404001M 58
+262
+Buen profesor
+263
+Curso divertido y bien dirigido
+264
+Muy buen horario de clase
+HAROLD ALDANA - TALLERES DE AUDITORÍA II 607063 50
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+10/33
+265
+Exelente docente
+ALBERTO ELIAS FLOREZ NIETO - TALLERES DE AUDITORÍA II 607063 50
+266
+Exelente docente
+ANDRES FELIPE CANIZALES CASTRO - TALLERES DE AUDITORÍA II 607063 50
+267
+Exelente docente
+MARCIA ELENA JIMENEZ GUERRERO - AUDITORÍA II 607136 50
+268
+Toda la asignatura la recibi en la sede de cali , lo cual la dra no me dio clases este segundo semestre
+HAROLD ALDANA - GERENCIA DE AUDITORÍA 607138 50
+269
+Exelente docente
+ALBERTO ELIAS FLOREZ NIETO - GERENCIA DE AUDITORÍA 607138 50
+270
+Exelente docente
+HAROLD ALDANA - LA SUPERVISIÓN EN AUDITORÍA 607146 50
+271
+Exelente docente
+CARMEN ALICIA ANDRADE PEREZ - MANEJO DE CONFLICTOS 607147 50
+272
+Recibi las clases en cali por lo cual no tuve clases con la profesora
+HAROLD ALDANA - SISTEMAS DE CALIDAD Y AUDITORÍA 607150 50
+273
+Exelente docente
+DAMIRA MEDINA RUIZ - CONSTITUCIÓN POLÍTICA DE COLOMBIA 700012M 50
+274
+La clase es pesada, y los temas son demasiado extensos para un solo curso
+275
+Excelente
+276
+Buena Docente
+277
+Ninguna mala observación muy buena profesora.
+278
+Debe mejorar la forma de dar las clases, ya que pasado media hora se aburre todo mundo y empieza a dar sueño, debe de hacer la clase un poco mas
+dinamica para que sea un poquito interesante.
+279
+Exelente prfesora
+280
+Muy buena
+GERARDO HUMBERTO PERILLA CALVO - CONTROLADORES PROGRAMABLES -E- 710119M 50
+281
+Me parece un excelente docente muy buen profesor muy flexibe y muy entendedor
+HECTOR GARCIA - INTRODUCCIÓN A LA TECNOLOGÍA ELECTRÓNICA 710189M 50
+282
+Un excelente acompañamiento por parte del docente, el cual al terminar los temas que ya estaban estipulados decidio continuar con nuevos los cuales han
+sido de completo provecho par mi formacion educativa
+283
+Deseo que se posibilite terminar la ingeniería en electronica en esta sede y así poder seguir ampliando el conocimientos con mayor facilidad me parecen
+muy constructivas la aulas ya que nos ayudan a mejorar, reforzar, y complementar nuestros conocimientos
+284
+El profesor aclaro muchas dudas que tenia y explica bien
+285
+El profesor es muy persistente por el grupo de Whatsapp, sin embargo se esfuerza para que sus estudiantes aprendan más de lo planeado
+286
+Que se haga posible que aquí,en tuluá pongan la ingenieria en electronica
+287
+Me gustaria que se implementara la ingenieria en electronica
+288
+Gran profesor con una muy buena metodología
+289
+Buen profesor
+290
+Me gustaria que esta sede pudiera seguir mi carrera profesional Ing eletronica
+291
+Repasar el caso de la ingenieria accesible para Tuluá gracias
+292
+Muy buenas las instalaciones de laboratorio, las aulas de matemáticas, son de gran ayuda. El profesor ha sido muy pro-activo, dinámico y sus enseñanzas
+son claras, adicional a esto es un profesor dedicado que dedica tiempo extra clase para nuestro aprendizaje. Como sugerencia, viendo el pensum completo
+y profesores tan comprometidos, deberían considerar abrir la ingeniería en electrónica en la sede Tuluá.
+293
+-contar en nuestra sede con la carrera de ingeniería electrónica. -contar con un lugar mas amplio para nuestro laboratorio.
+294
+Las condiciones de la sede son adecuadas para el funcionamiento de la carrera de ingenieria electronica .
+295
+Excelente profesor, niguna queja, aunque me gustaria que hubieran mas aulas y mas horarios de laboratorios
+296
+-buen educador en su dependencia academica - tambien su gran ayuda para la comprecion de algunos tema de tipo matemtico con su aublas de
+matematicas -tambien la dispoccion del laboratorio para todos los estudiantes del progrma academico -tambien me gustaria que inplemetaran mas
+semilleros de investgacion en arias donde la electronica puede mejorar calidad de vidad de muchos individuos -la implementacion de la carrera de ingeneria
+electronica aqui en tulua
+297
+El profesor es atento y se preocupa por los estudiantes, nos guío para cumplir con los temas planteados
+298
+EN LA AULA LOS CONOCIMIENTOS QUE SE ADQUIEREN Y LA BUENA METODOLOGIA DEL PROFESOR AYUDAN A COMPRENDER LOS TEMAS
+RELACIONADOS CON LO APRENDIDO LAS AULAS DE MATEMATICAS AYUDAN A FORTALECER LOS CONOCIMIENTOS CON AYUDA DE
+MONITORES ESTIPILADOS POR EL PROFESOR TAMBIENEN EL LABORATORIO ENTENDI EL FUNCIONAMIENTO PRACTICOS DE LAS COSAS Y
+APRENDE MUCHO GRACIAS A QUE LAS HERRAMIENTAS SON FUNDAMENTALES PARA LA TECNOLOGIA LAS AULAS ESTAN MUY BIEN
+DOTADAS CON AIRE ACONDICIONADO Y VIDEO VI
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+11/33
+299
+Muy buen profesor
+RAMIRO ANTONIO VICTORIA ALVAREZ - INSTRUMENTACIÓN ELECTRÓNICA BÁSICA 710190M 50
+300
+Es un profesor con un conocimiento excepcional y ello implica que los estudiantes entiendan cada una de sus explicaciones.
+301
+Un excelente profesor sin queja ni duda alguna y si ve esto perdirle disculpa porque Aveces no atender a su clases como debe ser..... Un profesional
+totalmente y con un gran conocimiento sin duda uno de los mejores docentes de Univalle.
+302
+Excelente profesor
+WALTER WILLIAM MONTOYA BARCENAS - SISTEMAS ELECTROMECÁNICOS 710191M 50
+303
+Muy buen profesor !!
+304
+Un excelente docente, el mejor del area en la que se desempeña, su manera de enseñar es unica; y su trato con los estudiantes el mejor. Gracias profesor
+por acompañarnos en la carrera!!
+305
+Es un excelente profesor, de muy alta calidad.
+306
+Muy buen profesor, siempre comprometido con sus estudiantes.
+307
+Excelente profesor.
+JAIME PEREZ HERNANDEZ - SISTEMAS ELECTROMECÁNICOS 710191M 51
+308
+Muy bien
+309
+Excelente profesor
+MARCO ANTONIO FULA ORTIZ - ARQUITECTURA DE COMPUTADORES I 710192M 50
+310
+En mi opinión, esta asignatura debería tener mas creditos, puesto que exige mucho estudio aparte de la clase.
+311
+En las explicaciones quedan algunas dudas en el aire
+312
+Sus explicaciones no van mas allá que ejemplos basicos
+313
+Algunos temas que explica no quedan muy claros
+314
+Algunas veces en los talleres y pre-informes, no es claro en lo que solicita presentar.
+315
+Algunos temas no quedan lo suficientemente claros y en los libros los ejemplos no son muy explícitos, entonces a la hora del examen se ven los resultados
+negativos, debería poner ejemplos en la clase de más nivel o difíciles para mayor comprensión
+JULIAN ENRIQUE CASTRO SEGURA - ARQUITECTURA DE COMPUTADORES I 710192M 51
+316
+Ninguna
+317
+Exelente profesor de arquitectura
+318
+N/A
+319
+Todo bien
+320
+La metodología usada por el profesor no fue la mejor. Debería de explicar de una mejor manera e ir a paso de los estudiantes.
+321
+Ninguna, que siga así...
+GERARDO HUMBERTO PERILLA CALVO - ARQUITECTURA DE COMPUTADORES II 710193M 50
+322
+Gran profesor.
+323
+Excelente
+324
+No pude asistir al curso por tal motivo no calificare la asignatura
+IVAN DARIO ARISTIZABAL - ELECTRÓNICA BÁSICA 710197M 50
+325
+Es un profesor con una calidad excepcional, nunca te vayas :,v
+326
+Muy buen profesor, cumple con todo lo establecido y muy buena y clara explicacion
+327
+.
+328
+Ninguna.
+329
+El docente es muy positivo y preocupado para que la clase sea mucho mas entendible y comprensible por los alumnos haciendo de la clase mucho mas
+didactica
+330
+Se entrega en su labor de docente.
+331
+Buen profesor, ecxelente persona, un ser muy humilde
+RAMIRO ANTONIO VICTORIA ALVAREZ - CIRCUITOS INTEGRADOS 710198M 50
+332
+Es un excelente profesor
+333
+Excelente profesor
+334
+Excelente profesor, el mejor en todas las areas de la electronica; una persona integra y responsable con su trabajo, asi mismo su comprension y
+sensibilidad hacia el estudiante hace de su asignatura una de las mejores de la carrera, pues pese a su dificultad este hace lo propicio para que el
+estudiante se sienta seguro y pueda desempeñar los temas vistos en clase perfectamente.
+335
+La universidad del valle sede tulua, es afortunada en tener a profesores como lo es ramiro, en todos los factores, personales, sociales y academicamente
+es un excelente maestro, como lo anteriormente dicho; la universidad es afortunada en tener a profesores de tan alta calidad.
+336
+Un profesor comprometido, siempre esta disponible para sus estudiantes, una persona que maneja el tema a la perfección, es una persona que le aporta
+mucho a la universidad, más personas como estas en la universidad y la UNIVERSIDAD DEL VALLE y sera aun más de calidad.
+337
+El mejor profesor
+338
+Excelente profesor
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+12/33
+339
+Un excelente profesor en el cual se puede encontrar muy buena informacion
+340
+Excelente profesor.
+341
+Excelente profesor, de admirar. gracias
+GERARDO HUMBERTO PERILLA CALVO - FUENTES Y AMPLIFICADORES 710199M 50
+342
+Muy buen profesor.
+343
+Es un excelente profesor con arduos conocimientos.
+344
+Muy buen profesor, sabe de que habla en sus clases, una persona comprometida con la universidad, siempre esta disponible para sus estudiantes, por
+profesores como estos seremos grandes.
+345
+Excelente profesor
+346
+Un excelente profesor el cual nos dio una buena informacion para poder aprender mas cosas
+347
+Excelente profesor.
+348
+Muy buen profesor, resuelve nuestras dudas durante la clase y fuera de la clases, exige mucho.. y es algo que nos hacia falta, sabe dar la clase y dejar
+claros los temas.
+349
+Domina muy bien el tema, aunque deberia mermar un poco la intencidad de los proyectos y laboratorios para mejorar el rendimiento en otras materias.
+gracias
+RAMIRO ANTONIO VICTORIA ALVAREZ - MEDICIONES ELECTRÓNICAS 710202M 50
+350
+Excelente trabajo
+JUAN SEBASTIAN CORREA FERNANDEZ - MICROPROCESADORES I 710204M 50
+351
+Excelente profesor !!!! :3
+352
+El mejor profesor en el area, gracias por enseñarnos!!!
+353
+Es un profesor excelente, por profesores como este es que la universidad tiene tan buenos estudiantes, no obstante a las carreras que le da clases,
+especialmente al programa 2710, nos sentimos afortunados de tener a profesores de tan alta calidad en el programa.
+354
+Muy buen profeso, siempre esta para sus estudiantes, muy comprometido con nosotros, dispuesto a enseñarnos grandes cosas que nos hacen mejores
+cada dia.
+355
+Excelente profesor
+356
+Excelente profesor, siempre dispuesto para sus estudiantes.
+357
+Buen profesor, seria bueno tenerlo en la materia de algoritmia y programacion ya que domina muy bien el tema, gracias
+JUAN SEBASTIAN CORREA FERNANDEZ - MICROPROCESADORES I 710204M 51
+358
+Excelente trabajo
+359
+Excelente profesor, de los mejores que tiene la universidad
+360
+Su metodologia de enseñanza es muy buena.
+DAMIRA MEDINA RUIZ - EL MEDIO AMBIENTE EN LA CONSTITUCIÓN POLÍTICA DE COLOMBIA 730069M 50
+361
+Excelente trabajo
+MAURICIO VIDALES DIAZ - IMPACTO AMBIENTAL DE LA TECNOLOGÍA 730125M 51
+362
+MEJORAR LA METODOLOGÍA QUE SE DA EN CLASE ,FALTO MUCHO MAS CONOCIMIENTO Y SACAR TIEMPO EMPÍRICO
+363
+Simplemente me gusta mucho este docente.
+364
+El profesor es muy respetuoso :3
+365
+Me gustaría que el profesor ambientara mas sus clases. Dicho esto el profesor explica de forma adecuada.
+MAURICIO VIDALES DIAZ - IMPACTO AMBIENTAL DE LA TECNOLOGÍA 730125M 52
+366
+Con respeto, el profesor debe de mejorar su tecnica de dar clases para estar masa atentos e interesados y con mayor compromiso ya que es una materia
+que a mi parecer debe de afectarnos mentalmente muy positivo para colaborar con el medio ambiente y tener un poco de sentido común aquellas personas
+que no valoran la naturaleza.
+LIBARDO CASTAÑEDA - QUÍMICA DE ALIMENTOS 745007M 50
+367
+No se le entiende
+368
+El profesor libardo, es un poco desordenado en algunas de las explicaciones dice incoherencias, en su clase realmente no siento que halla aprendido
+algo,el tiene mucha disponibilidad y es muy amable pero le falta mejorar.
+369
+El profesor fue muy proactivo en su enseñanza demostro cambio en su manera de dirigir la clase, es un gran docente..... espero verlo como docente en
+laguna otra materia la recomendación que simpre he dicho es que los laboratorios estan muy descuidados, faltan materiales para trabajar no hay.... no hay
+presupuesto mas ayuda para las sedes regionlaes
+370
+Capacitarse en pedagogia
+LEONARDO ENRIQUE NIETO ANILLO - TOXICOLOGÍA DE LOS ALIMENTOS 745023M 50
+371
+Utiliza una muy buena metodologia, se presta para resolver cualquier duda que el alumno pueda tener y es muy colaborador no solo en su area sino en
+cualquiera de la que tenga conocimiento .
+372
+El profesor ademas de tener una muy buena metodologia, responde dudas acerca de cualquier tema que tenga conocimiento
+373
+Es uno de los mejores docentes que tenemos en la carrera, tiene un carisma fascinante, esta muy bien preparado en su campo y en todos los campos de la
+carrera debido a que a sido de mucha ayuda para otras asignaturas, trata que la clase sea muy amena. ojala siga asi.
+374
+PROFESOR DE ADMIRAR.
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+13/33
+375
+El profesor maneja una muy buena metodología haciendo amenas las clases, adicional a esto esta en capacidad de brindar mayor parte de su
+conocimiento sin esperar nada a cambio. Parte de su clase y de su tiempo la brindo para explicar otros temas de clases diferentes a la misma.
+Recomendaría que tuvieran en cuenta al profesor para que diera la asignatura NUTRICIÓN, debido a que según opiniones de otros compañeros de otras
+sedes la dicta de forma amena y muy clara. Se nota la pasión de enseñar y las ganas de generar conocimiento en los estudiantes.
+MABEL BEATRIZ ESQUIVIA MERCADO - MICROBIOLOGÍA DE ALIMENTOS 745032M 50
+376
+La mejor de todas
+LEONARDO ENRIQUE NIETO ANILLO - INTRODUCCIÓN A LA TECNOLOGÍA EN ALIMENTOS 745033M 50
+377
+FALTA EXPLICAR MAS
+378
+.
+YONNY JIMENO - PRÁCTICA TECNOLÓGICA 745034M 50
+379
+Docente con un grado de responsabilidad y puntualidad
+380
+No hay ninguna observacion
+LILIANA ESTELLA MONTAÑO CAICEDO - ASEGURAMIENTO DE LA CALIDAD EN LA INDUSTRIA DE ALIMENTOS 745035M 50
+381
+Tiene algunas fallas pero da muy buenos ejemplos practicos y su forma de explicar deja muy claras las cosas
+382
+Se pierden mas clases, de lo que se ven.
+SALAZAR BOLAÑOS SANTIAGO - ELEMENTOS DE PROCESOS EN LA INDUSTRIA DE ALIMENTOS 745037M 50
+383
+El profesor santiago, muy inteligente sabe muchas cosas,pero como una critica constructiva deberia mejorar su metodologia es una persona muy paciente y
+de igual manera habla, no motiva,y esa materia es de la mas importantes de la carrera pero en este semestre no siento que halla aprendido mucho no solo
+con el, si no con dos docentes mas.
+384
+El profesor es un gran docente lo unico que le recomiendo es que use mas variedad de color de marcadores debido a que unas materia que tiene muchos
+diferentes procesos y aveces se satura con el mismo color y enreda la clase....
+385
+Excelente...
+386
+Excelente profesor
+LINA JIMENA MARMOLEJO GUTIERREZ - TECNOLOGÍA DE FRUTAS Y VERDURAS 745045M 50
+387
+Docente muy puntual con una gran experiencia
+388
+La profesora lina es una docente muy abierta a consultas y se preocupa bastante porque sus estudiantes aprendan lo mas que puedan
+LILIANA ESTELLA MONTAÑO CAICEDO - FUNDAMENTOS DE NUTRICIÓN HUMANA Y ANIMAL 745050M 50
+389
+La profesora no tiene la culpa de esta mala calificacion, pues la profesora no es nutricionista y el tema se siente que es dado con muchas dificultades. para
+mayor aprovechamiento de esta asignatura deberian contratar un profesional en el tema.
+390
+Es una docente que no esta preparada para impartir el curso de nutrición dado que no posee los conocimientos necesarios, a parte de ello es irresponsable
+con el cumplimiento de los horarios y la metodologia utilizada no facilita el entendimiento del contenido del curso.
+391
+No se explica bien, los talleres que hacia no era tan profesionales como deberia de ser y siempre llegaba tarde
+392
+La docente se caracteriza por ser un ser humano muy amable y respetuosa con sus estudiantes pero eso no le da el derecho a que sea tan irresponsable
+con su labor a parte de eso no esta lo suficientemente preparada para la asignatura que se la sido asignada. a pesar de todo tiene un buen carisma.
+393
+Es una docente que no cumple con un horario, no prepara su clase con anticipacion y solo lee diapositivas sin dejar todo los temas claros, se confunde
+mucho a la hora de explicar y eso da a entender que no domina el tema, es mejor bucar un profesor que entienda sobre la materia debido a que es algo
+muy importante para nuestra carrera como tal, alguien que domine el area y no solo la dicte por dictarla. con respecto a las evaluaciones no sabe calificar,
+uno consulta sobre los errores que tiene y no sabe contestar en que fallamos, o quizas no fallamos en nada y simplemente no coloca buena nota, uno se
+caracteriza por contestar lo que le preguntan y sin embrago para ella no es valido, en el curso toco devolver los parciales para que los ''revisara
+nuevamente'' y hasta ahora no los a entregado.
+394
+La docente Liliana se caracteriza por su impuntualidad a clase, TODAS las clases llega muy tarde, no cumple con su horario, es la última en llegar y la
+primera en querer irse. El día del parcial llegó más de una hora tarde y pretendía terminar a la hora de salida normal, cuando debía darnos el tiempo que
+corresponde la clase (3 HORAS) La profesora es demasiado incoherente con sus calificaciones, debido a que nos califica mucho menos de lo que
+realmente es y cuando le preguntamos que por qué tan baja la nota, sólo responde que los va a revisar otra vez o en su defecto dice "Es una brecha para
+la mejora continua" lo cual me parece demasiado patético, ya que no es el área adecuada para aplicar esa metodología, y si así lo fuera, a las personas se
+le da lo que MERECE, no lo que a ella le plazca. La docente no enseña para nada bien, sólo quiere PERDER el tiempo haciendo actividades que no tienen
+nada que ver con la clase como sandwich, ensaladas... que APROVECHE el tiempo enseñándonos más bien... Nos enseñó el tema MÁS importante del
+semestre y nos lo enseñó MAL, nos tocó ir en busca de otro docente para que nos explicara porque ella NO lo supo hacer, que PORFAVOR la saquen de
+nutrición, NO ES SU CAMPO, de hecho su campo no es NINGUNO :)
+395
+La profesora no esta en capacidad de dictar el curso NUTRICIÓN HUMANA Y ANIMAL, debido a la falencia en entregar los conocimientos, adicional a esto
+una recomendación a la UNIVERSIDAD y es contratar a profesores que estén especializados en la asignatura para facilitar la adquisición de conocimientos.
+Por otra parte la profesora es muy poco comprometida por llegar a tarde a clase y no mostrar el interés suficiente. Basándose en lo anterior la profesora
+calificaba de forma confusa los exámenes, no poniendo la nota merecida por el estudiante. Para finalizar una de las características de la profesora es su
+carisma, y su bondad.
+396
+No está capacitada para dar el curso de fundamentos de la nutricion.
+397
+La profesora es muy agradable , ella le pone empeño a lo que hace, pero en realidad le falta mas infomacion en esta area de nutrcion.
+DANIEL RENGIFO MEDINA - TECNOLOGÍA DE CARNES Y PRODUCTOS CÁRNICOS 745121M 51
+398
+Excelente profesor
+399
+Excelente docente con un gran conocimiento, tiene como fortaleza su gran responsabilidad y puntualidad
+400
+Excelente docente
+KATHERINE SOTO QUINTERO - TECNOLOGÍA DE CEREALES Y OLEAGINOSAS 745123M 50
+401
+Excelente docente.
+LIBARDO CASTAÑEDA - MANEJO DE SÓLIDOS Y FLUIDOS 745129M 50
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+14/33
+402
+La metodologia utilizada fue pesima, el curso fue irrelevante para mi formación, no por el contenido como tal del mismo sino por que el docente no supo
+impartirlo, se notaba que no habia ningun tipo de planeacion de las clase el nivel de improvisacion era muy alto, al punto de ni si quiera comprender él
+mismo los ejercicios.
+403
+La asignaturas siento que debe ser más práctica que teorica, siento que el profesor habla demasiado y se va alejando del tema de clase, ademas, hay un
+cierto aire a improvisacion en sus clases, parece que no las preparara.
+404
+Es un buen docente
+405
+El docente no debería dictar las clases.... debe prepararse más para llegar a ser un profesor de verdad. le falta mucho para que los estudiantes se tomen
+en serio su clase, no sabe explicar bien, se enreda y por ende nos enreda a todos. Él es muy buena persona pero eso no es suficiente para formar
+PERSONAS EN LA UNIVERSIDAD.
+406
+Tiene una muy buena actitud de enseñanza pero no se desenvuelve bien al explicar un tema, puede tener el conocimiento pero se enreda mucho al
+explicarlo, no es muy claro y quedamos con muchas dudas al respecto, hay temas que simplemente no se veran por que hemos ''perdido'' tiempo
+explicando algunos temas y algunos que son importantes para la carrera no se veran.
+407
+Es una persona un carisma muy lindo pero a la hora de enseñar no es claro se confunde mucho mezcla temas y es algo que debe de mejorar.
+408
+El profesor se caracteriza por querer transmitir el mayor conocimiento a sus estudiantes, sin embargo en ocasiones la forma de explicar es confusa,
+haciendo difícil la adquisición de conocimientos. Por otro lado se recomienda que los ejercicios del área se hagan en el tiempo requerido y explicados de la
+mejor forma, debido a que deja talleres extensos cuando solo explica pocos ejercicios.
+409
+Es muy buen profesor comparte mucho sus conocimientos
+YONNY JIMENO - TRANSFERENCIA DE CALOR 745510M 50
+410
+Excelente docente en todos los aspectos.
+411
+La unica observación seria para aplaudir el trabajo del profesor yonni, maneja una metodologia muy buena, aborda los temas con autoridad, a pesar de que
+el tema sea complicado trata de llevar al maximo la claridad de este.
+412
+Es un excelente docente a la hora de explicar, a la hora de evaluar es acorde a los temas vistos en clase. El unico problema es la demora a la hora de
+entregar las notas, de resto es un gran profesor.
+413
+Es el mejor profesor que tenemos siempre lo a sido desde los semestres pasados, el unico problema es que se demora para entregar los resultados de los
+parciales.
+414
+Lo único sería que entregue las notas a tiempo :c de resto es un excelente profesor
+415
+El profesor se caracteriza por brindar el conocimiento de forma clara. La materia es lo suficiente dura, por tanto recomiendo que se hagan mas ejercicios en
+clase y que se vea el acompañamiento del docente.
+416
+Me gustaría que el profesor al momento de iniciar un tema, explicará por lo menos de 3 ejercicios o más, por que pasa muy rápido a los siguientes temas,
+sin estar claros los anteriores, es una materia muy importante por ello se necesita más información, de resto Johnny muy buen profcesor.
+ALBEIRO APONTE - ALGORITMIA Y PROGRAMACIÓN 750001M 50
+417
+.
+418
+El docente es muy positivo y enérgico a la hora de enseñar, pero en ocasiones la clase es un poco difícil de entender por la forma tan técnica de explicar.
+419
+Te da un destornillador para armar un carro*****
+420
+Deberia mejorar la manera de explicar algoritimia con las facilidades que ofrecen los software de programacion de pseudocodigo como lo es Pseint, ya que
+esta es una materia más practica que teorica, aunque la teoria no se debe dejar de lado, con la practica se logran mejores resultados y mas si es en un
+software que permite prueba y error como si fuera un compilador de c++, ya que el papel es algo ortodoxo en esta era de la digitalización. Espero lo tomen
+en cuenta ;) i love you
+421
+Ninguna.
+422
+El profesor tiene motivación para enseñar, es bueno; sin embargo la metodología no es la mejor, o así lo siento; debería ser un poco más práctica que
+teórica, y tratar de emplear un solo lenguaje luego de haber aprendido pseudocodigo, porque es como tratar de enseñar dos idiomas al mismo tiempo,
+queda muy saturado y se pierde algo de enfoque, puesto que la idea es desarrollar al máximo las habilidades en C++. el curso debería partirse en dos, en
+primer semestre implementar solo pseudocódigo y que ayude a fondo a desarrollar la lógica de programación. y luego, ya en tercer semestre hacer que el
+curso sea full C++. podría ser una opción, porque la realidad es que muchos de los compañeros de semestres más avanzados han tenido las mismas
+falencias que nosotros sentimos en este momento. no obstante cabe destacar que el profesor trata de dar todo de sí para que el estudiante entienda, pero
+falta un poco más. Es una crítica constructiva y desde el enfoque de un estudiante que aprendió... pero siente que el curso es para ir más a fondo.
+JOHN ALEXANDER VARGAS - COMPUTACIÓN GRÁFICA 750006M 50
+423
+Actualización de los temas del curso, considero que ya están obsoletos para nuestra formación. Las librerias de OpenGl deberian ser una base pero el
+curso deberia enfocarze en herrramientas mas actuales.
+424
+El contenido del curso se encuentra muy desactualizado, en estos momentos lo que se aprende en este curso es obsoleto.
+425
+El curso se encuentra desactualizado
+426
+Como observación constructiva creo que el contenido del curso esta desactualizado para el tiempo en la cual es dictada, existen otros software mucho más
+potentes y que pueden mejorar la experiencia del estudiante y darle verdaderamente un aporte a su enriquecimiento profesional. Las técnicas (contenido) y
+el software empleado a mi parecer son rudimentarios. Realmente como estudiante pensé que este curso podría ser más interesante, pero debido a los
+items anteriormente nombrados la experiencia no fue tal cual como me lo imaginé. Sinceramente el crecimiento profesional que este curso pudo dejarme no
+es muy grande.
+427
+El curso de computacion grafica se encuentra desactualizado, en este hacemos uso de librerias que hoy en dia ya no se utilizan, ya que las tecnologias han
+mejorado pero el curso siguen dandolo con conceptos de hace muchos años
+428
+Es un exelente profesor, con mucho conocimiento y se da a entender
+429
+Se debe actualizar el programa, el curso es muy interesante pero la herramienta que se usa para el aprendizaje es obsoleta hoy en día, debido a esto hace
+que se pierda un poco el interés.
+430
+Excelente profesor y persona.
+ALBEIRO APONTE - SISTEMAS OPERATIVOS 750008M 50
+431
+Excelente profesor !
+432
+Xd
+433
+Entregar las evaluaciones a tiempo, dar explicaciones mas claras y practicas
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+15/33
+434
+El profesor tendría que mejorar en la redacción de las preguntas de los parciales porque no se entienden en algunos puntos lo que pide.
+JOSE LUIS UNAS GOMEZ - SISTEMAS DE INFORMACIÓN I 750022M 50
+435
+Excelente profesor
+436
+Ninguna
+437
+Buen docente
+438
+Buen docente.
+439
+Bien en general
+440
+Es un profesor exelente, con metodologia, pedagogia, es buena persona. Para mi fue un gusto encontrarme con porfesores como el que dia dia se
+empeñan porque el estudiante aprenda y mejore.Seria bueno que otras gneraciones tambien gozen de este docente. Lo unico malo fue que nos hizo unos
+escritos hace como un mes y no los ha entregado por eso obtiene un 4 en entrega de resultados a tiempo.
+ORLANDO TAMAYO LLANOS - SISTEMAS DE INFORMACIÓN I 750022M 51
+441
+ES UN EXCELENTE PROFESOR
+JOHN ALEXANDER VARGAS - BASES DE DATOS I 750030M 50
+442
+Buen profesor, deja claro los temas y apoya mucho con talleres para mejorar y aplicar los temas que enseña. Siga asi profe
+JOSHUA TRIANA MADRID - INTRODUCCIÓN A LA INTELIGENCIA ARTIFICIAL 750033M 50
+443
+Buen docente
+444
+Creo que es un curso con mucho potencial por explotar y la verdad se queda corto el tiempo para todo el contenido que tiene esta área.
+445
+Solo queda resaltar la labor del profesor joshua tanto dentro del aula como feura de esta, se nota comprometido para con sus estudiantes es una persona
+muy amable dispuesto a resolver dudas y apoyar el proceso de formacion del estudiante motivandolo a investigar
+446
+Es buen profesor, la única observación que hago es que no entregó la solución de los parciales, las decía al final de los parciales (hablada), pero considero
+que así no es suficiente debe haber un procedimiento escrito para hacer una retroalimentación.
+447
+Muy buenas explicaciones en clase, atento a dudas en clase, y método de calificación eficiente
+448
+Excelente planificacion del curso. El docente es una gran persona y a nivel profesional es de admirar. Docentes como el son los que la Universidad
+necesita.
+449
+El curso es muy interesante y motivador, el profesor es muy respetuoso, responsable, amable y responde dudas a tiempo por cualquier medio. Es una
+persona realmente muy capacitada en todos los temas que conllevan a la IA, excelente profesional. lo que no tuvo mucha coherencia en el curso fue que
+nos dejara talleres preparatorios para el parcial y que a la hora del parcial no saliera ni medio parecido lo propuesto en el taller. se supone que el taller
+asemeja un poco al parcial pero en esta ocasion no se vio por ningun lado.
+450
+Las diapositivas deben tener un poco más de información, ya que cuando se está estudiando por cuenta propia, muchas veces no se recuerda la
+explicación y la diapositiva tampoco contiene lo necesario, sin embargo el profesor tiene muy buena metodología.
+MAURICIO LOPEZ BENITEZ - INTRODUCCIÓN A LA INGENIERÍA DE SISTEMAS 750060M 50
+451
+Nada.
+452
+Ninguna
+453
+Un buen profesor.
+454
+Fue un buen profesor
+455
+La clase de introduccion a la ingenieria de sistemas fue una clase acertada para conocer todo lo referente a la carrera
+456
+Es un excelente profesor.
+AUGUSTO GOMEZ VINASCO - INTRODUCCIÓN AL PROCESAMIENTO DIGITAL DE IMÁGENES - E- 750068M 50
+457
+La practica permite motivar a los estudiantes a mostrar interes por los temas vistos
+VILLANUEVA SANCLEMENTE MIGUEL ANGEL - FUNDAMENTOS DE PROGRAMACIÓN 750080M 50
+458
+Buen profesor, coherente y dinamico
+459
+Ninguna
+460
+Falta un fortalecimiento en la pedagogia usada en el curso
+461
+Por parte de la presentacion de un tema nuevo, para su explicacion ser un poco mas claro y entendible
+462
+Deberían de contratar más profesores así. Me parece que el profesor Miguel es excelente enseñando y explicando. Aunque había personas que no
+entendíamos algo, él nos daba mucho de su clase explicandonos
+463
+El profesor es muy respetuoso y amable, aveces es un poco dificil entender algunos temas, pero el se toma el tiempo para volverlos a explicar, y lo hace
+con compromiso y de manera que uno pueda entenderlo, muchas gracias profe...
+464
+El profesor no explica muy bien los temas ni la manera de responder los problemas y es un poco dificil de entender de esa manera.
+465
+La clase de fundametos de programacion fue muy buena
+466
+El profesor debe de cambiar su metodología, y explicar un poco mejor los temas, ya que aveces no se le entiende
+VILLANUEVA SANCLEMENTE MIGUEL ANGEL - FUNDAMENTOS DE PROGRAMACIÓN 750080M 51
+467
+Ninguna
+468
+Excelente profesor.
+469
+Tratar de explicar de una manera mas sencilla y facil de entender para los estudiantes
+470
+Clases muy dinamicas y didacticas
+471
+Muy comprensivo a la hora de explicar cuando algo no es entendido
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+16/33
+472
+Buen profesor,
+473
+No tengo ninguna observación el profesor ha sido muy bueno y nos ha hecho la información de una muy buena manera
+474
+Ninguna queja...
+JOSHUA TRIANA MADRID - FUNDAMENTOS DE PROGRAMACIÓN 750080M 52
+475
+Es un buen profesor.
+476
+El profesor explico todo con mucha facilidad, ayudaba a entender los temas sentandose cerca del alumno para resolver problemas. En pocas palabras es
+un Dios
+477
+Fue un buen profesor durante el transcurso del semestre.
+478
+Veo oportuna la asignación de talleres regularmente que califique.
+JULIAN RODAS - FUNDAMENTOS DE PROGRAMACIÓN 750080M 53
+479
+Excelente profesor.
+480
+Muy buen profesor
+481
+Temas muy avanzados para el curso
+482
+El profesor es cumplido con la metodologia vista, pero el profesor no explica de forma muy precisa en la clase y aveces nos coloca trabajos muy dificiles
+para nuestro nivel de aprendisaje, pero cabe destacar que el profesor es muy objetivo...
+483
+Bien o Que¡¡¡¡
+484
+Nada que decir , es un buen profesor .
+485
+El profesor es muy galileo y todo eso
+486
+Lo único que tengo para mencionar es el solo haber dado 2 semanas para el proyecto final, sin embargo su desempeño como docente fue optimo, sin
+quejas.
+487
+Buen profesor, se entiende lo que explica, tarda en subir las notas de talleres, pero es buen profesor
+PEDRO PABLO BERMUDEZ MEDINA - INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA A OBJETOS 750081M 51
+488
+Mejorar la metodologia, explicacion para el buen manejo del tema y del curso
+489
+Mas dinamica, estar mas apropiado del tema, poder dar solucion a problemas de los estudiantes, son cosas en las que falla el profesor pedro pablo
+490
+Los temas visto no son el problema, es el profesor, me parece que tiene una forma de enseñar muy aburrida, me da sueño apenas comienza la clase, y no
+solo soy yo, casi toda la clase piensa lo mismo, solo se para a leer unas diapositivas y pone ejercicios y ya y me parece lo mas cutre que puede hacer un
+profesor de nivel universitario para enseñar, desearía que fuera un poco mas dinamico con sus clases para no aburrir, y mostras el uso del tema de la clase
+para mostrar como usarlo y en casos en que lo utilizaria, podria mandarnos mas ejemplos usando el campus y no unos ejemplos incompletos para
+enrredarnos mas, espero me escuchen y hagan algo al respeto, me parece la clase mas aburrida y poco productiva que e visto en todo el semestre.
+491
+El docente tiene el conociemiento necesario pero no tiene una pedagogia ni metodologia adecuada para facilitar la adquisicion del conocimiento en la clase
+492
+Las clases del prof.Bermudez deben de ser mas claras, un poco mas dinamicas o por lo menos que hable lo suficientemente fuerte para escucharlo y
+cuando se le pida aclarar una duda, que la resuelva no que genere mas.Falta manejo del tema(por asi decirlo)
+493
+Le hace falta ser mas practico en la clase con los estudiantes, desarrollar ejercicios con códigos y ser mas claro con las diapositivas que trae preparadas.
+494
+En mi opinión el docente debe mejorar la clase puesto que en su mayor parte del tiempo el estudiante tiende a distraerse, aburrirse ya que solo se dedica a
+leer las dispositivas que presenta. No obstante cuando se generaba una duda/error respecto al tema dado se llamaba al profesor pero este no lo
+solucionaba, se quedaba ahí y luego se iba haciendo pensar a los estudiantes si realmente el docente sabía lo que hacía, proseguía su clase dejando
+lagunas, las cuales fueron despejadas por compañeros (alumnos) quienes ya tenían conocimiento previo en la asignatura. de no ser por esto, un problema
+habría sido. Sin embargo se reconoce el esfuerzo brindado ya que no es fácil su puesto.
+495
+Un profesor que lee mucha diapositiva, esperaba ver mas programación, menos lectura de diapositivas ya que se hace aburridora la clase
+496
+El profesor no recomendaria para una materia de practica o practica-teorica, a el le va mejor en la teoria por ende lo recomiendo para IISI o para ITI pero
+para IPOO no
+DIEGO ALFREDO LEYES VELASQUEZ - INTRODUCCIÓN A LA TECNOLOGÍA INFORMÁTICA 750082M 50
+497
+Es una clase en realidad de bastante importancia para mi formacion profesional, el unico inconveniente es el poco tiempo que tenemos en esta, la cual es
+de tan solo dos horas.
+498
+Las clases son buenas si no que hay muchas distracciones
+499
+La profesora empezó desde lo básico para que todos aprendan desde lo primero, sin embargo las primeras clases pueden ser muy aburridoras para los
+que hayan hecho un curso anteriormente
+500
+Gran desempeño como profesor
+501
+.
+502
+El profesor da explicaciones claras sobre los temas vistos,utiliza excelentes métodos de enseñanza pero solo en una ocasión dio menos tiempo del
+necesario para culminar el examen,
+503
+- seria bueno que los parciales que implento el docente no abrir solo con libre office porque hay una deficencia academica pues falta enseñar mejor el
+manejo de libre office pues la diferencias de ciertas variables de cambio entre exel dificuntan la presentacion de parcial -mejor el aprendisaje de libre office
+y como superar las diferencias entre ellos
+504
+LAS BUENAS PRACTICAS Y EXPLICACION ME AYUDARON A FORTALECER MUCHO MI CONOCIMIENTO
+DIEGO ALFREDO LEYES VELASQUEZ - INTRODUCCIÓN A LA TECNOLOGÍA INFORMÁTICA 750082M 51
+505
+Excelente maestro, redacta muy bien sus clases y cuando un estudiante no entiende se toma su tiempo para explicarle de la manera mas apropiada.
+506
+El profesor es muy objetivo y siemprer trae cosas para hacer de la clase mas dinamica...
+507
+Excelente forma de desembolverse
+508
+Es notable la pedaogia que aplica con los estudiante, hace que las clases sean las mejores y muestra gran preocupación no solo por el rendimiento
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+17/33
+academico si no, por el mejoramiento y crecimiento personal de cada uno de los estudiantes, ayuda en los aspectos indiferentes a la asignatura como el
+manejo del tiempo y metodos anti estrés, que en mi opinion es muy importante que cualquier docente lo aplique en su clase y con sus estudiantes. Por mi
+parte fue el mejor docente y modelo a seguir durante el primer semestre de la carrera.
+509
+Es un buen profesor, sabe explicar bien las cosas, tiene un gran conocimiento sobre lo que enseña y es muy facil entenderle las cosas
+PEDRO PABLO BERMUDEZ MEDINA - INTRODUCCIÓN A LA TECNOLOGÍA INFORMÁTICA 750082M 52
+510
+Profe disculpe pero creo que debe cambiar esas diapositivas y ser mas conciso a la hora de explicarnos
+DIEGO ALFREDO LEYES VELASQUEZ - INTRODUCCIÓN A LA TECNOLOGÍA INFORMÁTICA 750082M 53
+511
+Ninguna
+512
+Es muy buen profesor, y maneja con mucha claridad y profesionalidad su curso, explica siempre que el estudiante no entiende, felicito a el profesor, esta
+muy entregado a su labor como instructor o profesor de el curso
+513
+ITI fue una clase que ayudo a reforzar el conocimiento aprendido en el colegio pero se necesita agregar mas temas a el programa establecido
+514
+Fue el mejor profesor que tuve en 1 semestre
+PEDRO PABLO BERMUDEZ MEDINA - INTRODUCCIÓN A LA TECNOLOGÍA INFORMÁTICA 750082M 54
+515
+Más dinamismo en la clase por parte del profesor ya que ésta se hace extremadamente tediosa.
+516
+Fue un buen profesor
+517
+Un buen profesor.
+LUIS MIGUEL LOZANO CARVAJAL - MATEMÁTICAS DISCRETAS I 750083M 50
+518
+Buen profesor
+519
+Una chimba el profesor :) gracias bro
+520
+El docente no tiene el conociemiento necesario para un buen desarrollo del curso y tampoco una metodologia y pedagogia que facilite la adquisicion del
+conocimiento
+521
+Se necesita un docente que sepa dar una clase, que sea puntual tanto en el horario como con o dicho en clase, el profesor tiene muchas falencias.
+522
+Al inicio la clase realmente era un asco, el profesor, viendo la situacion, cambio la metodologia, logrando asi, que los estudiantes entendieramos los temas
+del curso.
+523
+Ninguna
+CARLOS ANDRES DELGADO SAAVEDRA - MATEMÁTICAS DISCRETAS II 750084M 50
+524
+Me parece muy buena la idea del profesor de grabar la clase y subirla a yt, ya que nos permite repasar la clase
+525
+Excelentisimo profesor, imposible peder con el , ya que sus metodologia de enseñanza es demasiado buena, (graba todas las clases), facilita a la clases y
+asi ayuda a mejorar el desempeño ya que nos podemos apoyar de los videos, siga asi profesor de los mejores (Y).
+526
+Muy buen profesor, aparte de enseñar muy bien, se preocupa por el bienestar de los estudiantes. Felicitaciones y gracias!
+JUAN CARLOS HURTADO CORREA - PROGRAMACIÓN INTERACTIVA 750085M 50
+527
+N/A
+528
+Cambiar la metodologia de explicacion
+529
+Deberia preparar presentaciones teoricas al momento de iniciar un tema nuevo para asi ser mas claro en la practica
+530
+Mejoramiento en la metodologia
+531
+El docente es una persona que se nota que tiene conocimientos sobre el tema, pero al parecer trabaja demasiado y no prepara clases, al inicio de clases
+se le pidio que no explicara teoría y a las 2 o siguientes clases trajo diapositivas las explicaba en 40 minutos o una hora y esa es toda la explicación, cada
+clase nos deja un taller según para enviar al correo para revisar pero el señor destina parte de la clase siguiente a revisar los trabajos lo mismo ocurre con
+los parciales. En uno de los parciales se le pidio que lo explicara pero en vez de explicarlo su respuesta fue que no tenia preparado y nos toco esperar 2
+semanas para tener una explicación del codigo, en repetidas ocasiones el docente hablaba que encontraba codigos de internet y que con esos codigos es
+que daba la clase
+532
+.
+533
+Xd
+534
+El profesor debe de tener una mejor metodología para enseñar para que así sus estudiantes entiendan.
+535
+Mejorar, el método de dar clases
+JUAN CARLOS HURTADO CORREA - PROGRAMACIÓN INTERACTIVA 750085M 51
+536
+Metodologia poco practica, actividaes de 2 horas duraban las 4 horas de clase
+537
+Enseñe con mas dificultad en las clases y ponga muchos mas ejercicios, ya que los parciales son muy complicados, para que no halla un desbalance
+538
+Aprendi mas viendo videos y tutoriales que en clase, no se la metodologia aunque no es mala, a lo personal no me gusto, siento que al ser un lenguaje de
+programacion nuevo e importante para esta carrera, al comenzar debio fortalecer las bases.
+EFRAIN VASQUEZ MILLAN - ANÁLISIS Y MÉTODOS NUMÉRICOS 750086M 50
+539
+Excelente docente, necesitamos más docentes como este, apasionados por lo que hace
+540
+Eminencia de profesor
+541
+Para el profesor Efraín, deberian definir un horario apropiado a su tiempo desde inicio de semestre para que semanas despues no se empieza a perder
+clases tratando de ubicar un espacio de tiempo adecuado.
+542
+Las clases a pesar de tener una carga academica considerable fueron claras e interesantes
+ORLANDO TAMAYO LLANOS - APLICACIONES EN EL WEB Y REDES INALÁMBRICAS 750087M 50
+543
+Clases muy teoricas teniendo en cuenta que el curso es muy practico
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+18/33
+544
+Sin observación
+545
+Que cuando realice exposiciones saque un tiempo para la retroalimentación es muy necesario para nosotros como estudiantes
+546
+Las metodologia de enseñanza no fue muy clara muchas cosas de los que aprendi en este curso fue por cuenta propia
+547
+Debe tener mayor retroalimentación a la hora de explicar temas de desarrollo de programación
+548
+El docente a mi parecer, posee unas fallas que a continuación listare: -No posee pedagogía. -Asigno exposiciones, pero no se digno a colocar cuidado por
+hacer otras cosas. -Utiliza el tiempo de clase para realizar trabajos ajenos a la universidad. -Cuando hay dudas, decir que no sabe sobre todas las
+herramientas. -En pocas ocasiones decir que la clase va hasta las 12 del mediodía porque es el plazo para entregar un taller , pero el se va a las 11 am. -
+Hoy 22 de mayo de 2018 y no ha entregado notas de talleres hechos a la segunda semana del semestre. -No dar las notas de forma atómica, es decir
+entrega por entrega.
+549
+Un profesor sin pedagogia
+550
+Si bien las exposiciones estan bien, lo que no encuentro bien es que no preste atencion a la exposiciones realizadas por los estudiantes, porque mientras
+los estudiantes exponian el profesor se disponia hacer otro tipo de activades que no tenian nada relacionado con el curso, mas bien con sus otros trabajos
+personales. Si bien casi todas las clases se extendieron hasta las 12 (es de 8 a 11 am) el ordenaba que el taller de cada exposicion se hiciera hasta las 12
+pero el a las 11 se retiraba para su casa. Si bien es una persona muy capacitada para dictar la materia en cuanto a estudios y experiencia laboral, no tiene
+buena metodologia para la enseñanza. Para el proyecto toco investigar todo por cuenta de los estudiantes porque el total de clases dictadas por el profesor
+fueron 3. Para calificar las exposiciones todos los grupos sacaron 4, no refuto el valor de la nota, lo que no me queda claro es bajo que criterio califica el
+una exposicion a la cual no le presto ningun tipo de atencion. A la fecha 22 de mayo no ha entregado las notas de ningun taller, incluyendo talleres que se
+entregaron desde la segunda semana academica.
+551
+El profesor no explica ni ejemplifoca los temas vistos.. Se vio 1 tema por clase y los compañeros era quien trataba de explicarnos por medio de una
+exposicion. Este curso es muy importante debería verse en varios semestres si es necesario. No lleno mis expectativas, Deberian de implementar en todo
+un semestre java web ya que se ve mucho en el mercado. La idea es aprender algo bien y no ver temas por verlos
+552
+No explicaba nada! las clases fueron exposiciones de los estudiantes y explicaba nada
+JOHN ALEXANDER VARGAS - COMPLEJIDAD Y OPTIMIZACIÓN 750090M 50
+553
+Un poco mas de dinamismo
+554
+Bien.
+555
+El profesor debe mejorar la rapidez con la que expone sus clases, habla muy rapido y es dificil tomar nota, en una sola clase se abordan temas que se
+deberian desarrollar con muchas otras clases. Tambien mejorar las respuestas a correos a tiempo, a veces pasaban dias para obtener una respuesta.
+556
+Excelente profesor y persona.
+557
+Sí va utilizar materiales de otras universidades, debería preparar mejor las clases. Hacer su propio material, al menos. El profesor fue muy receptivo en
+cuanto a las dudas que se presentaron en las clases.
+JUAN CARLOS HURTADO CORREA - DESARROLLO DE SOFTWARE I 750091M 50
+558
+Excelente profesor, los temas los explica bien y se le entiende, fue de mucha ayuda esta materia para aplicarlo en la realizacion de software.
+ROYER DAVID ESTRADA ESPONDA - DESARROLLO DE SOFTWARE II 750092M 50
+559
+El curso de desarrollo de software 2 debería ser de 4 horas puesto que se necesita mas tiempo de clase para comprender mejor los temas vistos en clase,
+y facilitar el tiempo al profesor para explicar los temas en su totalidad
+560
+El curso debería tener una duración de 4 horas ya que en el tiempo establecido en algunas sesiones no se alcanzaba a tomar en cuenta algunos puntos del
+tema. Buen profesor y persona aunque aveces parecia arrogante.
+561
+La cantidad de Horas y Creditos asignados a esta materia no corresponden a la necesidad real del curso, los conocimientos adquiridos son adecuados a
+los objetivos gracias a la habilidad del docente.
+562
+Los proyectos deberian ser evaluados con los temas explicados, pero decidió meter lo de fronend y backend lo cual no evalua sus temas y complica mas rl
+proyecto
+563
+Ninguna
+MAURICIO LOPEZ BENITEZ - DESARROLLO DE SOFTWARE II 750092M 51
+564
+Excelente profesor, es muy atento a las peticiones de los estudiantes y sus opiniones
+565
+Atento a dudas de los estudiantes, buena integración en clases con respecto al tema, preocupación por que el estudiante entienda
+ROYER DAVID ESTRADA ESPONDA - DISEÑO DE INTERFACES DE USUARIO 750093M 50
+566
+Aumentar a 4 horas la intensidad del curso
+567
+Destaco que es un excelente profesor, facilita el aprendizaje con su manera de dirigir la clase.
+568
+Ninguna
+ANDRES FERNANDO VELASCO - FUNDAMENTOS DE ANÁLISIS Y DISEÑO DE ALGORITMOS 750094M 50
+569
+Felicitó al profesor, creo que la universidad debería elegir mas profesores como él qur si lo hace con vocacion, no como algunos que quieren que todo sea
+cobsulta como si fuera un curso virtual. Él es un profesor que se toma su tiempo para explicar por que realmente le interesa que el tema quede aprendido,
+exige pero tambn fa mucho de él
+MAURICIO LOPEZ BENITEZ - FUNDAMENTOS DE ANÁLISIS Y DISEÑO DE ALGORITMOS 750094M 51
+570
+Buen profesor
+CARLOS ANDRES DELGADO SAAVEDRA - FUNDAMENTOS DE LENGUAJES DE PROGRAMACIÓN 750095M 50
+571
+Es buen profesor
+572
+...
+573
+Buen profesor, genera buenas metodologías y brinda muchas oportunidades en la materia para que el estudiante progrese. Aunque a veces sus
+explicaciones no son tan claras y se enreda un poco.
+574
+El problema no es el docente, de hecho el profesor intentó de muchas formas darnos a entender cada tema, simplemente resulta ser una asignatura muy
+abstracta, lo que dificulta el entendimiento para estudiantes que como nosotros, veníamos con otra mentalidad y otra lógica.
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+19/33
+575
+El docente se preocupa por el desempeño de sus estudiantes
+576
+Usa herramientas adecuadas que ayudan a un mejor aprendizaje de los temas, tal como grabar la clase, es muy úti. Tiene en cuenta a los estudiantes y es
+flexible con el croograma del curso teniendo en cuenta y cumpliendo que debe dar todos los temas del curso.
+577
+La materia es literalmente un ladrillo dentro del pensum, es la peor asignatura de la carrera, los temas son demasiado abstractos, le dan ganas a uno de no
+continuar con esta carrera. Al ser una materia tan importante deberían de pensar una manera de simplificar. Y por ultimo esta mal ubicada, deberia estar
+despues de Fundamentos de programación, pues despues de 4 semestres la destreza en el lenguaje de programación Racket disminuye muchísimo.
+578
+Quiero resaltar el compromiso del docente por impartir una buena educación y la forma en la que dirige las clases, resulta muy apropiada y facilita el
+aprendizaje.
+IVAN DARIO ARISTIZABAL - FUNDAMENTOS DE REDES 750096M 51
+579
+Buen profesor. Se entiende que la clase es de mucha teoria, pero las preguntas abiertas de los parciales no deberian de ser tan extensas ya que no se
+puede memorizar tanta informacion en poco tiempo. De resto todo esta bien el profesor explica muy bien se le entiende
+580
+Un ser muy humilde que ama compartir conocimiento
+CARLOS ANDRES DELGADO SAAVEDRA - SEMINARIO DE PROYECTO DE GRADO 750097M 50
+581
+A veces el profesor exagera en las cantidad de cosas que pide en los talleres y proyectos.
+CARLOS ANDRES DELGADO SAAVEDRA - SIMULACIÓN COMPUTACIONAL 750098M 50
+582
+Excelente docente, mantiene actualizado, siempre nos presenta ideas que nos sirven mucho en cuanto al uso de herramientas. Sus clases grabadas son
+de gran ayuda. Entiende el punto de vista de los estudiantes..... Necesitamos más docentes como este en Univalle.
+583
+Gracais profesor delgado por apoyar a sus estudiantes :3
+584
+E profesor integro con innivación, dedicación, disposición, creatividad nuevas metodologias al proceso de enseñanza y aprendizaje. Excelente profesor
+585
+Buen profesor, solo le falta mejorar un poco su pedagogía para darse a entender de una mejor manera.
+586
+Bien.
+587
+Atento a dudas, preocupación por que el estudiante entienda.
+588
+EL profesor es muy singular, un asombroso profesional, inteligente con conocimientos en muchos campos, objetivo y respetuoso. Felicitaciones por toda la
+innovacion empleada en los cursos, por hacer uso de las tecnologias para hacer mas amena las sesiones de clases como por ejemplo grabar las clases y
+subirlas a youtube, ojala todos los profesores adoptaran esta practica.
+589
+Buen profesor.
+590
+Muy buen profesor, motiva a los estudiantes a que le metan ganas a la carrera, a que estudien, a que sean mejores y vayan construyendo su camino.
+Además, es paciente y tolerante frente a las actitudes de algunos estudiantes, muy respetuoso. ¡Gracias, profe!
+591
+Excelente la metodología de grabar las clases, ya que al tener alguna duda se busca el video y se aclara la explicación que se realizó en clase, el profesor
+ha mejorado mucho su metodología.
+592
+El profesor debe brindar el mismo trato y disponibilidad a todos los alumnos, no a unos si y a otros no.
+593
+El profesor repite mientras tiene la oportunidad que el es profesor hora cátedra y que por esto no tiene disponibilidad para resolver dudas en otro día
+diferente al de la clase o por un medio electrónico. Y un buen profesor no haría esto,debería siempre tener la disponibilidad necesaria para resolver dudas
+del curso.
+DIEGO ALFREDO LEYES VELASQUEZ - INTRODUCCIÓN A LA TECNOLOGÍA EN SISTEMAS DE INFORMACIÓN 750099M 50
+594
+El profesor hace sus clases muy dinamicas y el profesor explica y nos hace entender sobre todos los temas vistos en el curso
+595
+Me gusta tu manera de dictar clase tan clara y concisa ojala como te entendiera, entendiera todas las asignaturas
+596
+Exelente profesor, muy buen metodo de enseñanza
+597
+Excelente forma de desembolverse
+598
+Excelente profesor.
+599
+Es notable la pedaogia que aplica con los estudiante, hace que las clases sean las mejores y muestra gran preocupación no solo por el rendimiento
+academico si no, por el mejoramiento y crecimiento personal de cada uno de los estudiantes, ayuda en los aspectos indiferentes a la asignatura como el
+manejo del tiempo y metodos anti estrés, que en mi opinion es muy importante que cualquier docente lo aplique en su clase y con sus estudiantes. Por mi
+parte fue el mejor docente y modelo a seguir durante el primer semestre de la carrera.
+600
+Es buen profesor
+JOSHUA TRIANA MADRID - TRABAJO DE GRADO I 750101M 58
+601
+Excelente profesor, excelente persona.
+CARLOS ANDRES DELGADO SAAVEDRA - TRABAJO DE GRADO II 750102M 50
+602
+El ha sido un excelente director de grado, es muy amable, tolerante, atento, respetuoso y motivador, lo recomiendo 100%
+CARLOS ANDRES DELGADO SAAVEDRA - TRABAJO DE GRADO II 750102M 51
+603
+Realmente muy buen director, se preocupa mucho por sus estudiantes. La Univalle necesita más docentes así.
+JOSHUA TRIANA MADRID - TRABAJO DE GRADO II 750102M 56
+604
+Excelente asesor. Gran manejo de los temas y tiene un conocimiento verdaderamente profundo.
+CARLOS ANDRES DELGADO SAAVEDRA - TRABAJO DE GRADO II 750102M 60
+605
+La materia fue lo mejor de toda la carrera, hacer el Tg y terminarlo con buenos resultados es respuesta de un buen trabajo por parte de los dos, yo como
+estudiante y Carlos Delgado como profesor.
+CARLOS ANDRES DELGADO SAAVEDRA - TRABAJO DE GRADO II 750102M 61
+606
+Muy buena asesoría.
+ANDRES FERNANDO VELASCO - TÉCNICAS DE PRUEBAS DE SOFTWARE 750105M 50
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+20/33
+607
+Nunca llegó a tiempo a las clases
+608
+Ninguna
+609
+El profesor debería estar un poco más en la vanguardia del temario del curso. Utilizar las nuevas versiones de cada una de las herramientas vistas en
+clase.
+610
+Deberia ser mas puntual a la hora de iniciar las clases y entregar las calificaciones a tiempo
+611
+Falta poco para que termine el semestre y falta 70% de la nota por sacar, estamos quedados...
+612
+Se observa mucho relajamiento por parte del profesor en tema de la puntualidad
+613
+El profesor presenta evaluaciones interactivas acorde con el curso que facilitan su comprension pero ya se va a acabar el curso y aun nos falta
+aporximadamente el 70% de la nota.
+614
+El docente es muy bueno, tiene buena pedagogía, pero siempre llega tarde a dictar la clase. Otro punto negativo es que hoy 22 de mayo de 2018 no ha
+entregado ninguna nota de talleres.
+615
+Cosas por mejorar
+616
+Es muy buen porfesor, tiene buena metodologia y irradia conocimiento y experiencia, solo dos cosas malas, la impuntualidad llega muy tarde a clases. No
+ha entregado nota de ningun taller.
+JOSE LUIS UNAS GOMEZ - ADMINISTRACIÓN DE REDES Y SERVIDORES 750106M 50
+617
+Muy buena clase, excelente profesor
+618
+Un profesor con mucha experiencia es su campo
+619
+Muy buen docente, ojala los estudiantes nuevos puedan ver con él.
+620
+EXCELENTE SU METODOLOGÍA PARA ENSEÑAR
+621
+Bacano
+JOSHUA TRIANA MADRID - VIDA ARTIFICIAL 750115M 50
+622
+El profesor se esfuerza mucho en motivar a sus estudiantes hacia la investigacion y hacia los amplios abanicos de posibilidades con las herramientas que
+nos enseña
+ROYER DAVID ESTRADA ESPONDA - DESARROLLO DE APLICACIONES PARA DISPOSITIVOS MÓVILES 750124M 50
+623
+Es una clase que para su aprovechamiento se necesita de buen internet y en la salas de la universidad el internet falla demasiado o no esta disponible en
+todos los computadores
+ARAGON CAMPO JAIME EDUARDO - TEORÍA GENERAL DE SISTEMAS 760081M 50
+624
+El profesor domina varios campos del conocimiento . Es un gran profesor...
+625
+Buen profesor, solo que aveces tiene como problemas de concentración pero de resto una buena persona.
+CESAR LEON QUILLAS - ANÁLISIS ECONÓMICO DE INVERSIONES 760102M 50
+626
+El profesor conoce muy bien el tema y las explicaciones son claras.
+627
+Esta asignatura deberia estar en 4 o 5 semestre, debido a que ayuda a enteder en gran parte el manejo de dinero
+628
+Explica muy bien los temas.
+629
+Aprendí mucho. Excelente profesor!
+630
+Seria bueno que el profesor se bajara un poco de nivel para explicar de manera mas clara cada uno de los temas, ademas deberia proporcionar las
+formulas necesarias para resolver los parciales.
+631
+Buena metodologia, excelente profesor
+632
+Para los exámenes el profesor debería facilitar sacar formulas ya que con esto no estaría evaluando el conocimiento de lo que se aprendió en el curso ,sino
+la memoria por saberse todas las formulas y saberlas aplicar.
+HAROLD ANTONIO ANGULO CASTILLO - EMPRENDIMIENTO EMPRESARIAL 760155M 50
+633
+En mi opionion esta mal ubicada, por q la carga es mucha para el estudiante es mejor en un semestre anteriar para cumplir con responsabilidad con las
+exigencias del profe
+GUSTAVO LINERO G - PROBLEMAS COLOMBIANOS 801004M 50
+634
+La metodología empleada por el profesor es excelente y clara. Me ayudo a construir un pensamiento critico y una visión diferente del entorno.
+635
+UN GRAN PROFESOR
+636
+Conoce muy bien los temas y nos ayuda a pensar más criticamente
+637
+Que el docente respete los acuerdos pactados con los estudiantes desde principio de curso acerca de como va a evaluarlos y no los cambie a su
+conveniencia.
+638
+Muy buen acercamiento a la realidad a traves de la critica constructiva
+639
+Es muy buen profesor, me gusta la manera de darnos a conocer los problemas pero desearia que no cambiara el metodo de las notas al final del curso
+640
+Excelente profesor pero utiliza palabras muy tecnicas en sus explicaciones y a veces se hace dificil su comprensión.
+641
+Es un gran profesor y nos ayuda a fortalecer nuestro pensamiento crítico.
+642
+Buen profesor.
+643
+Una excelente clase, ayuda a crearnos conciencia.
+DIEGO ALFREDO LEYES VELASQUEZ - INFORMÁTICA I 801009M 50
+644
+GRACIAS
+645
+Ninguna
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+21/33
+646
+NINGUNA
+HAROLD EDMUNDO MORA - DOCTRINAS POLÍTICAS 801012M 50
+647
+GRAN MAESTRA, SU CALIDAD HUMANA ES GENIAL, AMA LO QUE HACE Y LO QUE ENSEÑA.
+648
+Bien
+HAROLD EDMUNDO MORA - DOCTRINAS POLÍTICAS 801012M 51
+649
+Tiene muy buen conocimiento, pero debe mejorar la forma de metodología con la cual imparte la clase. Preparar mejor los temas y actividades a desarrollar
+en cada una de ellas. Para que haya una mejor participación por parte de los Estudiantes.
+650
+UN SABADO ES MUY DIFICIL ASISTIR A CLASE PARA LOS QUE LABORAN
+651
+Explica cuidadosamente cada tema expuesto en clase con un lenguaje muy técnico
+652
+Por favor darle mas café a los maestros para que vayan con mas energía al salón y no duerman a los estudiantes.
+653
+Se enrede mucha al explicar.
+654
+El profesor tiene una metodología muy poco dinámica y sus explicaciones no son claras. Deja gran contenido de la temática sobre los estudiantes y no
+participa mucho para que el tema quede claro, se sale del tema y deja muchas ideas abiertas y no dice nada concreto. Su metodología no es apropiada.
+655
+Muy inteligente.
+656
+Deberian tratarse temas mas actuales que historicos.
+DAMIRA MEDINA RUIZ - CONSTITUCIÓN POLÍTICA DE COLOMBIA 801014M 50
+657
+Que la docente utilice uno, dos o tres temas por clase, no toda la constitucion en una sola clase. cambiar la metodologia
+658
+Los conocimientos de la profesora son ños mejores, sabe exactamente de lo q habla y explica de la mejor manera
+659
+Es muy buena profesora pero creo que podria explicar un poco mas despacio y no saturarnos de tanta informacion. Y deberia tirarnos menos duro en los
+parciales, podria colocar preguntas de los talleres que nos envio a investigar en el parcial.
+RICARDO LADINO JUAN CARLOS - LEGISLACIÓN COMERCIAL I 801015M 50
+660
+Muy buen docente.
+661
+Excelente maestro, con unos conocimientos bien claros e importantes para mi formación, demasiado conocedor del tema y da gusto escuchar sus clases
+662
+Que nunca cambie el profesor
+663
+Muy bien.
+664
+MUY BUEN DOCENTE
+665
+Falta ser mas dinámico.
+666
+Excelente Docente. Su Exigencia es adecuada para el Grupo
+667
+Un muy buen docente
+668
+Explica bien, rápido pero bien.
+669
+El profesor fue adecuado en su planteamiento pero las preferencias se vieron a leguas para con algunos estudiantes
+CESAR LEON QUILLAS - MICROECONOMÍA 801016M 50
+670
+El profesor tiene amplios conocimientos y tiene una manera adecuada de dictar la clase
+671
+MEJORAR SU METODO DE ENSEÑANZA PUESTO QUE VA A SU RITMO Y MAS DE LA MITAD DEL SALON NO ENTIENDE,GRACIAS
+672
+Lla única observación que quiero aclarar en esta materia, es que el contenido fué demasiado extenso y por motivos externos nos vimos obligados a perder
+clase y cuando quisimos recuperar aunque fuera una clase por que era de mucha importancia, la universidad nos negó esta oportunidad.
+673
+A la wea jajjaja.
+674
+Buen docente
+675
+Excelente maestro, conocimientos demasiado amplios, da gusto escuchar sus clases y nos impulsa a ser cada día mejores
+676
+Muy bien.
+677
+Se cree el mejor, y es el mejor!! excelente profesor
+678
+Esta clase se presta para salidas empresariales, deberían implementarse
+679
+Le hace falta explicar más o no ir tan rápido, pues hay muchas personas que no seguimos el rápido ritmo con que explica algunos temas.
+680
+El profesor utilizó dinámicos medios para el entendimiento de el curso
+681
+Le cuesta un poco entender que no todos los estudiantes tienen la misma facilidad de aprendizaje que otros y parece molestarle las preguntas obvias que
+para otros no pueden ser tan obvias. (por su inteligencia superior)
+CESAR LEON QUILLAS - ESTADÍSTICA I 801019M 50
+682
+El profesor debe mejorar su trato hacia los estudiantes, ser mas respetuoso y claro a la hora de responder alguna inquietud.
+683
+Su proceso de enseñanza es muy bueno.
+684
+Muy buena enseñanza, conocimiento y actitud con los estudiantes.
+685
+AVECES AVANZAN MUY RAPIDO Y SON MUCHOS TEMAS PARA COMPRENDERLOS BIEN
+686
+El trato hacia sus estudiantes puede ser mejor, tiene muy buen conocimiento de los temas que va a dar
+687
+Buenas noches, el profesor Cesar León Quilla me parece un docente un poco irrespetuoso con sus estudiantes, por ejemplo: En lugar de pedir el favor que
+hagan silencia, dice de una manera muy grosera que ''se callen''. Para mi el es una persona que no sabe tratar a sus estudiantes, lo primero que debe
+mostrar el docente frente a nosotros es RESPETO.
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+22/33
+688
+Excelente docente Buena metodología
+689
+No me gusta la manera en la que se refiere a los estudiantes y sus comparaciones me parecen absurdas, su manera de calificar no me gusta y de cambiar
+algunas cosas de los parciales ya que eso ocasiona que los estudiantes obtenga mal rendimiento en una nota tan importante como es el parcial.
+690
+Muy buena explicacion de todos los temas
+691
+ENSEÑA MUY BIEN. SIN EMBARGO, CREO QUE DEBE PROPICIAR UNA MEJOR INTERACCIÓN CON LOS ALUMNOS.
+692
+La clase se vuelve muy aburrida.
+693
+La forma de dirigirse a los estudiantes no es la adecuada en algunos momentos. a veces no tiene paciencia para explicar. y es una persona egocéntrica.
+694
+El docente quillas explica muy bien, pero en la hora del parcial su forma de redactar es muy mala no entendemos lo que esta pidiendo o que es lo que hay
+que hacer pero en verdad explica muy bien
+GUSTAVO LINERO G - MACROECONOMÍA 801020M 50
+695
+=)
+696
+A veces no explica claramente lo que nos plantea
+697
+Seria bueno mejorar su metodología de enseñanza, calificación y evaluación
+698
+La metodologia de enseñansa del profesor no es la apropiada, ademas el no nos hace opcional. no atiende las quejas que tenemos del curso y lo toma
+todo a mal.
+699
+Buen profesor.
+ALBERTO BETANCOURT - MACROECONOMÍA 801020M 51
+700
+El profe explica bien, sin embargo la manera de plantear las preguntas en los parciales es un poco confusa
+ALBERTO BETANCOURT - MACROECONOMÍA 801020M 52
+701
+Ninguna
+702
+Dificil los temas, puesto que la metodologia no funciona
+JAIME ALBERTO DE LA CRUZ GODOY - TEORÍA DE LA ORGANIZACIÓN Y GESTIÓN II 801021M 50
+703
+Es una clase muy interactiva y eso nos ayuda a poner en practica adecuadamente los conocimientos adquiridos, es buen profesor.
+704
+EXCELENTE MAESTRO
+705
+Debería tratar de no dejar todo el peso de los temas sobre los estudiantes e interferir mas en la explicación de estos.
+706
+La actitud es muy buena frente a la clase
+707
+Debería dar mas apoyo a los temas expuestos por los estudiantes en cada clase, no dejarlos a responsabilidad de ellos puesto que no tienen suficiente
+conocimiento ni manejo de los temas. seria mejor una clase magistral para que todo quede claro, y al momento de evaluar no guiarse estrictamente con la
+teoría, si no propiciar un ambiente de aprendizaje donde se maneje más el pensamiento de los estudiantes sobre el entorno. ya que sera de gran ayuda al
+llegar a una organización.
+708
+Excelente profesor.
+709
+Excelente profesor.
+710
+Muy buena e innovadora la clase.
+GUSTAVO LINERO G - TEORÍA DE LA ORGANIZACIÓN Y GESTIÓN I 801024M 50
+711
+GRAN PROFESOR POSEE DEMASIADO CONOCIMIENTO Y PROYECTA SU GRAN AMOR POR ENSEÑAR.
+712
+Bien
+713
+La manera en que califica , no me satisfazo mucho, ya que como estudiantes venimos aprender y a entender de manera disitinta sus conocminentos , y
+pensamos diferentes opiniones.
+714
+Buen profesor
+715
+Buena metodología para el desarrollo de las clases, explica de una manera adecuada los temas, es más bien es falta de nosotros como estudiantes la
+participación y el empeño por la investigación sobre los temas a desarrollar en las clases.
+716
+No por nada es profesor titular de la universidad. Es realmente genial ver clases con él.
+MARIA DEL PILAR GALINDO REINALES - HISTORIA DEL ARTE 801027M 50
+717
+GRACIAS
+718
+Ninguna
+719
+NINGUNA
+MARIA DEL PILAR GALINDO REINALES - HISTORIA DEL ARTE 801027M 51
+720
+Excelente clase.
+721
+Creo que el espacio donde vemos la clase no es el adecuado, creo que deberia adecuarse un lugar permanente para esta clase
+722
+El orientador maneja una buena catedra y dominio del tema.; muy buen apoyo hacia el estudiante
+723
+Excelete materia
+724
+Ninguna
+725
+Es muy buena docente, es muy paciente y tiene siempre un muy buen trato con los estudiantes, me gusta mucho que siempre esta dispuesta a ayudarnos
+si necesitamos algo en la clase.
+ESPERANZA MEJIA VARELA - LECTURA E INTERPRETACIÓN LITERARIA 801028M 50
+726
+Todo bien profe.
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+23/33
+727
+Excelente forma de lograr tener una mejor interpretación de textos, que en nuestra carrera sera demasiado importante a la hora de llevar a la practica los
+conocimientos adquiridos
+728
+Excelente maestra...
+729
+La mejor profesora
+730
+ES una buena docente
+731
+Muy bien.
+732
+Falta más aplicación a la escritura.
+733
+EXCELENTE SU METODO EN TODO
+734
+La docente es apasionada por su trabajo lo produce al estudiante un estimulo grande por la lectura
+735
+Es una gran docente. Debería mejorar un poco su método de calificación,
+DAMIRA MEDINA RUIZ - LEGISLACIÓN LABORAL 801030M 50
+736
+Super profesora
+737
+Ninguna
+738
+Podría ser de gran utilidad que el docente estuviese mas actualizado sobre los temas de la asignatura.
+739
+Una profesora con mucho conocimientos pero quedaron muchos vacíos en el curso debido a la poca claridad de la profesora al momento de dictar la clase
+respecto a la liquidación de horas extras, recargo nocturno, entre otros.
+740
+................
+741
+La profesora Damira Medina es muy buena a nivel de conocimientos en lo que tiene que ver con constitución política y contenido de leyes, sin embargo al
+momento de llevar la teoría laboral a la práctica se le complica un poco ya que ella no domina muy bien lo que tiene que ver con operaciones matemáticas
+en liquidación de nómina, prestaciones sociales, cesantías, entre otros. debería de estar dando la materia de legislación laboral un profesor que sea
+especialista en esta materia y que sea integro al darle manejo toda la información correctamente.
+742
+Excelente profesor.
+743
+Muy buena clase
+RODRIGO BECERRA TROCHEZ - ESTADÍSTICA II 801031M 50
+744
+A veces no es justo con las calificaciones de los parciales, no hay equidad.
+745
+El mejor docente, calidad al 100%
+HECTOR FERNANDO RUEDA RODRIGUEZ - METODOLOGÍA DE LA INVESTIGACIÓN 801051M 50
+746
+Se le sugiere al Profesor Hector Rueda, mas acompañamiento, especialmente cuando se trata de anteproyectos de investigacion, teniendo en cuenta que
+es un proceso importante para lograr realizar la tesis para culminar los estudios y convertirnos en administradores de empresas.
+747
+El docente no tuvo en cuenta la fase de ideación para el proyecto e inició con el resto de las fases sin pensar que algunos estudiantes aun teníamos dudas
+sobre el tema del proyecto. Parecía apresurado y puso bastantes obstáculos en cuanto se le decía una idea para el proyecto. Faltó varias veces a clase y
+no las recuperó y su metodología en general, no fue la mejor para el desarrollo del curso
+748
+Considero que debido a la complejidad de la materia es necesario que el profesor brinde mas acompañamiento y dedique mas tiempo para resolver
+inquietudes especialmente en lo referente al anteproyecto
+749
+Buen profesor, sin embargo falto mucha mas coherencia en la manera de dictar y enseñar cada tema o cada punto a tratar para el anteproyecto; notaba en
+algunas clases que no utilizaba material ni diapositivas para explicar mas claramente un nuevo tema y muchos quedaban confundidos o faltaba mas
+comprension en el tema para conocer un poco mejor; falto mas profundidad o ser mas detallado en los temas
+750
+El profesor Hector tiene un amplio conocimiento académico, conoce de los procesos de investigación y su metodología. Sin embargo sentí que el curso no
+tenia una estructura definida, hasta ahora no me queda claro como se realiza la metodología de la investigación para nuestro trabajo de grado.
+751
+Excelente docente, comprometido con su vocación; aportó mucho a mi crecimiento profesional.
+752
+EXCELENTE DOCENTE, ASESOR Y DIRECTOR DE PROYECTO DE GRADO. MUY VALIOSO TODO SU APOYO Y DISPOSICIÓN Y
+DISPONIBILIDAD.GRACIAS
+753
+Excelente clase magistral
+754
+Dio cumplimiento a lo estipulado por el curso con relación a los métodos de investigación dados por el Docente para la elaboración de un Ante- Proyecto.
+LUCY YANETH VARELA HERNANDEZ - INVESTIGACIÓN DE MERCADOS 801052M 50
+755
+La profe lucy es excelente explicando cada tema de la clase, pero se demora mucho en avanzar en cada uno de ellos y esto hace que se pierda tiempo a
+los grupos que vamos al paso
+756
+Muy buena la forma en la que llevo el curso creo que el trabajo de investigacion fue una manera adecuada apra evaluar los conocimientos tanto previos
+como los adquiridos en la asignatura, solo cuestiono su flexibilidad que por ser tan dedicada perdimos mucho tiempo ya que la profe se excedia explicando
+cosas que ya los estudiantes deberian saber, cosas basicas como realizar unos objetivos para el trabajo. deberia ser mas estricta
+757
+Excelente profesora
+758
+La profesora Lucy, es muy buena explicando los temas de investigación y mercadeo, da muy buenas asesorias y acompañamiento a lo largo del curso,
+pero hubo una mala organización al momento de hacer la revision de los trabajos de investigación, pues al no mantener un ritmo constante se llevó varias
+clases esta actividad lo que causa que los grupos que vamos a la par con la tematica de ella se queden atrasados.
+759
+Seria importante que ente curso se hagan salidas academicas que permita conocer otros métodos de investigación. y como se ve la inverstigacion desde
+otras perspetivas
+GUSTAVO ALFONZO ORTIZ VELA - INVESTIGACIÓN DE OPERACIONES 801054M 50
+760
+Buen docente, falta mejorar la metodologia de clase, para rendir mas
+761
+Es muy buen docente, se esmera para que los estudiantes entendamos. Es muy claro en sus explicaciones y ordenado con los procedimientos.
+762
+Ninguna
+763
+Para una materia con un nivel de alto de complejidad, se hizo mas facil su aprendizaje
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+24/33
+764
+Excelente profesor , muy organizado, se preocupa por que los estudiantes comprendamos los contenidos, muy exigente con el orden y los procesos.
+JAIME ALBERTO DE LA CRUZ GODOY - ENTORNO ORGANIZACIONAL 801059M 50
+765
+Es uno de los mejores profesor en realidad al final del curso uno aprende todo lo que plantea al comienzo de la clase y su forma de pensar es muy correcta
+y se dirije con mucho respeto
+ENEIS JARAMILLO RODRIGUEZ - COMERCIO EXTERIOR 801062M 50
+766
+.
+767
+No especifica con claridad la programacion del curso.
+768
+La profesora tiene una buena metodologia, tiene mucho conocimiento en su campo
+769
+La profesora tiene buena metodologia, pero necesita comprometer mas al estudiante en las clases, y hacer mas dinamicas en el salon de clase
+770
+A pesar de no mostrar el programa es una profesora que facilita el conocimiento de empresas, y la oportunidad de que los estudiantes que estamos en
+formación podamos tener mayor conocimiento de los procesos fuera de la universidad, son una de las pocas profesoras que aplican la practica en los
+estudiantes
+CESAR AUGUSTO SAAVEDRA QUINTERO - GERENCIA DE VENTAS 801073M 50
+771
+Se le sugiere al profesor Cesar, no dejar para lo ultimo las alineaciones del trabajo final. no es la unica materia que tenemos en el semestre y pretende que
+realicemos en 15 dias un trabajo tan extenso como lo es realizar Planeacion de ventas a una organizacion.
+772
+Para tener presente, considero que los lineamientos del trabajo final, deberían entregarse con anticipación, pues el docente entregó los lineamientos y el
+trabajo debía ser sustentado al mes o menos, lo que a mi parecer no permite que el desarrollo efectivo del mismo.
+773
+Cree que el docente debe mejorar en la asignacion de trabajos, no es justo que faltando un mes para finalizar el semestre solicite un trabajo final que
+contenga toda la tematica vista en el semestre cuando perfectamente pudo haberlo asignado desde el inicio para irle trabajando durante las clases
+774
+Excelente profesor, conoce muy bien la teoría del mercadeo y ventas. Sin embargo debe mejorar la metodología de dictar el curso puesto que siento que
+nos dio mucha información en muchas diapositivas y no sentí que fuera aplicada mediante algún ejemplo. Debe mejorar la información de las diapositivas
+con las que dicta el curso puesto que estan muy llenas de información y tienen pocas imágenes y gráficos.
+775
+EXCELENTE CURSO Y PROFE
+776
+Debe ser un poco más contundente y profundo en las explicaciones
+777
+Al profesor le falta ser mas concreto y ordenado en la transmisión del conocimiento. Provee mucha información y con poco orden por lo que el estudiante
+pierde el hilo conductor con frecuencia
+778
+Muy Buen profesor. Una sugerencia , su experiencia y conocimiento es muy valiosa para subutilizarla en clase, son muchas horas de exposición, podria ser
+mas practica la dinámica de la materia, durante el semestre y no solo con el proyecto final.
+HAROLD ANTONIO ANGULO CASTILLO - ORGANIZACIÓN Y MEDIO AMBIENTE 801075M 50
+779
+Irresponsable, ya que no cumple con sus compromisos de entregar los trabajos y llegar a tiempo a las clases, entre otras cosas
+780
+Mas responsabilidad, compromiso y seriedad a la hora de revisar y entregar parciales, trabajos y demas.
+781
+No cumple con el tiempo establecido en la entrega de parciales y trabajos.
+782
+Es un buen profesor, pero incumple con muchas funciones como puntualidad,entrega de trabajos y examenes.
+783
+Muy buen profesor muy claro y preciso , con mucho conocimiento , el punto debil es el incumplimiento con la entrega de trabajos y notas, se atrasa en los
+temas algunas ocasiones
+784
+Incumplimiento en la entrega de calificaciones y en ocasiones no supimos las notas de nuestros trabajos,y no nos ha dado a conocer todas las notas de
+este semestre
+785
+Incumplimiento con la entrega de trabajos, no los entrega en el tiempo estipulado, llega un poco tarde a clases, en el momento de las explicaciones no
+muchas veces queda claro lo que explica
+786
+No es puntual, no entra los trabajos a tiempo. pero como todo puede mejorar, es un profesor que tiene mucho conocimiento en las materias queda
+787
+A la fecha de ésta evaluación, el profesor no ha entregado notas de trabajos que fueron realizados a comienzos de Marzo. Es difícil para el estudiante
+poder mejorar en un área designada sin la retroalimentacion del docente y ésta es una clara muestra de esto. Realmente un problema bastante grande la
+cuestión de responsabilidad con la clase, puesto que ésto afectó las notas futuras de la misma.
+788
+El profesor presenta bastante fallas, primero su incumplimiento a la hora de entregar trabajos y talleres, segundo su falta de compromiso con el curso
+presente en sus llegadas tardes e idas antes del horario de clase establecido, tercero con las constantes excusas que presenta por su segundo trabajo y
+otras excusas mas que son bastante fuera de lugar y por ultimo y para mi lo mas grave de todo el irrespeto que presenta con algunos estudiantes
+incluyendome y la aparente preferencia que presenta con algunos otros y sin hablar de algunas acciones poco profesionales y eticas que he podido
+apreciar de el docente hacia algunas compañeras.
+789
+Primero la falta de responsabilidad por parte del docente, que a pesar de recoger informes y talleres a comienzo del semestre hoy casi 3 mese sdespués no
+ha calificado ni entregado las notas, teneidno a el 90% delcurso en suspenso, las excusas para cuando por su pereza o trabajos exterioes no cumple con lo
+estpipulado, desquitandose en clase con los estudiantes por sus broncas o malos días, la forma de evaluar tan erronea, en los parciales pone que
+expliquemos lo que dice exactamente en las lecturas de casi 20 hojas que pone cada semana, haciendo que el curso le responda con un informe semanal y
+él si no tiene la responsabilidad para calificar y entregar las notas, excusandose de tener más trabajos y poco tiempos, sabiendo que nosotros como
+estudiantes vemos casi 8 materias a la semana sin quejarnos.
+790
+El profesor tiene un buen dominio de tema y se siente seguro de lo que está presentando, pero hay casos en los que se vuelve muy exigente y no se revisa
+a él, teniendo dificultades y eso hace que nos afecte a nosotros como estudiantes.
+791
+El profesor fue muy irresponsable a la hora de entregar los resultados de evaluaciones y trabajos, ya estamos finalizando semestre y no sabemos las notas
+de los trabajos porque aun no los a calificado, su metodologia no fue buena, le gusta exigir pero no cumple como profesor, es muy exagerado a la hora de
+llamar la atencion, pues le molesta hasta el suspiro de un estudiante.
+792
+Es irresponsable al momento de entregar calificaciones y lo realiza de la manera mas adecuada.
+HECTOR FERNANDO RUEDA RODRIGUEZ - TRABAJO DE GRADO 801108M 50
+793
+El profesor al ser un Director de trabajo de grado, es muy practico y paciente con cada una de las dudas del estudiante. Proporciona al estudiante la
+oportunidad de explotar sus propias capacidades y corrige de las que no son muy buenas, se resalta que al hacer estas correcciones es muy agradable y
+empático con el estudiante. Igualmente, al ser un profesor tan practico y con una metodología excelente, el estudiante logro culminar antes de lo planeado
+el trabajo de grado.
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+25/33
+HECTOR FERNANDO RUEDA RODRIGUEZ - TRABAJO DE GRADO 801108M 51
+794
+Ninguna
+CAROLINA SOLARTE GOMEZ - TRABAJO DE GRADO 801108M 55
+795
+LA PROFESORA MANEJA UN CONOCIMIENTO MUY EXHAUSTIVO DEL TEMA ASIGNADO HA TRATAR EN EL TRABAJO DE GRADO, EL CUAL SE
+ENCUENTRA YA EN ETAPA FINAL, LA DOCENTE DA MUCHOS APORTES, REFUERZA Y EXPLICA DE UNA MANERA MUY CLARA.
+LUCY YANETH VARELA HERNANDEZ - TRABAJO DE GRADO 801108M 59
+796
+Gracias por dedicarnos tiempo y orientarnos para que todo salga bien. Bendiciones y siga asi
+LUCY YANETH VARELA HERNANDEZ - TRABAJO DE GRADO 801108M 60
+797
+Buen desarrollo de las actividades academicas
+HAROLD ANTONIO ANGULO CASTILLO - TRABAJO DE GRADO 801108M 61
+798
+Ninguna
+LUCY YANETH VARELA HERNANDEZ - TRABAJO DE GRADO 801108M 72
+799
+EXCELENTE ASESORIA...
+ENEIS JARAMILLO RODRIGUEZ - NEGOCIOS INTERNACIONALES 801109M 50
+800
+ESTE CURSO DEBERIA SER PRACTICO, Y TENER PROGRAMADAS VISITAS PARA CONOCER COMO LAS EMPRESAS LO IMPLEMENTAN.
+801
+Es muy comprometida, y esta a disposición de los estudiantes cuando se necesite. Excelente profesora.
+802
+Excelente docente
+GUSTAVO LINERO G - NEGOCIOS INTERNACIONALES 801109M 51
+803
+Cambio de metodologia, en este semestre fue una de las materias en donde me quedan dudas, no se puede discutir esas dudas en clase ya que el decir
+del docente es que toda la infrmacion estan en los libros de lectura o en su defecto en google.
+804
+MEJORAS EN METODOLOGIA QUE FACILITE EL APRENDIZAJE CON UN MEJOR ACOMPAÑAMIENTO
+CAROLINA SOLARTE GOMEZ - CREATIVIDAD E INNOVACIÓN EMPRESARIAL 801130M 50
+805
+Excelente docente
+806
+Excelente docente
+807
+Es una buena profesora, explica detalladamente los temas
+808
+Excelente metdologia de enseñanza y buena comprension con los alumnos
+809
+Excelente profesora
+810
+La mejor. ufffff Dioss.
+811
+Ninguna
+812
+Excelente profesora, tiene un mecanismo para enseñar muy bueno.
+813
+Buena docente maneja los temas, pero segun mi criterio le falta claridad sobre que pretende que los estudiantes aprendamos del curso, el trabajo final se le
+realizaron muchas modificaciones a ultima hora lo que dificulto su ejecucion, pero la docente siempre estubo dispuesta a apoyar el proceso.
+814
+Excelente docente, fundamenta su pedagogía de forma dinámica y acertada.
+GUSTAVO ADOLFO ROMERO - INFERENCIA ESTADÍSTICA 801150M 50
+815
+Genial
+816
+Expone temas muy complicados para la formación
+817
+A mi parecer la clase debe de ser más práctica y desarrollarse basándose en nuestra carrera. Hasta el momento me quedan muchos vacíos
+818
+Debería dejar de estar tan a la defensiva con los estudiantes y estar dispuesto a escucharlos
+819
+LA METODOLOGIA EMPLEADA NO ME PERMITIO ADQUIRIR LOS CONOCIMIENTOS ESPERADOS Y ADECUADOS, TAMPOCO ME PERMITIO
+UTILIZARLOS DE ACUERDO A LA CARRERA
+820
+El profesor tiene buenos conocimientos para el desarrollo del curso, sin embargo su metología no es la correcta para transmitir los conocimientos a los
+estudiantes ya que por decirlo así es muy escuelero y ronda y ronda por mucho tiempo en un mismo tema sin llegar a una conclusión. Ademas al momento
+de evaluar muchos de los ejercicios que nos deja como taller para solucionar nos corresponde hacerlo de cierta manera de forma empirica, se entregan los
+trabajos a él y se demora bastante tiempo para devolverlos así que no tenemos forma de saber si lo que realizamos estaba bien o no, y con ese mismo
+conocimiento dudoso llegamos a parciales.
+821
+No me gustó la metodología pedagógica.
+JUAN PABLO HINCAPIÉ MEJÍA - SEMINARIO DE EPISTEMOLOGÍA DE LAS CIENCIAS 801152M 50
+822
+Excelente profesor
+823
+Es extremadamente exigente en cuanto a las exposiciones y trabajos escritos cuando los temas son muy complicados para nuestra formación. Debería
+considerar un poco a los estudiantes puesto que la Epistemología no es entendible para la gran mayoría.
+824
+Me parece que los dos temas a tratar no se deberian llevar a la par seria mejor de manera individual para tener mejor entendimiento del tema
+825
+EN MI PERCEPCION PERSONAL EL UTILIZAR AMBOS TEXTOS (NAJMANOVICH Y TAMAYO) AL MISMO TIEMPO, LLEVO A QUE EN OCASIONES
+ME CONFUNDIERA EN ALGUNOS TERMINOS
+826
+Las explicaciones del profesor fueron de cierta manera claras, pero se regaba de tal manera con tanta información adicional que se desviaba de la idea
+principal que estaba tratando de explicar y nos saturaba de demasiada información.
+827
+Bueno profesor.
+828
+.
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+26/33
+HAROLD ANTONIO ANGULO CASTILLO - RESOLUCIÓN DE PROBLEMAS Y TOMA DE DECISIONES 801154M 50
+829
+NO CUMPLE CON LO PACTADO, LLEGA TARDE Y SE DISTRAE POR TODO
+830
+El profesor es muy bueno pero un poquito incumplido, se demora mucho con las notas y mantiene demasiado ocupado en otros asuntos
+LUCY YANETH VARELA HERNANDEZ - TEORÍAS DE LA ORGANIZACIÓN 801155M 50
+831
+Buena docente, los temas vistos en la clase fueron bastante interesantes
+832
+A pesar de ser una materia necesaria para el cumplimiento del pensum, no la considero relevante para la profesion.
+HECTOR GARCIA RODRIGUEZ - MATEMÁTICA BÁSICA-CONTADURÍA 801157M 50
+833
+GRACIAS
+834
+Es el mejor profesor que tenemos
+835
+Ninguna
+836
+5
+837
+NINGUNA
+HECTOR GARCIA RODRIGUEZ - MATEMÁTICAS I 801158M 50
+838
+Excelente materia
+839
+Ninguna
+JAIME ALBERTO DE LA CRUZ GODOY - FUNDAMENTOS DE ORGANIZACIÓN Y ADMINISTRACIÓN 801159M 50
+840
+De las clases mas interesantes y mas adecuadas para la carrera
+841
+Me encanta la metodologia que emplea con las diapositivas en clase, ya que asi siento que asi aprendo mas ya que nos explica punto por punto.
+CARLOS ALBERTO POLANCO HUERTAS - CIENCIAS HUMANAS I 801160M 50
+842
+El profesor debe mejorar su catedra debido a que no hace enfasis en explicar plenamente los temas (habla de su personal con los estudiantes); no corrige
+de una manera productiva a los estudiantes
+843
+Creo que podria mejorar la metodologia, en cuanto a temas, creo que todos los temas no son acorde a la materia
+844
+Habla muchas cosas que no tiene que ver con la materia
+845
+Excelente clase
+846
+Me encanta la metodologia del profesor en clase, pero me disgusto que en una ocasion se comparo con un estudiante y eso no me parecio bien hecho de
+su parte...
+847
+Es buena su metodologia y sus temas son interesantes solo que debe dejar de hablar tanto de su vida personal.
+ANA CECILIA SUÁREZ GONZÁLEZ - CIENCIAS HUMANAS II 801168M 50
+848
+Una buena profesora de ciencias humanas
+849
+Excelente Docente
+850
+Gran profe
+851
+Excelente docente, ideal para quienes inician su formación de primer semestre
+852
+Es la mejor profesora que tiene, por que no la habían traido antes
+853
+Buena profesora, excelente metodología para el desarrollo de las clases y en su momento de explicar deja los temas muy claros
+854
+Es una profesora muy talentosa en su trabajo, explica muy bien el tema, tambien es una excelente persona.
+855
+Realmente posee el conocimiento, la aptitud y el carisma por los estudiantes y por el estudio que un docente necesita. Es en verdad una maestra
+excepcional.
+856
+Una gran docente, en el curso de ciencias humanas quedaron demasiadas incognitas, que a medida del desarrollo del curso actual se fueron aclarando de
+manera clara y concisa.
+857
+Excelente metodolgia de enseñanza
+858
+Que hubiera llegado desde el semestre pasado para la realización del curso, ya que tenemos unas falencias
+JAIME AGUDELO MARTINEZ - MATEMÁTICAS II 801169M 50
+859
+GRAN PROFESOR, AMA LO QUE HACE Y LO QUE ENSEÑA.
+860
+Bien
+RICARDO LADINO JUAN CARLOS - LEGISLACIÓN EMPRESARIAL 801171M 50
+861
+Es excelente.
+RICARDO LADINO JUAN CARLOS - LEGISLACIÓN EMPRESARIAL 801171M 51
+862
+EXCELENTE PROFE
+863
+Excelente docente, faltaria bajar un poco a la elevada exigencia en examenes parciales
+864
+Aunque la metodologia no es la mejor, presenta explicaciones que los estudiantes entendemos facilmente
+865
+Excelente profesor, dar explicaciones mas entendibles y menos tecnicas
+866
+Ninguna
+867
+----
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+27/33
+868
+Buen docente, explica muy bien los contenidos, realiza las claraciones necesarias, pero los examenes son muy complicados de entender, asi se manejen
+los conceptos.
+869
+Es un docente que claramente esta apropiado del tema, pero, la metodología de aplicar el conocimiento no es el apropiado, ya que de por si el tema a tratar
+es complejo no debería aplicarlo como si fueramos ya graduados en derecho comercial, y lo que respecta al acuerdo de evaluación, mas bien es "su
+acuerdo "
+HERNAN AVILA DAVALOS - DISEÑO Y EVALUACIÓN ORGANIZACIONAL 801174M 50
+870
+No explica de manera clara los temas, ni tampoco tiene una buena actitud y disposición para explicar, satura de información y hace que sea mucho más
+dificil entender los temas del curso y es irrespetuoso y satirico al momento de pretender corregir las falencias del estudiante, no sabe dirigirse a los demás y
+tiende a ser grosero con los estudiantes, tiene mucho conocimiento y experiencia pero no sabe dirigirse a los demás ni tiene tacto.
+871
+La metodologia utilizada por el profesor no es la adecuada ya que no da claridad del tema
+872
+La metodologia usada por el profesor pienso que no es la adecuada ya que no da claridad de los temas y no tiene la disposicion de aclarar nada a los
+estudiantes, cuando quiere ''aclarar'' algo lo hace en forma burlesca ya que se burla constantemente de los estudiantes
+873
+El docente fue coherente de acuerdo al curso pero su metodología no fue satisfactoria para mi
+DORIAN ROLANDO POSADA MOSQUERA - DISEÑO Y EVALUACIÓN ORGANIZACIONAL 801174M 51
+874
+Buenas dinamica de estudio
+875
+Un profesor con buen carisma al explicar
+876
+Para resaltar cumplimiento de todas las actividades propuestas
+877
+Ninguna
+878
+Cada clase se buscaba una metodología diferente para el aprendizaje
+879
+Es muy bueno y amplio su conocimiento, y lo comparte con todos de una manera clara, pero es una clase que se compone de varios temas que deja mas si
+se aplica como tal, me parece mejor que fuese mas practico y menos teorico, es decir mas a hacer. ya que es un
+880
+Muy dinamica la clase, diferentes trabajos realizados permitian hacerla mas dinamica, un profesor muy puntual y comprometido con su asignatura, muy
+organizado con los contenidos.
+CESAR AUGUSTO SAAVEDRA QUINTERO - FUNDAMENTOS DE MERCADEO 801175M 50
+881
+Docente Bien calificado para tratar a los estudiantes y con toda la disponibilidad para aclarar dudas y explicar los temas
+882
+EXCELENTE PROFESOR
+LINA BUITRAGO - PROGRAMACIÓN E INTERNET 801176M 50
+883
+Grannn cambio de rutina con ella gracias profe
+884
+No se da a entender, no demuestra interes y es grosera.
+885
+No se toma el tiempo de explicar correctamente los procedimientos, ni a aclarar las dudas de las estudiantes.
+886
+Organizar la sala de sistemas, la profesora tiene toda la disponibilidad para explicar, pero con los computadores malos es dificil, lo que se hace es llevar el
+computador personal y asi poder ver la clase y hacer los ejercicios.
+CRISTIAN ANDRES BELTRAN ZUÑIGA - GESTIÓN DEL TALENTO HUMANO 801177M 50
+887
+Excelente docente. Muy práctico y entendibles sus clases, además de ser dinamico
+888
+Hizo de la clase un espacio agradable y los metodos utilizados para que aprendieramos los temas fueron adecuados, la clase era muy diferente y muy
+ludica, cada actividad nos forzaba a aprender el tema de verdad. un profesor muy respetuoso agradable y responsable.
+889
+El profesor es demasiado bueno en las clases, sus explicaciones dejan todo el tema claro, y las actividades que desarrollamos en las clases fueran un
+fortalecimiento a todos los temas vistos en clase, excelente profesor
+890
+El docente es excelente , siempre tiene disposicion , es muy amable y respetuoso , los temas son claros y concisos
+891
+La clase es demasiado agradable, se esmera mucho para que los estudiantes aprendan los conceptos y ademas lo apliquen en su vida profesional,
+siempre estuvo a disposición de los estudiantes y su metodologia es muy efectiva.
+892
+Calidad de persona y excelente profesor
+CAROLINA SOLARTE GOMEZ - CREACIÓN DE NUEVOS PRODUCTOS 801178M 50
+893
+Excelente profesora
+894
+Muy buena profesora
+895
+EXCELENTE COMO DOCENTE, MUY DINAMICA.
+896
+A docente tiene actitud para enseñar siempre explica de la mejor manera , esta siempre dispuesta , es buena docente.
+897
+Excelente Profesora, Gran Profesional y Gran Ser Humano
+898
+EXCELENTE DOCENTE, CONTINUA ASI, DESTACO SUS VALORES Y PRINCIPIOS , SU CARACTER Y LAS DEFENSA DE SUS CONVICCIONES
+CRISTIANAS.
+899
+Excelente manejo de temas
+JULIAN ANDRES ORTIZ MOSQUERA - CREACIÓN DE NUEVOS PRODUCTOS 801178M 51
+900
+Es un excelente profesor, sus explicaciones fueron claras y se esmera para que nosotros los estudiantes nos preparemos de manera profesional para el
+mercado laboral, es muy comprometido con su trabajo.
+901
+Buen docente, la universidad deberia de tener mas profesor como Julian con toda la disponibilidad para explicar y dar a conocer su conocimiento con
+claridad
+902
+Todo muy bien
+GUSTAVO ALFONZO ORTIZ VELA - GESTIÓN DE LA PRODUCCIÓN DE BIENES Y SERVICIOS 801179M 50
+903
+Excelente profe, explica muy bien los temas y se toma el tiempo que sea necesario para que todos entendamos el tema de la clase.
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+28/33
+904
+Explica muy bien, aunque con los dias se vuelve muy rutinario y se pierde el interes por los temas.
+905
+El profesor es excelente , es una persona muy respetuosa y explica muy bien , es muy profesional en su materia y siempre busca que los estudiantes
+entiendan.
+906
+Es muy comprometido con su trabajo, sus explicaciones son entendibles.
+LINA BUITRAGO - ANÁLISIS DE SISTEMAS Y BASES DE DATOS 801180M 50
+907
+Es buena docente, sin embargo propongo mejorar en la explicacion de nuevos temas a la clase, dictar la clase con mucha mas paciencia para lograr un
+buen manejo de los programas access y demas
+908
+La docente a veces contesta de mala manera, incluso cuando se le pregunta acerca del tema que explica.
+909
+En ocasiones a docente es muy grosera para contestar a los estudiantes y siempre es una actitud muy maluca, eso no permite una enseñanza mas optima
+por que en el momento de las aseseorias se quedan cortas y no son suficientes , pero lo que mas choca es que la actitud es muy grosera.
+910
+Excelente docente, metodologia, buenos ejercicios y casos prácticos.MUCHAS GRACIAS, PROFE. FELICITACIONES
+DIEGO ALFREDO LEYES VELASQUEZ - ANÁLISIS DE SISTEMAS Y BASES DE DATOS 801180M 51
+911
+Muy buen profesor, sin embargo el contenido de la asignatura no me parece relevante para nuestra formación como administradores.
+912
+Ser un poco mas flexible..
+913
+Muy buen profesor, recursivo, creativo, muy preocupado porque el estudiante entienda y comprenda muy bien su materia y la praxis de talleres y trabajos
+muy bien diseñada para aprovechar los conocimientos teóricos.
+914
+EXCELENTE PROFE
+915
+Buen profesor, me parece que la metodología es propicia para la reflexión de los temas en el contexto empresarial
+916
+N/A
+MARÍA EUGENIA CHAPARRO ROJAS - PROCESOS DE FABRICACIÓN DE BIENES Y SERVICIOS 801183M 50
+917
+N/A
+918
+De manera reiterada y en todos los semestres se ha realizado observaciones respecto a el docente, que no cumple con los horarios establecidos de la
+universidad para dar la clase, finaliza las clases en un cuarto de la jornada establecida, lo cual es una falta de respeto. Espero que estan evaluaciones sean
+consideradas para retroalimentar a el docente.
+919
+La profesora es buena y sabe de los temas, le cambiaria la forma de como realizar las clases.
+CARLOS ALBERTO POLANCO HUERTAS - ADMINISTRACIÓN PARA EL CAMBIO 801184M 50
+920
+.
+921
+Maneja una excelente organizaciòn del tiempo y es cumplido con las notas.
+922
+El profesor es excelente en su labor
+923
+El docente tiene bastante conocimiento acerca de la asignatura, pero debe tener en cuentas que los estudiantes no son colegialos.
+924
+1- Si desea hablar de temas politicos que sea de una manera neutral, no haciendo apologia al uribismo.
+925
+El profesor se esfuerza por generar la participación, reflexión y aprendizaje. Se enfoca en que los estudiantes generen su marca personal de liderazgo
+personal y profesional .FELICITACIONES
+HAROLD ANTONIO ANGULO CASTILLO - ADMINISTRACIÓN PARA EL CAMBIO 801184M 51
+926
+EL PROFESOR NO CUMPLIO CON LAS FECHAS PACTADAS INICIALMENTE Y LOS TRABAJOS LOS DABA CON PLAZO DE 2 A 3 DIAS DE
+ENTREGA
+927
+El profesor Harold tiene una metodología para enseñar muy amena, utiliza ejemplos prácticos con el Bryan y Wendy que hacen reír y enseñan. Debe
+mejorar la hora de inicio de clases puesto que ha llegado retrasado, también debe mejorar la entrega de notas puesto que aún no ha entregado evaluado
+muchos talleres que hicimos hace 1 mes
+928
+Recomiendo que el profesor envie con más anticipación las actividades para cada clase ya que este semestre se presentó en diferentes esta situación y se
+tuvo varios inconvenientes e inconformidades por esto.
+929
+Es un profesor que se compromete con la formación del estudiante y sigue casi extrictamente el programa diseñado para la materia
+930
+Planificar de manera mas adecuada las actividades del curso, a tiempo y con indicaciones mas claras.
+931
+Manejar mejor los tiempos. Excelente profesor, buena pedagogía y amplio conocimiento en los temas
+932
+ABURRIDOR Y CHOCANTE MUY TIRADOR
+GUSTAVO ALFONZO ORTIZ VELA - GERENCIA DE LA CALIDAD 801185M 50
+933
+Buen conocimiento, excelente profesor, sus clases son muy buenas. explicar un poco mas sus ejercicios
+934
+Excelente docente!!
+MARÍA EUGENIA CHAPARRO ROJAS - GERENCIA DE LA CALIDAD 801185M 51
+935
+Este tipo de clases deben ir con visitas empresariales
+936
+Durante la carrera no he tenido ningun inconveniente con la docente, sin embargo desde mi punto de vista la docente no posee metodologia para enseñar,
+posiblemente tenga mucho conocimiento sobre la materia sin embargo no es clara con sus explicaciones ni tampoco utiliza metodologia que motive a
+aprender, la docente exclusivamente se dedica a leer diapositivas que descarga de internet y de alli no aporta nada mas, esta sugerencia la realizo ya que
+me interesa la calidad en la universidad aun cuando yo ya estoy culminando mi carrera me gustaria que la universidad mejore en esta area
+937
+No cabe duda que la profesora Chaparro tiene amplio conocimiento en temas de calidad y los maneja adecuadamente, sin embargo me gustaría que fuera
+un poco mas exigente con el curso.
+938
+BUENA PROFE
+939
+Materia compleja pero el profesor ha hecho su mejor esfuerzo por ayudar a entender esa complejidad; a mi parecer lo ha logrado
+940
+Debería ampliar y profundizar más en los temas del curso para que haya mayor absorción de los conocimientos. la docente maneja muy bien los temas y
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+29/33
+demuestra su expertica en ellos, pero en las clases sería bueno mayor amplitud y ejemplificación
+941
+.
+942
+Buena metodologìa y dinamismo en clase. Aborda eficazmente los temas establecidos con anterioridad.
+943
+Me parece que hace falta compromiso con la creación de conocimiento y el despertar de un espíritu crítico por parte del docente.
+HECTOR FERNANDO RUEDA RODRIGUEZ - SOCIOLOGÍA DE LAS ORGANIZACIONES 801190M 50
+944
+Excelente profesor
+945
+Excelente docente lo hace reflexionar auno del todo
+946
+Explica muy bien, hace la clase mas amena, excelente profesor
+ANDREA PATRICIA GALLO RAMIREZ - ORGANIZACIÓN ADMINISTRACIÓN DE EMPRESAS 801208M 50
+947
+Todo bien
+948
+Interanse clase
+949
+Excelente profesora
+950
+No deberia poner proyectos al final que no estan estipulados al principio del curso
+951
+Muy buena docente, ojala los estudiantes nuevos puedan obtener conocimiento con ella.
+952
+Muy bien en general
+953
+La profesora es muy buena, se da entender muy facilmente se le nota la experiencia y los estudios. tiene pedagogia y una muy buena metodologia. Es
+bueno que otros estudiantes tengan la oportunidad de contar con profesores como ella. Lo unico malo fue incorporar un proyecto al final del curso, cuando
+no lo establecio al principio.
+GUSTAVO ALFONZO ORTIZ VELA - TOMA DE DECISIONES Y NEGOCIACIÓN 801218M 50
+954
+Las actividades y dinámicas desarrolladas durante el curso fueron excelentes, el profe Gustavo es de los mejores en la Universidad. Me parece que esta
+asignatura debe desarrollarse en semestres anteriores puesto que la toma de decisiones la llevamos a cabo constantemente durante nuestra formación y lo
+ideal sería tener el conocimiento teórico desde semestres intermedios (4to o 5to semestre)
+955
+Método de enseñanza muy bueno y utiliza el análisis, la reflexión y la práctica.
+956
+Excelente profesor, hace las clases muy dinamicas y en gran manera amenas; para el aprendizaje de la materia
+957
+EXCELENTE CALIDAD HUMANA, GRAN DOCENTE, RECURSIVO, VERSATIL, CREATIVO, INNOVADOR
+958
+Excelene profesor.
+959
+Ecxelente profesor, tiene voacion y enseña con agrado, se hace entener.
+DIEGO ALFREDO LEYES VELASQUEZ - GESTIÓN DE LOS SISTEMAS DE INFORMACIÓN Y TELECOMUNICACIONES 801219M 50
+960
+.
+961
+Muy buena metodologìa. Cumple plenamente con l estipulado en el cronograma y la programaciòn del curso. Es realmente muy cumplido y responsable.
+962
+Excelente profesor
+ANGELA MARIA HERRERA RESTREPO - ADMINISTRACIÓN DE NUEVAS EMPRESAS Y PROBLEMÁTICA MIPYME 801252M 50
+963
+.
+964
+Que estipule al inicio del curso la programaciòn con mayor claridad.
+965
+La Profesora no tiene una buena metodologia.
+966
+Excelente la metodologia utilizada este semestre, nos permitio conocer de cerca las problematicas de las pequeñas empresas en el municipio. Fue una
+experiencia enriquecedora.
+967
+La profesora no tiene una metodologia clara, le falta integrarse mas con sus estudiantes y darles buenas asesorias
+968
+El espacio para la clase no fue el adecuado, somos muchos para un salon tan pequeño
+969
+Excelente profesora, la metodología me gusto porque nos da la oportunidad de interactuar con empresario algo que los demás profesores deberian
+implementar en las asignaturas para tener experiencia en la aplicación de teorías vista en clase. Es una de las pocas profesoras que aplica lo aprendido
+con el mundo real
+HECTOR ALBERTO CORTEZ VALENCIA - INTRODUCCIÓN A LA CONTADURÍA PÚBLICA 802002M 50
+970
+NINGUNA
+971
+GRACIAS
+972
+Ninguna
+973
+El profesor hector tiene mucho conocimiento pero no sabe trasmitirlo, y al momento de decirle que va muy rapido en la forma de hablar, decia que asi
+seguiria.
+974
+NINGUNA
+LUIS FERNANDO VASQUEZ - LABORATORIO CONTABLE FINANCIERO SISTEMATIZADO 802025M 50
+975
+CON RESPECTO A LA UBICACIÓN DEL CURSO EN EL SEMESTRE, SE HACE NECESARIO QUE ESTE SE VEA DESDE SEMESTRES INFERIORES Y
+NO EN LOS ÚLTIMOS SEMESTRES.
+976
+Es un excelente profesor
+JULIAN DAVID SALCEDO MOSQUERA - CONTABILIDAD PÚBLICA 802026M 50
+977
+INICIALMENTE SE HABÍA PROGRAMADO AL DOCENTE JULIÁN DAVID SALCEDO; PERO, A ÚLTIMA HORA ESTE NO TOMÓ EL CURSO Y
+PROGRAMARON AL PROFESOR LUBIAN HERNANDO MORENO. QUIEN, POR CIERTO, FUE UN PÉSIMO DOCENTE: FALTA DE PEDAGOGÍA, SOLO
+ESTUVO DICTANDO COMO SI FUÉRAMOS ESTUDIANTES DE PRIMARIA Y UNA VEZ TERMINABA DE DICTAR, REPETÍA (COMO EXPLICACIÓN), LO
+Ó
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+30/33
+MISMO QUE ACABABA DE DICTAR. NUNCA FUE COHERENTE CON EL CURSO, NO PROGRAMABA CLASE, NO CUMPLIÓ CON LO ESTABLECIDO
+AL INICIO DEL CURSO Y HUBO UN MOMENTO EN EL QUE COMENZÓ A LLEGAR TARDE. ES UN DOCENTE QUE NO VALE LA PENA VOLVER A
+CONTRATAR, NO POR EL BIENESTAR ACADÉMICO DE LOS ESTUDIANTES QUE VIENEN TRAS NOSOTROS. ES MUY TRISTE QUE UNA
+ASIGNATURA TAN IMPORTANTE PARA LOS ESTUDIANTES DE ÚLTIMOS SEMESTRES, SEA ASIGNADA A ALGUIEN QUE NO CONOCE NADA DEL
+TEMA Y, POR ENDE, NO IMPARTE NADA A LOS ESTUDIANTES.
+978
+Al inicio se habia programado al docente Julian David Salcedo, pero pero a ultima hora estye no tomo el curso y programaron al profesor Lubian Hernando
+Moreno.
+979
+INICIALMENTE SE HABIA PROGRAMADO EL DOCENTE JULIÁN DAVID SALCEDO PERO A ÚLTIMA HORA ESTE NO TOMO EL CURSO Y
+PROGRMARON AL PROFESOR LUBÁN HERNANDO MORENO.
+980
+Inicialmente el curso fue programado para el docente Julian David Salcedo, sin embargo por falta de disponibildiad fue programada a el docente Lubian
+Hernando Moreno
+981
+Se debe precisar que inicialmente el docente asignado para dictar la materia de Contabilidad pública fue Julian David Salcedo Mosquera, sin embargo el
+docente que en verdad quedo correspondiente para enseñar la materia es Lubian Hernando Moreno
+982
+Recomiendo compartir los archivos y presentaciones que usa para dar las clases como lo hacen todos los docentes a tiempo, el amarre de las diapositivas
+no ayuda, lo deja a uno perdido en el limbo con tanto contenido; mientras que compartirlas mejora el recuerdo de lo que se dijo en clase y los resultados de
+las calificaciones de cada pregraduando suben. Uno estudia con más ánimo. Incentiva la investigación o el deseo de profundizar en el tema.
+983
+Inicialmente se había programado al docente Julián David Salcedo;pero, a última hora este no tomó el curso y programaron al profesor Lubian Hernando
+Moreno.
+984
+El curso fue asignado al profesor Lubián Hernando Moreno, es un docente con falta de pedagogía para dictar la materia; el método aplicado no es el
+correcto, falta estrategia y dinámica durante la clase.
+985
+INICIALMENTE SE HABÍA PROGRAMADO AL DOCENTE JULIÁN DAVID SALCEDO; PERO, EN ÚLTIMA INSTANCIA ESTE NO TOMÓ EL CURSO Y
+POR ELLO, ASIGNARON AL PROFESOR LUBIAN HERNANDO MORENO, AL CUAL LE CORRESPONDE LA PRESENTE CALIFICACIÓN.
+986
+INICIALMENTE SE HABÍA PROGRAMADO AL DOCENTE JULIAN DAVID SALCEDO; PERO A ÚLTIMA HORA ESTE NO TOMÓ EL CURSO Y
+PROGRAMARON AL PROFESOR LUBIAN HERNANDO MORENO
+987
+INICIALMENTE SE HABIA PROGRAMDADO AL DOCENTE JULIAN DAVID SALCEDO, PERO, A ULTIMA HORA ESTE NO TOMO EL CURSO Y
+PROGRAMARON AL DOCENTE LUBIAN HERNANDO MORENO, QUIEN A MANERA PERSONAL, NO CUENTA CON LA SUFICIENTE PEDAGOGIA
+PARA DIRECCIONAR UNA CATEDRA DE CLASE, NO CUENTA CON UNIFORMIDAD NI DISEÑO AGRADABLE PARA CON EL MATERIAL DE CLASE,
+TAMBIEN HACE CASO OMISO A LA SOLICITUD ACERCA DE COMPARTIR LA INFORMACION SOLICITADA POR LOS ALUMNOS DE LO VISTO EN
+CLASE Y POR ULTIMO, PLANTEA TRABAJOS FINALES SIN NI SIQUIERA HACER UN EJEMPLO O CASO PREVIO DEL MISMO.
+988
+Cabe resaltar que docente que aparce en sistena no es mismo que nos dio la asignatura, la persona que la dicto se llama dubian. La universidad debe
+tener mas cuidado a la hora de eligir su personal docente, el docente que dicto esta materia no era coherente con lo que decia con lo que praticaba le falta
+mucha pedagogia
+989
+El docente que nos dio el curso fue el profesor Lubian
+990
+Considero que la academia y mas la universidad del valle por su alto reconocimiento necesita docentes de mayor categoria y no reemplazos que dejen
+vacios a sus estudiantes. Cabe aclarar que el curso fue dictado por un profesor diferente al que aparece en la evalución, el curso fue dado por el profesor
+Llubian. en la casilla 20 aclaro que no es que no haya sido respetuoso sino mas bien que al querer explicar un tema y no obtener resultados hacia
+comentarios no adecuados y no reflexivos referentes a la falta de conocimiento de nosotros como estudiantes.
+991
+Esta materia fue dada por el profesor Lubian , no el profesor que aparece para la evaluacion.
+992
+INICIALMENTE SE HABÍA PROGRAMADO AL DOCENTE JULIÁN DAVID SALCEDO, PERO A ÚLTIMA HORA ESTE NO TOMÓ EL CURSO Y
+PROGRAMARON AL PROFESOR LUBIAN HERNANDO MORENO; QUIEN A MI CONSIDERACIÓN LE FALTA MUCHA PEDADOGÍA PARA
+DESEMPEÑAR SU LABOR.
+993
+INICIALMENTE SE HABIA PROGRAMADO ALDOCENTE JULIAN DAVID SALCEDO, PERO A ULTIMA HORA ESTE NO TOMO EL CURSO Y
+PROGRAMARON AL PROFESOR LUBIAN HERNANDO MORENO.
+HECTOR MAURICIO MEJIA VALENCIA - CONTROL DE GESTIÓN 802046M 50
+994
+Desmotiva con calificaciones demasiado bajas en las sustentaciones de investigaciones y trabajos impuestos. Recomiendo exigir sí, pero ser más justo
+cuando califica. Que nadie saque un 4 o un 5 hace que nadie dé lo mejor de sí en subsiguientes asignaturas con el mismo docente que involucren trabajos
+de investigación y sustentación. Ya pasó con Software y Proceso Contable, y vuelve y pasa con esta asignatura. Por lo demás, es un gran docente.
+WILLIAM GERARDO OSORIO ALVARADO - LEGISLACIÓN TRIBUTARIA II 802057M 50
+995
+Excelente docente, muy buena metodología implementada
+996
+El mejor!
+CUPERTINO FAJARDO - FINANZAS INTERNACIONALES 802060M 50
+997
+.
+998
+Buena metodologìa y manejo del tiempo. Cumple con lo estipulado al inicio del curso
+999
+El profesor tiene un amplio conocimiento en finanzas, y gracias a las clases puede pasarnos su legado para nuestro futuro
+1000 El profesor tiene gran conocimiento con respecto a la asignatura
+REINALDO SABOGAL - PROYECTO DE GRADO 802062M 50
+1001 Muy buen docente
+RODRIGO BECERRA TROCHEZ - ADMINISTRACIÓN FINANCIERA 802068M 50
+1002 Subjetividad en las calificaciones con algunos estudiantes
+1003 Considero que es un profesor excelente, no obstante para este curso el proceso me parece que fue muy acelerado y no profundizamos mucho en temas
+fundamentales para la carrera. Tambien se puede percibir subjetividad hacia integrantes del grupo.
+1004 Muy buen docente
+REINALDO SABOGAL - FUNDAMENTOS DE CONTABILIDAD FINANCIERA 802082M 50
+1005 NINGUNA
+1006 Graciaas
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+31/33
+1007 Ninguna
+1008 5
+1009 La metodología empleada por el docente fue adecuada y muy clara
+1010 NINGUNA
+WILLIAM GERARDO OSORIO ALVARADO - PROCESOS DE COSTOS I 802084M 50
+1011
+Considero que la asignatura de costos es de gran importancia para nuestra formación, pero desafortunadamente se ha tenido grandes vacíos que vienen
+desde la asignatura anterior a esta, -Fundamentos de costos- que ha impedido al óptimo desarrollo de los temas propuestos y esto se debe a la falta de
+docentes con conocimientos amplios de la asignatura, sin nombrar la dificultad de este semestre por el cambio tan repentino de docente. Es importante
+resaltar que el docente WILLIAM GERARDO OSORIO ALVARADO ha hecho un gran trabajo al ayudar a los estudiantes para cubrir los vacíos con los que
+se han llegado a la asignatura pero considero que se debe tomar medidas para los que vienen en formación y no presenten las mismas dificultades que VII
+semestre ha tenido.
+1012 Excelente docente, la metodología es la indicada, muy respetuoso y dispuesto a resolver inquietudes.
+1013 El profesor tomo el curso iniciando semestre (despues de primeros parciales) y de verdad que nos salvo el semestre!
+CARLOS ENRIQUE BETANCOURT DUQUE - CASOS CONTABLES ESPECIALES II 802086M 50
+1014 Buena profe, seguí así...
+1015 Super
+1016 Muy buen profesor
+1017 Un excelente profesor, explica de manera clara y completa todos los temas que se esperan tratar en el curso
+1018 Excelente docente.
+1019 Explica claramente los temas expuestos en clase
+1020 En las clases demuestra todo sus conocimientos y es muy comprometido con el aprendizaje de cada uno de los estudiantes.
+1021 Excelente docente
+1022 Excelente profesor.
+1023 El profesor dicta muy raro
+REINALDO SABOGAL - CONTABILIDAD DE LA FINANCIACIÓN 802087M 50
+1024 Excelente Docente
+1025 Los temas como son tan largos e importantes deberían darse con mas tiempo
+1026 Excelente Profesor!
+1027 Excelente profesor, ojalá nos enseñara todas las materias relacionadas con contabilidad
+1028 Una materia muy importante en mi desarrollo profesional
+1029 Es un gran docente.
+1030 Todo bien.
+1031 CUMPLE CON LAS ESPECTATIVA
+1032 El mejor profesor
+1033 Excelente docente, e imprecindible para el acompañamiento de los proximos años
+1034 Muy bien.
+1035 Excelente profesor
+1036 Excelente profesor
+JUAN PABLO RICARDO MANYOMA - FUNDAMENTOS DE CONTROL Y AUDITORÍA 802089M 50
+1037 Excelente profesor con amplios conocimientos y experiencia que contribuyen a un buen desarrollo de la asignatura. Desde mi punto de vista, considero
+importante continuar con el mismo profesor la línea de control y auditoría.
+1038
+Seria bueno que el docente cambiara la metodologia de aprendizaje, ya que lo unico que logro fue que no nos gustara la auditoria ya que de ella no explico
+nada se centro solo en las niif, y de control y auditoria lo explico en una sola clase, aparte de eso coloca un trabajo final del cual lo que explico fue muy
+poco
+1039 La metodologia aplicada es la adecuada, excelente docente
+1040
+Es normal algunos inconvenientes en un profesor que no es licenciado ni tiene pedagogia, pero esta parte la debe evaluar es la universidad al momento de
+hacer sus contrataciones y arriesgarse cuando contrata gente sin perfil sino exalumnos. El supo llevar los impases del principio y creo que su desempeno
+fue bueno desde la mitad del curso en adelante, al principio estaba algo enrredado con la metodologia que debia implementar.
+HECTOR MAURICIO MEJIA VALENCIA - DIRECCIÓN Y ORGANIZACIÓN CONTABLE 802092M 50
+1041 Mucho trabajo autonomo y mucha carga estudiantil.
+CESAR LEON QUILLAS - GESTIÓN FINANCIERA Y PRESUPUESTOS 802100M 50
+1042 Excelente profesor, de los mejores que tiene la universidad, con profesores de esa calidad, la universidad seria un poco mas profesional
+1043 El profesor quillas es un excelente profesor. por ende no me parece que le llamen la atención por acuerdos que hace con todo el grupo respecto a los
+horarios de entrada y salida, debido a que es de los poquitos profesores que si cumple con toda la tematica a lo largo de todo el curso
+1044 Es un excelente profesor pero mi principal problema fue que en cuanto al primer parcial no lo llevo listo o sea impreso y tuvo que esperar que abrieran la
+fotocopiadora a las 8 de la mañana pasadas cuando la clase era de 7 a 10 lo cual significa que perdimos casi hora y media de clase para el parcial ya que
+salimos a las 10 como siempre y muchos compañeros no tuvieron el tiempo suficiente para terminarlo, eso me parecio una total falta de respeto, deberia
+traerlo listo ya desde la noche anterior asi sea. y por otro lado me parece una estupidez que lo regañaran por salir 20 minutos antes, primero era un
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+32/33
+acuerdo del salon y todos estuvimos de acuerdo unanimemente y por otro lado incluso ibamos adelantados en tema, entonces no me parece que lo
+regañaran sin argumentos.
+1045
+De manera academica, es un excelente profesor; con sus explicaciones y trato hacia los estudiantes. Pero, en el momento del tiempo para la realización del
+parcial no dio las horas estipuladas para hacerlo; lo cual independientemente de que unos compañeros terminaran antes no significa que todos tienen la
+capacidad de terminar antes de las 3 horas y ganarlo.
+1046 Es un buen docente pero el desinteres que tiene porque los estudiantes aprendan es nulo, tanto que desde la primera clase dijo que no le importaba que
+aprendieramos, para ser docente hay que tener conocimiento y vocacion.
+1047 SERIA DE MUCHA IMPORTANCIA QUE ESTA CLASE, SE DICTE POR MEDIO DE SOFTWARE ESPECIALIZADO.
+1048 Excelente profesor.
+1049 Excelente Profesor!!
+REINALDO SABOGAL - CONTABILIDAD DE COSTOS Y PRESUPUESTOS 802101M 50
+1050 Se nota que prepara sus clases y se preocupa por que los estudiantes puedan aprender adecuadamente la temática y los temas de estudio. Por eso
+implementa estrategias participativas que ayudan a la construcción de conocimientos.
+1051 Excelente profesor.
+1052 Excelente la forma de expresar su conocimiento
+1053 Excelente metodologia y tiempo para explicacion de los temas
+1054 EXCELENTE DOCENTE TIENE UNA VIRTUD QUE ES LA PACIENCIA
+1055 Excelente profesor, se desempeña muy bien en su area, es muy cumplido, explica super bien y se le entiende perfectamente.
+1056 Un exelente profesor, con una metodologia de enseñanza propicia y entendible.
+1057 Muy buena metodología, excelente docente
+1058 Buena metodologia de enseñanza y carisma a la hora de impartirla
+1059 Excelente profesor y persona..
+1060 EXCELENTE METODOLOGÍA!
+1061 Es un profesor muy bueno, es paciente, su metodología es muy buena y siempre esta atento a cualquier inquietud y hace las clases dinámicas, es
+respetuoso y hace que los temas queden claros.
+1062 Un excelente docente.
+1063 Es muy buen profesor, explica perfectamente.
+1064 De los mejores docentes.
+1065 Es excelente profesor.
+CRISTIAN ANDRES BELTRAN ZUÑIGA - CONTABILIDAD GENERAL 802102M 50
+1066 Buen profe
+1067 Excelentes profesor , sabe explicar muy bien las cuentas y tiene un gran conocimiento contables.
+1068 Excelente docente , muy claro en las explicaciones, tiene vocación y disponibilidad para despejar dudas.
+1069 Espero que nos veamos el próximo semestre, eres un excelente profesor y ser humano, muchas gracias por tanto profesor
+1070 Excelente profesor.
+1071 Excelente profesor, tiene una buena metodología para el desarrollo de las clases, sus explicaciones son claras y los temas de practicas ayudan al
+desarrollo de habilidades para nuestro desempeño profesional.
+1072 Es el mejor profesor de contabilidad del mundo, es muy profesional en su trabajo, muy buena persona.
+1073 Es un gran docente y ser humano. Tiene un manejo superior del tema y sabe cómo enseñarlo. Es realmente un profesor genial.
+1074 Gran trato y manejo del curso y de los estudiante durante el semestre, cumplido con los compromisos y da muy buenas explicaciones.
+1075 El mejor profesor de todos
+1076 Felicito al profesor está muy atento y se ve muy comprometido con el desarrollo del curso.
+1077 El docente es excelente
+CARLOS ENRIQUE BETANCOURT DUQUE - CONTABILIDAD Y LEGISLACIÓN TRIBUTARIA-SECTOR ECONOMÍA SOLIDARIA 802103M 50
+1078
+EL PROFESOR DEBE UTILIZAR LOS MEDIOS INSTITUCIONALES PARA INFORMAR A LOS ESTUDIANTES MATRICULADOS EN LA MATERIA TODO
+LO REFERENTE A ELLA, DADO QUE AVISO QUE HABÍA UNA CLASE UN DOMINGO, ÉL DIJO QUE IBA A ENVIAR UN CORREO PERO INFORMÓ A
+UNA PERSONA Y ESA PERSONA NO INFORMÓ A TODOS LOS QUE ESTABAN MATRICULADOS EN ESA MATERIA. DECIRLE A UNA PERSONA
+PARA QUE DE LA INFORMACIÓN NO ES UN MEDIO DE COMUNICACIÓN GARANTIZADO.
+1079 Excelente docente
+HECTOR MAURICIO MEJIA VALENCIA - EVALUACIÓN FINANCIERA DE PROYECTOS PARA ADMINISTRACIÓN 802116M 50
+1080 Excelente docente, se aprende demasiado con el, lo aterriza a uno a la realidad y le cambia la manera de ver las cosas, un profesor digno de respeto y
+tiene demasiado conocimiento que hace que los estudiantes de la universidad del valle crezcan profesionalmente
+1081 .
+1082 Excelente manejo en cuanto a metodologìa y tiempo.
+1083 El profesor mejia, es un excelente docente, considero que es calidad institucional.
+1084 A pesar de la mala fama que se ha generado con respecto al docente, yo considero que es excelente, no solo por el conocimiento que brinda, sino tambien
+por el compromiso que tiene con respecto al acompañamiento que le brinda al estudiante.
+
+----
+12/6/2018
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php
+33/33
+1085 Los temas del curso son extensos y algunos complejos; no da el tiempo para comprender de una mejor forma, ya que las asesorias tienen que ser por fuera
+de clase
+JUAN CARLOS LOPEZ - MATEMÁTICA FINANCIERA PARA ADMINISTRACIÓN 802117M 50
+1086 Es una persona, muy respetuosa, colaboradora y excelente profesor.
+1087 El profe siempre esta disponible para preguntas y explica muy bien
+RODRIGO BECERRA TROCHEZ - MATEMÁTICA FINANCIERA PARA ADMINISTRACIÓN 802117M 51
+1088
+Falta un poco de metologia, como tambien ir un poco mas despacio en las clases, pues hay estudiantes que no tienen una capacidad de entendimiento tan
+rapida como las explicaciones del profesor. para mi como estudiante lo mas importante es poder entender los temas de las clases, mas no abordar una
+cantidad significativa de los mismos.
+1089 Su metodologia no es la adecuada, ya que no se acopla al ritmo de aprendizaje de todos los estudiantes, si no que por el contrario impone el suyo.
+1090 Excelente profesor, tiene excelente manejo de los temas que nos enseña.
+1091 Ninguno
+1092 Tratar de ser mas flexible a la hora de explicar un tema que se le pide
+1093 Exclente profesor, pero los contenidos de la materia son muchos y se ve obligado a dar una explicacion muy rapida.
+1094 Excelente docente, se aprende o se aprende con el, exige que se tenga que estudiar tanto fuera como dentro del aula
+ 
+
+----
