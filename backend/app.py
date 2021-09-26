@@ -52,7 +52,7 @@ def uploader():
   f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
   procesador(filename)
   # Retornamos una respuesta satisfactoria
-  return redirect('http://localhost:3000/classifierAlfabetico')
+  return redirect('http://localhost:3000/evaluaciones')
 
 
 @app.route("/mejor-promedio", methods=["GET"])

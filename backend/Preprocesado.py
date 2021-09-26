@@ -6,7 +6,6 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.neural_network import MLPClassifier
-from sklearn.metrics import classification_report
 import os
 
 non_words = list(punctuation)
@@ -76,7 +75,6 @@ def dataset(new_reviews):
     tfidf = TfidfTransformer()
 
     # MLP (red neuronal)
-    #print("Clasificador NLP")
     text_classifier = MLPClassifier(hidden_layer_sizes=(
         1500, 1000, 500), max_iter=3000, activation='relu', solver='adam', random_state=1)
 
@@ -90,25 +88,5 @@ def dataset(new_reviews):
     pipeline.fit(data['Observaciones'].values.astype('U'), data['Sentiment'])
     pipeline.score(data['Observaciones'].values.astype('U'), data['Sentiment'])
 
-    # aplicamos todas las técnicas de medición
-    #all_predictions = pipeline.predict(data['Observaciones'].values.astype('U'))
-    #print(classification_report(data['Sentiment'], all_predictions))
-
-    # Prueba
-    """
-    new_reviews = ['Utiliza muchos vídeos de YouTube en vez de explicar los temas él mismo, no me gusta su metodología',
-               'Lee muchas diapositivas',
-               'es grosero',
-               'es arrogante',
-               'muy buen profesor',
-               'xd',
-               '(y)',
-               'sin comentarios',
-               'Muy buena docente , excelente directora de trabajo de grado']
-    """
-    # print(pipeline.predict(new_reviews))
     rating = pipeline.predict(new_reviews)
     return rating
-
-#new_reviews = ['']
-# dataset(new_reviews)

@@ -9,7 +9,7 @@ def leer_PDF(pdf):
     module_dir = os.path.dirname(__file__)
     file = os.path.join(module_dir, pdf)
     documento = fitz.open(file)
-    pdf_a_texto =  os.path.join(module_dir, 'pdf_a_texto.txt')
+    pdf_a_texto = os.path.join(module_dir, 'pdf_a_texto.txt')
     nombre_txt = 'pdf_a_texto.txt'
     salida = open(pdf_a_texto, "wb")
 
@@ -24,7 +24,7 @@ def leer_PDF(pdf):
 # Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
 
 def leer_txt(documento):
-#def leer_txt():
+    # def leer_txt():
     tObservaciones = []
     quitarEspacios = []
     module_dir = os.path.dirname(__file__)
@@ -52,7 +52,8 @@ def leer_txt(documento):
 def almacenar_nombres(datos):
     vectorNombres = []
 
-    grupos = ["M 50", "M 51", "M 52", "M 53", "M 54", "M 55", "M 56", "M 57", "M 58", "M 59", "M 60"]
+    grupos = ["M 50", "M 51", "M 52", "M 53", "M 54",
+              "M 55", "M 56", "M 57", "M 58", "M 59", "M 60"]
 
     for nombre in datos:
         if len(nombre) > 18:

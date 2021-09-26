@@ -1,6 +1,7 @@
 import operator
 import os
 
+
 def consolidado_notas(datos):
     notas = []
     consolidado = []
@@ -13,7 +14,7 @@ def consolidado_notas(datos):
             notas = []
     consolidado.append(notas)
     consolidado.pop(0)
-    #print(consolidado)
+
     return consolidado
 
 
@@ -23,7 +24,7 @@ def nombre_y_curso(datos):
     for nombre in datos:
         if type(nombre) == str:
             nombreYCurso.append(nombre)
-    #print(nombreYCurso)
+
     return nombreYCurso
 
 
@@ -148,7 +149,7 @@ def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total
                              'total_muy_neg': total_muy_neg[i], 'total_neg': total_neg[i], 'total_neu': total_neu[i],
                              'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i],
                              'total_observaciones': total_observaciones[i], 'id': i}
-    #print(dict_from_list)
+
     return dict_from_list
 
 
@@ -180,7 +181,6 @@ def ordenar_diccionario_por_nombres(diccionario, nombres):
         else:
             ordenadoAlfabeticamente[i]['promedio_calificación'] = "Muy negativo"
 
-    #print(ordenadoAlfabeticamente)
     return ordenadoAlfabeticamente
 
 
@@ -208,7 +208,6 @@ def peor_promedio_calificacion(notas, diccionario):
     for key in list_keys1:
         peor_prom_profesor.append(diccionario[key])
 
-    #print(peor_prom_profesor)
     return peor_prom_profesor
 
 
@@ -227,17 +226,16 @@ def mejor_promedio_calificacion(notas, diccionario):
     for key in list_keys2:
         mejor_prom_profesor.append(diccionario[key])
 
-    #print(mejor_prom_profesor)
     return mejor_prom_profesor
+
 
 def consultar_por_nombre(datos, nombre):
 
-    datos_docente= []
+    datos_docente = []
 
     for i in range(len(datos)):
         if datos[i]['docente'] == nombre:
             datos_docente.append(datos[i])
-    #print(datos_docente)
 
 
 def resultados(datosCalificados):
@@ -257,11 +255,7 @@ def resultados(datosCalificados):
     diccionario = info_dicionario(nombres, asignaturas, notas, total_muy_neg,
                                   total_neg, total_neu, total_pos, total_muy_pos, total_obs)
     return diccionario
-    #prom_notas = promedio_calificacion(diccionario)
-    #ordenar_diccionario_por_nombres(diccionario, nombres)
-    #peor_promedio_calificacion(prom_notas, diccionario)
-    #mejor_promedio_calificacion(prom_notas, diccionario)
-    #consultar_por_nombre(diccionario, 'JUAN SEBASTIAN CORREA FERNANDEZ')
+
 
 def leer_archivo():
     datos = []
@@ -271,9 +265,6 @@ def leer_archivo():
     for line in archivo.readlines():
         if len(line) < 4:
             datos.append(int(line.strip()))
-        else: datos.append(line.strip())
-    #print(datos)
+        else:
+            datos.append(line.strip())
     return datos
-
-#datos = leer_archivo()
-#resultados(datos)

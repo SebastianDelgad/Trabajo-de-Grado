@@ -5,9 +5,10 @@ import { PagLogin } from "./Components/PagLogin";
 import { PagClassifier } from "./Components/PagClassifier";
 import { PagRegister } from "./Components/PagRegister";
 import { PagChangePass } from "./Components/PagChangePass";
-import {ClassifierAlfabéticamente} from "./Components/ClassifierAlfabéticamente";
-import {ClassifierMejorProm} from "./Components/ClassifierMejorProm";
-import {ClassifierPeorProm} from "./Components/ClassifierPeorProm";
+import { ClassifierAlfabéticamente } from "./Components/ClassifierAlfabéticamente";
+import { ClassifierMejorProm } from "./Components/ClassifierMejorProm";
+import { ClassifierPeorProm } from "./Components/ClassifierPeorProm";
+import { PagEvaluaciones } from "./Components/PagEvaluaciones";
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
       <Route exact path="/classifierAlfabetico" component={ClassifierAlfabéticamente} />
       <Route exact path="/classifierMejorProm" component={ClassifierMejorProm} />
       <Route exact path="/classifierPeorProm" component={ClassifierPeorProm} />
+      <Route exact path="/evaluaciones" component={PagEvaluaciones} />
     </BrowserRouter>
   );
 };

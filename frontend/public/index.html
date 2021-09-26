@@ -26,6 +26,27 @@
     -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <style>
+      /*
+          Use the DejaVu Sans font for displaying and embedding in the PDF file.
+          The standard PDF fonts do not support Unicode characters.
+      */
+      div {
+        font-family: "DejaVu Sans", "Arial", sans-serif;
+        font-size: 16px;
+      }
+  
+      /*
+        The example loads the DejaVu Sans from the Kendo UI CDN.
+        Other fonts have to be hosted from your application.
+        The official site of the Deja Vu Fonts project is
+        https://dejavu-fonts.github.io/.
+      */
+      @font-face {
+        font-family: "DejaVu Sans";
+        src: url("https://kendo.cdn.telerik.com/2017.2.621/styles/fonts/DejaVu/DejaVuSans.ttf") format("truetype");
+      }
+      	</style>
     <title>React App</title>
   </head>
   <body>

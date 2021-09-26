@@ -5,6 +5,10 @@ import { useHistory } from "react-router-dom";
 export const NavbarCalifications = () => {
   let history = useHistory();
 
+  function handleClickRegresar() {
+    history.push("/classifier");
+  }
+
   function handleClickAlfabeticamente() {
     history.push("/classifierAlfabetico");
   }
@@ -16,10 +20,7 @@ export const NavbarCalifications = () => {
   function handleClickPeorProm() {
     history.push("/classifierPeorProm");
   }
-
-  function handleClickRegresar() {
-    history.push("/classifier");
-  }
+  
   return (
     <Fragment>
       <div className="container mt-3 bg-light">
@@ -40,33 +41,33 @@ export const NavbarCalifications = () => {
         </div>
       </div>
       <div className="container mt-3 bg-light">
-        <div className="row justify-content-md-center">
-          <div className="col-2 ">
-            <button
-              className="btn btn-outline-danger btn-block"
-              onClick={handleClickAlfabeticamente}
-            >
-              <span> Alfabéticamente </span>
-            </button>
-          </div>
-          <div className="col-4">
-            <button
-              className="btn btn-outline-danger btn-block"
-              onClick={handleClickMejorProm}
-            >
-              <span> Mejor promedio de calificaciones </span>
-            </button>
-          </div>
-          <div className="col-3">
-            <button
-              className="btn btn-outline-danger btn-block"
-              onClick={handleClickPeorProm}
-            >
-              <span> Peor promedio de calificaciones </span>
-            </button>
+          <div className="row justify-content-md-center">
+            <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+              <button
+                className="btn btn-outline-danger btn-block"
+                onClick={handleClickAlfabeticamente}
+              >
+                <span> Alfabéticamente </span>
+              </button>
+            </div>
+            <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+              <button
+                className="btn btn-outline-danger btn-block"
+                onClick={handleClickMejorProm}
+              >
+                <span> Mejor promedio </span>
+              </button>
+            </div>
+            <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+              <button
+                className="btn btn-outline-danger btn-block"
+                onClick={handleClickPeorProm}
+              >
+                <span> Peor promedio </span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
     </Fragment>
   );
 };

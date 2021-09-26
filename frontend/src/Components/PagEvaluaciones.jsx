@@ -1,19 +1,19 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { NavbarClassifier } from "./NavbarClassifier";
+import { NavbarLogin } from "./NavbarLogin";
 import { auth } from "../firebase";
 import { useHistory } from "react-router-dom";
-import { UploadPDF } from "./UploadPDF";
 import { PagMain } from "./PagMain";
 
-export const PagClassifier = () => {
+export const PagEvaluaciones = () => {
   
   const [user, setUser] = useState();
 
   let history = useHistory();
 
-  function handleClickEvaluaciones() {
-    history.push("/evaluaciones");
+  function handleClickGenerar() {
+    history.push("/classifierAlfabetico");
   }
+  
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -23,46 +23,34 @@ export const PagClassifier = () => {
   }, []);
 
   
+
+ 
+
   if (user) {
     return (
       <Fragment>
-        <NavbarClassifier />
+        <NavbarLogin />
         <div className="container mt-3 bg-light">
           <div className="row">
             <div className="col">
-              <h3>Califique las observaciones de la evaluación docente. </h3>
+              <h3>Resultado de la evaluación docente. </h3>
               <p>
-                Asegúrese de que el documento este en formato PDF, una vez
-                cargue el documento seleccione un formato para hacer las
-                calificaciones
+                Selececcione el documento que desea visualizar
               </p>
             </div>
           </div>
         </div>
 
         <div className="container mt-3 bg-light">
-          <div className="row">
-            <div className="col">
-              <h4>Archivo a evaluar</h4>
-            </div>
-            <div className="col">
-              <UploadPDF />
-            </div>
-          </div>
-          <br></br>
-          <div className="row mt-3">
-            <div className="col">
-              <h4>Tiempo estimado de procesamiento de datos: 3 minutos</h4>
-            </div>
-          </div>
+          
           <div className="row mt-3">
             <div className="col"></div>
             <div className="col">
               <button
                 className="btn btn-outline-danger btn-block"
-                onClick={handleClickEvaluaciones}
+                onClick={handleClickGenerar}
               >
-                <span> Ver evaluaciones </span>
+                <span> Ver resultado </span>
               </button>
             </div>
             <div className="col"></div>
