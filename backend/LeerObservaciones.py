@@ -44,7 +44,6 @@ def leer_txt(documento):
             quitarEspacios.append(word3)
 
     return quitarEspacios
-    # print(tObservaciones)
 
 # Almacena los nombres, curso y grupo del curso que enseña el docente
 
@@ -63,7 +62,6 @@ def almacenar_nombres(datos):
                 if grupoPDF == grupo:
                     vectorNombres.append(nombre)
 
-    # print(vectorNombres)
     return vectorNombres
 
 
@@ -104,7 +102,6 @@ def procesado_txt(datos, vectorNombres):
             vectorDatosProcesados.append(word3)
 
     return vectorDatosProcesados
-    # print(vectorDatosProcesada)
 
 
 def observaciones(file):
@@ -113,10 +110,5 @@ def observaciones(file):
     txt = leer_txt(pdf)
     nombres = almacenar_nombres(txt)
     procesado = procesado_txt(txt, nombres)
-    # print(procesado)
 
     return procesado
-
-
-# leerPDF()
-# observaciones()

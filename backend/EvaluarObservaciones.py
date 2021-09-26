@@ -34,7 +34,6 @@ def evaluar_documento(txt):
             vecClasificador.append(vectorEvaluado[item])
             item += 1
 
-    #print(vecClasificador)
     return vecClasificador
 
 
@@ -47,5 +46,3 @@ def data(txt):
     np.savetxt(pdf_a_texto, np.array(evaluacion), fmt="%s")
 
     return evaluacion
-
-#data()

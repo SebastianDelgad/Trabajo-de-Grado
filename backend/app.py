@@ -5,7 +5,9 @@ from flask_cors import CORS
 from LeerObservaciones import observaciones
 from EvaluarObservaciones import data
 from OrdenResultados import resultados, nombre_y_curso, promedio_calificacion, ordenar_diccionario_por_nombres, peor_promedio_calificacion, mejor_promedio_calificacion, nombres_docentes
+
 app = Flask(__name__)
+
 module_dir = os.path.dirname(__file__)
 file = os.path.join(module_dir, '/PDF')
 app.config['UPLOAD_FOLDER'] = module_dir
@@ -16,7 +18,8 @@ def procesador(pdf):
     texto = observaciones(pdf)
     infoPrincipal = data(texto)
     return infoPrincipal
-    
+
+
 datos = []
 module_dir = os.path.dirname(__file__)
 pdf_a_texto = os.path.join(module_dir, 'resultado.txt')
@@ -24,7 +27,8 @@ archivo = open(pdf_a_texto, 'r')
 for line in archivo.readlines():
     if len(line) < 4:
         datos.append(int(line.strip()))
-    else: datos.append(line.strip())
+    else:
+        datos.append(line.strip())
 
 diccionario = resultados(datos)
 
@@ -36,23 +40,23 @@ peor_promedio = peor_promedio_calificacion(prom_notas, diccionario)
 mejor_promedio = mejor_promedio_calificacion(prom_notas, diccionario)
 
 
-#@app.route("/")
-#def upload_file():
- # renderiamos la plantilla "formulario.html"
- #return render_template('formulario.html')
+# @app.route("/")
+# def upload_file():
+# renderiamos la plantilla "formulario.html"
+# return render_template('formulario.html')
 
 
-@app.route("/upload", methods=['GET','POST'])
+@app.route("/upload", methods=['GET', 'POST'])
 def uploader():
- if request.method == 'POST':
-  # obtenemos el archivo del input "archivo"
-  f = request.files['archivo']
-  filename = secure_filename(f.filename)
-  # Guardamos el archivo en el directorio "PDF"
-  f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-  procesador(filename)
-  # Retornamos una respuesta satisfactoria
-  return redirect('http://localhost:3000/evaluaciones')
+    if request.method == 'POST':
+        # obtenemos el archivo del input "archivo"
+        f = request.files['archivo']
+        filename = secure_filename(f.filename)
+        # Guardamos el archivo en el directorio "PDF"
+        f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+        procesador(filename)
+        # Retornamos una respuesta satisfactoria
+        return redirect('http://localhost:3000/evaluaciones')
 
 
 @app.route("/mejor-promedio", methods=["GET"])
