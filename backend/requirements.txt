@@ -3,3 +3,4 @@ PyMuPDF
 Flask
 flask-restful
 -U flask-cors
+firebase_admin

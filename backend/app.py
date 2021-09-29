@@ -6,6 +6,8 @@ from LeerObservaciones import observaciones
 from EvaluarObservaciones import data
 from OrdenResultados import resultados, nombre_y_curso, promedio_calificacion, ordenar_diccionario_por_nombres, peor_promedio_calificacion, mejor_promedio_calificacion, nombres_docentes
 
+ALLOWED_EXTENSIONS = {'pdf'}
+
 app = Flask(__name__)
 
 module_dir = os.path.dirname(__file__)
@@ -45,18 +47,24 @@ mejor_promedio = mejor_promedio_calificacion(prom_notas, diccionario)
 # renderiamos la plantilla "formulario.html"
 # return render_template('formulario.html')
 
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route("/upload", methods=['GET', 'POST'])
 def uploader():
     if request.method == 'POST':
         # obtenemos el archivo del input "archivo"
         f = request.files['archivo']
-        filename = secure_filename(f.filename)
-        # Guardamos el archivo en el directorio "PDF"
-        f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        procesador(filename)
+        if f and allowed_file(f.filename):
+            filename = secure_filename(f.filename)
+            # Guardamos el archivo en el directorio "PDF"
+            f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            procesador(filename)
         # Retornamos una respuesta satisfactoria
-        return redirect('http://localhost:3000/evaluaciones')
+            return redirect('http://localhost:3000/evaluaciones')
+        return redirect('http://localhost:3000/classifier')
+
 
 
 @app.route("/mejor-promedio", methods=["GET"])

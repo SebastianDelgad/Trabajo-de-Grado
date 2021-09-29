@@ -42,7 +42,7 @@ def leer_txt(documento):
     for word3 in tObservaciones:
         if len(word3) > 0:
             quitarEspacios.append(word3)
-
+            
     return quitarEspacios
 
 # Almacena los nombres, curso y grupo del curso que enseña el docente

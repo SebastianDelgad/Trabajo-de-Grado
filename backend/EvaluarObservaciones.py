@@ -1,4 +1,4 @@
-from LeerObservaciones import observaciones, almacenar_nombres
+from LeerObservaciones import  almacenar_nombres
 from Preprocesado import dataset
 import numpy as np
 import os
