@@ -202,11 +202,97 @@ def peor_promedio_calificacion(notas, diccionario):
     for key in enumerate(notas_sort):
         peor_nota[key[1][0]] = notas[key[1][0]]
 
+    list_keys = list(peor_nota.keys())
+
+    peores_notas = {}
+    for key in list_keys:
+        peores_notas[key] = diccionario[key]
+
+    # Ordenando las observaciones muy positivas
+    muy_positivo = {}
+    for i in range(len(peores_notas)):
+        if peores_notas[i]['promedio_calificación'] == 'Muy positivo':
+            muy_positivo[i] = peores_notas[i]['total_observaciones']
+
+    muy_positivo_ordenado = {}
+    muy_positivo_sort = sorted(
+        muy_positivo.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(muy_positivo_sort):
+        muy_positivo_ordenado[key[1][0]] = muy_positivo[key[1][0]]
+
+    list_keys1 = list(muy_positivo_ordenado.keys())
+
+    # Ordenando las observaciones positivas
+    positivo = {}
+    for i in range(len(peores_notas)):
+        if peores_notas[i]['promedio_calificación'] == 'Positivo':
+            positivo[i] = peores_notas[i]['total_observaciones']
+
+    positivo_ordenado = {}
+    positivo_sort = sorted(
+        positivo.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(positivo_sort):
+        positivo_ordenado[key[1][0]] = positivo[key[1][0]]
+
+    list_keys2 = list(positivo_ordenado.keys())
+
+    # Ordenando las observaciones neutrales
+    neutral = {}
+    for i in range(len(peores_notas)):
+        if peores_notas[i]['promedio_calificación'] == 'Neutral':
+            neutral[i] = peores_notas[i]['total_observaciones']
+
+    neutral_ordenado = {}
+    neutral_sort = sorted(
+        neutral.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(neutral_sort):
+        neutral_ordenado[key[1][0]] = neutral[key[1][0]]
+
+    list_keys3 = list(neutral_ordenado.keys())
+
+    # Ordenando las observaciones negativas
+    negativas = {}
+    for i in range(len(peores_notas)):
+        if peores_notas[i]['promedio_calificación'] == 'Negativo':
+            negativas[i] = peores_notas[i]['total_observaciones']
+
+    negativas_ordenado = {}
+    negativas_sort = sorted(
+        negativas.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(negativas_sort):
+        negativas_ordenado[key[1][0]] = negativas[key[1][0]]
+
+    list_keys4 = list(negativas_ordenado.keys())
+
+    # Ordenando las observaciones muy negativas
+    muy_negativo = {}
+    for i in range(len(peores_notas)):
+        if peores_notas[i]['promedio_calificación'] == 'Muy negativo':
+            muy_negativo[i] = peores_notas[i]['total_observaciones']
+
+    muy_negativo_ordenado = {}
+    muy_negativo_sort = sorted(
+        muy_negativo.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(muy_negativo_sort):
+        muy_negativo_ordenado[key[1][0]] = muy_negativo[key[1][0]]
+
+    list_keys5 = list(muy_negativo_ordenado.keys())
+
     peor_prom_profesor = []
-    list_keys1 = list(peor_nota.keys())
+    for key in list_keys5:
+        peor_prom_profesor.append(peores_notas[key])
+
+    for key in list_keys4:
+        peor_prom_profesor.append(peores_notas[key])
+
+    for key in list_keys3:
+        peor_prom_profesor.append(peores_notas[key])
+
+    for key in list_keys2:
+        peor_prom_profesor.append(peores_notas[key])
 
     for key in list_keys1:
-        peor_prom_profesor.append(diccionario[key])
+        peor_prom_profesor.append(peores_notas[key])
 
     return peor_prom_profesor
 
@@ -220,11 +306,97 @@ def mejor_promedio_calificacion(notas, diccionario):
     for key in enumerate(notas_sort):
         mejor_nota[key[1][0]] = notas[key[1][0]]
 
+    list_keys = list(mejor_nota.keys())
+
+    mejores_notas = {}
+    for key in list_keys:
+        mejores_notas[key] = diccionario[key]
+
+    # Ordenando las observaciones muy positivas
+    muy_positivo = {}
+    for i in range(len(mejores_notas)):
+        if mejores_notas[i]['promedio_calificación'] == 'Muy positivo':
+            muy_positivo[i] = mejores_notas[i]['total_observaciones']
+
+    muy_positivo_ordenado = {}
+    muy_positivo_sort = sorted(
+        muy_positivo.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(muy_positivo_sort):
+        muy_positivo_ordenado[key[1][0]] = muy_positivo[key[1][0]]
+
+    list_keys1 = list(muy_positivo_ordenado.keys())
+
+    # Ordenando las observaciones positivas
+    positivo = {}
+    for i in range(len(mejores_notas)):
+        if mejores_notas[i]['promedio_calificación'] == 'Positivo':
+            positivo[i] = mejores_notas[i]['total_observaciones']
+
+    positivo_ordenado = {}
+    positivo_sort = sorted(
+        positivo.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(positivo_sort):
+        positivo_ordenado[key[1][0]] = positivo[key[1][0]]
+
+    list_keys2 = list(positivo_ordenado.keys())
+
+    # Ordenando las observaciones neutrales
+    neutral = {}
+    for i in range(len(mejores_notas)):
+        if mejores_notas[i]['promedio_calificación'] == 'Neutral':
+            neutral[i] = mejores_notas[i]['total_observaciones']
+
+    neutral_ordenado = {}
+    neutral_sort = sorted(
+        neutral.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(neutral_sort):
+        neutral_ordenado[key[1][0]] = neutral[key[1][0]]
+
+    list_keys3 = list(neutral_ordenado.keys())
+
+    # Ordenando las observaciones negativas
+    negativas = {}
+    for i in range(len(mejores_notas)):
+        if mejores_notas[i]['promedio_calificación'] == 'Negativo':
+            negativas[i] = mejores_notas[i]['total_observaciones']
+
+    negativas_ordenado = {}
+    negativas_sort = sorted(
+        negativas.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(negativas_sort):
+        negativas_ordenado[key[1][0]] = negativas[key[1][0]]
+
+    list_keys4 = list(negativas_ordenado.keys())
+
+    # Ordenando las observaciones muy negativas
+    muy_negativo = {}
+    for i in range(len(mejores_notas)):
+        if mejores_notas[i]['promedio_calificación'] == 'Muy negativo':
+            muy_negativo[i] = mejores_notas[i]['total_observaciones']
+
+    muy_negativo_ordenado = {}
+    muy_negativo_sort = sorted(
+        muy_negativo.items(), key=operator.itemgetter(1), reverse=True)
+    for key in enumerate(muy_negativo_sort):
+        muy_negativo_ordenado[key[1][0]] = muy_negativo[key[1][0]]
+
+    list_keys5 = list(muy_negativo_ordenado.keys())
+
     mejor_prom_profesor = []
-    list_keys2 = list(mejor_nota.keys())
+    for key in list_keys1:
+        mejor_prom_profesor.append(mejores_notas[key])
 
     for key in list_keys2:
-        mejor_prom_profesor.append(diccionario[key])
+        mejor_prom_profesor.append(mejores_notas[key])
+
+    for key in list_keys3:
+        mejor_prom_profesor.append(mejores_notas[key])
+
+    for key in list_keys4:
+        mejor_prom_profesor.append(mejores_notas[key])
+
+    for key in list_keys5:
+        mejor_prom_profesor.append(mejores_notas[key])
 
     return mejor_prom_profesor
 

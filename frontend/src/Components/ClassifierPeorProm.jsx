@@ -4,6 +4,8 @@ import img_negativa from "../Assets/Images/negativa.png";
 import img_neutral from "../Assets/Images/neutral.png";
 import img_positivo from "../Assets/Images/positivo.png";
 import img_muy_positivo from "../Assets/Images/muy_positivo.png";
+import icon_account from "../Assets/Images/outline_perm_identity_black_48dp.png";
+import icon_book from "../Assets/Images/outline_menu_book_black_48dp.png";
 import { NavbarCalifications } from "./NavbarCalifications";
 import { PagMain } from "./PagMain";
 import { auth } from "../firebase";
@@ -98,7 +100,7 @@ export const ClassifierPeorProm = () => {
         </div>
         <PDFExport
           ref={pdfExportComponent}
-          paperSize="auto"
+          paperSize="Legal"
           margin={40}
           fileName="Orden peor promedio"
         >
@@ -158,13 +160,13 @@ export const ClassifierPeorProm = () => {
               <li key={item.id}>
                 <div className="row">
                   <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
-                    <span className="material-icons md-48">&#xe8a6;</span>
+                  <img src={icon_account} className="img-fluid" alt="account" />
                   </div>
                   <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <h4> Nombre: </h4> {item.docente}
                   </div>
                   <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
-                    <span className="material-icons md-48">&#xea19;</span>
+                  <img src={icon_book} className="img-fluid" alt="book" />
                   </div>
                   <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
                     <h4> Asignatura: </h4> {item.asignatura}

@@ -51,6 +51,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+
 @app.route("/upload", methods=['GET', 'POST'])
 def uploader():
     if request.method == 'POST':
@@ -64,7 +65,6 @@ def uploader():
         # Retornamos una respuesta satisfactoria
             return redirect('http://localhost:3000/evaluaciones')
         return redirect('http://localhost:3000/classifier')
-
 
 
 @app.route("/mejor-promedio", methods=["GET"])

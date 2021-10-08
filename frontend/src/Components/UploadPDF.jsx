@@ -11,7 +11,7 @@ export const UploadPDF = () => {
   }
   const upload = () => {
     if (txt == null) return;
-    storage.ref(`/PDF/${txt.name}`).put(txt).on("state_changed", alert("Archivo evaluado y almacenado"), alert);
+    storage.ref(`/PDF/${txt.name}`).put(txt).on("state_changed", alert("Archivo almacenado y se está evaluando"), alert);
   };
 
   return (
