@@ -1,10 +1,11 @@
+import urllib
 import firebase_admin.storage
-
 from LeerObservaciones import almacenar_nombres
 from Preprocesado import dataset
 import numpy as np
 import os
 from firebase_admin import credentials, initialize_app, storage, db
+
 
 # Fetch the service account key JSON file contents
 module_dir = os.path.dirname(__file__)
@@ -15,18 +16,20 @@ cred = credentials.Certificate(credential)
 initialize_app(cred, {
     'storageBucket': 'teacher-qualifier.appspot.com',
 })
-
+def saveFile():
 # Put your local file path 
-fileName = "resultado1.txt"
-file = os.path.join(module_dir, fileName)
-bucket = storage.bucket()
-blob = bucket.blob(fileName)
-blob.upload_from_filename(file)
+    fileName = "resultado.txt"
+    file = os.path.join(module_dir, fileName)
+    bucket = storage.bucket()
+    blob = bucket.blob(fileName)
+    blob.upload_from_filename(file)
 
 # Opt : if you want to make public access from the URL
-blob.make_public()
+    blob.make_public()
 
-print("your file url", blob.public_url)
+    print("your file url", blob.public_url)
+
+
 
 
 def evaluar_documento(txt):
@@ -61,14 +64,39 @@ def evaluar_documento(txt):
 
     return vecClasificador
 
+def normalize(s):
+    replacements = (
+        ("á", "a"),
+        ("é", "e"),
+        ("í", "i"),
+        ("ó", "o"),
+        ("ú", "u"),
+        ("ñ", "n"),
+        ("ü", "u"),
+    )
+    for a, b in replacements:
+        s = s.replace(a, b).replace(a.upper(), b.upper())
+    return s
+
+def quitarTildes(datos):
+    endName = []
+    for name in datos:
+        if type(name) == str:
+            endName.append(normalize(name))
+        else:
+            endName.append(name)
+
+    #print(endName)
+    return endName
 
 def data(txt):
     evaluacion = evaluar_documento(txt)
-
+    file = quitarTildes(evaluacion)
     module_dir = os.path.dirname(__file__)
-    resultado = os.path.join(module_dir, 'resultado1.txt')
+    resultado = os.path.join(module_dir, 'resultado.txt')
 
-    np.savetxt(resultado, np.array(evaluacion), fmt="%s")
+    np.savetxt(resultado, np.array(file), fmt="%s")
+    saveFile()
 
-    return evaluacion
+    return file
 

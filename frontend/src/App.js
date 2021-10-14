@@ -9,6 +9,9 @@ import { ClassifierAlfabéticamente } from "./Components/ClassifierAlfabéticame
 import { ClassifierMejorProm } from "./Components/ClassifierMejorProm";
 import { ClassifierPeorProm } from "./Components/ClassifierPeorProm";
 import { PagEvaluaciones } from "./Components/PagEvaluaciones";
+import { ClassifierHistoryMejor } from "./Components/ClassifierHistoryMejor";
+import { ClassifierHistoryPeor } from "./Components/ClassifierHistoryPeor";
+import { ClassifierHistoryOrdenado } from "./Components/ClassifierHistoryOrdenado";
 
 export const App = () => {
   return (
@@ -22,6 +25,9 @@ export const App = () => {
       <Route exact path="/classifierMejorProm" component={ClassifierMejorProm} />
       <Route exact path="/classifierPeorProm" component={ClassifierPeorProm} />
       <Route exact path="/evaluaciones" component={PagEvaluaciones} />
+      <Route exact path="/mejor-prom" component={ClassifierHistoryMejor} />
+      <Route exact path="/peor-prom" component={ClassifierHistoryPeor} />
+      <Route exact path="/ordenado" component={ClassifierHistoryOrdenado} />
     </BrowserRouter>
   );
 };

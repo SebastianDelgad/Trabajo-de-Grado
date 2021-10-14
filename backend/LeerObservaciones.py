@@ -9,8 +9,8 @@ def leer_PDF(pdf):
     module_dir = os.path.dirname(__file__)
     file = os.path.join(module_dir, pdf)
     documento = fitz.open(file)
-    pdf_a_texto = os.path.join(module_dir, 'pdf_a_texto.txt')
-    nombre_txt = 'pdf_a_texto.txt'
+    pdf_a_texto = os.path.join(module_dir, pdf+'.txt')
+    nombre_txt = pdf+'.txt'
     salida = open(pdf_a_texto, "wb")
 
     for pagina in documento:
@@ -110,5 +110,5 @@ def observaciones(file):
     txt = leer_txt(pdf)
     nombres = almacenar_nombres(txt)
     procesado = procesado_txt(txt, nombres)
-
+    
     return procesado
