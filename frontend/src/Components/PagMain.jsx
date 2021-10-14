@@ -16,7 +16,7 @@ export const PagMain = () => {
         <h3 className="text-center text-responsive">
           Califica las observaciones de los docentes en el periodo académico{" "}
         </h3>
-        <div className="row">
+        <div className="row justify-content-md-center">
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <p className="text-responsive">
               Esta web proporciona un documento con las observaciones docente
@@ -37,7 +37,7 @@ export const PagMain = () => {
       </div>
 
       <div className="container mt-3 bg-light">
-        <div className="row d-flex justify-content-around">
+        <div className="row justify-content-md-center mt-3">
           <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
             <h4 className="text-center text-responsive">Minería de texto</h4>
             <img src={miner_imagen} className="img-fluid" alt="miner" />

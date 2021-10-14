@@ -1,11 +1,16 @@
-import React, {useState} from 'react';
-import axios from 'axios';
+import {useState} from 'react';
 import { storage } from "../firebase";
+import { useHistory } from "react-router-dom";
 
 export const UploadPDF = () => {
   const [txt, setTxt] = useState("");
 	const [selectedFile, setSelectedFile] = useState();
   const [isSelected, setIsSelected] = useState(false);
+  let history = useHistory();
+
+  function redirection() {
+    history.push("/classifierAlfabetico");
+  }
   
 	const changeHandler = (event) => {
 		setSelectedFile(event.target.files[0]);
@@ -19,15 +24,21 @@ export const UploadPDF = () => {
 
 	const handleSubmission = () => {
 		const formData = new FormData();
-    upload()
+    	upload()
 
 		formData.append('File', selectedFile);
 
-		axios.post("http://127.0.0.1:5000/upload", formData)
+		fetch("http://127.0.0.1:5000/upload",{
+			method: 'POST',
+			body: formData,
+		})
     
-			.then(result => 
+			.then((result) => { 
 				console.log('Success:', result)
-			)
+				if (result.ok){
+					redirection();
+				}
+			})
 			.catch(error => 
 				console.error('Error:', error)
 			);
