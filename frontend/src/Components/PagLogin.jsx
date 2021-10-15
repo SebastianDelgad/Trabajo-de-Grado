@@ -8,10 +8,6 @@ import { PagClassifier } from "./PagClassifier";
 export const PagLogin = (props) => {
   let history = useHistory();
 
-  function handleClickRegistrarse() {
-    history.push("/register");
-  }
-
   function handleClickOlvidoContraseña() {
     history.push("/changepass");
   }
@@ -67,7 +63,7 @@ export const PagLogin = (props) => {
     return (
       <Fragment>
         <NavbarLogin />
-        <div className="container mt-3 bg-light">
+        <div className="container mt-3 bg-light rounded-6">
           <h3 className="text-center"> Acceder al sistema </h3>
           <div className="row justify-content-center">
             <div className="col-12 col-sm-8 col-md-6 col-xl-4">
@@ -122,17 +118,6 @@ export const PagLogin = (props) => {
                       onClick={login}
                     >
                       <span> Ingresar </span>
-                    </button>
-                  </div>
-                </div>
-                <div className="row mt-3 justify-content-center">
-                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
-                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
-                    <button
-                      className="btn btn-outline-danger btn-block"
-                      onClick={handleClickRegistrarse}
-                    >
-                      <span> Registrarse </span>
                     </button>
                   </div>
                 </div>

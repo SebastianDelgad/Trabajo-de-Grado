@@ -25,7 +25,7 @@ export const PagChangePass = () => {
 
   return (
     <Fragment>
-      <div className="container mt-3 bg-light">
+      <div className="container mt-3 bg-light rounded-6">
         <div className="row">
           <div className="col-8 col-sm-9 col-xs-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
             <img src={logo_imagen} alt="logoLogin" className="img-fluid" />
@@ -42,12 +42,12 @@ export const PagChangePass = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-3 bg-light">
+      <div className="container mt-3 bg-light rounded-6">
         <div className="row mt-3 justify-content-center">
           <h4> Por favor ingrese el correo para recuperar la contaseña </h4>
         </div>
         <div className="row justify-content-center">
-          <div className="col-7">
+          <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <input
               type="email"
               className="form-control"

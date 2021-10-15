@@ -1,16 +1,10 @@
 import React, { Fragment, useState, useEffect, useCallback } from "react";
 import { db, auth } from "../firebase";
-import { useHistory } from "react-router-dom";
 import { NavbarRegister } from "./NavbarRegister";
 import "../Assets/Styles/icons.css";
 import { PagClassifier } from "./PagClassifier";
 
 export const PagRegister = (props) => {
-  let history = useHistory();
-
-  function handleClickYaTieneCuenta() {
-    history.push("/login");
-  }
 
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
@@ -19,8 +13,8 @@ export const PagRegister = (props) => {
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      console.log(user);
-      setUser(user);
+      console.log(user.email);
+      setUser(user.email);
     });
   }, []);
 
@@ -74,11 +68,11 @@ export const PagRegister = (props) => {
     }
   }, [email, pass, props.history]);
 
-  if (!User) {
+  if (User === "delgado.sebastian@correounivalle.edu.co") {
     return (
       <Fragment>
         <NavbarRegister />
-        <div className="container mt-3 bg-light">
+        <div className="container mt-3 bg-light rounded-6">
         <h3 className="text-center"> Registro de usuarios </h3>
           <div className="row justify-content-center">
             <div className="col-12 col-sm-8 col-md-6 col-xl-4">
@@ -134,19 +128,7 @@ export const PagRegister = (props) => {
                       type="submit"
                       onClick={registrar}
                     >
-                      Registrarse
-                    </button>
-                  </div>
-                </div>
-                <div className="row mt-3 justify-content-center">
-                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
-                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
-                    <button
-                      className="btn btn-outline-danger btn-block"
-                      type="button"
-                      onClick={handleClickYaTieneCuenta}
-                    >
-                      ¿Ya tienes cuenta?
+                      Registrar
                     </button>
                   </div>
                 </div>

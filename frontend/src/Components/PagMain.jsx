@@ -12,10 +12,12 @@ export const PagMain = () => {
   return (
     <Fragment>
       <NavbarMain />
-      <div className="container mt-3 bg-light">
+      <div className="container mt-3 bg-light rounded-6">
+        <br/>
         <h3 className="text-center text-responsive">
           Califica las observaciones de los docentes en el periodo académico{" "}
         </h3>
+        <br/>
         <div className="row justify-content-md-center">
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <p className="text-responsive">
@@ -25,70 +27,89 @@ export const PagMain = () => {
             </p>
           </div>
           <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <img src={graficos_imagen} className="img-fluid" alt="grafico" />
+            <img src={graficos_imagen} className="img-fluid rounded" alt="grafico" />
           </div>
         </div>
+        <br/>
       </div>
 
-      <div className="container mt-3 bg-light">
+      <div className="container mt-3 bg-light rounded-6">
+        <br/>
         <h3 className="text-center">
           Tecnologías usadas en el desarrollo de esta web
         </h3>
+        <br/>
       </div>
 
-      <div className="container mt-3 bg-light">
+      <div className="container mt-3 bg-light rounded-6">
         <div className="row justify-content-md-center mt-3">
           <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <br/>
             <h4 className="text-center text-responsive">Minería de texto</h4>
-            <img src={miner_imagen} className="img-fluid" alt="miner" />
+            <br/>
+            <img src={miner_imagen} className="img-fluid rounded" alt="miner" />
+            <br/>
+            <br/>
             <p className="text-justify">
               La minería de textos es el proceso de analizar texto con el objeto
               de capturar los temas, conceptos clave, sin necesidad de conocer
               las palabras o los términos exactos que los autores han utilizado
               para expresar dichos conceptos.
             </p>
-            <p>Fuente: www.ibm.com</p>
+            <br/>
+            <a className="text-black" href="https://www.ibm.com/docs/es/spss-modeler/18.1.1?topic=analytics-about-text-mining"> <u> Fuente: www.ibm.com</u>{" "}</a>
+            <br/>
+            <br/>
           </div>
           <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <br/>
             <h4 className="text-center text-responsive">
               Análisis de sentimiento
             </h4>
-            <img src={sentiment_imagen} className="img-fluid" alt="sentiment" />
+            <br/>
+            <img src={sentiment_imagen} className="img-fluid rounded" alt="sentiment" />
             <p className="text-justify">
+            <br/>
               El análisis de texto, un tipo de análisis cualitativo, es la
               extracción de información útil del texto de manera que las ideas o
               los conceptos clave que contiene el texto pueden agruparse en una
               serie de categorías apropiadas.
             </p>
-            <p className="text-justify">Fuente: www.ibm.com</p>
+            <br/>
+            <a className="text-black" href="https://www.ibm.com/docs/es/spss-modeler/18.1.1?topic=analytics-about-text-mining"> <u> Fuente: www.ibm.com</u>{" "}</a>
           </div>
           <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+          <br/>
             <h4 className="text-center">Machine learning</h4>
-            <img src={machine_imagen} className="img-fluid" alt="machine" />
+            <br/>
+            <img src={machine_imagen} className="img-fluid rounded" alt="machine" />
+            <br/><br/>
             <p className="text-justify">
               Machine learning es una forma de la IA que permite a un sistema
               aprender de los datos en lugar de aprender mediante la
               programación explícita.
             </p>
-            <p className="text-justify">Fuente: www.ibm.com</p>
+            <br/><br/><br/>
+            <a className="text-black" href="https://www.ibm.com/co-es/analytics/machine-learning"> <u> Fuente: www.ibm.com</u>{" "}</a>
           </div>
         </div>
       </div>
 
-      <div className="container mt-3 bg-light">
+      <div className="container mt-3 bg-light rounded-6">
+      <br/>
         <h3 className="text-center">
           Tipos de formato de las observaciones calificadas
         </h3>
-      </div>
-      <div className="container mt-3 bg-light">
+        <br/>
         <div className="row">
           <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
             <img
               src={alfabeticamente_imagen}
-              className="img-fluid"
+              className="img-fluid rounded"
               alt="alfabeticamente"
             />
           </div>
+          
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <h4 className="text-justify">
               Documento ordenado alfabéticamente por el nombre de los docentes y
@@ -96,9 +117,11 @@ export const PagMain = () => {
             </h4>
           </div>
         </div>
+        <br/>
       </div>
 
-      <div className="container mt-3 bg-light">
+      <div className="container mt-3 bg-light rounded-6">
+      <br/>
         <div className="row">
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <h4 className="text-justify">
@@ -107,15 +130,17 @@ export const PagMain = () => {
             </h4>
           </div>
           <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <img src={ok_imagen} className="img-fluid" alt="ok_imagen" />
+            <img src={ok_imagen} className="img-fluid rounded" alt="ok_imagen" />
           </div>
         </div>
+        <br/>
       </div>
 
-      <div className="container mt-3 bg-light">
+      <div className="container mt-3 bg-light rounded-6">
+      <br/>
         <div className="row">
           <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <img src={bad_imagen} className="img-fluid" alt="bad" />
+            <img src={bad_imagen} className="img-fluid rounded" alt="bad" />
           </div>
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <h4 className="text-justify">
@@ -124,6 +149,7 @@ export const PagMain = () => {
             </h4>
           </div>
         </div>
+        <br/>
       </div>
     </Fragment>
   );

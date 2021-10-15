@@ -45,10 +45,11 @@ export const UploadPDF = () => {
 	};
 
 	return(
-   <div>
+   <div className="row">
+	   <div  className="col-8 col-sm-8 col-xs-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
 			<input type="file" name="File" onChange={changeHandler} />
 			{isSelected ? (
-				<div>
+				<div >
 					<p>Filename: {selectedFile.name}</p>
 					<p>Filetype: {selectedFile.type}</p>
 					<p>Size in bytes: {selectedFile.size}</p>
@@ -60,7 +61,8 @@ export const UploadPDF = () => {
 			) : (
 				<p>Select a file to show details</p>
 			)}
-			<div>
+			</div>
+			<div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
 				<button  className ="btn btn-outline-danger btn-block" type="submit" onClick={handleSubmission}>Evaluar</button>
 			</div>
 		</div>

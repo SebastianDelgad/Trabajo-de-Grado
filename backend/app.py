@@ -173,7 +173,6 @@ def obtenerArchivo(url):
         np.savetxt(resultado, np.array(cambio), fmt="%s")
 
 
-
 @app.route("/historial-ordenado", methods=["GET"])
 def historialorden():
     datos = []
