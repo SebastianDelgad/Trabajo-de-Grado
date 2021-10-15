@@ -13,15 +13,7 @@ export const PagEvaluaciones = () => {
   function handleClickGenerar() {
     history.push("/classifierAlfabetico");
   }
-  function handleHistoryMejor() {
-    history.push("/mejor-prom");
-  }
-  function handleHistoryPeor() {
-    history.push("/peor-prom");
-  }
-  function handleHistoryOrdenado() {
-    history.push("/ordenado");
-  }
+ 
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -80,20 +72,22 @@ export const PagEvaluaciones = () => {
 
         <div className="container mt-3 bg-light">
           <div className="row mt-3"></div>
+          <div className="row mt-3">
+            <h2>Escoja el archivo que desea visualizar</h2>
+          </div>
           <form
-        action="http://127.0.0.1:5000/historial-mejor-prom"
+        action="http://127.0.0.1:5000/historial"
         method="POST"
         encType="multipart/form-data"
       >
           {data.map((val) => (
             <div className="container mt-4 bg-light rounded">
-            <h2>
-            <a href = {`https://storage.googleapis.com/teacher-qualifier.appspot.com/${val}`} >
-              {val} </a> 
-            </h2>
-            <button name="link" value={val} onClick={handleHistoryMejor}>clasificación mejor promedio</button>
-            <button name="link" value={val} onClick={handleHistoryPeor}>clasificación peor promedio</button>
-            <button name="link" value={val} onClick={handleHistoryOrdenado}>clasificación ordenada por nombre</button>
+            <div className="row mt-3">
+            <div className="col-4">
+            <input name="link" value={val} type="submit" className="btn btn-outline-danger btn-block" >
+               </input>
+               </div>
+               </div>
             </div>
           ))}</form>
         </div>

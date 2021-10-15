@@ -6,7 +6,7 @@ import img_positivo from "../Assets/Images/positivo.png";
 import img_muy_positivo from "../Assets/Images/muy_positivo.png";
 import icon_account from "../Assets/Images/outline_perm_identity_black_48dp.png";
 import icon_book from "../Assets/Images/outline_menu_book_black_48dp.png";
-import { NavbarCalifications } from "./NavbarCalifications";
+import { NavbarEvaluaciones } from "./NavbarEvaluaciones";
 import { PagMain } from "./PagMain";
 import { auth } from "../firebase";
 import { PDFExport } from "@progress/kendo-react-pdf";
@@ -17,6 +17,18 @@ export const ClassifierHistoryPeor = () => {
   const [User, setUser] = useState(false);
   const pdfExportComponent = useRef(null);
   let history = useHistory();
+
+  function handleClickAlfabeticamente() {
+    history.push("/ordenado");
+  }
+
+  function handleClickMejorProm() {
+    history.push("/mejor-prom");
+  }
+
+  function handleClickPeorProm() {
+    history.push("/peor-prom");
+  }
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -43,10 +55,35 @@ export const ClassifierHistoryPeor = () => {
   if (User) {
     return (
       <Fragment>
-        <NavbarCalifications />
+        <NavbarEvaluaciones />
         <div className="container mt-3 bg-light rounded">
           <br></br>
           <ul className="nav nav-pills nav-justified">
+          <li className="nav-tabs">
+              <button
+                className="btn btn-outline-danger"
+                aria-current="page"
+                onClick={handleClickAlfabeticamente}
+              >
+                Alfabéticamente
+              </button>
+            </li>
+            <li className="nav-tabs">
+              <button
+                className="btn btn-outline-danger"
+                onClick={handleClickMejorProm}
+              >
+                Mejor promedio
+              </button>
+            </li>
+            <li className="nav-tabs">
+              <button
+                className="btn btn-outline-danger active"
+                onClick={handleClickPeorProm}
+              >
+                Peor promedio
+              </button>
+            </li>
             <li className="nav-item">
               <button
                 className="btn btn-outline-danger"

@@ -73,7 +73,7 @@ def procesador_orden():
 
 def procesador(pdf):
     texto = observaciones(pdf)
-    infoPrincipal = data(texto)
+    infoPrincipal = data(texto, pdf)
     module_dir = os.path.dirname(__file__)
     os.remove(module_dir+'\\'+pdf)
     os.remove(module_dir+'\\'+pdf+'.txt')
@@ -136,13 +136,20 @@ def alfabeticamente():
     ordenado["data"] = orden_nombres
     return jsonify(ordenado)
 
-@app.route("/historial-ordenado", methods=["GET", "POST"])
-def historialmejor():
-    datos = []
+
+@app.route("/historial", methods=["POST"])
+def historial():
     if request.method == 'POST':
         # obtenemos el nombre del input "archivo"
         f = request.values["link"]
+        print(f)
         url = "https://storage.googleapis.com/teacher-qualifier.appspot.com/"+f
+        obtenerArchivo(url)
+        
+        return redirect('http://localhost:3000/ordenado')
+        
+
+def obtenerArchivo(url):
         data = urllib.request.urlopen(url).read().decode(encoding="utf-8")
         conc = ""
         infoWeb = []
@@ -153,19 +160,23 @@ def historialmejor():
             else:
                 conc += line
     
-            if len(infoWeb) > 1:
-                cambio = []
-                for line in infoWeb:
-                    if len(line) < 4:
-                        cambio.append(int(line))
-                    else:
-                        cambio.append(line)
-        
+        if len(infoWeb) > 1:
+            cambio = []
+            for line in infoWeb:
+                if len(line) < 4:
+                    cambio.append(int(line))
+                else:
+                    cambio.append(line)
         module_dir = os.path.dirname(__file__)
+        print(module_dir)
         resultado = os.path.join(module_dir, 'historial.txt')
         np.savetxt(resultado, np.array(cambio), fmt="%s")
 
 
+
+@app.route("/historial-ordenado", methods=["GET"])
+def historialorden():
+    datos = []
     module_dir = os.path.dirname(__file__)
     pdf_a_texto = os.path.join(module_dir, 'historial.txt')
     archivo = open(pdf_a_texto, 'r')
@@ -186,69 +197,34 @@ def historialmejor():
     historial["data"] = ordenado
     return jsonify(historial)
 
-@app.route("/historial-mejor-prom", methods=["GET", "POST"])
-def historialorden():
+@app.route("/historial-mejor-prom", methods=["GET"])
+def historialmejor():
     datos = []
-    if request.method == 'POST':
-        # obtenemos el nombre del input "archivo"
-        f = request.values["link"]
-        url = "https://storage.googleapis.com/teacher-qualifier.appspot.com/"+f
-        data = urllib.request.urlopen(url).read().decode(encoding="utf-8")
-        conc = ""
-        infoWeb = []
-        for line in data:
-            if line == "\r" :
-                infoWeb.append(conc.strip())
-                conc = ""
-            else:
-                conc += line
-            print(infoWeb)
-    
-        if len(infoWeb) > 1:
-            cambio = []
-            for line in infoWeb:
-                if len(line) < 4:
-                    cambio.append(int(line))
-                else:
-                    cambio.append(line)
-        
-        module_dir = os.path.dirname(__file__)
+    module_dir = os.path.dirname(__file__)
+    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+    archivo = open(pdf_a_texto, 'r')
+    for line in archivo.readlines():
+        if len(line) < 4:
+            datos.append(int(line.strip()))
+        else:
+            datos.append(line.strip())
 
-        app.config['UPLOAD_FOLDER'] = module_dir
-        f.save(os.path.join(app.config['UPLOAD_FOLDER'], 'historial.txt'))
+    diccionario = resultados(datos)
+    nombresCursos = nombre_y_curso(datos)
+    prom_notas = promedio_calificacion(diccionario)
+    nombres = nombres_docentes(nombresCursos)
+    ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
+    peor= peor_promedio_calificacion(prom_notas, diccionario)
+    mejor = mejor_promedio_calificacion(prom_notas, diccionario)
+    historial = {}
+    historial["data"] = mejor
+    return jsonify(historial)
 
     
 
-@app.route("/historial-peor-prom", methods=["GET", "POST"])
-def historialpejor():
+@app.route("/historial-peor-prom", methods=["GET"])
+def historialpeor():
     datos = []
-    if request.method == 'POST':
-        # obtenemos el nombre del input "archivo"
-        f = request.values["link"]
-        url = "https://storage.googleapis.com/teacher-qualifier.appspot.com/"+f
-        data = urllib.request.urlopen(url).read().decode(encoding="utf-8")
-        conc = ""
-        infoWeb = []
-        for line in data:
-            if line == "\r" :
-                infoWeb.append(conc.strip())
-                conc = ""
-            else:
-                conc += line
-    
-            if len(infoWeb) > 1:
-                cambio = []
-                for line in infoWeb:
-                    if len(line) < 4:
-                        cambio.append(int(line))
-                    else:
-                        cambio.append(line)
-        
-        module_dir = os.path.dirname(__file__)
-        resultado = os.path.join(module_dir, 'historial.txt')
-        np.savetxt(resultado, np.array(cambio), fmt="%s")
-
-
     module_dir = os.path.dirname(__file__)
     pdf_a_texto = os.path.join(module_dir, 'historial.txt')
     archivo = open(pdf_a_texto, 'r')
