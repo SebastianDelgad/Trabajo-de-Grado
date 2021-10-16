@@ -2,5 +2,10 @@ nltk
 PyMuPDF
 Flask
 flask-restful
--U flask-cors
 firebase_admin
+Werkzeug
+numpy
+scikit-learn
+gunicorn
+Flask-Cors
+pandas

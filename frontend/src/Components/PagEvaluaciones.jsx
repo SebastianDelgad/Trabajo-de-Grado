@@ -74,20 +74,26 @@ export const PagEvaluaciones = () => {
   const verificarAdmin = () => {
     admin.map((item) => {
       if (user === item.email) {
+        console.log(user)
+      console.log(item.email)
         return true;
-      }
+      }else {return false;}
     });
   };
 
   const verificarLog = () => {
     users.map((item) => {
+      
+      
       if (user === item.email) {
+        console.log(user)
+      console.log(item.email)
         return true;
-      }
+      }else {return false;}
     });
   };
 
-  if ({ verificarAdmin } && user) {
+  if (verificarAdmin) {
     return (
       <Fragment>
         <NavbarClassifier />
@@ -153,7 +159,7 @@ export const PagEvaluaciones = () => {
     );
   }
 
-  if ({ verificarLog } && user) {
+  if  (verificarLog) {
     return (
       <Fragment>
         <NavbarClassifier />

@@ -1,3 +1,5 @@
 nltk
 PyMuPDF
--c conda-forge
+numpy
+scikit-learn
+pandas
