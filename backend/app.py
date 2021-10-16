@@ -146,7 +146,7 @@ def historial():
         url = "https://storage.googleapis.com/teacher-qualifier.appspot.com/"+f
         obtenerArchivo(url)
         
-        return redirect('http://localhost:3000/ordenado')
+        return redirect('http://localhost:3000/evaluacion/ordenado')
         
 
 def obtenerArchivo(url):

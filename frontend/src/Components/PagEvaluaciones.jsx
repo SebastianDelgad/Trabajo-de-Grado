@@ -1,31 +1,59 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { NavbarClassifier } from "./NavbarClassifier";
-import { auth, storage } from "../firebase";
+import { auth, storage, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { PagMain } from "./PagMain";
 
 export const PagEvaluaciones = () => {
   const [user, setUser] = useState();
-  const [data, setData] = useState([]);
+  const [docs, setDocs] = useState([]);
+  const [admin, setAdmin] = useState();
+  const [users, setUsers] = useState();
 
   let history = useHistory();
 
   function handleClickGenerar() {
-    history.push("/classifierAlfabetico");
+    history.push("/evaluacion/alfabetica");
   }
 
   function handleClickEvaluar() {
     history.push("/classifier");
   }
- 
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      setUser(user.email);
-      console.log(user);
-      listItem();
+      if (user) {
+        setUser(user.email);
+        listItem();
+        listUsersAdmins();
+        listUsers();
+      } else {
+        setUser(null);
+      }
     });
   }, []);
+
+  const listUsersAdmins = async () => {
+    db.collectionGroup("usuarios")
+      .where("IsAdmin", "==", "admin")
+      .onSnapshot((querySnapshot) => {
+        const perfiles = [];
+        querySnapshot.forEach((doc) => {
+          perfiles.push({ ...doc.data() });
+        });
+        setAdmin(perfiles);
+      });
+  };
+
+  const listUsers = async () => {
+    db.collectionGroup("usuarios").onSnapshot((querySnapshot) => {
+      const perfiles = [];
+      querySnapshot.forEach((doc) => {
+        perfiles.push({ ...doc.data() });
+      });
+      setUsers(perfiles);
+    });
+  };
 
   // List All Files
   const listItem = () => {
@@ -35,8 +63,7 @@ export const PagEvaluaciones = () => {
       .listAll()
       .then((res) => {
         res.items.forEach((item) => {
-          setData((arr) => [...arr, item.name]);
-          console.log(item.fullPath);
+          setDocs((arr) => [...arr, item.name]);
         });
       })
       .catch((err) => {
@@ -44,7 +71,23 @@ export const PagEvaluaciones = () => {
       });
   };
 
-  if (user === "delgado.sebastian@correounivalle.edu.co") {
+  const verificarAdmin = () => {
+    admin.map((item) => {
+      if (user === item.email) {
+        return true;
+      }
+    });
+  };
+
+  const verificarLog = () => {
+    users.map((item) => {
+      if (user === item.email) {
+        return true;
+      }
+    });
+  };
+
+  if ({ verificarAdmin } && user) {
     return (
       <Fragment>
         <NavbarClassifier />
@@ -56,7 +99,9 @@ export const PagEvaluaciones = () => {
           </div>
 
           <div className="row mt-3">
-          <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"> </div>
+            <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+              {" "}
+            </div>
             <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
               <button
                 className="btn btn-outline-danger btn-block"
@@ -66,15 +111,15 @@ export const PagEvaluaciones = () => {
               </button>
             </div>
             <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            <button
+              <button
                 className="btn btn-outline-danger btn-block"
                 onClick={handleClickEvaluar}
               >
-                <span> Evaluar otro documento </span>
+                <span> Evaluar un documento </span>
               </button>
             </div>
           </div>
-          <br/>
+          <br />
         </div>
 
         <div className="container mt-3 bg-light rounded-6">
@@ -83,27 +128,32 @@ export const PagEvaluaciones = () => {
             <h2>Selececcione el documento que desea visualizar</h2>
           </div>
           <form
-        action="http://127.0.0.1:5000/historial"
-        method="POST"
-        encType="multipart/form-data"
-      >
-          {data.map((val) => (
-            <div className="row mt-3">
-            <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
-            <span className="material-icons md-48">&#xe415;</span>
+            action="http://127.0.0.1:5000/historial"
+            method="POST"
+            encType="multipart/form-data"
+          >
+            {docs.map((val) => (
+              <div className="row mt-3">
+                <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                  <span className="material-icons md-48">&#xe415;</span>
+                </div>
+                <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                  <input
+                    name="link"
+                    value={val}
+                    type="submit"
+                    className="btn btn-outline-danger btn-block"
+                  ></input>
+                </div>
               </div>
-            <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-            <input name="link" value={val} type="submit" className="btn btn-outline-danger btn-block" >
-               </input>
-               </div>
-               </div>
-          ))}</form>
+            ))}
+          </form>
         </div>
       </Fragment>
     );
   }
 
-  if (user !== "delgado.sebastian@correounivalle.edu.co") {
+  if ({ verificarLog } && user) {
     return (
       <Fragment>
         <NavbarClassifier />
@@ -111,7 +161,7 @@ export const PagEvaluaciones = () => {
           <div className="row mt-3">
             <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
               <h3>Resultados de las evaluaciones docente. </h3>
-              <br/>
+              <br />
             </div>
           </div>
 
@@ -120,23 +170,28 @@ export const PagEvaluaciones = () => {
             <br />
           </div>
           <form
-        action="http://127.0.0.1:5000/historial"
-        method="POST"
-        encType="multipart/form-data"
-      >
-          {data.map((val) => (
-            <div className="row mt-3">
-            <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
-            <span className="material-icons md-48">&#xe415;</span>
+            action="http://127.0.0.1:5000/historial"
+            method="POST"
+            encType="multipart/form-data"
+          >
+            {docs.map((val) => (
+              <div className="row mt-3">
+                <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                  <span className="material-icons md-48">&#xe415;</span>
+                </div>
+                <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                  <input
+                    name="link"
+                    value={val}
+                    type="submit"
+                    className="btn btn-outline-danger btn-block"
+                  ></input>
+                </div>
               </div>
-            <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-            <input name="link" value={val} type="submit" className="btn btn-outline-danger btn-block" >
-               </input>
-               </div>
-               </div>
-          ))}</form>
+            ))}
+          </form>
         </div>
       </Fragment>
     );
-  } else  return <PagMain />;
+  } else return <PagMain />;
 };

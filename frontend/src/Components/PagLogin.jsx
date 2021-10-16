@@ -2,7 +2,7 @@ import React, { Fragment, useState, useCallback, useEffect } from "react";
 import "../Assets/Styles/icons.css";
 import { useHistory } from "react-router-dom";
 import { NavbarLogin } from "./NavbarLogin";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
 import { PagClassifier } from "./PagClassifier";
 
 export const PagLogin = (props) => {
@@ -15,7 +15,8 @@ export const PagLogin = (props) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [error, setError] = useState(null);
-  const [User, setUser] = useState(false);
+  const [User, setUser] = useState();
+  const [users, setUsers] = useState();
 
   const procesarDatos = (e) => {
     e.preventDefault();
@@ -35,10 +36,32 @@ export const PagLogin = (props) => {
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      console.log(user);
-      setUser(user);
+      if (user) {
+        setUser(user);
+        listUsers();
+      } else {
+        setUser(null);
+      }
     });
   }, []);
+
+  const listUsers = async () => {
+    db.collectionGroup("usuarios").onSnapshot((querySnapshot) => {
+      const perfiles = [];
+      querySnapshot.forEach((doc) => {
+        perfiles.push({ ...doc.data() });
+      });
+      setUsers(perfiles);
+    });
+  };
+
+  const verificarLog = () => {
+    users.map((item) => {
+      if (User === item.email) {
+        return true;
+      } else {return false}
+    });
+  };
 
   const login = useCallback(async () => {
     try {
@@ -46,7 +69,7 @@ export const PagLogin = (props) => {
       setEmail("");
       setPass("");
       setError(null);
-      props.history.push("/classifier");
+      props.history.push("/evaluaciones");
     } catch (error) {
       if (error.code === "auth/user-not-found") {
         setError("Usuario o contraseña incorrecta");
@@ -59,7 +82,7 @@ export const PagLogin = (props) => {
     }
   }, [email, pass, props.history]);
 
-  if (!User) {
+  if ({ verificarLog } && !User) {
     return (
       <Fragment>
         <NavbarLogin />

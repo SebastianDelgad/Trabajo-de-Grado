@@ -11,7 +11,7 @@ export const NavbarRegister = () => {
   return (
     <Fragment>
       <div className="container mt-3 bg-light">
-      <br/>
+        <br />
         <div className="row">
           <div className="col-8 col-sm-9 col-xs-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
             <img src={logo_imagen} alt="logoLogin" className="img-fluid" />
@@ -27,7 +27,7 @@ export const NavbarRegister = () => {
             </div>
           </div>
         </div>
-        <br/>
+        <br />
       </div>
     </Fragment>
   );

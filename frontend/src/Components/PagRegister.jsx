@@ -5,18 +5,43 @@ import "../Assets/Styles/icons.css";
 import { PagClassifier } from "./PagClassifier";
 
 export const PagRegister = (props) => {
-
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [error, setError] = useState(null);
   const [User, setUser] = useState(false);
+  const [admin, setAdmin] = useState("");
+  const [master, setMaster] = useState();
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      console.log(user.email);
-      setUser(user.email);
+      if (user) {
+        setUser(user.email);
+        listUsersAdmins();
+      } else {
+        setUser(null);
+      }
     });
   }, []);
+
+  const listUsersAdmins = async () => {
+    db.collectionGroup("usuarios")
+      .where("IsAdmin", "==", "admin")
+      .onSnapshot((querySnapshot) => {
+        const perfiles = [];
+        querySnapshot.forEach((doc) => {
+          perfiles.push({ ...doc.data() });
+        });
+        setMaster(perfiles);
+      });
+  };
+
+  const verificarAdmin = () => {
+    master.map((item) => {
+      if (User === item.email) {
+        return true;
+      }
+    });
+  };
 
   const procesarDatos = (e) => {
     e.preventDefault();
@@ -49,6 +74,7 @@ export const PagRegister = (props) => {
         photoURL: res.user.photoURL,
         email: res.user.email,
         uid: res.user.uid,
+        IsAdmin: admin,
       });
       setEmail("");
       setPass("");
@@ -66,14 +92,14 @@ export const PagRegister = (props) => {
         return;
       }
     }
-  }, [email, pass, props.history]);
+  }, [email, pass, admin, props.history]);
 
-  if (User === "delgado.sebastian@correounivalle.edu.co") {
+  if ({ verificarAdmin } && User) {
     return (
       <Fragment>
         <NavbarRegister />
         <div className="container mt-3 bg-light rounded-6">
-        <h3 className="text-center"> Registro de usuarios </h3>
+          <h3 className="text-center"> Registro de usuarios </h3>
           <div className="row justify-content-center">
             <div className="col-12 col-sm-8 col-md-6 col-xl-4">
               <form onSubmit={procesarDatos}>
@@ -118,6 +144,34 @@ export const PagRegister = (props) => {
                       onChange={(e) => setPass(e.target.value)}
                       value={pass}
                     />
+                  </div>
+                </div>
+                <div className="row mt-3 justify-content-center">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                    <h4>¿Usuario administrador?</h4>
+                  </div>
+                </div>
+                <div className="row justify-content-center">
+                  <div className="col-2">
+                    <span className="material-icons md-36">&#xef3d;</span>
+                  </div>
+                  <div className="col">
+                    <div className="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        className="form-check-input"
+                        id="exampleCheck1"
+                        value="admin"
+                        onChange={(e) => setAdmin(e.target.value)}
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="exampleCheck1"
+                      >
+                        Selecciona si el usuario será admin
+                      </label>
+                    </div>
                   </div>
                 </div>
                 <div className="row mt-3 justify-content-center">

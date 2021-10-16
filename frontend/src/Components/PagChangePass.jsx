@@ -21,6 +21,7 @@ export const PagChangePass = () => {
       .catch(function (e) {
         console.log(e);
       });
+      auth.verifyPasswordResetCode(email)
   };
 
   return (

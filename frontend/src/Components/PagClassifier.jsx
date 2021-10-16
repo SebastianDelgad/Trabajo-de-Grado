@@ -1,13 +1,13 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { NavbarClassifier } from "./NavbarClassifier";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { UploadPDF } from "./UploadPDF";
-import { PagEvaluaciones } from "./PagEvaluaciones";
+import { PagMain } from "./PagMain";
 
 export const PagClassifier = () => {
-  
   const [user, setUser] = useState();
+  const [admin, setAdmin] = useState("");
 
   let history = useHistory();
 
@@ -21,18 +21,41 @@ export const PagClassifier = () => {
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      setUser(user.email);
-      console.log(user.email);
+      if (user) {
+        setUser(user.email);
+        listUsersAdmins();
+      } else {
+        setUser(null);
+      }
     });
   }, []);
 
-  
-  if (user === "delgado.sebastian@correounivalle.edu.co") {
+  const listUsersAdmins = async () => {
+    db.collectionGroup("usuarios")
+      .where("IsAdmin", "==", "admin")
+      .onSnapshot((querySnapshot) => {
+        const perfiles = [];
+        querySnapshot.forEach((doc) => {
+          perfiles.push({ ...doc.data() });
+        });
+        setAdmin(perfiles);
+      });
+  };
+
+  const verificarAdmin = () => {
+    admin.map((item) => {
+      if (user === item.email) {
+        return true;
+      } 
+    });
+  };
+
+  if ({verificarAdmin} && user) {
     return (
       <Fragment>
         <NavbarClassifier />
         <div className="container mt-3 bg-light rounded-6">
-        <br/>
+          <br />
           <div className="row">
             <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
               <h3>Califique las observaciones de la evaluación docente. </h3>
@@ -46,7 +69,7 @@ export const PagClassifier = () => {
         </div>
 
         <div className="container mt-3 bg-light rounded-6">
-        <br/>
+          <br />
           <div className="row">
             <div className="col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
               <h4>Archivo a evaluar</h4>
@@ -71,15 +94,14 @@ export const PagClassifier = () => {
                 <span> Ver evaluaciones </span>
               </button>
             </div>
-            <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-            </div>
+            <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
           </div>
-          <br/>
+          <br />
         </div>
         <div className="container mt-3 bg-light rounded-6">
-          <br/>
+          <br />
           <h4> Registrar un usuario</h4>
-        <div className="row mt-3">
+          <div className="row mt-3">
             <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5"></div>
             <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
               <button
@@ -91,10 +113,9 @@ export const PagClassifier = () => {
             </div>
             <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
           </div>
-          <br/>
+          <br />
         </div>
       </Fragment>
     );
-  } 
-  else return <PagEvaluaciones />;
+  } return  <PagMain />;
 };

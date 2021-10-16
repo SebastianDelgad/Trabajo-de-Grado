@@ -8,36 +8,58 @@ import icon_account from "../Assets/Images/outline_perm_identity_black_48dp.png"
 import icon_book from "../Assets/Images/outline_menu_book_black_48dp.png";
 import { NavbarCalifications } from "./NavbarCalifications";
 import { PagMain } from "./PagMain";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
 import { PDFExport } from "@progress/kendo-react-pdf";
 import { useHistory } from "react-router-dom";
 
 export const ClassifierPeorProm = () => {
   const [observaciones, setObservacion] = useState([]);
-  const [User, setUser] = useState(false);
+  const [User, setUser] = useState();
+  const [users, setUsers] = useState();
   const pdfExportComponent = useRef(null);
   let history = useHistory();
 
   function handleClickAlfabeticamente() {
-    history.push("/classifierAlfabetico");
+    history.push("/evaluacion/alfabetica");
   }
 
   function handleClickMejorProm() {
-    history.push("/classifierMejorProm");
+    history.push("/evaluacion/mejor-promedio");
   }
 
   function handleClickPeorProm() {
-    history.push("/classifierPeorProm");
+    history.push("/evaluacion/peor-promedio");
   }
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      console.log(user);
-      setUser(user);
+      if (user) {
+        setUser(user.email);
+        listUsers();
+        obtenerDatos();
+      } else {
+        setUser(null);
+      }
     });
-    //console.log("useEffect");
-    obtenerDatos();
   }, []);
+
+  const listUsers = async () => {
+    db.collectionGroup("usuarios").onSnapshot((querySnapshot) => {
+      const perfiles = [];
+      querySnapshot.forEach((doc) => {
+        perfiles.push({ ...doc.data() });
+      });
+      setUsers(perfiles);
+    });
+  };
+
+  const verificarLog = () => {
+    users.map((item) => {
+      if (User === item.email) {
+        return true;
+      }
+    });
+  };
 
   const obtenerDatos = async () => {
     const data = await fetch("http://127.0.0.1:5000/peor-promedio");
@@ -52,7 +74,7 @@ export const ClassifierPeorProm = () => {
     }
   };
 
-  if (User) {
+  if ({ verificarLog } && User) {
     return (
       <Fragment>
         <NavbarCalifications />
@@ -160,13 +182,17 @@ export const ClassifierPeorProm = () => {
               <li key={item.id}>
                 <div className="row">
                   <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
-                  <img src={icon_account} className="img-fluid" alt="account" />
+                    <img
+                      src={icon_account}
+                      className="img-fluid"
+                      alt="account"
+                    />
                   </div>
                   <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                     <h4> Nombre: </h4> {item.docente}
                   </div>
                   <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
-                  <img src={icon_book} className="img-fluid" alt="book" />
+                    <img src={icon_book} className="img-fluid" alt="book" />
                   </div>
                   <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
                     <h4> Asignatura: </h4> {item.asignatura}

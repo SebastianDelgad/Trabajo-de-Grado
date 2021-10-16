@@ -21,13 +21,13 @@ export const App = () => {
       <Route exact path="/classifier" component={PagClassifier} />
       <Route exact path="/register" component={PagRegister} />
       <Route exact path="/changepass" component={PagChangePass} />
-      <Route exact path="/classifierAlfabetico" component={ClassifierAlfabéticamente} />
-      <Route exact path="/classifierMejorProm" component={ClassifierMejorProm} />
-      <Route exact path="/classifierPeorProm" component={ClassifierPeorProm} />
+      <Route exact path="/evaluacion/alfabetica" component={ClassifierAlfabéticamente} />
+      <Route exact path="/evaluacion/mejor-promedio" component={ClassifierMejorProm} />
+      <Route exact path="/evaluacion/peor-promedio" component={ClassifierPeorProm} />
       <Route exact path="/evaluaciones" component={PagEvaluaciones} />
-      <Route exact path="/mejor-prom" component={ClassifierHistoryMejor} />
-      <Route exact path="/peor-prom" component={ClassifierHistoryPeor} />
-      <Route exact path="/ordenado" component={ClassifierHistoryOrdenado} />
+      <Route exact path="/evaluacion/mejor-promedio" component={ClassifierHistoryMejor} />
+      <Route exact path="/evaluacion/promedio-bajo" component={ClassifierHistoryPeor} />
+      <Route exact path="/evaluacion/ordenado" component={ClassifierHistoryOrdenado} />
     </BrowserRouter>
   );
 };

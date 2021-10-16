@@ -10,7 +10,6 @@ export const NavbarMain = () => {
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      console.log(user);
       if (user) {
         setFirebaseUser(user);
       } else {
@@ -20,13 +19,13 @@ export const NavbarMain = () => {
   }, []);
 
   function handleClickIniciarsesion() {
-    firebaseUser ? history.push("/classifier") : history.push("/login");
+    firebaseUser ? history.push("/evaluaciones") : history.push("/login");
   }
 
   return (
     <Fragment>
       <div className="container mt-3 bg-light rounded-6">
-      <br/>
+        <br />
         <div className="row">
           <div className="col-8 col-sm-9 col-xs-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
             <img src={logo_imagen} alt="logoLogin" className="img-fluid" />
@@ -37,12 +36,12 @@ export const NavbarMain = () => {
                 className="btn btn-outline-danger"
                 onClick={handleClickIniciarsesion}
               >
-                {firebaseUser !== null ? "Clasificador" : "Iniciar Sesión"}
+                {firebaseUser !== null ? "Evaluaciones" : "Iniciar Sesión"}
               </button>
             </div>
           </div>
         </div>
-        <br/>
+        <br />
       </div>
     </Fragment>
   );
