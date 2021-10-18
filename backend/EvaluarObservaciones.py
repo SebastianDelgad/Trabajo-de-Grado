@@ -1,11 +1,8 @@
-import urllib
-import firebase_admin.storage
 from LeerObservaciones import almacenar_nombres
 from Preprocesado import dataset
 import numpy as np
 import os
-from firebase_admin import credentials, initialize_app, storage, db
-
+from firebase_admin import credentials, initialize_app, storage
 
 
 def saveFile(txt):
@@ -29,9 +26,6 @@ def saveFile(txt):
     blob.make_public()
 
     #print("your file url", blob.public_url)
-
-
-
 
 def evaluar_documento(txt):
 

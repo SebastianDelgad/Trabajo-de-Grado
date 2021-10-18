@@ -7,7 +7,11 @@ export const UploadPDF = () => {
   let history = useHistory();
 
   function redirection() {
-    history.push("/classifierAlfabetico");
+    history.push("/classifier/cargando");
+  }
+
+  function redirectionfail() {
+    history.push("/classifier");
   }
 
   const changeHandler = (event) => {
@@ -30,7 +34,7 @@ export const UploadPDF = () => {
           redirection();
         }
       })
-      .catch((error) => console.error("Error:", error));
+      .catch((error) => console.error("Error:", error), redirectionfail());
   };
 
   return (
@@ -39,7 +43,6 @@ export const UploadPDF = () => {
         <input type="file" name="File" onChange={changeHandler} />
         {isSelected ? (
           <div>
-            <p>Filename: {selectedFile.name}</p>
             <p>Filetype: {selectedFile.type}</p>
             <p>Size in bytes: {selectedFile.size}</p>
             <p>

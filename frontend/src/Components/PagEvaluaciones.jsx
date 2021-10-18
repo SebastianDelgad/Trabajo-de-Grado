@@ -7,8 +7,9 @@ import { PagMain } from "./PagMain";
 export const PagEvaluaciones = () => {
   const [user, setUser] = useState();
   const [docs, setDocs] = useState([]);
-  const [admin, setAdmin] = useState();
-  const [users, setUsers] = useState();
+  const [users, setUsers] = useState([]);
+  const [view, setView] = useState();
+  const [viewA, setViewA] = useState();
 
   let history = useHistory();
 
@@ -21,37 +22,54 @@ export const PagEvaluaciones = () => {
   }
 
   useEffect(() => {
+    const ac = new AbortController();
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
         listItem();
-        listUsersAdmins();
-        listUsers();
+      listUsers();
+      listUsersAdmin();
+        
       } else {
         setUser(null);
+        return () => ac.abort();
       }
     });
   }, []);
 
-  const listUsersAdmins = async () => {
-    db.collectionGroup("usuarios")
-      .where("IsAdmin", "==", "admin")
-      .onSnapshot((querySnapshot) => {
-        const perfiles = [];
-        querySnapshot.forEach((doc) => {
-          perfiles.push({ ...doc.data() });
-        });
-        setAdmin(perfiles);
-      });
-  };
-
-  const listUsers = async () => {
+  const listUsersAdmin = () => {
     db.collectionGroup("usuarios").onSnapshot((querySnapshot) => {
       const perfiles = [];
       querySnapshot.forEach((doc) => {
         perfiles.push({ ...doc.data() });
       });
       setUsers(perfiles);
+    });
+    console.log(users);
+    users.map((item) => {
+      if (item.email === user && item.IsAdmin === "admin") {
+        setViewA(user);
+      } else {
+        setViewA(null);
+      }
+    });
+  };
+
+  const listUsers = () => {
+    db.collectionGroup("usuarios").onSnapshot((querySnapshot) => {
+      const perfiles = [];
+      querySnapshot.forEach((doc) => {
+        perfiles.push({ ...doc.data() });
+      });
+      setUsers(perfiles);
+    });
+    console.log(users);
+    users.map((item) => {
+      if (item.email === user) {
+        setView(user);
+      } else {
+        setView(null);
+      }
     });
   };
 
@@ -71,29 +89,7 @@ export const PagEvaluaciones = () => {
       });
   };
 
-  const verificarAdmin = () => {
-    admin.map((item) => {
-      if (user === item.email) {
-        console.log(user)
-      console.log(item.email)
-        return true;
-      }else {return false;}
-    });
-  };
-
-  const verificarLog = () => {
-    users.map((item) => {
-      
-      
-      if (user === item.email) {
-        console.log(user)
-      console.log(item.email)
-        return true;
-      }else {return false;}
-    });
-  };
-
-  if (verificarAdmin) {
+  if (user) {
     return (
       <Fragment>
         <NavbarClassifier />
@@ -159,7 +155,7 @@ export const PagEvaluaciones = () => {
     );
   }
 
-  if  (verificarLog) {
+  else if (false) {
     return (
       <Fragment>
         <NavbarClassifier />
@@ -199,5 +195,6 @@ export const PagEvaluaciones = () => {
         </div>
       </Fragment>
     );
-  } else return <PagMain />;
+  }
+ else return <PagMain />;
 };

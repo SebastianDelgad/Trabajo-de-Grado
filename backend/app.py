@@ -84,12 +84,8 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-
-
-
 app = Flask(__name__)
 CORS(app)
-
 
 @app.route("/")
 def idenx():
@@ -109,7 +105,7 @@ def uploader():
             f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             procesador(filename)
         # Retornamos una respuesta satisfactoria
-            return redirect('http://localhost:3000/evaluaciones')
+            return redirect('http://localhost:3000/classifier/evaluaciones')
         return redirect('http://localhost:3000/classifier')
 
 
@@ -142,7 +138,6 @@ def historial():
     if request.method == 'POST':
         # obtenemos el nombre del input "archivo"
         f = request.values["link"]
-        print(f)
         url = "https://storage.googleapis.com/teacher-qualifier.appspot.com/"+f
         obtenerArchivo(url)
         
@@ -150,25 +145,23 @@ def historial():
         
 
 def obtenerArchivo(url):
+        cambio = []
         data = urllib.request.urlopen(url).read().decode(encoding="utf-8")
         conc = ""
         infoWeb = []
         for line in data:
-            if line == "\r" :
+            if line == "\n" :
                 infoWeb.append(conc.strip())
                 conc = ""
             else:
                 conc += line
-    
         if len(infoWeb) > 1:
-            cambio = []
             for line in infoWeb:
                 if len(line) < 4:
                     cambio.append(int(line))
                 else:
                     cambio.append(line)
         module_dir = os.path.dirname(__file__)
-        print(module_dir)
         resultado = os.path.join(module_dir, 'historial.txt')
         np.savetxt(resultado, np.array(cambio), fmt="%s")
 

@@ -25,7 +25,7 @@ export const ClassifierHistoryOrdenado = () => {
   }
 
   function handleClickMejorProm() {
-    history.push("/evaluacion/mejor-promedio");
+    history.push("/evaluacion/promedio-alto");
   }
 
   function handleClickPeorProm() {

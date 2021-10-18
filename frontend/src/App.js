@@ -25,7 +25,7 @@ export const App = () => {
       <Route exact path="/evaluacion/mejor-promedio" component={ClassifierMejorProm} />
       <Route exact path="/evaluacion/peor-promedio" component={ClassifierPeorProm} />
       <Route exact path="/evaluaciones" component={PagEvaluaciones} />
-      <Route exact path="/evaluacion/mejor-promedio" component={ClassifierHistoryMejor} />
+      <Route exact path="/evaluacion/promedio-alto" component={ClassifierHistoryMejor} />
       <Route exact path="/evaluacion/promedio-bajo" component={ClassifierHistoryPeor} />
       <Route exact path="/evaluacion/ordenado" component={ClassifierHistoryOrdenado} />
     </BrowserRouter>

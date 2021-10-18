@@ -64,7 +64,7 @@ def preprocess(text):
 def dataset(new_reviews):
     # Lectura el data set y especificar las dos columnas que tiene el dataset como estructura
     module_dir = os.path.dirname(__file__)
-    file = os.path.join(module_dir, 'dataset/Observaciones_-2_a_2.csv')
+    file = os.path.join(module_dir, 'dataset/observaciones_-2_a_2.csv')
     data = pd.read_csv(file,
                        sep=',', encoding="utf8", header=None)
     data.columns = ['Observaciones', 'Sentiment']
@@ -76,7 +76,7 @@ def dataset(new_reviews):
 
     # MLP (red neuronal)
     text_classifier = MLPClassifier(hidden_layer_sizes=(
-        1500, 1000, 500), max_iter=3000, activation='relu', solver='adam', random_state=1)
+        1500, 1000, 500), max_iter=50, activation='relu', solver='adam', random_state=1)
 
     pipeline = Pipeline([
         ('bow', bow),  # strings to token integer counts
