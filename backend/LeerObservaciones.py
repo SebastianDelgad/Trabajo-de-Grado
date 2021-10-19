@@ -39,6 +39,7 @@ def leer_txt(documento):
                 # print(linea)
                 if not linea:
                     break
+    archivo.close()
 
     for word3 in tObservaciones:
         if len(word3) > 0:
@@ -112,11 +113,11 @@ def procesado_txt(datos, vectorNombres):
     # se elimina los elementos vacios que hay en el vector
     for word3 in vectorFinal:
         if len(word3) > 0:
-            vectorDatosProcesados.append(word3)
+            vectorDatosProcesados.append(word3.strip())
     
     for word4 in vectorDatosProcesados:
         if len(word4) > 1 and word4[1] != "/":
-            datosFinalesProcesados.append(word4)
+            datosFinalesProcesados.append(word4.strip())
 
     return datosFinalesProcesados
 
