@@ -7,7 +7,7 @@ export const UploadPDF = () => {
   let history = useHistory();
 
   function redirection() {
-    history.push("/classifier/cargando");
+    history.push("/evaluaciones");
   }
 
   function redirectionfail() {

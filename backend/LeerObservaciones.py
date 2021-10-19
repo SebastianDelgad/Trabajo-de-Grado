@@ -27,6 +27,7 @@ def leer_txt(documento):
     # def leer_txt():
     tObservaciones = []
     quitarEspacios = []
+    quitarLinks = []
     module_dir = os.path.dirname(__file__)
     file = os.path.join(module_dir, documento)
     archivo = open(file, mode='r', encoding='utf8')
@@ -42,8 +43,19 @@ def leer_txt(documento):
     for word3 in tObservaciones:
         if len(word3) > 0:
             quitarEspacios.append(word3)
-            
-    return quitarEspacios
+    
+    for frases in quitarEspacios:
+        if len(frases) > 2:
+            if frases != "----":
+                if frases[2] != "/":
+                    if frases != "https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php": 
+                        quitarLinks.append(frases)
+        
+        else:
+            quitarLinks.append(frases)
+
+    
+    return quitarLinks
 
 # Almacena los nombres, curso y grupo del curso que enseña el docente
 
@@ -70,6 +82,7 @@ def almacenar_nombres(datos):
 def procesado_txt(datos, vectorNombres):
     vectorFinal = []
     vectorDatosProcesados = []
+    datosFinalesProcesados = []
     nObservación = 0
     union = ""
 
@@ -100,8 +113,12 @@ def procesado_txt(datos, vectorNombres):
     for word3 in vectorFinal:
         if len(word3) > 0:
             vectorDatosProcesados.append(word3)
+    
+    for word4 in vectorDatosProcesados:
+        if len(word4) > 1 and word4[1] != "/":
+            datosFinalesProcesados.append(word4)
 
-    return vectorDatosProcesados
+    return datosFinalesProcesados
 
 
 def observaciones(file):

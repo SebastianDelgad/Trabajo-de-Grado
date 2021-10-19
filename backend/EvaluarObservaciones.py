@@ -2,19 +2,22 @@ from LeerObservaciones import almacenar_nombres
 from Preprocesado import dataset
 import numpy as np
 import os
+import firebase_admin
 from firebase_admin import credentials, initialize_app, storage
 
 
 def saveFile(txt):
+
+    if (not len(firebase_admin._apps)):
     # Fetch the service account key JSON file contents
-    module_dir = os.path.dirname(__file__)
-    credential = os.path.join(module_dir, 'teacher-qualifier-firebase-adminsdk-rcl5m-f2037fdc9f.json')
+        module_dir = os.path.dirname(__file__)
+        credential = os.path.join(module_dir, 'teacher-qualifier-firebase-adminsdk-rcl5m-f2037fdc9f.json')
 
-    cred = credentials.Certificate(credential)
+        cred = credentials.Certificate(credential)
 
-    initialize_app(cred, {
-    'storageBucket': 'teacher-qualifier.appspot.com',
-})
+        initialize_app(cred, {
+        'storageBucket': 'teacher-qualifier.appspot.com',
+        })
 # Put your local file path 
     fileName = txt+".txt"
     file = os.path.join(module_dir, fileName)

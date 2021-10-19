@@ -76,7 +76,7 @@ def dataset(new_reviews):
 
     # MLP (red neuronal)
     text_classifier = MLPClassifier(hidden_layer_sizes=(
-        1500, 1000, 500), max_iter=50, activation='relu', solver='adam', random_state=1)
+        150, 100, 50), max_iter=50, activation='relu', solver='adam', random_state=1)
 
     pipeline = Pipeline([
         ('bow', bow),  # strings to token integer counts
