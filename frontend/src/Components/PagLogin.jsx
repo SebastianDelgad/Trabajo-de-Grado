@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useCallback, useEffect } from "react";
-import "../Assets/Styles/icons.css";
+import "../Assets/Styles/Styles.css";
 import { useHistory } from "react-router-dom";
 import { NavbarLogin } from "./NavbarLogin";
-import { auth, db } from "../firebase";
+import { auth } from "../firebase";
 import { PagClassifier } from "./PagClassifier";
 
 export const PagLogin = (props) => {
@@ -16,7 +16,6 @@ export const PagLogin = (props) => {
   const [pass, setPass] = useState("");
   const [error, setError] = useState(null);
   const [User, setUser] = useState();
-  const [users, setUsers] = useState();
 
   const procesarDatos = (e) => {
     e.preventDefault();
@@ -38,30 +37,11 @@ export const PagLogin = (props) => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user);
-        listUsers();
       } else {
         setUser(null);
       }
     });
   }, []);
-
-  const listUsers = async () => {
-    db.collectionGroup("usuarios").onSnapshot((querySnapshot) => {
-      const perfiles = [];
-      querySnapshot.forEach((doc) => {
-        perfiles.push({ ...doc.data() });
-      });
-      setUsers(perfiles);
-    });
-  };
-
-  const verificarLog = () => {
-    users.map((item) => {
-      if (User === item.email) {
-        return true;
-      } else {return false}
-    });
-  };
 
   const login = useCallback(async () => {
     try {
@@ -82,12 +62,16 @@ export const PagLogin = (props) => {
     }
   }, [email, pass, props.history]);
 
-  if ({ verificarLog } && !User) {
+  if (!User) {
     return (
       <Fragment>
         <NavbarLogin />
         <div className="container mt-3 bg-light rounded-6">
-          <h3 className="text-center"> Acceder al sistema </h3>
+          <div className="row">
+            <div className="mt-4 col">
+              <h3 className="text-center"> Acceder al sistema </h3>
+            </div>
+          </div>
           <div className="row justify-content-center">
             <div className="col-12 col-sm-8 col-md-6 col-xl-4">
               <form onSubmit={procesarDatos}>
@@ -109,7 +93,7 @@ export const PagLogin = (props) => {
                     <input
                       type="email"
                       className="form-control mb-2"
-                      placeholder="Ingrese el email..."
+                      placeholder="Ingrese el correo..."
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
@@ -146,7 +130,7 @@ export const PagLogin = (props) => {
                 </div>
                 <div className="row mt-3 justify-content-center">
                   <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
-                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <div className="mb-4 col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
                     <h6
                       className="outline-danger"
                       onClick={handleClickOlvidoContraseña}

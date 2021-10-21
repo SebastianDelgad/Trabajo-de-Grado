@@ -9,16 +9,18 @@ from firebase_admin import credentials, initialize_app, storage
 def saveFile(txt):
 
     if (not len(firebase_admin._apps)):
-    # Fetch the service account key JSON file contents
+        # Fetch the service account key JSON file contents
         module_dir = os.path.dirname(__file__)
-        credential = os.path.join(module_dir, 'teacher-qualifier-firebase-adminsdk-rcl5m-f2037fdc9f.json')
+        credential = os.path.join(
+            module_dir, 'teacher-qualifier-firebase-adminsdk-rcl5m-f2037fdc9f.json')
 
         cred = credentials.Certificate(credential)
 
         initialize_app(cred, {
-        'storageBucket': 'teacher-qualifier.appspot.com',
+            'storageBucket': 'teacher-qualifier.appspot.com',
         })
-# Put your local file path 
+# Put your local file path
+    module_dir = os.path.dirname(__file__)
     fileName = txt+".txt"
     file = os.path.join(module_dir, fileName)
     bucket = storage.bucket()
@@ -29,6 +31,7 @@ def saveFile(txt):
     blob.make_public()
 
     #print("your file url", blob.public_url)
+
 
 def evaluar_documento(txt):
 
@@ -62,6 +65,7 @@ def evaluar_documento(txt):
 
     return vecClasificador
 
+
 def normalize(s):
     replacements = (
         ("á", "a"),
@@ -76,6 +80,7 @@ def normalize(s):
         s = s.replace(a, b).replace(a.upper(), b.upper())
     return s
 
+
 def quitarTildes(datos):
     endName = []
     for name in datos:
@@ -84,8 +89,9 @@ def quitarTildes(datos):
         else:
             endName.append(name)
 
-    #print(endName)
+    # print(endName)
     return endName
+
 
 def data(txt, pdf):
     evaluacion = evaluar_documento(txt)
@@ -97,4 +103,3 @@ def data(txt, pdf):
     saveFile(pdf)
 
     return file
-

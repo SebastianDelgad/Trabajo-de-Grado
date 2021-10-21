@@ -8,15 +8,15 @@ import icon_account from "../Assets/Images/outline_perm_identity_black_48dp.png"
 import icon_book from "../Assets/Images/outline_menu_book_black_48dp.png";
 import { NavbarEvaluaciones } from "./NavbarEvaluaciones";
 import { PagMain } from "./PagMain";
-import { auth, db } from "../firebase";
+import { auth } from "../firebase";
 import { PDFExport } from "@progress/kendo-react-pdf";
 import { useHistory } from "react-router-dom";
 
 export const ClassifierHistoryPeor = () => {
   const [observaciones, setObservacion] = useState([]);
   const [User, setUser] = useState(false);
-  const [users, setUsers] = useState();
   const pdfExportComponent = useRef(null);
+
   let history = useHistory();
 
   function handleClickAlfabeticamente() {
@@ -35,31 +35,12 @@ export const ClassifierHistoryPeor = () => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
-        listUsers();
         obtenerDatos();
       } else {
         setUser(null);
       }
     });
   }, []);
-
-  const listUsers = async () => {
-    db.collectionGroup("usuarios").onSnapshot((querySnapshot) => {
-      const perfiles = [];
-      querySnapshot.forEach((doc) => {
-        perfiles.push({ ...doc.data() });
-      });
-      setUsers(perfiles);
-    });
-  };
-
-  const verificarLog = () => {
-    users.map((item) => {
-      if (User === item.email) {
-        return true;
-      }
-    });
-  };
 
   const obtenerDatos = async () => {
     const data = await fetch("http://127.0.0.1:5000/historial-peor-prom");
@@ -74,65 +55,78 @@ export const ClassifierHistoryPeor = () => {
     }
   };
 
-  if ({ verificarLog }  && User) {
+  if (User) {
     return (
       <Fragment>
         <NavbarEvaluaciones />
         <div className="container mt-3 bg-light rounded">
-          <br></br>
-          <ul className="nav nav-pills nav-justified">
-            <li className="nav-tabs">
-              <button
-                className="btn btn-outline-danger"
-                aria-current="page"
-                onClick={handleClickAlfabeticamente}
-              >
-                Alfabéticamente
-              </button>
-            </li>
-            <li className="nav-tabs">
-              <button
-                className="btn btn-outline-danger"
-                onClick={handleClickMejorProm}
-              >
-                Mejor promedio
-              </button>
-            </li>
-            <li className="nav-tabs">
-              <button
-                className="btn btn-outline-danger active"
-                onClick={handleClickPeorProm}
-              >
-                Peor promedio
-              </button>
-            </li>
-            <li className="nav-item">
-              <button
-                className="btn btn-outline-danger"
-                onClick={exportPDFWithComponent}
-              >
-                Descargar en PDF
-              </button>
-            </li>
-          </ul>
-          <br></br>
+          <div className="row">
+            <div className="mt-3 mb-4 col">
+              <ul className="nav nav-pills nav-justified">
+                <li className="nav-tabs">
+                  <button
+                    className="btn btn-outline-danger"
+                    onClick={handleClickAlfabeticamente}
+                  >
+                    Alfabéticamente
+                  </button>
+                </li>
+                <li className="nav-tabs">
+                  <button
+                    className="btn btn-outline-danger"
+                    onClick={handleClickMejorProm}
+                  >
+                    Promedio más alto
+                  </button>
+                </li>
+                <li className="nav-tabs">
+                  <button
+                    className="btn btn-outline-danger active"
+                    aria-current="page"
+                    onClick={handleClickPeorProm}
+                  >
+                    Promedio más bajo
+                  </button>
+                </li>
+                <li className="nav-item">
+                  <button
+                    className="btn btn-outline-danger"
+                    onClick={exportPDFWithComponent}
+                  >
+                    Descargar en PDF
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <PDFExport
-          ref={pdfExportComponent}
+          scale={0.6}
           paperSize="Legal"
-          margin={40}
-          fileName="Orden alfabético"
+          margin="2cm"
+          fileName="Promedio bajo"
+          ref={pdfExportComponent}
         >
           <div className="container mt-3 bg-light rounded">
-            <h2 className="text-center mt-2">
-              Evaluaciones ordenadas por el{" "}
-              <p className="text-danger">peor promedio </p> de calificacion de
-              las observaciones
-            </h2>
-            <h5 className="mt-2"> Clasificación de las observaciones: </h5>
+            <div className="row">
+              <div className=" mt-3 mb-2 col">
+                <h2 className="text-center text-responsive">
+                  Evaluaciones ordenadas por el promedio más bajo de
+                  calificación de las observaciones
+                </h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className=" mb-2 col">
+                <h5 className="mt-2 text-responsive">
+                  {" "}
+                  Clasificación de las observaciones:{" "}
+                </h5>
+              </div>
+            </div>
             <div className="row justify-content-md-center mt-3">
-              <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+              <div className="mb-1 col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                 <img
                   src={img_muy_negativa}
                   className="img-fluid"
@@ -157,20 +151,20 @@ export const ClassifierHistoryPeor = () => {
               </div>
             </div>
             <div className="row justify-content-md-center">
-              <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                <p> Muy negativa</p>
+              <div className="mb-2 col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                <p className="text-responsive"> Muy negativa</p>
               </div>
               <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                <p> Negativa</p>
+                <p className="text-responsive"> Negativa</p>
               </div>
               <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                <p> Neutral</p>
+                <p className="text-responsive"> Neutral</p>
               </div>
               <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                <p> Positivo </p>
+                <p className="text-responsive"> Positivo </p>
               </div>
               <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                <p> Muy positivo</p>
+                <p className="text-responsive"> Muy positivo</p>
               </div>
             </div>
           </div>
@@ -179,160 +173,180 @@ export const ClassifierHistoryPeor = () => {
             <div className="container mt-4 bg-light rounded">
               <li key={item.id}>
                 <div className="row">
-                  <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                     <img
                       src={icon_account}
                       className="img-fluid"
                       alt="account"
                     />
                   </div>
-                  <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                    <h4> Nombre: </h4> {item.docente}
+                  <div className="mt-2 col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <h4 className="text-responsive"> Nombre: </h4>{" "}
+                    <p className="text-responsive">{item.docente}</p>
                   </div>
-                  <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                     <img src={icon_book} className="img-fluid" alt="book" />
                   </div>
-                  <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                    <h4> Asignatura: </h4> {item.asignatura}
+                  <div className="mt-2 col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <h4 className="text-responsive"> Asignatura: </h4>{" "}
+                    <p className="text-responsive">{item.asignatura}</p>
                   </div>
                 </div>
-
-                <div className="container mt-1 bg-white rounded">
-                  <div className="row mt-3">
-                    <h4> &nbsp; Calificación observaciones </h4>
+                <div className="row mt-2">
+                  <div className="col mb-3 mt-3">
+                    <h4 className="text-responsive">
+                      {" "}
+                      &nbsp; Calificación observaciones{" "}
+                    </h4>
                   </div>
-                  <br></br>
-                  <div className="row justify-content-md-center mt-2">
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                </div>
+                <div className="row justify-content-md-center mt-2">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <img
+                      src={img_muy_negativa}
+                      className="img-fluid"
+                      alt="muy_negativo"
+                    />
+                  </div>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <img
+                      src={img_negativa}
+                      className="img-fluid"
+                      alt="negativo"
+                    />
+                  </div>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <img
+                      src={img_neutral}
+                      className="img-fluid"
+                      alt="neutral"
+                    />
+                  </div>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <img
+                      src={img_positivo}
+                      className="img-fluid"
+                      alt="positivo"
+                    />
+                  </div>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <img
+                      src={img_muy_positivo}
+                      className="img-fluid"
+                      alt="muy_positivo"
+                    />
+                  </div>
+                </div>
+                <div className="row justify-content-md-center mt-1">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <h5 className="text-responsive">
+                      {" "}
+                      &nbsp;&nbsp;&nbsp; {item.total_muy_neg}{" "}
+                    </h5>
+                  </div>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <h5 className="text-responsive">
+                      {" "}
+                      &nbsp;&nbsp;&nbsp; {item.total_neg}{" "}
+                    </h5>
+                  </div>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <h5 className="text-responsive">
+                      {" "}
+                      &nbsp;&nbsp;&nbsp; {item.total_neu}{" "}
+                    </h5>
+                  </div>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <h5 className="text-responsive">
+                      {" "}
+                      &nbsp;&nbsp;&nbsp; {item.total_pos}{" "}
+                    </h5>
+                  </div>
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <h5 className="text-responsive">
+                      {" "}
+                      &nbsp;&nbsp;&nbsp; {item.total_muy_pos}{" "}
+                    </h5>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <h4 className="text-responsive mt-1"> &nbsp; Promedio: </h4>
+                  </div>
+                </div>
+                <div className="row justify-content-md-center mt-1">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    {item.promedio_calificación === "Muy negativo" && (
                       <img
                         src={img_muy_negativa}
                         className="img-fluid"
                         alt="muy_negativo"
                       />
-                    </div>
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                      <img
-                        src={img_negativa}
-                        className="img-fluid"
-                        alt="negativo"
-                      />
-                    </div>
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    )}
+
+                    {item.promedio_calificación === "Neutral" && (
                       <img
                         src={img_neutral}
                         className="img-fluid"
                         alt="neutral"
                       />
-                    </div>
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    )}
+
+                    {item.promedio_calificación === "Positivo" && (
                       <img
                         src={img_positivo}
                         className="img-fluid"
                         alt="positivo"
                       />
-                    </div>
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    )}
+
+                    {item.promedio_calificación === "Muy positivo" && (
                       <img
                         src={img_muy_positivo}
                         className="img-fluid"
                         alt="muy_positivo"
                       />
-                    </div>
-                  </div>
-                  <div className="row justify-content-md-center mt-1">
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                      <h5> &nbsp;&nbsp;&nbsp; {item.total_muy_neg} </h5>
-                    </div>
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                      <h5> &nbsp;&nbsp;&nbsp; {item.total_neg} </h5>
-                    </div>
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                      <h5> &nbsp;&nbsp;&nbsp; {item.total_neu} </h5>
-                    </div>
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                      <h5> &nbsp;&nbsp;&nbsp; {item.total_pos} </h5>
-                    </div>
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                      <h5> &nbsp;&nbsp;&nbsp; {item.total_muy_pos} </h5>
-                    </div>
+                    )}
+
+                    {item.promedio_calificación === "Negativo" && (
+                      <img
+                        src={img_negativa}
+                        className="img-fluid"
+                        alt="negativo"
+                      />
+                    )}
                   </div>
                 </div>
-                <div className="container mt-1 bg-white rounded">
-                  <div className="row mt-5">
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                      <h4> Promedio: </h4>
-                    </div>
-                  </div>
-                  <div className="row justify-content-md-center mt-1">
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                      {item.promedio_calificación === "Muy negativo" && (
-                        <img
-                          src={img_muy_negativa}
-                          className="img-fluid"
-                          alt="muy_negativo"
-                        />
-                      )}
+                <div className="row justify-content-md-center mt-1">
+                  <div className="mb-2 col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    {item.promedio_calificación === "Muy negativo" && (
+                      <p className="text-responsive"> Muy negativo </p>
+                    )}
 
-                      {item.promedio_calificación === "Neutral" && (
-                        <img
-                          src={img_neutral}
-                          className="img-fluid"
-                          alt="neutral"
-                        />
-                      )}
+                    {item.promedio_calificación === "Neutral" && (
+                      <p className="text-responsive"> Neutral </p>
+                    )}
 
-                      {item.promedio_calificación === "Positivo" && (
-                        <img
-                          src={img_positivo}
-                          className="img-fluid"
-                          alt="positivo"
-                        />
-                      )}
+                    {item.promedio_calificación === "Positivo" && (
+                      <p className="text-responsive"> Positivo </p>
+                    )}
 
-                      {item.promedio_calificación === "Muy positivo" && (
-                        <img
-                          src={img_muy_positivo}
-                          className="img-fluid"
-                          alt="muy_positivo"
-                        />
-                      )}
+                    {item.promedio_calificación === "Muy positivo" && (
+                      <p className="text-responsive"> Muy positivo </p>
+                    )}
 
-                      {item.promedio_calificación === "Negativo" && (
-                        <img
-                          src={img_negativa}
-                          className="img-fluid"
-                          alt="negativo"
-                        />
-                      )}
-                    </div>
-                  </div>
-                  <div className="row justify-content-md-center mt-1">
-                    <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                      {item.promedio_calificación === "Muy negativo" && (
-                        <p> Muy negativo </p>
-                      )}
-
-                      {item.promedio_calificación === "Neutral" && (
-                        <p> Neutral </p>
-                      )}
-
-                      {item.promedio_calificación === "Positivo" && (
-                        <p> Positivo </p>
-                      )}
-
-                      {item.promedio_calificación === "Muy positivo" && (
-                        <p> Muy positivo </p>
-                      )}
-
-                      {item.promedio_calificación === "Negativo" && (
-                        <p> Negativo </p>
-                      )}
-                    </div>
+                    {item.promedio_calificación === "Negativo" && (
+                      <p className="text-responsive"> Negativo </p>
+                    )}
                   </div>
                 </div>
-                <div className="row mt-3">
-                  <div className="col">
-                    <h4> Total observaciones: {item.total_observaciones} </h4>
+
+                <div className="row mt-1">
+                  <div className="col mt-2 mb-3">
+                    <h4 className="text-responsive">
+                      {" "}
+                      Total observaciones: {item.total_observaciones}{" "}
+                    </h4>
                   </div>
                 </div>
               </li>

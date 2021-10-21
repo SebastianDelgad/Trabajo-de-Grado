@@ -35,3 +35,9 @@
 .rounded-6 {
   border-radius:.40rem!important
 }
+
+.justify {
+  margin: 0;
+  text-indent: 0;
+  text-align: justify;
+}

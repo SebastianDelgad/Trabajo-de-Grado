@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect, useCallback } from "react";
 import { db, auth } from "../firebase";
 import { NavbarRegister } from "./NavbarRegister";
-import "../Assets/Styles/icons.css";
+import "../Assets/Styles/Styles.css";
 import { PagClassifier } from "./PagClassifier";
 
 export const PagRegister = (props) => {
@@ -10,38 +10,16 @@ export const PagRegister = (props) => {
   const [error, setError] = useState(null);
   const [User, setUser] = useState(false);
   const [admin, setAdmin] = useState("");
-  const [master, setMaster] = useState();
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
-        listUsersAdmins();
       } else {
         setUser(null);
       }
     });
   }, []);
-
-  const listUsersAdmins = async () => {
-    db.collectionGroup("usuarios")
-      .where("IsAdmin", "==", "admin")
-      .onSnapshot((querySnapshot) => {
-        const perfiles = [];
-        querySnapshot.forEach((doc) => {
-          perfiles.push({ ...doc.data() });
-        });
-        setMaster(perfiles);
-      });
-  };
-
-  const verificarAdmin = () => {
-    master.map((item) => {
-      if (User === item.email) {
-        return true;
-      }
-    });
-  };
 
   const procesarDatos = (e) => {
     e.preventDefault();
@@ -94,12 +72,16 @@ export const PagRegister = (props) => {
     }
   }, [email, pass, admin, props.history]);
 
-  if ({ verificarAdmin } && User) {
+  if (User) {
     return (
       <Fragment>
         <NavbarRegister />
         <div className="container mt-3 bg-light rounded-6">
-          <h3 className="text-center"> Registro de usuarios </h3>
+          <div className="row justify-content-center">
+            <div className="mt-4 mb-2 col">
+              <h3 className="text-center"> Registro de usuarios </h3>
+            </div>
+          </div>
           <div className="row justify-content-center">
             <div className="col-12 col-sm-8 col-md-6 col-xl-4">
               <form onSubmit={procesarDatos}>
@@ -176,7 +158,7 @@ export const PagRegister = (props) => {
                 </div>
                 <div className="row mt-3 justify-content-center">
                   <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
-                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <div className="mb-4 col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
                     <button
                       className="btn btn-outline-danger btn-block"
                       type="submit"

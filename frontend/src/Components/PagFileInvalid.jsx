@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 import { UploadPDF } from "./UploadPDF";
 import { PagMain } from "./PagMain";
 
-export const PagClassifier = () => {
+export const PagFileInvalid = () => {
   const [user, setUser] = useState();
 
   let history = useHistory();
@@ -46,6 +46,13 @@ export const PagClassifier = () => {
         </div>
 
         <div className="container mt-3 bg-light rounded-6">
+          <div className="row">
+            <div className="col-">
+              <div className="alert alert-danger">
+                Por favor ingrese un archivo válido
+              </div>
+            </div>
+          </div>
           <div className="row">
             <div className="mt-4 mb-5 col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
               <h4>Archivo a evaluar</h4>

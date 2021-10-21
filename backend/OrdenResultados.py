@@ -427,16 +427,3 @@ def resultados(datosCalificados):
     diccionario = info_dicionario(nombres, asignaturas, notas, total_muy_neg,
                                   total_neg, total_neu, total_pos, total_muy_pos, total_obs)
     return diccionario
-
-
-def leer_archivo():
-    datos = []
-    module_dir = os.path.dirname(__file__)
-    pdf_a_texto = os.path.join(module_dir, 'resultado.txt')
-    archivo = open(pdf_a_texto, 'r')
-    for line in archivo.readlines():
-        if len(line) < 4:
-            datos.append(int(line.strip()))
-        else:
-            datos.append(line.strip())
-    return datos

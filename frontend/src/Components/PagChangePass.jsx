@@ -11,17 +11,22 @@ export const PagChangePass = () => {
   }
 
   const [email, setEmail] = useState("");
+  const [error, setError] = useState(null);
 
   const forgotPassword = (email) => {
     auth
       .sendPasswordResetEmail(email)
       .then(function () {
-        alert("Por favor verifica el correo...");
+        setError("Por favor verifica el correo...");
       })
       .catch(function (e) {
         console.log(e);
+        if (e.code === "auth/invalid-email") {
+          setError("Ingrese un correo válido");
+        }
       });
-      auth.verifyPasswordResetCode(email)
+
+    auth.verifyPasswordResetCode(email);
   };
 
   return (
@@ -47,7 +52,7 @@ export const PagChangePass = () => {
         <div className="row mt-3 justify-content-center">
           <h4> Por favor ingrese el correo para recuperar la contaseña </h4>
         </div>
-        <div className="row justify-content-center">
+        <div className="row mt-3 justify-content-center">
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <input
               type="email"
@@ -57,13 +62,23 @@ export const PagChangePass = () => {
             />
           </div>
         </div>
+        <div className="row mt-2 justify-content-center">
+          {error ? (
+            <div className="alert alert-danger col-7">{error}</div>
+          ) : null}
+        </div>
         <div className="row mt-3 justify-content-center">
-          <button
-            className="btn btn-outline-danger"
-            onClick={() => forgotPassword(email)}
-          >
-            <span> Enviar </span>
-          </button>
+          <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            {" "}
+          </div>
+          <div className="col-6 col-sm-6 col-xs-6 col-md-6 col-lg-6 col-xl-6 col-xxl-5">
+            <button
+              className="btn btn-outline-danger"
+              onClick={() => forgotPassword(email)}
+            >
+              <span> Enviar </span>
+            </button>
+          </div>
         </div>
       </div>
     </Fragment>

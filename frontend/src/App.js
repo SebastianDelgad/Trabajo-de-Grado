@@ -5,13 +5,11 @@ import { PagLogin } from "./Components/PagLogin";
 import { PagClassifier } from "./Components/PagClassifier";
 import { PagRegister } from "./Components/PagRegister";
 import { PagChangePass } from "./Components/PagChangePass";
-import { ClassifierAlfabéticamente } from "./Components/ClassifierAlfabéticamente";
-import { ClassifierMejorProm } from "./Components/ClassifierMejorProm";
-import { ClassifierPeorProm } from "./Components/ClassifierPeorProm";
 import { PagEvaluaciones } from "./Components/PagEvaluaciones";
 import { ClassifierHistoryMejor } from "./Components/ClassifierHistoryMejor";
 import { ClassifierHistoryPeor } from "./Components/ClassifierHistoryPeor";
 import { ClassifierHistoryOrdenado } from "./Components/ClassifierHistoryOrdenado";
+import { PagFileInvalid } from "./Components/PagFileInvalid";
 
 export const App = () => {
   return (
@@ -21,13 +19,11 @@ export const App = () => {
       <Route exact path="/classifier" component={PagClassifier} />
       <Route exact path="/register" component={PagRegister} />
       <Route exact path="/changepass" component={PagChangePass} />
-      <Route exact path="/evaluacion/alfabetica" component={ClassifierAlfabéticamente} />
-      <Route exact path="/evaluacion/mejor-promedio" component={ClassifierMejorProm} />
-      <Route exact path="/evaluacion/peor-promedio" component={ClassifierPeorProm} />
       <Route exact path="/evaluaciones" component={PagEvaluaciones} />
       <Route exact path="/evaluacion/promedio-alto" component={ClassifierHistoryMejor} />
       <Route exact path="/evaluacion/promedio-bajo" component={ClassifierHistoryPeor} />
       <Route exact path="/evaluacion/ordenado" component={ClassifierHistoryOrdenado} />
+      <Route exact path="/classifier/error" component={PagFileInvalid} />
     </BrowserRouter>
   );
 };
