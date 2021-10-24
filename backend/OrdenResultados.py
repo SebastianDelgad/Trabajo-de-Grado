@@ -145,7 +145,7 @@ def info_dicionario(nombres, asignaturas, notas, total_muy_neg, total_neg, total
     dict_from_list = {}
 
     for i in range(len(nombres)):
-        dict_from_list[i] = {'docente': nombres[i], 'asignatura': asignaturas[i], 'promedio_calificación': notas[i],
+        dict_from_list[i] = {'docente': nombres[i], 'asignatura': asignaturas[i], 'promedio_calificacion': notas[i],
                              'total_muy_neg': total_muy_neg[i], 'total_neg': total_neg[i], 'total_neu': total_neu[i],
                              'total_pos': total_pos[i], 'total_muy_pos': total_muy_pos[i],
                              'total_observaciones': total_observaciones[i], 'id': i}
@@ -170,16 +170,16 @@ def ordenar_diccionario_por_nombres(diccionario, nombres):
                 ordenadoAlfabeticamente.append(diccionario[i])
 
     for i in range(len(ordenadoAlfabeticamente)):
-        if ordenadoAlfabeticamente[i]['promedio_calificación'] >= 1.5:
-            ordenadoAlfabeticamente[i]['promedio_calificación'] = "Muy positivo"
-        elif ordenadoAlfabeticamente[i]['promedio_calificación'] >= 0.5:
-            ordenadoAlfabeticamente[i]['promedio_calificación'] = "Positivo"
-        elif ordenadoAlfabeticamente[i]['promedio_calificación'] >= -0.4:
-            ordenadoAlfabeticamente[i]['promedio_calificación'] = "Neutral"
-        elif ordenadoAlfabeticamente[i]['promedio_calificación'] >= -1.5:
-            ordenadoAlfabeticamente[i]['promedio_calificación'] = "Negativo"
+        if ordenadoAlfabeticamente[i]['promedio_calificacion'] >= 1.5:
+            ordenadoAlfabeticamente[i]['promedio_calificacion'] = "Muy positivo"
+        elif ordenadoAlfabeticamente[i]['promedio_calificacion'] >= 0.5:
+            ordenadoAlfabeticamente[i]['promedio_calificacion'] = "Positivo"
+        elif ordenadoAlfabeticamente[i]['promedio_calificacion'] >= -0.4:
+            ordenadoAlfabeticamente[i]['promedio_calificacion'] = "Neutral"
+        elif ordenadoAlfabeticamente[i]['promedio_calificacion'] >= -1.5:
+            ordenadoAlfabeticamente[i]['promedio_calificacion'] = "Negativo"
         else:
-            ordenadoAlfabeticamente[i]['promedio_calificación'] = "Muy negativo"
+            ordenadoAlfabeticamente[i]['promedio_calificacion'] = "Muy negativo"
 
     return ordenadoAlfabeticamente
 
@@ -189,7 +189,7 @@ def promedio_calificacion(diccionario):
     notas = {}
 
     for i in range(len(diccionario)):
-        notas[i] = diccionario[i]['promedio_calificación']
+        notas[i] = diccionario[i]['promedio_calificacion']
     return notas
 
 
@@ -211,7 +211,7 @@ def peor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones muy positivas
     muy_positivo = {}
     for i in range(len(peores_notas)):
-        if peores_notas[i]['promedio_calificación'] == 'Muy positivo':
+        if peores_notas[i]['promedio_calificacion'] == 'Muy positivo':
             muy_positivo[i] = peores_notas[i]['total_observaciones']
 
     muy_positivo_ordenado = {}
@@ -225,7 +225,7 @@ def peor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones positivas
     positivo = {}
     for i in range(len(peores_notas)):
-        if peores_notas[i]['promedio_calificación'] == 'Positivo':
+        if peores_notas[i]['promedio_calificacion'] == 'Positivo':
             positivo[i] = peores_notas[i]['total_observaciones']
 
     positivo_ordenado = {}
@@ -239,7 +239,7 @@ def peor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones neutrales
     neutral = {}
     for i in range(len(peores_notas)):
-        if peores_notas[i]['promedio_calificación'] == 'Neutral':
+        if peores_notas[i]['promedio_calificacion'] == 'Neutral':
             neutral[i] = peores_notas[i]['total_observaciones']
 
     neutral_ordenado = {}
@@ -253,7 +253,7 @@ def peor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones negativas
     negativas = {}
     for i in range(len(peores_notas)):
-        if peores_notas[i]['promedio_calificación'] == 'Negativo':
+        if peores_notas[i]['promedio_calificacion'] == 'Negativo':
             negativas[i] = peores_notas[i]['total_observaciones']
 
     negativas_ordenado = {}
@@ -267,7 +267,7 @@ def peor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones muy negativas
     muy_negativo = {}
     for i in range(len(peores_notas)):
-        if peores_notas[i]['promedio_calificación'] == 'Muy negativo':
+        if peores_notas[i]['promedio_calificacion'] == 'Muy negativo':
             muy_negativo[i] = peores_notas[i]['total_observaciones']
 
     muy_negativo_ordenado = {}
@@ -315,7 +315,7 @@ def mejor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones muy positivas
     muy_positivo = {}
     for i in range(len(mejores_notas)):
-        if mejores_notas[i]['promedio_calificación'] == 'Muy positivo':
+        if mejores_notas[i]['promedio_calificacion'] == 'Muy positivo':
             muy_positivo[i] = mejores_notas[i]['total_observaciones']
 
     muy_positivo_ordenado = {}
@@ -329,7 +329,7 @@ def mejor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones positivas
     positivo = {}
     for i in range(len(mejores_notas)):
-        if mejores_notas[i]['promedio_calificación'] == 'Positivo':
+        if mejores_notas[i]['promedio_calificacion'] == 'Positivo':
             positivo[i] = mejores_notas[i]['total_observaciones']
 
     positivo_ordenado = {}
@@ -343,7 +343,7 @@ def mejor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones neutrales
     neutral = {}
     for i in range(len(mejores_notas)):
-        if mejores_notas[i]['promedio_calificación'] == 'Neutral':
+        if mejores_notas[i]['promedio_calificacion'] == 'Neutral':
             neutral[i] = mejores_notas[i]['total_observaciones']
 
     neutral_ordenado = {}
@@ -357,7 +357,7 @@ def mejor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones negativas
     negativas = {}
     for i in range(len(mejores_notas)):
-        if mejores_notas[i]['promedio_calificación'] == 'Negativo':
+        if mejores_notas[i]['promedio_calificacion'] == 'Negativo':
             negativas[i] = mejores_notas[i]['total_observaciones']
 
     negativas_ordenado = {}
@@ -371,7 +371,7 @@ def mejor_promedio_calificacion(notas, diccionario):
     # Ordenando las observaciones muy negativas
     muy_negativo = {}
     for i in range(len(mejores_notas)):
-        if mejores_notas[i]['promedio_calificación'] == 'Muy negativo':
+        if mejores_notas[i]['promedio_calificacion'] == 'Muy negativo':
             muy_negativo[i] = mejores_notas[i]['total_observaciones']
 
     muy_negativo_ordenado = {}
@@ -408,6 +408,26 @@ def consultar_por_nombre(datos, nombre):
     for i in range(len(datos)):
         if datos[i]['docente'] == nombre:
             datos_docente.append(datos[i])
+    
+    return datos_docente
+
+def consultar_por_curso(datos, curso):
+
+    datos_docente = []
+
+
+    grupos = ["50", "51", "52", "53", "54",
+              "55", "56", "57", "58", "59", "60"]
+
+    for i in range(len(datos)):
+        materia = datos[i]['asignatura'] 
+        for grupo in grupos:
+            if (materia[(len(materia))-2] +""+ materia[(len(materia))-1]) == grupo:
+                materia = materia.replace(" "+grupo,"")
+                if materia == curso:  
+                    datos_docente.append(datos[i])
+
+    return datos_docente
 
 
 def resultados(datosCalificados):

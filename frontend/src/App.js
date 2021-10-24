@@ -10,6 +10,8 @@ import { ClassifierHistoryMejor } from "./Components/ClassifierHistoryMejor";
 import { ClassifierHistoryPeor } from "./Components/ClassifierHistoryPeor";
 import { ClassifierHistoryOrdenado } from "./Components/ClassifierHistoryOrdenado";
 import { PagFileInvalid } from "./Components/PagFileInvalid";
+import { PagClassifierCustom } from "./Components/PagClassifierCustom";
+import { PagClassifierCustomCourse } from "./Components/PagClassifierCustomCourse";
 
 export const App = () => {
   return (
@@ -24,6 +26,8 @@ export const App = () => {
       <Route exact path="/evaluacion/promedio-bajo" component={ClassifierHistoryPeor} />
       <Route exact path="/evaluacion/ordenado" component={ClassifierHistoryOrdenado} />
       <Route exact path="/classifier/error" component={PagFileInvalid} />
+      <Route exact path="/evaluacion/custom/nombre" component={PagClassifierCustom} />
+      <Route exact path="/evaluacion/custom/curso" component={PagClassifierCustomCourse} />
     </BrowserRouter>
   );
 };

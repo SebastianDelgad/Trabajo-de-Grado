@@ -31,6 +31,10 @@ export const ClassifierHistoryMejor = () => {
     history.push("/evaluacion/promedio-bajo");
   }
 
+  function handleClickCustom() {
+    history.push("/evaluacion/custom/nombre");
+  }
+
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
@@ -86,6 +90,14 @@ export const ClassifierHistoryMejor = () => {
                     onClick={handleClickPeorProm}
                   >
                     Promedio más bajo
+                  </button>
+                </li>
+                <li className="nav-tabs">
+                  <button
+                    className="btn btn-outline-danger"
+                    onClick={handleClickCustom}
+                  >
+                    Personalizado
                   </button>
                 </li>
                 <li className="nav-item">
@@ -276,7 +288,7 @@ export const ClassifierHistoryMejor = () => {
                 </div>
                 <div className="row justify-content-md-center mt-1">
                   <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                    {item.promedio_calificación === "Muy negativo" && (
+                    {item.promedio_calificacion === "Muy negativo" && (
                       <img
                         src={img_muy_negativa}
                         className="img-fluid"
@@ -284,7 +296,7 @@ export const ClassifierHistoryMejor = () => {
                       />
                     )}
 
-                    {item.promedio_calificación === "Neutral" && (
+                    {item.promedio_calificacion === "Neutral" && (
                       <img
                         src={img_neutral}
                         className="img-fluid"
@@ -292,7 +304,7 @@ export const ClassifierHistoryMejor = () => {
                       />
                     )}
 
-                    {item.promedio_calificación === "Positivo" && (
+                    {item.promedio_calificacion === "Positivo" && (
                       <img
                         src={img_positivo}
                         className="img-fluid"
@@ -300,7 +312,7 @@ export const ClassifierHistoryMejor = () => {
                       />
                     )}
 
-                    {item.promedio_calificación === "Muy positivo" && (
+                    {item.promedio_calificacion === "Muy positivo" && (
                       <img
                         src={img_muy_positivo}
                         className="img-fluid"
@@ -308,7 +320,7 @@ export const ClassifierHistoryMejor = () => {
                       />
                     )}
 
-                    {item.promedio_calificación === "Negativo" && (
+                    {item.promedio_calificacion === "Negativo" && (
                       <img
                         src={img_negativa}
                         className="img-fluid"
@@ -319,23 +331,23 @@ export const ClassifierHistoryMejor = () => {
                 </div>
                 <div className="row justify-content-md-center mt-1">
                   <div className="mb-2 col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                    {item.promedio_calificación === "Muy negativo" && (
+                    {item.promedio_calificacion === "Muy negativo" && (
                       <p className="text-responsive"> Muy negativo </p>
                     )}
 
-                    {item.promedio_calificación === "Neutral" && (
+                    {item.promedio_calificacion === "Neutral" && (
                       <p className="text-responsive"> Neutral </p>
                     )}
 
-                    {item.promedio_calificación === "Positivo" && (
+                    {item.promedio_calificacion === "Positivo" && (
                       <p className="text-responsive"> Positivo </p>
                     )}
 
-                    {item.promedio_calificación === "Muy positivo" && (
+                    {item.promedio_calificacion === "Muy positivo" && (
                       <p className="text-responsive"> Muy positivo </p>
                     )}
 
-                    {item.promedio_calificación === "Negativo" && (
+                    {item.promedio_calificacion === "Negativo" && (
                       <p className="text-responsive"> Negativo </p>
                     )}
                   </div>
