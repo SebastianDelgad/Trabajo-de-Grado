@@ -40,8 +40,5 @@ def leer_txt(documento):
 def comprobarArchivo(pdf):
     nombre = leer_PDF(pdf)
     validacion = leer_txt(nombre)
-    module_dir = os.path.dirname(__file__)
-    os.remove(module_dir+'\\'+pdf)
-    os.remove(module_dir+'\\'+nombre)
 
     return validacion

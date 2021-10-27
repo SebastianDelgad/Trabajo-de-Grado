@@ -12,6 +12,18 @@ export const NavbarClassifier = (props) => {
     });
   };
 
+  const cambiarPass = () => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        auth.sendPasswordResetEmail(user.email).then(function () {
+          alert(
+            "Se ha enviado un email para cambiar la contraseña, por favor verifica tu correo..."
+          );
+        });
+      }
+    });
+  };
+
   return (
     <Fragment>
       <div className="container mt-3 bg-light rounded-6">
@@ -20,10 +32,28 @@ export const NavbarClassifier = (props) => {
             <img src={logo_imagen} alt="logoLogin" className="img-fluid" />
           </div>
           <div className="mt-4 mb-4 col-4 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-3">
-            <div className="btn-toolbar">
-              <button className="btn btn-outline-danger" onClick={cerrarSesion}>
-                <span> Cerrar sesión </span>
+            <div class="btn-group" role="group">
+              <button
+                id="btnGroupDrop1"
+                type="button"
+                class="btn btn-outline-danger dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Perfil
               </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li>
+                  <a class="dropdown-item" href="#" onClick={cambiarPass}>
+                    Cambiar contraseña
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" onClick={cerrarSesion}>
+                    Cerrar sesión
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

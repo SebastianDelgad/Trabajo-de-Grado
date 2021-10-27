@@ -10,8 +10,16 @@ export const PagEvaluaciones = () => {
 
   let history = useHistory();
 
-  function handleClickEvaluar() {
+  function handleClickClassifier() {
     history.push("/classifier");
+  }
+
+  function handleClickEvaluaciones() {
+    history.push("/evaluaciones");
+  }
+
+  function handleClickRegistrarse() {
+    history.push("/register");
   }
 
   useEffect(() => {
@@ -49,29 +57,43 @@ export const PagEvaluaciones = () => {
         <NavbarClassifier />
         <div className="container mt-3 bg-light rounded-6">
           <div className="row mt-3">
-            <div className="mt-4 col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-              <h3>Resultado de la evaluación docente. </h3>
-            </div>
-          </div>
-
-          <div className="row mt-3">
-            <div className="col-5"> </div>
-            <div className="mb-4 col-3">
-              <button
-                className="btn btn-outline-danger btn-block"
-                onClick={handleClickEvaluar}
-              >
-                <span> Evaluar un documento </span>
-              </button>
-            </div>
-            <div className="col-4"> </div>
+            <ul className="mt-3 mb-3 nav nav-pills nav-justified">
+              <li className="nav-tabs">
+                <button
+                  className="btn btn-outline-danger btn-block"
+                  onClick={handleClickClassifier}
+                >
+                  <span> Evaluar un documento </span>
+                </button>
+              </li>
+              <li className="nav-tabs">
+                <button
+                  className="btn btn-outline-danger btn-block active"
+                  onClick={handleClickEvaluaciones}
+                >
+                  <span> Ver evaluaciones </span>
+                </button>
+              </li>
+              <li className="nav-tabs">
+                <button
+                  className="btn btn-outline-danger btn-block"
+                  onClick={handleClickRegistrarse}
+                >
+                  <span> Registrar usuario </span>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
-
         <div className="container mt-3 bg-light rounded-6">
-          <div className="row mt-3"></div>
+          <div className="row mt-3">
+            <div className="mt-4 col">
+              <h3>Resultados de la evaluaciones docente calificadas. </h3>
+            </div>
+          </div>
+          <div className="row "></div>
           <div className="mt-3 col-8 col-sm-8 col-xs-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
-            <h2>Selececcione el documento que desea visualizar</h2>
+            <h3>Selececcione el documento que desea visualizar.</h3>
           </div>
           <form
             action="http://127.0.0.1:5000/historial"

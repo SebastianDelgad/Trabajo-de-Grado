@@ -10,6 +10,10 @@ export const PagClassifier = () => {
 
   let history = useHistory();
 
+  function handleClickClassifier() {
+    history.push("/classifier");
+  }
+
   function handleClickEvaluaciones() {
     history.push("/evaluaciones");
   }
@@ -33,13 +37,43 @@ export const PagClassifier = () => {
       <Fragment>
         <NavbarClassifier />
         <div className="container mt-3 bg-light rounded-6">
+          <div className="row mt-3">
+            <ul className="mt-3 mb-3 nav nav-pills nav-justified">
+              <li className="nav-tabs">
+                <button
+                  className="btn btn-outline-danger btn-block active"
+                  onClick={handleClickClassifier}
+                >
+                  <span> Evaluar un documento </span>
+                </button>
+              </li>
+              <li className="nav-tabs">
+                <button
+                  className="btn btn-outline-danger btn-block"
+                  onClick={handleClickEvaluaciones}
+                >
+                  <span> Ver evaluaciones </span>
+                </button>
+              </li>
+              <li className="nav-tabs">
+                <button
+                  className="btn btn-outline-danger btn-block"
+                  onClick={handleClickRegistrarse}
+                >
+                  <span> Registrar usuario </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="container mt-3 bg-light rounded-6">
           <div className="row">
             <div className="mt-4 col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
               <h3>Califique las observaciones de la evaluación docente. </h3>
               <p>
                 Asegúrese de que el documento este en formato PDF, una vez
                 cargue el documento seleccione un formato para hacer las
-                calificaciones
+                calificaciones.
               </p>
             </div>
           </div>
@@ -56,39 +90,8 @@ export const PagClassifier = () => {
           </div>
           <div className="row mt-5">
             <div className="col-9 col-sm-9 col-xs-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
-              <h4>Tiempo estimado de procesamiento de datos: 1 minuto</h4>
+              <h4>Tiempo estimado de procesamiento de datos: 1 minuto.</h4>
             </div>
-          </div>
-          <div className="row mt-3">
-            <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5"></div>
-            <div className="mb-4 col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-              <button
-                className="btn btn-outline-danger btn-block"
-                onClick={handleClickEvaluaciones}
-              >
-                <span> Ver evaluaciones </span>
-              </button>
-            </div>
-            <div className="col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
-          </div>
-        </div>
-        <div className="container mt-3 bg-light rounded-6">
-          <div className="row mt-3">
-            <div className="mt-4 mb-3 col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-              <h4> Registrar un usuario</h4>
-            </div>
-          </div>
-          <div className="row mt-3">
-            <div className="col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5"></div>
-            <div className="mb-4 col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-              <button
-                className="btn btn-outline-danger btn-block"
-                onClick={handleClickRegistrarse}
-              >
-                <span> Registrar usuario </span>
-              </button>
-            </div>
-            <div className="mb-4 col-4 col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
           </div>
         </div>
       </Fragment>

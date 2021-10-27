@@ -12,21 +12,25 @@ export const PagChangePass = () => {
 
   const [email, setEmail] = useState("");
   const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(null);
 
   const forgotPassword = (email) => {
     auth
       .sendPasswordResetEmail(email)
       .then(function () {
-        setError("Por favor verifica el correo...");
+        setSuccess(
+          "Se ha enviado un email para la recuperación por favor verifica el correo..."
+        );
       })
       .catch(function (e) {
         console.log(e);
         if (e.code === "auth/invalid-email") {
           setError("Ingrese un correo válido");
         }
+        if (e.code === "auth/missing-email") {
+          setError("Ingrese un correo, el campo está vacío!!");
+        }
       });
-
-    auth.verifyPasswordResetCode(email);
   };
 
   return (
@@ -65,6 +69,11 @@ export const PagChangePass = () => {
         <div className="row mt-2 justify-content-center">
           {error ? (
             <div className="alert alert-danger col-7">{error}</div>
+          ) : null}
+        </div>
+        <div className="row mt-2 justify-content-center">
+          {success ? (
+            <div className="alert alert-success col-7">{success}</div>
           ) : null}
         </div>
         <div className="row mt-3 justify-content-center">
