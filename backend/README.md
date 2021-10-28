@@ -1,1 +1,3 @@
 Libraries required in requiriments.txt
+En caso de la instalacion de la librería nltk no funcionen correctamente, descomentar las lienas 1 y 2 de la clase Preprocesado.py
+Para ejecutar de manera local el backend en un Visual Studio Code, abrur la clase app.py, presionar F5, dar click en Flask y pegar la ruta de acceso de app.py que se obtiene haciendo click derecho sobre la misma y en la opción "copiar ruta de acceso"
