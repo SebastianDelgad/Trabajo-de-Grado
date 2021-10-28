@@ -458,7 +458,7 @@ def consultar_por_curso(datos, curso):
 
     print(datos_docente)
 
-
+# llamado a todas las funciones anteriores en conjunto para obtener el resultado final consolidado
 def resultados(datosCalificados):
     valoraciones = consolidado_notas(datosCalificados)
     nombresCursos = nombre_y_curso(datosCalificados)
