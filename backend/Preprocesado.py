@@ -1,3 +1,5 @@
+# nltk.download('stopwords')
+# nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk import word_tokenize, sent_tokenize
 from string import punctuation
