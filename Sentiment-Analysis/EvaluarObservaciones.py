@@ -4,6 +4,8 @@ import numpy as np
 
 txt = LeerObservaciones.observaciones()
 nombres_cursos = LeerObservaciones.almacenar_nombres(txt)
+# Evalua los comentarios de los pdf y acomoda el resultado en un vector
+
 
 def evaluar_documento():
 
@@ -40,11 +42,11 @@ def evaluar_documento():
 
 def data():
     evaluacion = evaluar_documento()
-
+    # almacena los resultados de la evaluación en esta ruta, estos son leidos en la clase OrdenResultados.py
     pdf_a_texto = 'PDF/resultado.txt'
     np.savetxt(pdf_a_texto, np.array(evaluacion), fmt="%s")
 
     return evaluacion
 
-
+#inicializó la función para obtener los resultados del pdf de la ruta PDF/ y que los almacene en un txt
 data()

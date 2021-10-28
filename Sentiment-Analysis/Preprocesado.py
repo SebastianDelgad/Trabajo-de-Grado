@@ -1,4 +1,5 @@
 import nltk
+# en caso de que el nltk.txt no sirve para las dos librerias que faltan, descomentar las dos siguientes lineas
 # nltk.download('stopwords')
 # nltk.download('punkt')
 from nltk.corpus import stopwords
@@ -11,7 +12,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report
 
-
+# se inicializa metodos de la librería nltk
 non_words = list(punctuation)
 spanish_stopwords = stopwords.words('spanish')
 # stemmer trnasformar la palabra en su raiz
@@ -39,7 +40,7 @@ def remove_numbers(text):
 
 def remove_punct(text):
     """
-    Remueve los signos de puntuación
+    Remueve los signos de puntuación, admiraciín y exclamación
     """
     return ''.join(c for c in text if c not in punctuation)
 
@@ -79,7 +80,7 @@ def dataset(new_reviews):
     # MLP (red neuronal)
     #print("Clasificador NLP")
     text_classifier = MLPClassifier(hidden_layer_sizes=(
-        1500, 1000, 500), max_iter=3000, activation='relu', solver='adam', random_state=1)
+        150, 100, 50), max_iter=3000, activation='relu', solver='adam', random_state=1)
 
     pipeline = Pipeline([
         ('bow', bow),  # strings to token integer counts
@@ -95,9 +96,17 @@ def dataset(new_reviews):
     #all_predictions = pipeline.predict(data['Observaciones'].values.astype('U'))
     #print(classification_report(data['Sentiment'], all_predictions))
 
-    # Prueba
-    """
-    new_reviews = ['Utiliza muchos vídeos de YouTube en vez de explicar los temas él mismo, no me gusta su metodología',
+    # print(pipeline.predict(new_reviews))
+    # Esta función evaluá las observaciones docentes
+    rating = pipeline.predict(new_reviews)
+    return rating
+
+
+   # Prueba
+   # para realizar comentarios custom y probar el algoritmo, descomentar esta parte, escribir comentarios
+   # en el vector y ejecutar
+"""
+new_reviews = ['Utiliza muchos vídeos de YouTube en vez de explicar los temas él mismo, no me gusta su metodología',
                'Lee muchas diapositivas',
                'es grosero',
                'es arrogante',
@@ -106,10 +115,5 @@ def dataset(new_reviews):
                '(y)',
                'sin comentarios',
                'Muy buena docente , excelente directora de trabajo de grado']
-    """
-    # print(pipeline.predict(new_reviews))
-    rating = pipeline.predict(new_reviews)
-    return rating
-
-#new_reviews = ['']
+"""
 # dataset(new_reviews)

@@ -1,9 +1,7 @@
 import fitz  # Libreria PyMuPDF
 
 
-# Transforma un archivo PDF a TXT sin perder la estructura del PDF
-
-
+# Transforma un archivo PDF a TXT sin perder la estructura del PDF ni caracteres especiales
 def leer_PDF():
     pdf_documento = 'PDF/2017- ll.pdf'
     documento = fitz.open(pdf_documento)
@@ -18,10 +16,9 @@ def leer_PDF():
     return pdf_a_texto
 
 
-# Extrae información del archivo TXT desde donde comienzan observaciones a los docentes
+# Extrae información del archivo TXT desde donde comienzan las observaciones a los docentes
 
 def leer_txt(documento):
-#def leer_txt():
     tObservaciones = []
     quitarEspacios = []
     quitarLinks = []
@@ -35,30 +32,28 @@ def leer_txt(documento):
                     if not linea:
                         break
         archivo.close()
-    
+
     for word3 in tObservaciones:
         if len(word3) > 0:
             quitarEspacios.append(word3)
-    
+
     for frases in quitarEspacios:
         if len(frases) > 2:
             if frases != "----":
                 if frases[2] != "/":
-                    if frases != "https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php": 
+                    if frases != "https://swebse12.univalle.edu.co/evaluaciondocente//paquetes/reportes/index.php":
                         quitarLinks.append(frases)
-        
+                        # dado que algunos pdf terminan así se añadió el link para evitar que lo añada
         else:
             quitarLinks.append(frases)
 
-    
     return quitarLinks
+
 
 # Almacena los nombres, curso y grupo del curso que enseña el docente
 
-
 def almacenar_nombres(datos):
     vectorNombres = []
-
     grupos = ["M 50", "M 51", "M 52", "M 53", "M 54",
               "M 55", "M 56", "M 57", "M 58", "M 59", "M 60"]
 
@@ -109,7 +104,7 @@ def procesado_txt(datos, vectorNombres):
     for word3 in vectorFinal:
         if len(word3) > 0:
             vectorDatosProcesados.append(word3.strip())
-    
+
     for word4 in vectorDatosProcesados:
         if len(word4) > 1 and word4[1] != "/":
             datosFinalesProcesados.append(word4.strip())
@@ -123,8 +118,5 @@ def observaciones(file):
     txt = leer_txt(pdf)
     nombres = almacenar_nombres(txt)
     procesado = procesado_txt(txt, nombres)
-    
-    return procesado
 
-# leerPDF()
-#observaciones()
+    return procesado
