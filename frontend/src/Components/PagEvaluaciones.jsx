@@ -1,12 +1,13 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { NavbarClassifier } from "./NavbarClassifier";
-import { auth, storage } from "../firebase";
+import { auth, storage, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { PagMain } from "./PagMain";
 
 export const PagEvaluaciones = () => {
   const [user, setUser] = useState();
   const [docs, setDocs] = useState([]);
+  const [admin, setAdmin] = useState();
 
   let history = useHistory();
 
@@ -22,17 +23,35 @@ export const PagEvaluaciones = () => {
     history.push("/register");
   }
 
+  const listUsersAdmins = async () => {
+    var p = auth.currentUser;
+    db.collectionGroup("usuarios")
+      .where("IsAdmin", "==", "admin")
+      .onSnapshot((querySnapshot) => {
+        const perfiles = [];
+        querySnapshot.forEach((doc) => {
+          perfiles.push({ ...doc.data() });
+        });
+        for (let i = 0; i < perfiles.length; i++) {
+          if (p.email === perfiles[i].email) {
+            setAdmin(true);
+          }
+        }
+      });
+  };
+
   useEffect(() => {
     const ac = new AbortController();
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
+        listUsersAdmins();
         listItem();
       } else {
         setUser(null);
-        return () => ac.abort();
       }
     });
+    return () => ac.abort();
   }, []);
 
   // List All Files
@@ -55,36 +74,40 @@ export const PagEvaluaciones = () => {
     return (
       <Fragment>
         <NavbarClassifier />
-        <div className="container mt-3 bg-light rounded-6">
-          <div className="row mt-3">
-            <ul className="mt-3 mb-3 nav nav-pills nav-justified">
-              <li className="nav-tabs">
-                <button
-                  className="btn btn-outline-danger btn-block"
-                  onClick={handleClickClassifier}
-                >
-                  <span> Evaluar un documento </span>
-                </button>
-              </li>
-              <li className="nav-tabs">
-                <button
-                  className="btn btn-outline-danger btn-block active"
-                  onClick={handleClickEvaluaciones}
-                >
-                  <span> Ver evaluaciones </span>
-                </button>
-              </li>
-              <li className="nav-tabs">
-                <button
-                  className="btn btn-outline-danger btn-block"
-                  onClick={handleClickRegistrarse}
-                >
-                  <span> Registrar usuario </span>
-                </button>
-              </li>
-            </ul>
+        {admin ? (
+          <div className="container mt-3 bg-light rounded-6">
+            <div className="row mt-3">
+              <ul className="mt-3 mb-3 nav nav-pills nav-justified">
+                <li className="nav-tabs">
+                  <button
+                    className="btn btn-outline-danger btn-block"
+                    onClick={handleClickClassifier}
+                  >
+                    <span> Evaluar un documento </span>
+                  </button>
+                </li>
+                <li className="nav-tabs">
+                  <button
+                    className="btn btn-outline-danger btn-block  active"
+                    onClick={handleClickEvaluaciones}
+                  >
+                    <span> Ver evaluaciones </span>
+                  </button>
+                </li>
+                <li className="nav-tabs">
+                  <button
+                    className="btn btn-outline-danger btn-block"
+                    onClick={handleClickRegistrarse}
+                  >
+                    <span> Registrar usuario </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+        ) : (
+          <p> </p>
+        )}
         <div className="container mt-3 bg-light rounded-6">
           <div className="row mt-3">
             <div className="mt-4 col">

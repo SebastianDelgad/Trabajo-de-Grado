@@ -36,6 +36,7 @@ export const ClassifierHistoryMejor = () => {
   }
 
   useEffect(() => {
+    const ac = new AbortController();
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
@@ -44,6 +45,7 @@ export const ClassifierHistoryMejor = () => {
         setUser(null);
       }
     });
+    return () => ac.abort();
   }, []);
 
   const obtenerDatos = async () => {

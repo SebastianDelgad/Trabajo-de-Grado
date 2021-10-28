@@ -1,9 +1,11 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import logo_imagen from "../Assets/Images/logo-univalle.png";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 
 export const NavbarClassifier = (props) => {
+  const [name, setName] = useState();
+
   let history = useHistory();
 
   const cerrarSesion = () => {
@@ -12,17 +14,30 @@ export const NavbarClassifier = (props) => {
     });
   };
 
-  const cambiarPass = () => {
-    auth.onAuthStateChanged((user) => {
-      if (user) {
-        auth.sendPasswordResetEmail(user.email).then(function () {
-          alert(
-            "Se ha enviado un email para cambiar la contraseña, por favor verifica tu correo..."
-          );
-        });
+  function handleClickPerfil() {
+    history.push("/perfil");
+  }
+
+  const listUsers = async () => {
+    var p = auth.currentUser;
+    db.collectionGroup("usuarios").onSnapshot((querySnapshot) => {
+      const perfiles = [];
+      querySnapshot.forEach((doc) => {
+        perfiles.push({ ...doc.data() });
+      });
+      for (let i = 0; i < perfiles.length; i++) {
+        if (p.email === perfiles[i].email) {
+          setName(perfiles[i].displayName);
+        }
       }
     });
   };
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      listUsers();
+    });
+  }, []);
 
   return (
     <Fragment>
@@ -32,26 +47,30 @@ export const NavbarClassifier = (props) => {
             <img src={logo_imagen} alt="logoLogin" className="img-fluid" />
           </div>
           <div className="mt-4 mb-4 col-4 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-3">
-            <div class="btn-group" role="group">
+            <div className="btn-group" role="group">
               <button
                 id="btnGroupDrop1"
                 type="button"
-                class="btn btn-outline-danger dropdown-toggle"
+                className="btn btn-outline-danger dropdown-toggle"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Perfil
+                {name}
               </button>
-              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <ul className="dropdown-menu" aria-labelledby="btnGroupDrop1">
                 <li>
-                  <a class="dropdown-item" href="#" onClick={cambiarPass}>
-                    Cambiar contraseña
-                  </a>
+                  <u
+                    className="dropdown-item"
+                    href="#"
+                    onClick={handleClickPerfil}
+                  >
+                    Configuraciones
+                  </u>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#" onClick={cerrarSesion}>
+                  <u className="dropdown-item" href="#" onClick={cerrarSesion}>
                     Cerrar sesión
-                  </a>
+                  </u>
                 </li>
               </ul>
             </div>

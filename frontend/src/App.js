@@ -12,6 +12,7 @@ import { ClassifierHistoryOrdenado } from "./Components/ClassifierHistoryOrdenad
 import { PagFileInvalid } from "./Components/PagFileInvalid";
 import { PagClassifierCustom } from "./Components/PagClassifierCustom";
 import { PagClassifierCustomCourse } from "./Components/PagClassifierCustomCourse";
+import { PagPerfil } from "./Components/PagPerfil";
 
 export const App = () => {
   return (
@@ -28,6 +29,7 @@ export const App = () => {
       <Route exact path="/classifier/error" component={PagFileInvalid} />
       <Route exact path="/evaluacion/custom/nombre" component={PagClassifierCustom} />
       <Route exact path="/evaluacion/custom/curso" component={PagClassifierCustomCourse} />
+      <Route exact path="/perfil" component={PagPerfil} />
     </BrowserRouter>
   );
 };

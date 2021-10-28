@@ -1,12 +1,13 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { NavbarClassifier } from "./NavbarClassifier";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { UploadPDF } from "./UploadPDF";
 import { PagMain } from "./PagMain";
 
 export const PagClassifier = () => {
   const [user, setUser] = useState();
+  const [admin, setAdmin] = useState();
 
   let history = useHistory();
 
@@ -22,17 +23,37 @@ export const PagClassifier = () => {
     history.push("/register");
   }
 
+  const listUsersAdmins = async () => {
+    var p = auth.currentUser;
+    db.collectionGroup("usuarios")
+      .where("IsAdmin", "==", "admin")
+      .onSnapshot((querySnapshot) => {
+        const perfiles = [];
+        querySnapshot.forEach((doc) => {
+          perfiles.push({ ...doc.data() });
+        });
+        for (let i = 0; i < perfiles.length; i++) {
+          if (p.email === perfiles[i].email) {
+            setAdmin(true);
+          }
+        }
+      });
+  };
+
   useEffect(() => {
+    const ac = new AbortController();
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
+        listUsersAdmins();
       } else {
         setUser(null);
       }
     });
+    return () => ac.abort();
   }, []);
 
-  if (user) {
+  if (admin && user) {
     return (
       <Fragment>
         <NavbarClassifier />

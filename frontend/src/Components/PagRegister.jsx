@@ -7,19 +7,41 @@ import { PagClassifier } from "./PagClassifier";
 export const PagRegister = (props) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+  const [name, setName] = useState("");
   const [error, setError] = useState(null);
   const [User, setUser] = useState(false);
   const [admin, setAdmin] = useState("");
+  const [uadmin, setUadmin] = useState();
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
+        listUsersAdmins();
       } else {
         setUser(null);
       }
     });
   }, []);
+
+  const listUsersAdmins = async () => {
+    var p = auth.currentUser;
+    db.collectionGroup("usuarios")
+      .where("IsAdmin", "==", "admin")
+      .onSnapshot((querySnapshot) => {
+        const perfiles = [];
+        querySnapshot.forEach((doc) => {
+          perfiles.push({ ...doc.data() });
+        });
+        for (let i = 0; i < perfiles.length; i++) {
+          //console.log(perfiles[i].email);
+          //console.log(user)
+          if (p.email === perfiles[i].email) {
+            setUadmin(true);
+          }
+        }
+      });
+  };
 
   const procesarDatos = (e) => {
     e.preventDefault();
@@ -48,7 +70,7 @@ export const PagRegister = (props) => {
       console.log(res.user);
       await db.collection("usuarios").doc(res.user.uid).set({
         fechaCreacion: Date.now(),
-        displayName: res.user.displayName,
+        displayName: name,
         photoURL: res.user.photoURL,
         email: res.user.email,
         uid: res.user.uid,
@@ -57,7 +79,7 @@ export const PagRegister = (props) => {
       setEmail("");
       setPass("");
       setError(null);
-      props.history.push("/classifier");
+      props.history.push("/evaluaciones");
     } catch (error) {
       console.log(error);
       // setError(error.message)
@@ -72,7 +94,7 @@ export const PagRegister = (props) => {
     }
   }, [email, pass, admin, props.history]);
 
-  if (User) {
+  if (uadmin && User) {
     return (
       <Fragment>
         <NavbarRegister />
@@ -88,6 +110,26 @@ export const PagRegister = (props) => {
                 {error ? (
                   <div className="alert alert-danger">{error}</div>
                 ) : null}
+                <div className="row mt-3 justify-content-center">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                    <h4> Nombre </h4>
+                  </div>
+                </div>
+
+                <div className="row justify-content-center">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <span className="material-icons md-36">&#xea67;</span>
+                  </div>
+                  <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                    <input
+                      type="text"
+                      className="form-control mb-2"
+                      placeholder="Ingrese el nombre y apellido"
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                  </div>
+                </div>
                 <div className="row mt-3 justify-content-center">
                   <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
                   <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">

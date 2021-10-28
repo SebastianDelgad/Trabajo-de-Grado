@@ -36,6 +36,7 @@ export const ClassifierHistoryOrdenado = () => {
   }
 
   useEffect(() => {
+    const ac = new AbortController();
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
@@ -44,6 +45,7 @@ export const ClassifierHistoryOrdenado = () => {
         setUser(null);
       }
     });
+    return () => ac.abort();
   }, []);
 
   const obtenerDatos = async () => {

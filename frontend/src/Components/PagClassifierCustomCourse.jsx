@@ -46,6 +46,7 @@ export const PagClassifierCustomCourse = () => {
   };
 
   useEffect(() => {
+    const ac = new AbortController();
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
@@ -55,6 +56,7 @@ export const PagClassifierCustomCourse = () => {
         setUser(null);
       }
     });
+    return () => ac.abort();
   }, []);
 
   const obtenerCursos = async () => {
