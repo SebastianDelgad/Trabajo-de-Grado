@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect} from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { auth, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { NavbarClassifier } from "./NavbarClassifier";
@@ -8,23 +8,24 @@ export const PagPerfil = (props) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [User, setUser] = useState(false);
+  const [uid, setUid] = useState("");
 
   let history = useHistory();
+
+  const [success, setSuccess] = useState(null);
 
   function handleClickRegresar() {
     history.push("/evaluaciones");
   }
 
   const cambiarPass = () => {
-    auth.onAuthStateChanged((user) => {
-      if (user) {
-        auth.sendPasswordResetEmail(user.email).then(function () {
-          alert(
-            "Se ha enviado un email para cambiar la contraseña, por favor verifica tu correo..."
-          );
-        });
-      }
-    });
+        auth
+          .sendPasswordResetEmail(email)
+          
+            setSuccess(
+              "Se ha enviado un email para la recuperación por favor verifica el correo..."
+            );
+
   };
 
   const listUsers = async () => {
@@ -43,11 +44,27 @@ export const PagPerfil = (props) => {
     });
   };
 
+  const actualizarDatos = async () => {
+    db.collection("usuarios").doc(uid).update({
+      displayName: name,
+    })
+    setSuccess(
+      "Se ha actualizado el nombre del usuario"
+    );
+  }
+
   useEffect(() => {
+    const ac = new AbortController();
     auth.onAuthStateChanged((user) => {
-      setUser(user.email);
-      listUsers();
+      if (user) {
+        setUser(user.email);
+        setUid(user.uid);
+        listUsers();
+      } else {
+        setUser(null);
+      }
     });
+    return () => ac.abort();
   }, []);
 
   if (User) {
@@ -61,9 +78,13 @@ export const PagPerfil = (props) => {
               <h3 className="text-center"> Datos del usuario </h3>
             </div>
           </div>
+          <div className="row mt-2 justify-content-center">
+                  {success ? (
+                    <div className="alert alert-success col-7">{success}</div>
+                  ) : null}
+                </div>
           <div className="row justify-content-center">
             <div className="col-12 col-sm-8 col-md-6 col-xl-4">
-              <form>
                 <div className="row mt-3 justify-content-center">
                   <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
                   <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
@@ -76,7 +97,12 @@ export const PagPerfil = (props) => {
                     <span className="material-icons md-36">&#xea67;</span>
                   </div>
                   <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
-                    <p className=" bg-white">{name} </p>
+                  <input
+                      type="text"
+                      className="form-control mb-2"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
                   </div>
                 </div>
                 <div className="row mt-3 justify-content-center">
@@ -112,10 +138,16 @@ export const PagPerfil = (props) => {
                     </button>
                   </div>
                 </div>
-
                 <div className="row mt-4 justify-content-center">
-                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
-                  <div className="mb-4 col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <div className="col-5">
+                  <button
+                      className="btn btn-outline-danger"
+                      onClick={actualizarDatos}
+                    >
+                      actualizar datos
+                    </button>
+                  </div>
+                  <div className="mb-4 col-3">
                     <button
                       className="btn btn-outline-danger"
                       onClick={handleClickRegresar}
@@ -124,7 +156,6 @@ export const PagPerfil = (props) => {
                     </button>
                   </div>
                 </div>
-              </form>
             </div>
           </div>
         </div>

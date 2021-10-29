@@ -211,6 +211,9 @@ def uploader():
             # Retornamos una respuesta satisfactoria
                 return redirect('http://localhost:3000/evaluaciones')
             else:
+                module_dir = os.path.dirname(__file__)
+                os.remove(module_dir+'\\'+filename)
+                os.remove(module_dir+'\\'+filename+'.txt')
                 return redirect('http://localhost:3000/classifier/error')
         return redirect('http://localhost:3000/classifier/error')
 
