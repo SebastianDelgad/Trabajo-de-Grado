@@ -7,7 +7,8 @@ Estudiante: \
 Sebastián Delgado.
 
 Director:\
-Mauricio López.\
+Mauricio López.
+
 Desarrollo del trabajo de grado: \
 Página web del prototipo https://clasificacionobservaciones.herokuapp.com/ 
 
