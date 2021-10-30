@@ -24,11 +24,13 @@ export const NavbarClassifier = (props) => {
       querySnapshot.forEach((doc) => {
         perfiles.push({ ...doc.data() });
       });
+      if(p && perfiles){
       for (let i = 0; i < perfiles.length; i++) {
         if (p.email === perfiles[i].email) {
           setName(perfiles[i].displayName);
         }
       }
+    }
     });
   };
 
