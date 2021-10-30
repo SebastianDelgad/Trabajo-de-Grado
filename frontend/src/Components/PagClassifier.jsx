@@ -4,6 +4,7 @@ import { auth, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { UploadPDF } from "./UploadPDF";
 import { PagMain } from "./PagMain";
+import { Helmet } from "react-helmet";
 
 export const PagClassifier = () => {
   const [user, setUser] = useState();
@@ -57,6 +58,9 @@ export const PagClassifier = () => {
     return (
       <Fragment>
         <NavbarClassifier />
+        <Helmet>
+          <title>Clasificación - SISCOD</title>
+        </Helmet>
         <div className="container mt-3 bg-light rounded-6">
           <div className="row mt-3">
             <ul className="mt-3 mb-3 nav nav-pills ">
@@ -108,11 +112,11 @@ export const PagClassifier = () => {
         <div className="container mt-3 bg-light rounded-6">
           <div className="row">
             <div className="mt-4 col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
-              <h3>Califique las observaciones de la evaluación docente. </h3>
+              <h3>Clasifique las observaciones de la evaluación docente. </h3>
               <p>
                 Asegúrese de que el documento este en formato PDF, una vez
                 cargue el documento seleccione un formato para hacer las
-                calificaciones.
+                clasificaciones.
               </p>
             </div>
           </div>

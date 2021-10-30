@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BackendUrl } from "./BackendUrl";
 
 export const UploadPDF = () => {
   const [selectedFile, setSelectedFile] = useState();
@@ -18,7 +19,7 @@ export const UploadPDF = () => {
     <div className="container mt-3 bg-light rounded-6">
       <div className="row">
         <form
-          action="http://127.0.0.1:5000/upload"
+          action= {BackendUrl+"upload"}
           method="POST"
           encType="multipart/form-data"
         >

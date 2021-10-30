@@ -7,21 +7,25 @@ import bad_imagen from "../Assets/Images/pexels-cottonbro-46296261.png";
 import miner_imagen from "../Assets/Images/clipart4755686.png";
 import machine_imagen from "../Assets/Images/Chip iconos vectoriales gratuitos diseñados por Freepik.png";
 import sentiment_imagen from "../Assets/Images/ambalina-sentiment-analysis-header.png";
+import { Helmet } from "react-helmet";
 
 export const PagMain = () => {
   return (
     <Fragment>
       <NavbarMain />
+      <Helmet>
+          <title>SISCOD</title>
+        </Helmet>
       <div className="container mt-3 bg-light rounded-6">
         <div className="row"></div>
         <h2 className="mt-4 mb-4 text-center text-responsive">
-          Califica las observaciones de los docentes en el periodo académico{" "}
+          Sistema de clasificación de las observaciones docentes {" "}
         </h2>
         <div className="row justify-content-md-center">
           <div className="col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <p className="justify text-responsive h5">
-              Esta web proporciona un documento con las observaciones docente
-              calificadas, donde se puede elegir ordenar el documento en 3
+              Esta web proporciona un documento con las observaciones docente del periodo académico
+              clasificadas, donde se puede ordenar el documento en 3
               formatos
             </p>
           </div>
@@ -129,7 +133,7 @@ export const PagMain = () => {
         <div className="row">
           <div className="mt-4 mb-4">
             <h3 className="text-center">
-              Tipos de formato de las observaciones calificadas
+              Tipos de formato de las observaciones clasificadas
             </h3>
           </div>
         </div>
@@ -155,8 +159,8 @@ export const PagMain = () => {
         <div className="row">
           <div className="mt-4 mb-4 col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <h4 className="text-justify">
-              Documento con los cursos que en promedio fueron mejor calificados
-              a peor calificados
+              Documento con los cursos que en promedio obtuvieron una
+              clasificacion más alta a la más baja.
             </h4>
           </div>
           <div className="mt-4 mb-4 col-5 col-sm-5 col-xs-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
@@ -176,8 +180,8 @@ export const PagMain = () => {
           </div>
           <div className="mt-4 mb-4 col-7 col-sm-7 col-xs-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <h4 className="text-justify">
-              Documento con los cursos que en promedio fueron peor calificados a
-              mejor calificados
+              Documento con los cursos que en promedio obtuvieron una
+              clasificacion más baja a la más alta
             </h4>
           </div>
         </div>

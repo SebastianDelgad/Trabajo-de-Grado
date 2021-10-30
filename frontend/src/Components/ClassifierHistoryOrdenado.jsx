@@ -11,6 +11,8 @@ import { PagMain } from "./PagMain";
 import { auth } from "../firebase";
 import { PDFExport } from "@progress/kendo-react-pdf";
 import { useHistory } from "react-router-dom";
+import { BackendUrl } from "./BackendUrl";
+import { Helmet } from "react-helmet";
 
 export const ClassifierHistoryOrdenado = () => {
   const [observaciones, setObservacion] = useState([]);
@@ -49,7 +51,7 @@ export const ClassifierHistoryOrdenado = () => {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch("http://127.0.0.1:5000/historial-ordenado");
+    const data = await fetch(BackendUrl+"historial-ordenado");
     const info = await data.json();
     info.data.map((element) => {});
     setObservacion(info.data);
@@ -65,6 +67,9 @@ export const ClassifierHistoryOrdenado = () => {
     return (
       <Fragment>
         <NavbarEvaluaciones />
+        <Helmet>
+          <title>Evaluación alfabéticamente - SISCOD</title>
+        </Helmet>
         <div className="container mt-3 bg-light rounded">
           <div className="row mt-3">
             <div className="mt-3 mb-4 col">
@@ -228,7 +233,7 @@ export const ClassifierHistoryOrdenado = () => {
                   <div className="col mb-3 mt-3">
                     <h4 className="text-responsive">
                       {" "}
-                      &nbsp; Calificación observaciones{" "}
+                      &nbsp; Clasificación observaciones{" "}
                     </h4>
                   </div>
                 </div>

@@ -49,12 +49,8 @@ def allowed_file(filename):
 
 app = Flask(__name__)
 CORS(app)
-
-
-@app.route("/")
-def idenx():
-    # renderiamos la plantilla "formulario.html"
-    return "<h1>Welcome</h1>"
+frontendUrl = 'http://localhost:3000/'
+#frontendUrl = 'https://clasificacionobservaciones.herokuapp.com/'
 
 @app.route("/nombres", methods=["GET"])
 def nombres():
@@ -122,7 +118,7 @@ def individual():
         archivo.write(f)
         archivo.close()
         
-        return redirect('http://localhost:3000/evaluacion/custom/nombre')
+        return redirect(frontendUrl+'evaluacion/custom/nombre')
 
 
 @app.route("/evaluacion-curso", methods=["POST"])
@@ -136,7 +132,7 @@ def evaCurso():
         archivo.write(f)
         archivo.close()
         
-        return redirect('http://localhost:3000/evaluacion/custom/curso')
+        return redirect(frontendUrl+'evaluacion/custom/curso')
 
 
 @app.route("/busqueda-nombre", methods=["GET"])
@@ -209,13 +205,13 @@ def uploader():
             if (comprobarArchivo(filename)):
                 procesador(filename)
             # Retornamos una respuesta satisfactoria
-                return redirect('http://localhost:3000/evaluaciones')
+                return redirect(frontendUrl+'evaluaciones')
             else:
                 module_dir = os.path.dirname(__file__)
                 os.remove(module_dir+'\\'+filename)
                 os.remove(module_dir+'\\'+filename+'.txt')
-                return redirect('http://localhost:3000/classifier/error')
-        return redirect('http://localhost:3000/classifier/error')
+                return redirect(frontendUrl+'classifier/error')
+        return redirect(frontendUrl+'classifier/error')
 
 
 @app.route("/historial", methods=["POST"])
@@ -226,7 +222,7 @@ def historial():
         url = "https://storage.googleapis.com/teacher-qualifier.appspot.com/"+f+".pdf.txt"
         obtenerArchivo(url)
 
-        return redirect('http://localhost:3000/evaluacion/ordenado')
+        return redirect(frontendUrl+'evaluacion/ordenado')
 
 
 @app.route("/historial-ordenado", methods=["GET"])

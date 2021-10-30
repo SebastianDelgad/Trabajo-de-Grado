@@ -3,6 +3,8 @@ import { NavbarClassifier } from "./NavbarClassifier";
 import { auth, storage, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { PagMain } from "./PagMain";
+import { BackendUrl } from "./BackendUrl";
+import { Helmet } from "react-helmet";
 
 export const PagEvaluaciones = () => {
   const [user, setUser] = useState();
@@ -74,6 +76,9 @@ export const PagEvaluaciones = () => {
     return (
       <Fragment>
         <NavbarClassifier />
+        <Helmet>
+          <title>Evaluaciones - SISCOD</title>
+        </Helmet>
         {admin ? (
           <div className="container mt-3 bg-light rounded-6">
           <div className="row mt-3">
@@ -129,7 +134,7 @@ export const PagEvaluaciones = () => {
         <div className="container mt-3 bg-light rounded-6">
           <div className="row mt-3">
             <div className="mt-4 col">
-              <h3>Resultados de la evaluaciones docente calificadas. </h3>
+              <h3>Resultados de la evaluaciones docente clasificadas. </h3>
             </div>
           </div>
           <div className="row "></div>
@@ -137,7 +142,7 @@ export const PagEvaluaciones = () => {
             <h3>Selececcione el documento que desea visualizar.</h3>
           </div>
           <form
-            action="http://127.0.0.1:5000/historial"
+            action= {BackendUrl+"historial"}
             method="POST"
             encType="multipart/form-data"
           >

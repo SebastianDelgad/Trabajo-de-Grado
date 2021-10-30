@@ -3,6 +3,7 @@ import { auth, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { NavbarClassifier } from "./NavbarClassifier";
 import { PagMain } from "./PagMain";
+import { Helmet } from "react-helmet";
 
 export const PagPerfil = (props) => {
   const [email, setEmail] = useState("");
@@ -67,6 +68,9 @@ export const PagPerfil = (props) => {
     return (
       <Fragment>
         <NavbarClassifier />
+        <Helmet>
+          <title>Perfil - SISCOD</title>
+        </Helmet>
         <div className="container mt-3 bg-light rounded-6">
           <div className="row justify-content-center">
             <div className="mt-4 mb-2 col">

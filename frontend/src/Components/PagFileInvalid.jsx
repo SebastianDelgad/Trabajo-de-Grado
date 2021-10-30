@@ -4,6 +4,7 @@ import { auth, db } from "../firebase";
 import { useHistory } from "react-router-dom";
 import { UploadPDF } from "./UploadPDF";
 import { PagMain } from "./PagMain";
+import { Helmet } from "react-helmet";
 
 export const PagFileInvalid = () => {
   const [user, setUser] = useState();
@@ -57,6 +58,9 @@ export const PagFileInvalid = () => {
     return (
       <Fragment>
         <NavbarClassifier />
+        <Helmet>
+          <title>Error clasificación - SISCOD</title>
+        </Helmet>
         <div className="container mt-3 bg-light rounded-6">
           <div className="row mt-3">
             <ul className="mt-3 mb-3 nav nav-pills nav-justified">

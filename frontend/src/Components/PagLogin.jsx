@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import { NavbarLogin } from "./NavbarLogin";
 import { auth } from "../firebase";
 import { PagClassifier } from "./PagClassifier";
+import { Helmet } from "react-helmet";
 
 export const PagLogin = (props) => {
   let history = useHistory();
@@ -66,6 +67,9 @@ export const PagLogin = (props) => {
     return (
       <Fragment>
         <NavbarLogin />
+        <Helmet>
+          <title>Iniciar sesión - SISCOD</title>
+        </Helmet>
         <div className="container mt-3 bg-light rounded-6">
           <div className="row">
             <div className="mt-4 col">

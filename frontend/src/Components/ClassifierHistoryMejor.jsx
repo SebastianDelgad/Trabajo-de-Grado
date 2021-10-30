@@ -11,6 +11,8 @@ import { PagMain } from "./PagMain";
 import { auth } from "../firebase";
 import { PDFExport } from "@progress/kendo-react-pdf";
 import { useHistory } from "react-router-dom";
+import { BackendUrl } from "./BackendUrl";
+import { Helmet } from "react-helmet";
 
 export const ClassifierHistoryMejor = () => {
   const [observaciones, setObservacion] = useState([]);
@@ -49,7 +51,7 @@ export const ClassifierHistoryMejor = () => {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch("http://127.0.0.1:5000/historial-mejor-prom");
+    const data = await fetch(BackendUrl+"historial-mejor-prom");
     const info = await data.json();
     info.data.map((element) => {});
     setObservacion(info.data);
@@ -65,6 +67,9 @@ export const ClassifierHistoryMejor = () => {
     return (
       <Fragment>
         <NavbarEvaluaciones />
+        <Helmet>
+          <title>Evaluación promedio alto - SISCOD</title>
+        </Helmet>
         <div className="container mt-3 bg-light rounded">
           <div className="row mt-3">
             <div className="mt-3 mb-4 col">
@@ -142,7 +147,7 @@ export const ClassifierHistoryMejor = () => {
               <div className=" mt-3 mb-2 col">
                 <h2 className="text-center text-responsive">
                   Evaluaciones ordenadas por el promedio más alto de
-                  calificación de las observaciones
+                  clasificación de las observaciones
                 </h2>
               </div>
             </div>
@@ -225,7 +230,7 @@ export const ClassifierHistoryMejor = () => {
                   <div className="col mb-3 mt-3">
                     <h4 className="text-responsive">
                       {" "}
-                      &nbsp; Calificación observaciones{" "}
+                      &nbsp; Clasificación observaciones{" "}
                     </h4>
                   </div>
                 </div>

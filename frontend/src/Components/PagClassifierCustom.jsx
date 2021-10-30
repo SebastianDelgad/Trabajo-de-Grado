@@ -11,6 +11,8 @@ import { PagMain } from "./PagMain";
 import { auth } from "../firebase";
 import { PDFExport } from "@progress/kendo-react-pdf";
 import { useHistory } from "react-router-dom";
+import { BackendUrl } from "./BackendUrl";
+import { Helmet } from "react-helmet";
 
 export const PagClassifierCustom = () => {
   const [nombres, setNombres] = useState([]);
@@ -60,14 +62,14 @@ export const PagClassifierCustom = () => {
   }, []);
 
   const obtenerNombres = async () => {
-    const data = await fetch("http://127.0.0.1:5000/nombres");
+    const data = await fetch(BackendUrl+"nombres");
     const info = await data.json();
     info.data.map((element) => {});
     setNombres(info.data);
   };
 
   const obtenerDatos = async () => {
-    const data = await fetch("http://127.0.0.1:5000/busqueda-nombre");
+    const data = await fetch(BackendUrl+"busqueda-nombre");
     const info = await data.json();
     info.data.map((element) => {});
     setObservacion(info.data);
@@ -77,6 +79,9 @@ export const PagClassifierCustom = () => {
     return (
       <Fragment>
         <NavbarEvaluaciones />
+        <Helmet>
+          <title>Busqueda por nombre - SISCOD</title>
+        </Helmet>
         <div className="container mt-3 bg-light rounded">
           <div className="row mt-3">
             <div className="mt-3 mb-4 col">
@@ -201,7 +206,7 @@ export const PagClassifierCustom = () => {
           <div className="row">
             <div className="mt-3 mb-3 col-4">
               <form
-                action="http://127.0.0.1:5000/evaluacion-nombre"
+                action={BackendUrl+"evaluacion-nombre"}
                 method="POST"
                 encType="multipart/form-data"
               >
@@ -233,7 +238,7 @@ export const PagClassifierCustom = () => {
           scale={0.6}
           paperSize="Legal"
           margin="2cm"
-          fileName="Calificación orden personalizado por nombre"
+          fileName="Clasificación orden personalizado por nombre"
           ref={pdfExportComponent}
         >
           <div className="container mt-3 bg-light rounded-6">
@@ -264,7 +269,7 @@ export const PagClassifierCustom = () => {
                     <div className="col mb-3 mt-3">
                       <h4 className="text-responsive">
                         {" "}
-                        &nbsp; Calificación observaciones{" "}
+                        &nbsp; Clasificación observaciones{" "}
                       </h4>
                     </div>
                   </div>

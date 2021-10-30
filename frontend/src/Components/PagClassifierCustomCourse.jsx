@@ -11,6 +11,8 @@ import { PagMain } from "./PagMain";
 import { auth } from "../firebase";
 import { PDFExport } from "@progress/kendo-react-pdf";
 import { useHistory } from "react-router-dom";
+import { BackendUrl } from "./BackendUrl";
+import { Helmet } from "react-helmet";
 
 export const PagClassifierCustomCourse = () => {
   const [curso, setCurso] = useState([]);
@@ -60,14 +62,14 @@ export const PagClassifierCustomCourse = () => {
   }, []);
 
   const obtenerCursos = async () => {
-    const data = await fetch("http://127.0.0.1:5000/curso");
+    const data = await fetch(BackendUrl+"curso");
     const info = await data.json();
     info.data.map((element) => {});
     setCurso(info.data);
   };
 
   const obtenerDatos = async () => {
-    const data = await fetch("http://127.0.0.1:5000/busqueda-curso");
+    const data = await fetch(BackendUrl+"busqueda-curso");
     const info = await data.json();
     info.data.map((element) => {});
     setObservacion(info.data);
@@ -77,6 +79,9 @@ export const PagClassifierCustomCourse = () => {
     return (
       <Fragment>
         <NavbarEvaluaciones />
+        <Helmet>
+          <title>Busqueda por curso - SISCOD</title>
+        </Helmet>
         <div className="container mt-3 bg-light rounded">
           <div className="row mt-3">
             <div className="mt-3 mb-4 col">
@@ -205,7 +210,7 @@ export const PagClassifierCustomCourse = () => {
           <div className="row">
             <div className="mt-3 mb-3 col-4">
               <form
-                action="http://127.0.0.1:5000/evaluacion-curso"
+                action={BackendUrl+"evaluacion-curso"}
                 method="POST"
                 encType="multipart/form-data"
               >
@@ -239,7 +244,7 @@ export const PagClassifierCustomCourse = () => {
           scale={0.6}
           paperSize="Legal"
           margin="2cm"
-          fileName="Calificación orden personalizado por asignatura"
+          fileName="Clasificación orden personalizado por asignatura"
           ref={pdfExportComponent}
         >
           <div className="container mt-3 bg-light rounded-6">
@@ -270,7 +275,7 @@ export const PagClassifierCustomCourse = () => {
                     <div className="col mb-3 mt-3">
                       <h4 className="text-responsive">
                         {" "}
-                        &nbsp; Calificación observaciones{" "}
+                        &nbsp; Clasificación observaciones{" "}
                       </h4>
                     </div>
                   </div>
