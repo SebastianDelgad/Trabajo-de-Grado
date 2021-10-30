@@ -51,7 +51,7 @@ export const ClassifierHistoryPeor = () => {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch(BackendUrl+"historial-peor-prom");
+    const data = await fetch(BackendUrl + "historial-peor-prom");
     const info = await data.json();
     info.data.map((element) => {});
     setObservacion(info.data);
@@ -116,7 +116,9 @@ export const ClassifierHistoryPeor = () => {
                       <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                         <span className="material-icons md-36">&#xe8b6;</span>
                       </div>
-                      <div className="col-10">Personalizado</div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Personalizado
+                      </div>
                     </div>
                   </u>
                 </li>
@@ -126,7 +128,9 @@ export const ClassifierHistoryPeor = () => {
                       <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                         <span className="material-icons md-36">&#xf090;</span>
                       </div>
-                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">Descargar en PDF</div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Descargar en PDF
+                      </div>
                     </div>
                   </u>
                 </li>
