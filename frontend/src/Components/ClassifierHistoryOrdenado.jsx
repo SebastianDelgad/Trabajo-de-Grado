@@ -51,7 +51,7 @@ export const ClassifierHistoryOrdenado = () => {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch(BackendUrl+"historial-ordenado");
+    const data = await fetch(BackendUrl + "historial-ordenado");
     const info = await data.json();
     info.data.map((element) => {});
     setObservacion(info.data);
@@ -119,17 +119,21 @@ export const ClassifierHistoryOrdenado = () => {
                       <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                         <span className="material-icons md-36">&#xe8b6;</span>
                       </div>
-                      <div className="col-10">Personalizado</div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Personalizado
+                      </div>
                     </div>
                   </u>
                 </li>
-                <li className="nav-item">
+                <li className="nav-tabs">
                   <u className="nav-link" onClick={exportPDFWithComponent}>
                     <div className="row">
-                      <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                         <span className="material-icons md-36">&#xf090;</span>
                       </div>
-                      <div className="col-10">Descargar en PDF</div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Descargar en PDF
+                      </div>
                     </div>
                   </u>
                 </li>
