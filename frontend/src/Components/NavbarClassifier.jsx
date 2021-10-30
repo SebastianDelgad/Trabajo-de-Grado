@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 
 export const NavbarClassifier = (props) => {
   const [name, setName] = useState();
-
   let history = useHistory();
 
   const cerrarSesion = () => {
@@ -53,22 +52,19 @@ export const NavbarClassifier = (props) => {
                 type="button"
                 className="btn btn-outline-danger dropdown-toggle"
                 data-bs-toggle="dropdown"
+                data-bs-auto-close="inside"
                 aria-expanded="false"
               >
                 {name}
               </button>
               <ul className="dropdown-menu" aria-labelledby="btnGroupDrop1">
                 <li>
-                  <u
-                    className="dropdown-item"
-                    href="#"
-                    onClick={handleClickPerfil}
-                  >
+                  <u className="dropdown-item" onClick={handleClickPerfil}>
                     Configuraciones
                   </u>
                 </li>
                 <li>
-                  <u className="dropdown-item" href="#" onClick={cerrarSesion}>
+                  <u className="dropdown-item" onClick={cerrarSesion}>
                     Cerrar sesión
                   </u>
                 </li>

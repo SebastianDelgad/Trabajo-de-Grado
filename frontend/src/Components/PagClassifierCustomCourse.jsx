@@ -78,49 +78,71 @@ export const PagClassifierCustomCourse = () => {
       <Fragment>
         <NavbarEvaluaciones />
         <div className="container mt-3 bg-light rounded">
-          <div className="row">
+          <div className="row mt-3">
             <div className="mt-3 mb-4 col">
               <ul className="nav nav-pills nav-justified">
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger"
-                    onClick={handleClickAlfabeticamente}
-                  >
-                    Alfabéticamente
-                  </button>
+                  <u className="nav-link" onClick={handleClickAlfabeticamente}>
+                    <div className="row">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                        <span className="material-icons md-36">&#xef42;</span>
+                      </div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        <span>Alfabéticamente </span>
+                      </div>
+                    </div>
+                  </u>
                 </li>
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger "
-                    aria-current="page"
-                    onClick={handleClickMejorProm}
-                  >
-                    Promedio más alto
-                  </button>
+                  <u className="nav-link" onClick={handleClickMejorProm}>
+                    <div className="row">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                        <span className="material-icons md-36">&#xe9f3;</span>
+                      </div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Promedio más alto
+                      </div>
+                    </div>
+                  </u>
                 </li>
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger "
-                    onClick={handleClickPeorProm}
-                  >
-                    Promedio más bajo
-                  </button>
+                  <u className="nav-link" onClick={handleClickPeorProm}>
+                    <div className="row">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                        <span className="material-icons md-36">&#xe9f2;</span>
+                      </div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Promedio más bajo
+                      </div>
+                    </div>
+                  </u>
                 </li>
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger active"
+                  <u
+                    className="nav-link-active"
                     onClick={handleClickCustomNombre}
                   >
-                    Personalizado
-                  </button>
+                    <div className="row">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                        <span className="material-icons md-36">&#xe8b6;</span>
+                      </div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Personalizado
+                      </div>
+                    </div>
+                  </u>
                 </li>
                 <li className="nav-item">
-                  <button
-                    className="btn btn-outline-danger"
-                    onClick={exportPDFWithComponent}
-                  >
-                    Descargar en PDF
-                  </button>
+                  <u className="nav-link" onClick={exportPDFWithComponent}>
+                    <div className="row">
+                      <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                        <span className="material-icons md-36">&#xf090;</span>
+                      </div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Descargar en PDF
+                      </div>
+                    </div>
+                  </u>
                 </li>
               </ul>
             </div>
@@ -140,20 +162,31 @@ export const PagClassifierCustomCourse = () => {
             <div className="mt-3 mb-4 col">
               <ul className="nav nav-pills nav-justified">
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger"
-                    onClick={handleClickCustomNombre}
-                  >
-                    Nombre
-                  </button>
+                  <u className="nav-link" onClick={handleClickCustomNombre}>
+                    <div className="row">
+                      <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                        <span className="material-icons md-36">&#xe8a6;</span>
+                      </div>
+                      <div className="col-9 col-sm-9 col-xs-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                        Nombre
+                      </div>
+                    </div>
+                  </u>
                 </li>
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger active"
+                  <u
+                    className="nav-link-active"
                     onClick={handleClickCustomCourse}
                   >
-                    Asignatura
-                  </button>
+                    <div className="row">
+                      <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                        <span className="material-icons md-36">&#xe666;</span>
+                      </div>
+                      <div className="col-9 col-sm-9 col-xs-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                        Asignatura
+                      </div>
+                    </div>
+                  </u>
                 </li>
               </ul>
             </div>
@@ -162,10 +195,10 @@ export const PagClassifierCustomCourse = () => {
 
         <div className="container mt-3 bg-light rounded-6">
           <div className="row">
-            <div className="mt-3 mb-3 col">
+            <div className="mt-3 col">
               <h5 className="justify text-responsive">
                 {" "}
-                Seleccione la asignatura y después oprima enter
+                Seleccione la asignatura
               </h5>
             </div>
           </div>
@@ -190,6 +223,12 @@ export const PagClassifierCustomCourse = () => {
                       </option>
                     ))}
                   </datalist>
+                  <button
+                    className="btn btn-outline-danger btn-block"
+                    type="submit"
+                  >
+                    Buscar
+                  </button>
                 </div>
               </form>
             </div>

@@ -18,12 +18,16 @@ export const NavbarEvaluaciones = () => {
           </div>
           <div className="mt-4 mb-4 col-4 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-3">
             <div className="btn-toolbar">
-              <button
-                className="btn btn-outline-danger"
-                onClick={handleClickRegresar}
-              >
-                <span> Regresar </span>
-              </button>
+              <u className="nav-link" onClick={handleClickRegresar}>
+                <div className="row">
+                  <div className="col-3 col-sm-3 col-xs-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                    <span className="material-icons md-36">&#xe5c4;</span>
+                  </div>
+                  <div className="col-9 col-sm-9 col-xs-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                    <span> Regresar </span>
+                  </div>
+                </div>
+              </u>
             </div>
           </div>
         </div>

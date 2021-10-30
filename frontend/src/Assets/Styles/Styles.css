@@ -41,3 +41,7 @@
   text-indent: 0;
   text-align: justify;
 }
+
+.nav-link { color: red; }
+
+.nav-link-active { color: red; }

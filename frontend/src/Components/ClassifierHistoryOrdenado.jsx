@@ -66,49 +66,67 @@ export const ClassifierHistoryOrdenado = () => {
       <Fragment>
         <NavbarEvaluaciones />
         <div className="container mt-3 bg-light rounded">
-          <div className="row">
+          <div className="row mt-3">
             <div className="mt-3 mb-4 col">
               <ul className="nav nav-pills nav-justified">
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger active"
-                    aria-current="page"
+                  <u
+                    className="nav-link-active"
                     onClick={handleClickAlfabeticamente}
                   >
-                    Alfabéticamente
-                  </button>
+                    <div className="row">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                        <span className="material-icons md-36">&#xef42;</span>
+                      </div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        <span>Alfabéticamente </span>
+                      </div>
+                    </div>
+                  </u>
                 </li>
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger"
-                    onClick={handleClickMejorProm}
-                  >
-                    Promedio más alto
-                  </button>
+                  <u className="nav-link" onClick={handleClickMejorProm}>
+                    <div className="row">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                        <span className="material-icons md-36">&#xe9f3;</span>
+                      </div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Promedio más alto
+                      </div>
+                    </div>
+                  </u>
                 </li>
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger "
-                    onClick={handleClickPeorProm}
-                  >
-                    Promedio más bajo
-                  </button>
+                  <u className="nav-link" onClick={handleClickPeorProm}>
+                    <div className="row">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                        <span className="material-icons md-36">&#xe9f2;</span>
+                      </div>
+                      <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                        Promedio más bajo
+                      </div>
+                    </div>
+                  </u>
                 </li>
                 <li className="nav-tabs">
-                  <button
-                    className="btn btn-outline-danger"
-                    onClick={handleClickCustom}
-                  >
-                    Personalizado
-                  </button>
+                  <u className="nav-link" onClick={handleClickCustom}>
+                    <div className="row">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                        <span className="material-icons md-36">&#xe8b6;</span>
+                      </div>
+                      <div className="col-10">Personalizado</div>
+                    </div>
+                  </u>
                 </li>
                 <li className="nav-item">
-                  <button
-                    className="btn btn-outline-danger"
-                    onClick={exportPDFWithComponent}
-                  >
-                    Descargar en PDF
-                  </button>
+                  <u className="nav-link" onClick={exportPDFWithComponent}>
+                    <div className="row">
+                      <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                        <span className="material-icons md-36">&#xf090;</span>
+                      </div>
+                      <div className="col-10">Descargar en PDF</div>
+                    </div>
+                  </u>
                 </li>
               </ul>
             </div>
