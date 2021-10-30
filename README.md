@@ -1,16 +1,16 @@
 # Prototipo SISCOD
-#Trabajo de grado para la obtención del titulo ingeniería en sistemas
+# Trabajo de grado para la obtención del titulo ingeniería en sistemas
 
-#HERRAMIENTA PARA LA CLASIFICACIÓN DE LAS OBSERVACIONES EN LA EVALUACIÓN DOCENTE DE LA UNIVERSIDAD DEL VALLE SEDE TULUÁ
+HERRAMIENTA PARA LA CLASIFICACIÓN DE LAS OBSERVACIONES EN LA EVALUACIÓN DOCENTE DE LA UNIVERSIDAD DEL VALLE SEDE TULUÁ
 
-Estudiante: \
+# Estudiante: \
 Sebastián Delgado.
 
-Director:\
+# Director:\
 Mauricio López.
 
-Desarrollo del trabajo de grado: \
-Página web del prototipo https://clasificacionobservaciones.herokuapp.com/ 
+# Página web del prototipo: \ 
+https://clasificacionobservaciones.herokuapp.com/ 
 
 Breve explicación de las carpetas del repositorio \
 La carpeta Sentiment-Analysis contiene el algoritmo de procesamiento de texto y de análisis de sentimineto en python sin adaptar para funcionar a un servidor. \
