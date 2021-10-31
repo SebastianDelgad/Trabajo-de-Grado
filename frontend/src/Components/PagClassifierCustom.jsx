@@ -134,10 +134,10 @@ export const PagClassifierCustom = () => {
                     </div>
                   </u>
                 </li>
-                <li className="nav-item">
+                <li className="nav-tabs">
                   <u className="nav-link" onClick={exportPDFWithComponent}>
                     <div className="row">
-                      <div className="col-1 col-sm-1 col-xs-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
+                      <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                         <span className="material-icons md-36">&#xf090;</span>
                       </div>
                       <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
