@@ -160,7 +160,7 @@ export const PagEvaluaciones = () => {
                   ></input>
                 </div>
               </div>
-            ))}
+            )).reverse()}
           </form>
         </div>
       </Fragment>
