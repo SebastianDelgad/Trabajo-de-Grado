@@ -61,7 +61,7 @@ export const PagClassifierCustomCourse = () => {
   }, []);
 
   const obtenerCursos = async () => {
-    const data = await fetch(BackendUrl+"curso");
+    const data = await fetch(BackendUrl + "curso");
     const info = await data.json();
     setCurso(info.data);
   };
@@ -76,7 +76,7 @@ export const PagClassifierCustomCourse = () => {
   };
 
   const obtenerDatos = async () => {
-    const data = await fetch(BackendUrl+"busqueda-curso");
+    const data = await fetch(BackendUrl + "busqueda-curso");
     const info = await data.json();
     setObservacion(info.data);
   };
@@ -216,7 +216,7 @@ export const PagClassifierCustomCourse = () => {
           <div className="row">
             <div className="mt-3 mb-3 col-4">
               <form
-                action={BackendUrl+"evaluacion-curso"}
+                action={BackendUrl + "evaluacion-curso"}
                 method="POST"
                 encType="multipart/form-data"
               >

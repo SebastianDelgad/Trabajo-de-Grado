@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Fragment, useRef, useCallback } from "react";
+import React, { useEffect, useState, Fragment, useRef } from "react";
 import img_muy_negativa from "../Assets/Images/muy_negativa.png";
 import img_negativa from "../Assets/Images/negativa.png";
 import img_neutral from "../Assets/Images/neutral.png";
@@ -61,7 +61,7 @@ export const PagClassifierCustom = () => {
   }, []);
 
   const obtenerNombres = async () => {
-    const data = await fetch(BackendUrl+"nombres");
+    const data = await fetch(BackendUrl + "nombres");
     const info = await data.json();
     setNombres(info.data);
   };
@@ -76,7 +76,7 @@ export const PagClassifierCustom = () => {
   };
 
   const obtenerDatos = async () => {
-    const data = await fetch(BackendUrl+"busqueda-nombre");
+    const data = await fetch(BackendUrl + "busqueda-nombre");
     const info = await data.json();
     setObservacion(info.data);
   };
@@ -129,7 +129,10 @@ export const PagClassifierCustom = () => {
                   </u>
                 </li>
                 <li className="nav-tabs">
-                  <u className="nav-link-active" onClick={handleClickCustomNombre}>
+                  <u
+                    className="nav-link-active"
+                    onClick={handleClickCustomNombre}
+                  >
                     <div className="row">
                       <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
                         <span className="material-icons md-36">&#xe8b6;</span>
@@ -212,7 +215,7 @@ export const PagClassifierCustom = () => {
           <div className="row">
             <div className="mt-3 mb-3 col-4">
               <form
-                action={BackendUrl+"evaluacion-nombre"}
+                action={BackendUrl + "evaluacion-nombre"}
                 method="POST"
                 encType="multipart/form-data"
               >

@@ -25,22 +25,13 @@ def consultar_token():
     db = firestore.client()
     doc_ref = db.collection(u'tokens').document(u'Token')
     doc = doc_ref.get()
-    
+
     dato = doc.to_dict()
-    #print(dato['token'])
     if(dato['token'] != ''):
-        #print(True)
         return True
     else:
-        #print(False)
         return False
-    
-    #if doc.exists:
-    #    print(f'Document data: {doc.to_dict()}')
-    #else:
-    #    print(u'No such document!')
-            
-   
+
 
 def actualizar_token():
     if (not len(firebase_admin._apps)):
@@ -55,10 +46,6 @@ def actualizar_token():
     db = firestore.client()
     consult = db.collection(u'tokens').document(u'Token')
     consult.update({'token': ""})
-    #acceso = consult.update({'token': ""})
-   
-    #print(acceso)
-       # print('Token: {}'.format(s['Token']))
 
 
 def obtenerArchivo(url):
@@ -103,6 +90,7 @@ CORS(app)
 frontendUrl = 'http://localhost:3000/'
 #frontendUrl = 'https://clasificacionobservaciones.herokuapp.com/'
 
+
 @app.route("/nombres", methods=["GET"])
 def nombres():
     token = consultar_token()
@@ -131,6 +119,7 @@ def nombres():
     else:
         return "<h1>Por favor inicie sesión</h1>"
 
+
 @app.route("/curso", methods=["GET"])
 def cursosN():
     token = consultar_token()
@@ -148,13 +137,13 @@ def cursosN():
         data = nombre_y_curso(datos)
         nombresCursos = cursos(data)
         grupos = ["50", "51", "52", "53", "54",
-                "55", "56", "57", "58", "59", "60"]
+                  "55", "56", "57", "58", "59", "60"]
 
-        sinGrupo= []
+        sinGrupo = []
         for item in nombresCursos:
             for grupo in grupos:
-                if (item[(len(item))-2] +""+ item[(len(item))-1]) == grupo:
-                    materia = item.replace(" "+grupo,"")
+                if (item[(len(item))-2] + "" + item[(len(item))-1]) == grupo:
+                    materia = item.replace(" "+grupo, "")
                     sinGrupo.append(materia)
         cursoN = []
         for item in sinGrupo:
@@ -168,6 +157,7 @@ def cursosN():
     else:
         return "<h1>Por favor inicie sesión</h1>"
 
+
 @app.route("/evaluacion-nombre", methods=["POST"])
 def individual():
     if request.method == 'POST':
@@ -178,7 +168,7 @@ def individual():
         archivo = open(nombre, 'w')
         archivo.write(f)
         archivo.close()
-        
+
         return redirect(frontendUrl+'evaluacion/custom/nombre')
 
 
@@ -192,7 +182,7 @@ def evaCurso():
         archivo = open(nombre, 'w')
         archivo.write(f)
         archivo.close()
-        
+
         return redirect(frontendUrl+'evaluacion/custom/curso')
 
 
@@ -229,6 +219,7 @@ def busqueda():
     else:
         return "<h1>Por favor inicie sesión</h1>"
 
+
 @app.route("/busqueda-curso", methods=["GET"])
 def busquedaCurso():
     token = consultar_token()
@@ -261,6 +252,7 @@ def busquedaCurso():
         return jsonify(historial)
     else:
         return "<h1>Por favor inicie sesión</h1>"
+
 
 @app.route("/upload", methods=['POST'])
 def uploader():
@@ -324,6 +316,7 @@ def historialorden():
     else:
         return "<h1>Por favor inicie sesión</h1>"
 
+
 @app.route("/historial-mejor-prom", methods=["GET"])
 def historialmejor():
     token = consultar_token()
@@ -351,7 +344,6 @@ def historialmejor():
         return jsonify(historial)
     else:
         return "<h1>Por favor inicie sesión</h1>"
-        
 
 
 @app.route("/historial-peor-prom", methods=["GET"])

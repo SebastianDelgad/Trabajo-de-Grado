@@ -58,7 +58,6 @@ export const ClassifierHistoryPeor = () => {
     obtenerDatos();
   };
 
-
   const obtenerDatos = async () => {
     const data = await fetch(BackendUrl + "historial-peor-prom");
     const info = await data.json();

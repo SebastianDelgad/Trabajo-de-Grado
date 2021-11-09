@@ -58,7 +58,6 @@ export const ClassifierHistoryOrdenado = () => {
     obtenerDatos();
   };
 
-
   const obtenerDatos = async () => {
     const data = await fetch(BackendUrl + "historial-ordenado");
     const info = await data.json();
