@@ -58,7 +58,8 @@ export const PagClassifierCustomCourse = () => {
       }
     });
     return () => ac.abort();
-  }, []);
+  }, //eslint-disable-next-line react-hooks/exhaustive-deps
+   []);
 
   const obtenerCursos = async () => {
     const data = await fetch(BackendUrl + "curso");

@@ -48,7 +48,8 @@ export const ClassifierHistoryPeor = () => {
       }
     });
     return () => ac.abort();
-  }, []);
+  }, //eslint-disable-next-line react-hooks/exhaustive-deps
+   []);
 
   const actualizarDatos = async () => {
     var p = auth.currentUser;

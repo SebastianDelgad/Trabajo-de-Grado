@@ -108,7 +108,8 @@ export const PagRegister = (props) => {
         return;
       }
     }
-  }, [email, pass, admin, props.history]);
+  },//eslint-disable-next-line react-hooks/exhaustive-deps
+   [email, pass, admin, props.history]);
 
   if (uadmin && User) {
     return (

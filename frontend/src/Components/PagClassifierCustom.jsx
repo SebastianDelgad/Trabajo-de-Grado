@@ -58,7 +58,8 @@ export const PagClassifierCustom = () => {
       }
     });
     return () => ac.abort();
-  }, []);
+  }, //eslint-disable-next-line react-hooks/exhaustive-deps
+   []);
 
   const obtenerNombres = async () => {
     const data = await fetch(BackendUrl + "nombres");
