@@ -8,6 +8,57 @@ from OrdenResultados import consultar_por_curso, consultar_por_nombre, resultado
 from VerificarArchivo import comprobarArchivo
 import urllib.request
 import numpy as np
+import firebase_admin
+from firebase_admin import credentials, initialize_app, firestore
+
+
+def consultar_token():
+    if (not len(firebase_admin._apps)):
+        # Fetch the service account key JSON file contents
+        module_dir = os.path.dirname(__file__)
+        credential = os.path.join(
+            module_dir, 'teacher-qualifier-firebase-adminsdk-rcl5m-f2037fdc9f.json')
+
+        cred = credentials.Certificate(credential)
+
+        initialize_app(cred)
+    db = firestore.client()
+    doc_ref = db.collection(u'tokens').document(u'Token')
+    doc = doc_ref.get()
+    
+    dato = doc.to_dict()
+    #print(dato['token'])
+    if(dato['token'] != ''):
+        #print(True)
+        return True
+    else:
+        #print(False)
+        return False
+    
+    #if doc.exists:
+    #    print(f'Document data: {doc.to_dict()}')
+    #else:
+    #    print(u'No such document!')
+            
+   
+
+def actualizar_token():
+    if (not len(firebase_admin._apps)):
+        # Fetch the service account key JSON file contents
+        module_dir = os.path.dirname(__file__)
+        credential = os.path.join(
+            module_dir, 'teacher-qualifier-firebase-adminsdk-rcl5m-f2037fdc9f.json')
+
+        cred = credentials.Certificate(credential)
+
+        initialize_app(cred)
+    db = firestore.client()
+    consult = db.collection(u'tokens').document(u'Token')
+    consult.update({'token': ""})
+    #acceso = consult.update({'token': ""})
+   
+    #print(acceso)
+       # print('Token: {}'.format(s['Token']))
 
 
 def obtenerArchivo(url):
@@ -54,58 +105,68 @@ frontendUrl = 'http://localhost:3000/'
 
 @app.route("/nombres", methods=["GET"])
 def nombres():
-    datos = []
-    module_dir = os.path.dirname(__file__)
-    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
-    archivo = open(pdf_a_texto, 'r')
-    for line in archivo.readlines():
-        if len(line) < 4:
-            datos.append(int(line.strip()))
-        else:
-            datos.append(line.strip())
+    token = consultar_token()
+    if(token == True):
+        datos = []
+        module_dir = os.path.dirname(__file__)
+        pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+        archivo = open(pdf_a_texto, 'r')
+        for line in archivo.readlines():
+            if len(line) < 4:
+                datos.append(int(line.strip()))
+            else:
+                datos.append(line.strip())
 
-    nombresCursos = nombre_y_curso(datos)
-    nombres = nombres_docentes(nombresCursos)
-    docentesUnico = []
-    for item in nombres:
-        if item not in docentesUnico:
-            docentesUnico.append(item)
-    docentesUnico.sort()
-    docentes = {}
-    docentes["data"] = docentesUnico
-    return jsonify(docentes)
+        nombresCursos = nombre_y_curso(datos)
+        nombres = nombres_docentes(nombresCursos)
+        docentesUnico = []
+        for item in nombres:
+            if item not in docentesUnico:
+                docentesUnico.append(item)
+        docentesUnico.sort()
+        docentes = {}
+        docentes["data"] = docentesUnico
+        actualizar_token()
+        return jsonify(docentes)
+    else:
+        return "<h1>Por favor inicie sesión</h1>"
 
 @app.route("/curso", methods=["GET"])
 def cursosN():
-    datos = []
-    module_dir = os.path.dirname(__file__)
-    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
-    archivo = open(pdf_a_texto, 'r')
-    for line in archivo.readlines():
-        if len(line) < 4:
-            datos.append(int(line.strip()))
-        else:
-            datos.append(line.strip())
+    token = consultar_token()
+    if(token == True):
+        datos = []
+        module_dir = os.path.dirname(__file__)
+        pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+        archivo = open(pdf_a_texto, 'r')
+        for line in archivo.readlines():
+            if len(line) < 4:
+                datos.append(int(line.strip()))
+            else:
+                datos.append(line.strip())
 
-    data = nombre_y_curso(datos)
-    nombresCursos = cursos(data)
-    grupos = ["50", "51", "52", "53", "54",
-              "55", "56", "57", "58", "59", "60"]
+        data = nombre_y_curso(datos)
+        nombresCursos = cursos(data)
+        grupos = ["50", "51", "52", "53", "54",
+                "55", "56", "57", "58", "59", "60"]
 
-    sinGrupo= []
-    for item in nombresCursos:
-        for grupo in grupos:
-            if (item[(len(item))-2] +""+ item[(len(item))-1]) == grupo:
-                materia = item.replace(" "+grupo,"")
-                sinGrupo.append(materia)
-    cursoN = []
-    for item in sinGrupo:
-        if item not in cursoN:
-            cursoN.append(item)
-    cursoN.sort()
-    docentes = {}
-    docentes["data"] = cursoN
-    return jsonify(docentes)
+        sinGrupo= []
+        for item in nombresCursos:
+            for grupo in grupos:
+                if (item[(len(item))-2] +""+ item[(len(item))-1]) == grupo:
+                    materia = item.replace(" "+grupo,"")
+                    sinGrupo.append(materia)
+        cursoN = []
+        for item in sinGrupo:
+            if item not in cursoN:
+                cursoN.append(item)
+        cursoN.sort()
+        docentes = {}
+        docentes["data"] = cursoN
+        actualizar_token()
+        return jsonify(docentes)
+    else:
+        return "<h1>Por favor inicie sesión</h1>"
 
 @app.route("/evaluacion-nombre", methods=["POST"])
 def individual():
@@ -137,59 +198,69 @@ def evaCurso():
 
 @app.route("/busqueda-nombre", methods=["GET"])
 def busqueda():
-    datos = []
-    module_dir = os.path.dirname(__file__)
-    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
-    archivo = open(pdf_a_texto, 'r')
-    for line in archivo.readlines():
-        if len(line) < 4:
-            datos.append(int(line.strip()))
-        else:
-            datos.append(line.strip())
+    token = consultar_token()
+    if(token == True):
+        datos = []
+        module_dir = os.path.dirname(__file__)
+        pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+        archivo = open(pdf_a_texto, 'r')
+        for line in archivo.readlines():
+            if len(line) < 4:
+                datos.append(int(line.strip()))
+            else:
+                datos.append(line.strip())
 
-    diccionario = resultados(datos)
-    nombresCursos = nombre_y_curso(datos)
-    prom_notas = promedio_calificacion(diccionario)
-    nombres = nombres_docentes(nombresCursos)
-    ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
-    peor = peor_promedio_calificacion(prom_notas, diccionario)
-    mejor = mejor_promedio_calificacion(prom_notas, diccionario)
+        diccionario = resultados(datos)
+        nombresCursos = nombre_y_curso(datos)
+        prom_notas = promedio_calificacion(diccionario)
+        nombres = nombres_docentes(nombresCursos)
+        ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
+        peor = peor_promedio_calificacion(prom_notas, diccionario)
+        mejor = mejor_promedio_calificacion(prom_notas, diccionario)
 
-    nombres = os.path.join(module_dir, 'nombre.txt')
-    archivo = open(nombres, 'r')
-    nombre = archivo.read()
-    custom = consultar_por_nombre(mejor, nombre)
-    historial = {}
-    historial["data"] = custom
-    return jsonify(historial)
+        nombres = os.path.join(module_dir, 'nombre.txt')
+        archivo = open(nombres, 'r')
+        nombre = archivo.read()
+        custom = consultar_por_nombre(mejor, nombre)
+        historial = {}
+        historial["data"] = custom
+        actualizar_token()
+        return jsonify(historial)
+    else:
+        return "<h1>Por favor inicie sesión</h1>"
 
 @app.route("/busqueda-curso", methods=["GET"])
 def busquedaCurso():
-    datos = []
-    module_dir = os.path.dirname(__file__)
-    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
-    archivo = open(pdf_a_texto, 'r')
-    for line in archivo.readlines():
-        if len(line) < 4:
-            datos.append(int(line.strip()))
-        else:
-            datos.append(line.strip())
+    token = consultar_token()
+    if(token == True):
+        datos = []
+        module_dir = os.path.dirname(__file__)
+        pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+        archivo = open(pdf_a_texto, 'r')
+        for line in archivo.readlines():
+            if len(line) < 4:
+                datos.append(int(line.strip()))
+            else:
+                datos.append(line.strip())
 
-    diccionario = resultados(datos)
-    nombresCursos = nombre_y_curso(datos)
-    prom_notas = promedio_calificacion(diccionario)
-    nombres = nombres_docentes(nombresCursos)
-    ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
-    peor = peor_promedio_calificacion(prom_notas, diccionario)
-    mejor = mejor_promedio_calificacion(prom_notas, diccionario)
+        diccionario = resultados(datos)
+        nombresCursos = nombre_y_curso(datos)
+        prom_notas = promedio_calificacion(diccionario)
+        nombres = nombres_docentes(nombresCursos)
+        ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
+        peor = peor_promedio_calificacion(prom_notas, diccionario)
+        mejor = mejor_promedio_calificacion(prom_notas, diccionario)
 
-    nombres = os.path.join(module_dir, 'curso.txt')
-    archivo = open(nombres, 'r')
-    nombre = archivo.read()
-    custom = consultar_por_curso(mejor, nombre)
-    historial = {}
-    historial["data"] = custom
-    return jsonify(historial)
+        nombres = os.path.join(module_dir, 'curso.txt')
+        archivo = open(nombres, 'r')
+        nombre = archivo.read()
+        custom = consultar_por_curso(mejor, nombre)
+        historial = {}
+        historial["data"] = custom
+        actualizar_token()
+        return jsonify(historial)
+    else:
+        return "<h1>Por favor inicie sesión</h1>"
 
 @app.route("/upload", methods=['POST'])
 def uploader():
@@ -227,74 +298,89 @@ def historial():
 
 @app.route("/historial-ordenado", methods=["GET"])
 def historialorden():
-    datos = []
-    module_dir = os.path.dirname(__file__)
-    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
-    archivo = open(pdf_a_texto, 'r')
-    for line in archivo.readlines():
-        if len(line) < 4:
-            datos.append(int(line.strip()))
-        else:
-            datos.append(line.strip())
+    token = consultar_token()
+    if(token == True):
+        datos = []
+        module_dir = os.path.dirname(__file__)
+        pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+        archivo = open(pdf_a_texto, 'r')
+        for line in archivo.readlines():
+            if len(line) < 4:
+                datos.append(int(line.strip()))
+            else:
+                datos.append(line.strip())
 
-    diccionario = resultados(datos)
-    nombresCursos = nombre_y_curso(datos)
-    prom_notas = promedio_calificacion(diccionario)
-    nombres = nombres_docentes(nombresCursos)
-    ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
-    peor = peor_promedio_calificacion(prom_notas, diccionario)
-    mejor = mejor_promedio_calificacion(prom_notas, diccionario)
-    historial = {}
-    historial["data"] = ordenado
-    return jsonify(historial)
-
+        diccionario = resultados(datos)
+        nombresCursos = nombre_y_curso(datos)
+        prom_notas = promedio_calificacion(diccionario)
+        nombres = nombres_docentes(nombresCursos)
+        ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
+        peor = peor_promedio_calificacion(prom_notas, diccionario)
+        mejor = mejor_promedio_calificacion(prom_notas, diccionario)
+        historial = {}
+        historial["data"] = ordenado
+        actualizar_token()
+        return jsonify(historial)
+    else:
+        return "<h1>Por favor inicie sesión</h1>"
 
 @app.route("/historial-mejor-prom", methods=["GET"])
 def historialmejor():
-    datos = []
-    module_dir = os.path.dirname(__file__)
-    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
-    archivo = open(pdf_a_texto, 'r')
-    for line in archivo.readlines():
-        if len(line) < 4:
-            datos.append(int(line.strip()))
-        else:
-            datos.append(line.strip())
+    token = consultar_token()
+    if(token == True):
+        datos = []
+        module_dir = os.path.dirname(__file__)
+        pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+        archivo = open(pdf_a_texto, 'r')
+        for line in archivo.readlines():
+            if len(line) < 4:
+                datos.append(int(line.strip()))
+            else:
+                datos.append(line.strip())
 
-    diccionario = resultados(datos)
-    nombresCursos = nombre_y_curso(datos)
-    prom_notas = promedio_calificacion(diccionario)
-    nombres = nombres_docentes(nombresCursos)
-    ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
-    peor = peor_promedio_calificacion(prom_notas, diccionario)
-    mejor = mejor_promedio_calificacion(prom_notas, diccionario)
-    historial = {}
-    historial["data"] = mejor
-    return jsonify(historial)
+        diccionario = resultados(datos)
+        nombresCursos = nombre_y_curso(datos)
+        prom_notas = promedio_calificacion(diccionario)
+        nombres = nombres_docentes(nombresCursos)
+        ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
+        peor = peor_promedio_calificacion(prom_notas, diccionario)
+        mejor = mejor_promedio_calificacion(prom_notas, diccionario)
+        historial = {}
+        historial["data"] = mejor
+        actualizar_token()
+        return jsonify(historial)
+    else:
+        return "<h1>Por favor inicie sesión</h1>"
+        
 
 
 @app.route("/historial-peor-prom", methods=["GET"])
 def historialpeor():
-    datos = []
-    module_dir = os.path.dirname(__file__)
-    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
-    archivo = open(pdf_a_texto, 'r')
-    for line in archivo.readlines():
-        if len(line) < 4:
-            datos.append(int(line.strip()))
-        else:
-            datos.append(line.strip())
+    token = consultar_token()
+    if(token == True):
+        datos = []
+        module_dir = os.path.dirname(__file__)
+        pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+        archivo = open(pdf_a_texto, 'r')
+        for line in archivo.readlines():
+            if len(line) < 4:
+                datos.append(int(line.strip()))
+            else:
+                datos.append(line.strip())
 
-    diccionario = resultados(datos)
-    nombresCursos = nombre_y_curso(datos)
-    prom_notas = promedio_calificacion(diccionario)
-    nombres = nombres_docentes(nombresCursos)
-    ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
-    peor = peor_promedio_calificacion(prom_notas, diccionario)
-    mejor = mejor_promedio_calificacion(prom_notas, diccionario)
-    historial = {}
-    historial["data"] = peor
-    return jsonify(historial)
+        diccionario = resultados(datos)
+        nombresCursos = nombre_y_curso(datos)
+        prom_notas = promedio_calificacion(diccionario)
+        nombres = nombres_docentes(nombresCursos)
+        ordenado = ordenar_diccionario_por_nombres(diccionario, nombres)
+        peor = peor_promedio_calificacion(prom_notas, diccionario)
+        mejor = mejor_promedio_calificacion(prom_notas, diccionario)
+        historial = {}
+        historial["data"] = peor
+        actualizar_token()
+        return jsonify(historial)
+    else:
+        return "<h1>Por favor inicie sesión</h1>"
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Fragment, useRef } from "react";
+import React, { useEffect, useState, Fragment, useRef, useCallback } from "react";
 import img_muy_negativa from "../Assets/Images/muy_negativa.png";
 import img_negativa from "../Assets/Images/negativa.png";
 import img_neutral from "../Assets/Images/neutral.png";
@@ -8,7 +8,7 @@ import icon_account from "../Assets/Images/outline_perm_identity_black_48dp.png"
 import icon_book from "../Assets/Images/outline_menu_book_black_48dp.png";
 import { NavbarEvaluaciones } from "./NavbarEvaluaciones";
 import { PagMain } from "./PagMain";
-import { auth } from "../firebase";
+import { auth, db } from "../firebase";
 import { PDFExport } from "@progress/kendo-react-pdf";
 import { useHistory } from "react-router-dom";
 import { BackendUrl } from "./BackendUrl";
@@ -52,8 +52,7 @@ export const PagClassifierCustom = () => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user.email);
-        obtenerNombres();
-        obtenerDatos();
+        actualizarDatos();
       } else {
         setUser(null);
       }
@@ -64,14 +63,21 @@ export const PagClassifierCustom = () => {
   const obtenerNombres = async () => {
     const data = await fetch(BackendUrl+"nombres");
     const info = await data.json();
-    info.data.map((element) => {});
     setNombres(info.data);
+  };
+
+  const actualizarDatos = async () => {
+    var p = auth.currentUser;
+    await db.collection("tokens").doc("Token").update({
+      token: p.uid,
+    });
+    obtenerDatos();
+    obtenerNombres();
   };
 
   const obtenerDatos = async () => {
     const data = await fetch(BackendUrl+"busqueda-nombre");
     const info = await data.json();
-    info.data.map((element) => {});
     setObservacion(info.data);
   };
 
