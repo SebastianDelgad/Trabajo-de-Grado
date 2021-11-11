@@ -23,7 +23,7 @@ def saveFile(txt):
     module_dir = os.path.dirname(__file__)
     fileName = txt+".txt"
     file = os.path.join(module_dir, fileName)
-    bucket = storage.bucket()
+    bucket = storage.bucket('teacher-qualifier.appspot.com')
     blob = bucket.blob(fileName)
     blob.upload_from_filename(file)
 
