@@ -93,8 +93,6 @@ frontendUrl = 'http://localhost:3000/'
 
 @app.route("/nombres", methods=["GET"])
 def nombres():
-    token = consultar_token()
-    if(token == True):
         datos = []
         module_dir = os.path.dirname(__file__)
         pdf_a_texto = os.path.join(module_dir, 'historial.txt')
@@ -116,14 +114,11 @@ def nombres():
         docentes["data"] = docentesUnico
         actualizar_token()
         return jsonify(docentes)
-    else:
-        return "<h1>Por favor inicie sesión</h1>"
+
 
 
 @app.route("/curso", methods=["GET"])
 def cursosN():
-    token = consultar_token()
-    if(token == True):
         datos = []
         module_dir = os.path.dirname(__file__)
         pdf_a_texto = os.path.join(module_dir, 'historial.txt')
@@ -154,8 +149,6 @@ def cursosN():
         docentes["data"] = cursoN
         actualizar_token()
         return jsonify(docentes)
-    else:
-        return "<h1>Por favor inicie sesión</h1>"
 
 
 @app.route("/evaluacion-nombre", methods=["POST"])
