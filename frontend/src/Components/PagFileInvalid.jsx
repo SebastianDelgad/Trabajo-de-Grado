@@ -63,30 +63,48 @@ export const PagFileInvalid = () => {
         </Helmet>
         <div className="container mt-3 bg-light rounded-6">
           <div className="row mt-3">
-            <ul className="mt-3 mb-3 nav nav-pills nav-justified">
+            <ul className="mt-3 mb-3 nav nav-pills ">
               <li className="nav-tabs">
-                <button
-                  className="btn btn-outline-danger btn-block active"
+                <u
+                  className="nav-link-active"
                   onClick={handleClickClassifier}
-                >
-                  <span> Evaluar un documento </span>
-                </button>
+                ><div className="row">
+                  <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                    <span className="material-icons md-36">&#xe873;</span>
+                    </div>
+                    <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <span > Evaluar un documento </span>
+                  </div>
+                  </div>
+                </u>
               </li>
               <li className="nav-tabs">
-                <button
-                  className="btn btn-outline-danger btn-block"
+                <u
+                  className="nav-link"
                   onClick={handleClickEvaluaciones}
-                >
+                ><div className="row">
+                <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                  <span className="material-icons md-36">&#xe8dd;</span>
+                  </div>
+                    <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
                   <span> Ver evaluaciones </span>
-                </button>
+                  </div>
+                  </div>
+                </u>
               </li>
               <li className="nav-tabs">
-                <button
-                  className="btn btn-outline-danger btn-block"
+                <u
+                  className="nav-link"
                   onClick={handleClickRegistrarse}
-                >
+                ><div className="row">
+                <div className="col-2 col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                 <span className="material-icons md-36">&#xf02e;</span> 
+                 </div>
+                    <div className="col-10 col-sm-10 col-xs-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
                   <span> Registrar usuario </span>
-                </button>
+                  </div>
+                  </div>
+                </u>
               </li>
             </ul>
           </div>
