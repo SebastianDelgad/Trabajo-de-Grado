@@ -10,6 +10,11 @@ import urllib.request
 import numpy as np
 import firebase_admin
 from firebase_admin import credentials, initialize_app, firestore
+from FrontUrl import frontUrl
+
+app = Flask(__name__)
+CORS(app)
+frontendUrl = frontUrl()
 
 
 def consultar_token():
@@ -85,70 +90,63 @@ def allowed_file(filename):
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-app = Flask(__name__)
-CORS(app)
-frontendUrl = 'http://localhost:3000/'
-#frontendUrl = 'https://clasificacionobservaciones.herokuapp.com/'
-
-
 @app.route("/nombres", methods=["GET"])
 def nombres():
-        datos = []
-        module_dir = os.path.dirname(__file__)
-        pdf_a_texto = os.path.join(module_dir, 'historial.txt')
-        archivo = open(pdf_a_texto, 'r')
-        for line in archivo.readlines():
-            if len(line) < 4:
-                datos.append(int(line.strip()))
-            else:
-                datos.append(line.strip())
+    datos = []
+    module_dir = os.path.dirname(__file__)
+    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+    archivo = open(pdf_a_texto, 'r')
+    for line in archivo.readlines():
+        if len(line) < 4:
+            datos.append(int(line.strip()))
+        else:
+            datos.append(line.strip())
 
-        nombresCursos = nombre_y_curso(datos)
-        nombres = nombres_docentes(nombresCursos)
-        docentesUnico = []
-        for item in nombres:
-            if item not in docentesUnico:
-                docentesUnico.append(item)
-        docentesUnico.sort()
-        docentes = {}
-        docentes["data"] = docentesUnico
-        actualizar_token()
-        return jsonify(docentes)
-
+    nombresCursos = nombre_y_curso(datos)
+    nombres = nombres_docentes(nombresCursos)
+    docentesUnico = []
+    for item in nombres:
+        if item not in docentesUnico:
+            docentesUnico.append(item)
+    docentesUnico.sort()
+    docentes = {}
+    docentes["data"] = docentesUnico
+    actualizar_token()
+    return jsonify(docentes)
 
 
 @app.route("/curso", methods=["GET"])
 def cursosN():
-        datos = []
-        module_dir = os.path.dirname(__file__)
-        pdf_a_texto = os.path.join(module_dir, 'historial.txt')
-        archivo = open(pdf_a_texto, 'r')
-        for line in archivo.readlines():
-            if len(line) < 4:
-                datos.append(int(line.strip()))
-            else:
-                datos.append(line.strip())
+    datos = []
+    module_dir = os.path.dirname(__file__)
+    pdf_a_texto = os.path.join(module_dir, 'historial.txt')
+    archivo = open(pdf_a_texto, 'r')
+    for line in archivo.readlines():
+        if len(line) < 4:
+            datos.append(int(line.strip()))
+        else:
+            datos.append(line.strip())
 
-        data = nombre_y_curso(datos)
-        nombresCursos = cursos(data)
-        grupos = ["50", "51", "52", "53", "54",
-                  "55", "56", "57", "58", "59", "60"]
+    data = nombre_y_curso(datos)
+    nombresCursos = cursos(data)
+    grupos = ["50", "51", "52", "53", "54",
+              "55", "56", "57", "58", "59", "60"]
 
-        sinGrupo = []
-        for item in nombresCursos:
-            for grupo in grupos:
-                if (item[(len(item))-2] + "" + item[(len(item))-1]) == grupo:
-                    materia = item.replace(" "+grupo, "")
-                    sinGrupo.append(materia)
-        cursoN = []
-        for item in sinGrupo:
-            if item not in cursoN:
-                cursoN.append(item)
-        cursoN.sort()
-        docentes = {}
-        docentes["data"] = cursoN
-        actualizar_token()
-        return jsonify(docentes)
+    sinGrupo = []
+    for item in nombresCursos:
+        for grupo in grupos:
+            if (item[(len(item))-2] + "" + item[(len(item))-1]) == grupo:
+                materia = item.replace(" "+grupo, "")
+                sinGrupo.append(materia)
+    cursoN = []
+    for item in sinGrupo:
+        if item not in cursoN:
+            cursoN.append(item)
+    cursoN.sort()
+    docentes = {}
+    docentes["data"] = cursoN
+    actualizar_token()
+    return jsonify(docentes)
 
 
 @app.route("/evaluacion-nombre", methods=["POST"])
