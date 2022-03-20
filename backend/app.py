@@ -14,7 +14,7 @@ from FrontUrl import frontUrl
 
 app = Flask(__name__)
 CORS(app)
-frontendUrl = frontUrl()
+#frontendUrl = frontUrl()
 
 
 def consultar_token():
@@ -159,8 +159,8 @@ def individual():
         archivo = open(nombre, 'w')
         archivo.write(f)
         archivo.close()
-
-        return redirect(frontendUrl+'evaluacion/custom/nombre')
+        urlOrigin=request.environ["HTTP_ORIGIN"]
+        return redirect(urlOrigin+'/evaluacion/custom/nombre')
 
 
 @app.route("/evaluacion-curso", methods=["POST"])
@@ -173,8 +173,8 @@ def evaCurso():
         archivo = open(nombre, 'w')
         archivo.write(f)
         archivo.close()
-
-        return redirect(frontendUrl+'evaluacion/custom/curso')
+        urlOrigin=request.environ["HTTP_ORIGIN"]
+        return redirect(urlOrigin+'/evaluacion/custom/curso')
 
 
 @app.route("/busqueda-nombre", methods=["GET"])
@@ -258,14 +258,17 @@ def uploader():
             f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             if (comprobarArchivo(filename)):
                 procesador(filename)
+                urlOrigin=request.environ["HTTP_ORIGIN"]
             # Retornamos una respuesta satisfactoria
-                return redirect(frontendUrl+'evaluaciones')
+                return redirect(urlOrigin+'/evaluaciones')
             else:
                 module_dir = os.path.dirname(__file__)
                 os.remove(module_dir+'\\'+filename)
                 os.remove(module_dir+'\\'+filename+'.txt')
-                return redirect(frontendUrl+'classifier/error')
-        return redirect(frontendUrl+'classifier/error')
+                urlOrigin=request.environ["HTTP_ORIGIN"]
+                return redirect(urlOrigin+'/classifier/error')
+        urlOrigin=request.environ["HTTP_ORIGIN"]
+        return redirect(urlOrigin+'/classifier/error')
 
 
 @app.route("/historial", methods=["POST"])
@@ -275,8 +278,8 @@ def historial():
         f = request.values["link"]
         url = "https://storage.googleapis.com/teacher-qualifier.appspot.com/"+f+".pdf.txt"
         obtenerArchivo(url)
-
-        return redirect(frontendUrl+'evaluacion/ordenado')
+        urlOrigin=request.environ["HTTP_ORIGIN"]
+        return redirect(urlOrigin+'/evaluacion/ordenado')
 
 
 @app.route("/historial-ordenado", methods=["GET"])
