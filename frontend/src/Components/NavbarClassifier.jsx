@@ -17,6 +17,10 @@ export const NavbarClassifier = (props) => {
     history.push("/perfil");
   }
 
+  function handleClickMain() {
+    history.push("/");
+  }
+
   const listUsers = async () => {
     var p = auth.currentUser;
     db.collectionGroup("usuarios").onSnapshot((querySnapshot) => {
@@ -47,10 +51,10 @@ export const NavbarClassifier = (props) => {
         <div className="mt-3 mb-4 col-8 col-sm-9 col-xs-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
           <div className="row">
           <div className="col-3 col-sm-3 col-xs-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1">
-            <img src={logo_imagen} alt="logoLogin"/>
+            <img src={logo_imagen} alt="logoLogin" onClick={handleClickMain}/>
             </div>
             <div className="mt-3 col-5">
-              <strong className="text-danger ">SISCOD</strong>
+              <strong className="text-danger " onClick={handleClickMain}>SISCOD</strong>
               </div>
             </div>
           </div>
