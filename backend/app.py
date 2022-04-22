@@ -79,8 +79,10 @@ def procesador(pdf):
     texto = observaciones(pdf)
     infoPrincipal = data(texto, pdf)
     module_dir = os.path.dirname(__file__)
-    os.remove(module_dir+'\\'+pdf)
-    os.remove(module_dir+'\\'+pdf+'.txt')
+    current_path1 = module_dir+'\\'+pdf
+    current_path2 = module_dir+'\\'+pdf+'.txt'
+    os.remove(current_path1.replace(os.sep, "/"))
+    os.remove(current_path2.replace(os.sep, "/"))
     return infoPrincipal
 
 
@@ -263,8 +265,10 @@ def uploader():
                 return redirect(urlOrigin+'/evaluaciones')
             else:
                 module_dir = os.path.dirname(__file__)
-                os.remove(module_dir+'\\'+filename)
-                os.remove(module_dir+'\\'+filename+'.txt')
+                current_path1 = module_dir+'\\'+filename
+                current_path2 = module_dir+'\\'+filename+'.txt'
+                os.remove(current_path1.replace(os.sep, "/"))
+                os.remove(current_path2.replace(os.sep, "/"))
                 urlOrigin=request.environ["HTTP_ORIGIN"]
                 return redirect(urlOrigin+'/classifier/error')
         urlOrigin=request.environ["HTTP_ORIGIN"]
