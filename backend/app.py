@@ -79,6 +79,7 @@ def procesador(pdf):
     texto = observaciones(pdf)
     infoPrincipal = data(texto, pdf)
     module_dir = os.path.dirname(__file__)
+    module_dir = module_dir + '/datos/'
     current_path1 = module_dir+'\\'+pdf
     current_path2 = module_dir+'\\'+pdf+'.txt'
     os.remove(current_path1.replace(os.sep, "/"))
@@ -256,7 +257,7 @@ def uploader():
             filename = secure_filename(f.filename)
             # Guardamos el archivo en el directorio "PDF"
             module_dir = os.path.dirname(__file__)
-            app.config['UPLOAD_FOLDER'] = module_dir
+            app.config['UPLOAD_FOLDER'] = module_dir + '/datos/'
             f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             if (comprobarArchivo(filename)):
                 procesador(filename)
@@ -265,6 +266,7 @@ def uploader():
                 return redirect(urlOrigin+'/evaluaciones')
             else:
                 module_dir = os.path.dirname(__file__)
+                module_dir = module_dir + '/datos/'
                 current_path1 = module_dir+'\\'+filename
                 current_path2 = module_dir+'\\'+filename+'.txt'
                 os.remove(current_path1.replace(os.sep, "/"))

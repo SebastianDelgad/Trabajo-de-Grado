@@ -22,7 +22,8 @@ def saveFile(txt):
 # Put your local file path
     module_dir = os.path.dirname(__file__)
     fileName = txt+".txt"
-    file = os.path.join(module_dir, fileName)
+    module_dir = module_dir + '/datos/'
+    file = os.path.join(module_dir, fileName).replace(os.sep, "/")
     bucket = storage.bucket('teacher-qualifier.appspot.com')
     blob = bucket.blob(fileName)
     blob.upload_from_filename(file)
@@ -97,7 +98,8 @@ def data(txt, pdf):
     evaluacion = evaluar_documento(txt)
     file = quitarTildes(evaluacion)
     module_dir = os.path.dirname(__file__)
-    resultado = os.path.join(module_dir, pdf+".txt")
+    module_dir = module_dir + '/datos/'
+    resultado = os.path.join(module_dir, pdf+".txt").replace(os.sep, "/")
 
     np.savetxt(resultado, np.array(file), fmt="%s")
     saveFile(pdf)

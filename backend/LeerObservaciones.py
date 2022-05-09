@@ -7,9 +7,10 @@ import os
 
 def leer_PDF(pdf):
     module_dir = os.path.dirname(__file__)
-    file = os.path.join(module_dir, pdf)
+    module_dir = module_dir + '/datos/'
+    file = os.path.join(module_dir, pdf).replace(os.sep, "/")
     documento = fitz.open(file)
-    pdf_a_texto = os.path.join(module_dir, pdf+'.txt')
+    pdf_a_texto = os.path.join(module_dir, pdf+'.txt').replace(os.sep, "/")
     nombre_txt = pdf+'.txt'
     salida = open(pdf_a_texto, "wb")
 
@@ -29,7 +30,8 @@ def leer_txt(documento):
     quitarEspacios = []
     quitarLinks = []
     module_dir = os.path.dirname(__file__)
-    file = os.path.join(module_dir, documento)
+    module_dir = module_dir + '/datos/'
+    file = os.path.join(module_dir, documento).replace(os.sep, "/")
     archivo = open(file, mode='r', encoding='utf8')
     for word in archivo:
         if word.strip() == 'Observaciones':
