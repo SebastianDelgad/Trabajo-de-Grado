@@ -9,7 +9,7 @@ import icon_book from "../Assets/Images/outline_menu_book_black_48dp.png";
 import { NavbarEvaluaciones } from "./NavbarEvaluaciones";
 import { PagMain } from "./PagMain";
 import { auth, db } from "../firebase";
-import { Document } from "react-pdf";
+import { PDFExport } from "@progress/kendo-react-pdf";
 import { useHistory } from "react-router-dom";
 import { BackendUrl } from "./BackendUrl";
 import { Helmet } from "react-helmet";
@@ -244,7 +244,7 @@ export const PagClassifierCustom = () => {
           </div>
         </div>
 
-        <Document
+        <PDFExport
           scale={0.6}
           paperSize="Legal"
           margin="2cm"
@@ -439,7 +439,7 @@ export const PagClassifierCustom = () => {
               </div>
             ))}
           </div>
-        </Document>
+        </PDFExport>
       </Fragment>
     );
   }
